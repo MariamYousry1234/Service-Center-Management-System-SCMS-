@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B586E49-BB78-4F22-8AFA-6DC73CC59AD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Service_Center_Management_System__SCMS_</RootNamespace>
+    <AssemblyName>Service Center Management System %28SCMS%29</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlsLib">
+      <HintPath>..\ControlsLib\obj\Debug\ControlsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedLib">
+      <HintPath>..\SharedLib\obj\Debug\SharedLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsGlobal.cs" />
+    <Compile Include="Employee\frmAddEditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmAddEditEmployee.Designer.cs">
+      <DependentUpon>frmAddEditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmManageEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmManageEmployees.Designer.cs">
+      <DependentUpon>frmManageEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmSearchForAnEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmSearchForAnEmployee.Designer.cs">
+      <DependentUpon>frmSearchForAnEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmAddEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmAddEditCustomer.Designer.cs">
+      <DependentUpon>frmAddEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmManageCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmManageCustomers.Designer.cs">
+      <DependentUpon>frmManageCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmSearchForACustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmSearchForACustomer.Designer.cs">
+      <DependentUpon>frmSearchForACustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmShowCustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmShowCustomerInfo.Designer.cs">
+      <DependentUpon>frmShowCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceType\frmAddEditDeviceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceType\frmAddEditDeviceType.Designer.cs">
+      <DependentUpon>frmAddEditDeviceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceType\frmManageDeviceTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceType\frmManageDeviceTypes.Designer.cs">
+      <DependentUpon>frmManageDeviceTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceType\frmSearchForADeviceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceType\frmSearchForADeviceType.Designer.cs">
+      <DependentUpon>frmSearchForADeviceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmAddEditBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmAddEditBrand.Designer.cs">
+      <DependentUpon>frmAddEditBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmManageBands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmManageBands.Designer.cs">
+      <DependentUpon>frmManageBands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmSearchForaBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmSearchForaBrand.Designer.cs">
+      <DependentUpon>frmSearchForaBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmShowAllModelsForBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Brand\frmShowAllModelsForBrand.Designer.cs">
+      <DependentUpon>frmShowAllModelsForBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\frmAddEditDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\frmAddEditDevice.Designer.cs">
+      <DependentUpon>frmAddEditDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\frmManageDevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\frmManageDevices.Designer.cs">
+      <DependentUpon>frmManageDevices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\frmSearchForADevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\frmSearchForADevice.Designer.cs">
+      <DependentUpon>frmSearchForADevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\frmShowDeviceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\frmShowDeviceDetails.Designer.cs">
+      <DependentUpon>frmShowDeviceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\frmShowAllDevicesForACustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\frmShowAllDevicesForACustomer.Designer.cs">
+      <DependentUpon>frmShowAllDevicesForACustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmShowCustomerRepairOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmShowCustomerRepairOrders.Designer.cs">
+      <DependentUpon>frmShowCustomerRepairOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\frmAddEditDiagnosis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\frmAddEditDiagnosis.Designer.cs">
+      <DependentUpon>frmAddEditDiagnosis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\frmCustomerApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\frmCustomerApproval.Designer.cs">
+      <DependentUpon>frmCustomerApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\frmManageDiagnoses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\frmManageDiagnoses.Designer.cs">
+      <DependentUpon>frmManageDiagnoses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\frmAddEditDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery\frmAddEditDelivery.Designer.cs">
+      <DependentUpon>frmAddEditDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmInvoicesAwaitingPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmInvoicesAwaitingPayment.Designer.cs">
+      <DependentUpon>frmInvoicesAwaitingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmRepairOrdersReadyForDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmRepairOrdersReadyForDelivery.Designer.cs">
+      <DependentUpon>frmRepairOrdersReadyForDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmRepairOrdersReadyForInvoicing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmRepairOrdersReadyForInvoicing.Designer.cs">
+      <DependentUpon>frmRepairOrdersReadyForInvoicing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmAddEditPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmAddEditPayment.Designer.cs">
+      <DependentUpon>frmAddEditPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmShowPaymentHistory.Designer.cs">
+      <DependentUpon>frmShowPaymentHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\Part Brand\frmAddEditPartBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\Part Brand\frmAddEditPartBrand.Designer.cs">
+      <DependentUpon>frmAddEditPartBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\Part Category\frmAddEditPartCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\Part Category\frmAddEditPartCategories.Designer.cs">
+      <DependentUpon>frmAddEditPartCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmManageInvoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmManageInvoices.Designer.cs">
+      <DependentUpon>frmManageInvoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmShowInvoiceDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmShowInvoiceDetails.Designer.cs">
+      <DependentUpon>frmShowInvoiceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmIssueInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmIssueInvoice.Designer.cs">
+      <DependentUpon>frmIssueInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\Part Brand\frmManagePartBrands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\Part Brand\frmManagePartBrands.Designer.cs">
+      <DependentUpon>frmManagePartBrands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\Part Category\frmManagePartCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\Part Category\frmManagePartCategories.Designer.cs">
+      <DependentUpon>frmManagePartCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\frmShowDiagnosisDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\frmShowDiagnosisDetails.Designer.cs">
+      <DependentUpon>frmShowDiagnosisDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmRecordUsedPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmRecordUsedPart.Designer.cs">
+      <DependentUpon>frmRecordUsedPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\frmSetRepairCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\frmSetRepairCost.Designer.cs">
+      <DependentUpon>frmSetRepairCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmShowAllPreviousPuchaseOperationsForPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmShowAllPreviousPuchaseOperationsForPart.Designer.cs">
+      <DependentUpon>frmShowAllPreviousPuchaseOperationsForPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmCreateSparePartPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmCreateSparePartPurchase.Designer.cs">
+      <DependentUpon>frmCreateSparePartPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmManagePurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmManagePurchases.Designer.cs">
+      <DependentUpon>frmManagePurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmShowPurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmShowPurchaseDetails.Designer.cs">
+      <DependentUpon>frmShowPurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmAddEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmAddEditSupplier.Designer.cs">
+      <DependentUpon>frmAddEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmManageSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmManageSuppliers.Designer.cs">
+      <DependentUpon>frmManageSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\frmSearchForSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmSearchForSupplier.Designer.cs">
+      <DependentUpon>frmSearchForSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmAddEditSparePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmAddEditSparePart.Designer.cs">
+      <DependentUpon>frmAddEditSparePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmManageSpareParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmManageSpareParts.Designer.cs">
+      <DependentUpon>frmManageSpareParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmSearchForSparePart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmSearchForSparePart.Designer.cs">
+      <DependentUpon>frmSearchForSparePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\frmShowSparePartDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spare Part\frmShowSparePartDetails.Designer.cs">
+      <DependentUpon>frmShowSparePartDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmShowAssignedRepairsForTechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmShowAssignedRepairsForTechnician.Designer.cs">
+      <DependentUpon>frmShowAssignedRepairsForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmShowCompletedRepairsForTechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmShowCompletedRepairsForTechnician.Designer.cs">
+      <DependentUpon>frmShowCompletedRepairsForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmShowCurrentWorkloadForTechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmShowCurrentWorkloadForTechnician.Designer.cs">
+      <DependentUpon>frmShowCurrentWorkloadForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmShowRepairOrderHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmShowRepairOrderHistory.Designer.cs">
+      <DependentUpon>frmShowRepairOrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmShowRepairOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmShowRepairOrderDetails.Designer.cs">
+      <DependentUpon>frmShowRepairOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmAddEditRepairOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmAddEditRepairOrder.Designer.cs">
+      <DependentUpon>frmAddEditRepairOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmManageRepairOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmManageRepairOrders.Designer.cs">
+      <DependentUpon>frmManageRepairOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Model\frmAddEditModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Model\frmAddEditModel.Designer.cs">
+      <DependentUpon>frmAddEditModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Model\frmManageModels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Model\frmManageModels.Designer.cs">
+      <DependentUpon>frmManageModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\Device Model\frmSearchForAModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Device\Device Model\frmSearchForAModel.Designer.cs">
+      <DependentUpon>frmSearchForAModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmAddEditTechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmAddEditTechnician.Designer.cs">
+      <DependentUpon>frmAddEditTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmManageTechnicians.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmManageTechnicians.Designer.cs">
+      <DependentUpon>frmManageTechnicians.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmSearchForATechnician.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmSearchForATechnician.Designer.cs">
+      <DependentUpon>frmSearchForATechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\frmShowTechnicianInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Technician\frmShowTechnicianInfo.Designer.cs">
+      <DependentUpon>frmShowTechnicianInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployeeUserAcounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployeeUserAcounts.Designer.cs">
+      <DependentUpon>frmShowEmployeeUserAcounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmSearchForAUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmSearchForAUser.Designer.cs">
+      <DependentUpon>frmSearchForAUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginScreen.Designer.cs">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\frmManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\frmManageUsers.Designer.cs">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmSelectEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmSelectEmployee.Designer.cs">
+      <DependentUpon>frmSelectEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployeeInfo.Designer.cs">
+      <DependentUpon>frmShowEmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employee\frmAddEditEmployee.resx">
+      <DependentUpon>frmAddEditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmManageEmployees.resx">
+      <DependentUpon>frmManageEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmSearchForAnEmployee.resx">
+      <DependentUpon>frmSearchForAnEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmAddEditCustomer.resx">
+      <DependentUpon>frmAddEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmManageCustomers.resx">
+      <DependentUpon>frmManageCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmSearchForACustomer.resx">
+      <DependentUpon>frmSearchForACustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmShowCustomerInfo.resx">
+      <DependentUpon>frmShowCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceType\frmAddEditDeviceType.resx">
+      <DependentUpon>frmAddEditDeviceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceType\frmManageDeviceTypes.resx">
+      <DependentUpon>frmManageDeviceTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceType\frmSearchForADeviceType.resx">
+      <DependentUpon>frmSearchForADeviceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Brand\frmAddEditBrand.resx">
+      <DependentUpon>frmAddEditBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Brand\frmManageBands.resx">
+      <DependentUpon>frmManageBands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Brand\frmSearchForaBrand.resx">
+      <DependentUpon>frmSearchForaBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Brand\frmShowAllModelsForBrand.resx">
+      <DependentUpon>frmShowAllModelsForBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\frmAddEditDevice.resx">
+      <DependentUpon>frmAddEditDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\frmManageDevices.resx">
+      <DependentUpon>frmManageDevices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\frmSearchForADevice.resx">
+      <DependentUpon>frmSearchForADevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\frmShowDeviceDetails.resx">
+      <DependentUpon>frmShowDeviceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\frmShowAllDevicesForACustomer.resx">
+      <DependentUpon>frmShowAllDevicesForACustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmShowCustomerRepairOrders.resx">
+      <DependentUpon>frmShowCustomerRepairOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\frmAddEditDiagnosis.resx">
+      <DependentUpon>frmAddEditDiagnosis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\frmCustomerApproval.resx">
+      <DependentUpon>frmCustomerApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\frmManageDiagnoses.resx">
+      <DependentUpon>frmManageDiagnoses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\frmAddEditDelivery.resx">
+      <DependentUpon>frmAddEditDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\frmInvoicesAwaitingPayment.resx">
+      <DependentUpon>frmInvoicesAwaitingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmRepairOrdersReadyForDelivery.resx">
+      <DependentUpon>frmRepairOrdersReadyForDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmRepairOrdersReadyForInvoicing.resx">
+      <DependentUpon>frmRepairOrdersReadyForInvoicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmAddEditPayment.resx">
+      <DependentUpon>frmAddEditPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmShowPaymentHistory.resx">
+      <DependentUpon>frmShowPaymentHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\Part Brand\frmAddEditPartBrand.resx">
+      <DependentUpon>frmAddEditPartBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\Part Category\frmAddEditPartCategories.resx">
+      <DependentUpon>frmAddEditPartCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\frmManageInvoices.resx">
+      <DependentUpon>frmManageInvoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\frmShowInvoiceDetails.resx">
+      <DependentUpon>frmShowInvoiceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\frmIssueInvoice.resx">
+      <DependentUpon>frmIssueInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\Part Brand\frmManagePartBrands.resx">
+      <DependentUpon>frmManagePartBrands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\Part Category\frmManagePartCategories.resx">
+      <DependentUpon>frmManagePartCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\frmShowDiagnosisDetails.resx">
+      <DependentUpon>frmShowDiagnosisDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmRecordUsedPart.resx">
+      <DependentUpon>frmRecordUsedPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\RepairCost\frmSetRepairCost.resx">
+      <DependentUpon>frmSetRepairCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmShowAllPreviousPuchaseOperationsForPart.resx">
+      <DependentUpon>frmShowAllPreviousPuchaseOperationsForPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmCreateSparePartPurchase.resx">
+      <DependentUpon>frmCreateSparePartPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmManagePurchases.resx">
+      <DependentUpon>frmManagePurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmShowPurchaseDetails.resx">
+      <DependentUpon>frmShowPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmAddEditSupplier.resx">
+      <DependentUpon>frmAddEditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmManageSuppliers.resx">
+      <DependentUpon>frmManageSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmSearchForSupplier.resx">
+      <DependentUpon>frmSearchForSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmAddEditSparePart.resx">
+      <DependentUpon>frmAddEditSparePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmManageSpareParts.resx">
+      <DependentUpon>frmManageSpareParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmSearchForSparePart.resx">
+      <DependentUpon>frmSearchForSparePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\frmShowSparePartDetails.resx">
+      <DependentUpon>frmShowSparePartDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmShowAssignedRepairsForTechnician.resx">
+      <DependentUpon>frmShowAssignedRepairsForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmShowCompletedRepairsForTechnician.resx">
+      <DependentUpon>frmShowCompletedRepairsForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmShowCurrentWorkloadForTechnician.resx">
+      <DependentUpon>frmShowCurrentWorkloadForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmShowRepairOrderHistory.resx">
+      <DependentUpon>frmShowRepairOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmShowRepairOrderDetails.resx">
+      <DependentUpon>frmShowRepairOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmAddEditRepairOrder.resx">
+      <DependentUpon>frmAddEditRepairOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmManageRepairOrders.resx">
+      <DependentUpon>frmManageRepairOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Model\frmAddEditModel.resx">
+      <DependentUpon>frmAddEditModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Model\frmManageModels.resx">
+      <DependentUpon>frmManageModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\Device Model\frmSearchForAModel.resx">
+      <DependentUpon>frmSearchForAModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmAddEditTechnician.resx">
+      <DependentUpon>frmAddEditTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmManageTechnicians.resx">
+      <DependentUpon>frmManageTechnicians.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmSearchForATechnician.resx">
+      <DependentUpon>frmSearchForATechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\frmShowTechnicianInfo.resx">
+      <DependentUpon>frmShowTechnicianInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmShowEmployeeUserAcounts.resx">
+      <DependentUpon>frmShowEmployeeUserAcounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmSearchForAUser.resx">
+      <DependentUpon>frmSearchForAUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginScreen.resx">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\frmManageUsers.resx">
+      <DependentUpon>frmManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmSelectEmployee.resx">
+      <DependentUpon>frmSelectEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmShowEmployeeInfo.resx">
+      <DependentUpon>frmShowEmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCMSControlsLib\SCMSControlsLib.csproj">
+      <Project>{C3F03295-8A5D-45EB-9C75-3361A111DADF}</Project>
+      <Name>SCMSControlsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SCMS_Business_Logic\SCMS_Business_Logic.csproj">
+      <Project>{f00c4b6c-1a9f-44e7-841a-03bd5cf9c706}</Project>
+      <Name>SCMS_Business_Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groups.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\division.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-model.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-modeling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\repair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broken-monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currentworkload.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spare-parts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spare-parts %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-update %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthcare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identify1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ram-memory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\touch-screen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivered1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

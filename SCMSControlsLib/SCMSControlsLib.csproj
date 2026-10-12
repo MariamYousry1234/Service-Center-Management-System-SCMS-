@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3F03295-8A5D-45EB-9C75-3361A111DADF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SCMSControlsLib</RootNamespace>
+    <AssemblyName>SCMSControlsLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlsLib">
+      <HintPath>..\ControlsLib\obj\Debug\ControlsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\Service Center Management System (SCMS)\packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="SCMS_Business_Logic">
+      <HintPath>..\SCMS_Business_Logic\obj\Debug\SCMS_Business_Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControls\cusTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\cusTextBox.Designer.cs">
+      <DependentUpon>cusTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Person\ucPersonalInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\ucPersonalInfo.Designer.cs">
+      <DependentUpon>ucPersonalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\ucSearchForAnEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employees\ucSearchForAnEmployee.Designer.cs">
+      <DependentUpon>ucSearchForAnEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\ucShowEmployeeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employees\ucShowEmployeeInfo.Designer.cs">
+      <DependentUpon>ucShowEmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person\ucShowPersonInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Person\ucShowPersonInfo.Designer.cs">
+      <DependentUpon>ucShowPersonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Customer\ucSearchForCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucSearchForCustomer.Designer.cs">
+      <DependentUpon>ucSearchForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ucShowCustomerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucShowCustomerInfo.Designer.cs">
+      <DependentUpon>ucShowCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\ucSearchForEmployeeWithAddingEditing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employees\ucSearchForEmployeeWithAddingEditing.Designer.cs">
+      <DependentUpon>ucSearchForEmployeeWithAddingEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\ucSearchForATechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technician\ucSearchForATechnician.Designer.cs">
+      <DependentUpon>ucSearchForATechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\ucShowTechnicianInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technician\ucShowTechnicianInfo.Designer.cs">
+      <DependentUpon>ucShowTechnicianInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceType\ucSearchForDeviceType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceType\ucSearchForDeviceType.Designer.cs">
+      <DependentUpon>ucSearchForDeviceType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceType\ucShowDeviceTypeInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceType\ucShowDeviceTypeInfo.Designer.cs">
+      <DependentUpon>ucShowDeviceTypeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\ucSearchForABrand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Brand\ucSearchForABrand.Designer.cs">
+      <DependentUpon>ucSearchForABrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\ucShowBrandInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Brand\ucShowBrandInfo.Designer.cs">
+      <DependentUpon>ucShowBrandInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Brand\ucShowAllModelsForBrand.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Brand\ucShowAllModelsForBrand.Designer.cs">
+      <DependentUpon>ucShowAllModelsForBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucSearchForAModel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucSearchForAModel.Designer.cs">
+      <DependentUpon>ucSearchForAModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ucShowModelInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\ucShowModelInfo.Designer.cs">
+      <DependentUpon>ucShowModelInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\ucSearchForADevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\ucSearchForADevice.Designer.cs">
+      <DependentUpon>ucSearchForADevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ucSearchForCustomerWithAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucSearchForCustomerWithAddEdit.Designer.cs">
+      <DependentUpon>ucSearchForCustomerWithAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\ucShowDeviceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\ucShowDeviceInfo.Designer.cs">
+      <DependentUpon>ucShowDeviceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\ucShowAllDevicesForACustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\ucShowAllDevicesForACustomer.Designer.cs">
+      <DependentUpon>ucShowAllDevicesForACustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Device\ucSearchForDeviceWithAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Device\ucSearchForDeviceWithAddEdit.Designer.cs">
+      <DependentUpon>ucSearchForDeviceWithAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\ucShowRepairOrderDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repair Order\ucShowRepairOrderDetails.Designer.cs">
+      <DependentUpon>ucShowRepairOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ucShowCustomerRepairOrders.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucShowCustomerRepairOrders.Designer.cs">
+      <DependentUpon>ucShowCustomerRepairOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\ucShowAssignedRepairsForTechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technician\ucShowAssignedRepairsForTechnician.Designer.cs">
+      <DependentUpon>ucShowAssignedRepairsForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\ucShowCompletedRepairsForTechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technician\ucShowCompletedRepairsForTechnician.Designer.cs">
+      <DependentUpon>ucShowCompletedRepairsForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Technician\ucShowCurrentWorkloadForTechnician.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Technician\ucShowCurrentWorkloadForTechnician.Designer.cs">
+      <DependentUpon>ucShowCurrentWorkloadForTechnician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\ucShowRepairOrderHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repair Order\ucShowRepairOrderHistory.Designer.cs">
+      <DependentUpon>ucShowRepairOrderHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\ucSearchForSparePart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Spare Part\ucSearchForSparePart.Designer.cs">
+      <DependentUpon>ucSearchForSparePart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\ucShowSparePartDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Spare Part\ucShowSparePartDetails.Designer.cs">
+      <DependentUpon>ucShowSparePartDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\ucSearchForSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supplier\ucSearchForSupplier.Designer.cs">
+      <DependentUpon>ucSearchForSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier\ucShowSupplierInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Supplier\ucShowSupplierInfo.Designer.cs">
+      <DependentUpon>ucShowSupplierInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\ucShowAllPreviousOperationsForPart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Spare Part\ucShowAllPreviousOperationsForPart.Designer.cs">
+      <DependentUpon>ucShowAllPreviousOperationsForPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ucShowPurchaseDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Purchase\ucShowPurchaseDetails.Designer.cs">
+      <DependentUpon>ucShowPurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnosis\ucShowDiagnosisDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Diagnosis\ucShowDiagnosisDetails.Designer.cs">
+      <DependentUpon>ucShowDiagnosisDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\ucShowRepairCostDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\ucShowRepairCostDetails.Designer.cs">
+      <DependentUpon>ucShowRepairCostDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spare Part\ucShowUsedParts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Spare Part\ucShowUsedParts.Designer.cs">
+      <DependentUpon>ucShowUsedParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucShowInvoiceDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucShowInvoiceDetails.Designer.cs">
+      <DependentUpon>ucShowInvoiceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\ucShowRepairCostDetailsWithEditing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\RepairCost\ucShowRepairCostDetailsWithEditing.Designer.cs">
+      <DependentUpon>ucShowRepairCostDetailsWithEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucSearchForInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucSearchForInvoice.Designer.cs">
+      <DependentUpon>ucSearchForInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ucShowPaymentHistoryForRepairOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\ucShowPaymentHistoryForRepairOrder.Designer.cs">
+      <DependentUpon>ucShowPaymentHistoryForRepairOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ucInvoicesAwaitingPayment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoice\ucInvoicesAwaitingPayment.Designer.cs">
+      <DependentUpon>ucInvoicesAwaitingPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\ucRepairOrdersReadyForDelivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repair Order\ucRepairOrdersReadyForDelivery.Designer.cs">
+      <DependentUpon>ucRepairOrdersReadyForDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\ucRepairOrdersReadyForInvoicing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repair Order\ucRepairOrdersReadyForInvoicing.Designer.cs">
+      <DependentUpon>ucRepairOrdersReadyForInvoicing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ucSearchForUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\ucSearchForUserInfo.Designer.cs">
+      <DependentUpon>ucSearchForUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\ucShowAllAcountsForAnEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Employees\ucShowAllAcountsForAnEmployee.Designer.cs">
+      <DependentUpon>ucShowAllAcountsForAnEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ucShowUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\ucShowUserInfo.Designer.cs">
+      <DependentUpon>ucShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\ucPersonalInfo.resx">
+      <DependentUpon>ucPersonalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\ucSearchForAnEmployee.resx">
+      <DependentUpon>ucSearchForAnEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\ucShowEmployeeInfo.resx">
+      <DependentUpon>ucShowEmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Person\ucShowPersonInfo.resx">
+      <DependentUpon>ucShowPersonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucSearchForCustomer.resx">
+      <DependentUpon>ucSearchForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucShowCustomerInfo.resx">
+      <DependentUpon>ucShowCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\ucSearchForEmployeeWithAddingEditing.resx">
+      <DependentUpon>ucSearchForEmployeeWithAddingEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\ucSearchForATechnician.resx">
+      <DependentUpon>ucSearchForATechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\ucShowTechnicianInfo.resx">
+      <DependentUpon>ucShowTechnicianInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceType\ucSearchForDeviceType.resx">
+      <DependentUpon>ucSearchForDeviceType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceType\ucShowDeviceTypeInfo.resx">
+      <DependentUpon>ucShowDeviceTypeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\ucSearchForABrand.resx">
+      <DependentUpon>ucSearchForABrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\ucShowBrandInfo.resx">
+      <DependentUpon>ucShowBrandInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Brand\ucShowAllModelsForBrand.resx">
+      <DependentUpon>ucShowAllModelsForBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucSearchForAModel.resx">
+      <DependentUpon>ucSearchForAModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\ucShowModelInfo.resx">
+      <DependentUpon>ucShowModelInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\ucSearchForADevice.resx">
+      <DependentUpon>ucSearchForADevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucSearchForCustomerWithAddEdit.resx">
+      <DependentUpon>ucSearchForCustomerWithAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\ucShowDeviceInfo.resx">
+      <DependentUpon>ucShowDeviceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\ucShowAllDevicesForACustomer.resx">
+      <DependentUpon>ucShowAllDevicesForACustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Device\ucSearchForDeviceWithAddEdit.resx">
+      <DependentUpon>ucSearchForDeviceWithAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\ucShowRepairOrderDetails.resx">
+      <DependentUpon>ucShowRepairOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucShowCustomerRepairOrders.resx">
+      <DependentUpon>ucShowCustomerRepairOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\ucShowAssignedRepairsForTechnician.resx">
+      <DependentUpon>ucShowAssignedRepairsForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\ucShowCompletedRepairsForTechnician.resx">
+      <DependentUpon>ucShowCompletedRepairsForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Technician\ucShowCurrentWorkloadForTechnician.resx">
+      <DependentUpon>ucShowCurrentWorkloadForTechnician.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\ucShowRepairOrderHistory.resx">
+      <DependentUpon>ucShowRepairOrderHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\ucSearchForSparePart.resx">
+      <DependentUpon>ucSearchForSparePart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\ucShowSparePartDetails.resx">
+      <DependentUpon>ucShowSparePartDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\ucSearchForSupplier.resx">
+      <DependentUpon>ucSearchForSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\ucShowSupplierInfo.resx">
+      <DependentUpon>ucShowSupplierInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\ucShowAllPreviousOperationsForPart.resx">
+      <DependentUpon>ucShowAllPreviousOperationsForPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ucShowPurchaseDetails.resx">
+      <DependentUpon>ucShowPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnosis\ucShowDiagnosisDetails.resx">
+      <DependentUpon>ucShowDiagnosisDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\RepairCost\ucShowRepairCostDetails.resx">
+      <DependentUpon>ucShowRepairCostDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spare Part\ucShowUsedParts.resx">
+      <DependentUpon>ucShowUsedParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucShowInvoiceDetails.resx">
+      <DependentUpon>ucShowInvoiceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\RepairCost\ucShowRepairCostDetailsWithEditing.resx">
+      <DependentUpon>ucShowRepairCostDetailsWithEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucSearchForInvoice.resx">
+      <DependentUpon>ucSearchForInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\ucShowPaymentHistoryForRepairOrder.resx">
+      <DependentUpon>ucShowPaymentHistoryForRepairOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\ucInvoicesAwaitingPayment.resx">
+      <DependentUpon>ucInvoicesAwaitingPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\ucRepairOrdersReadyForDelivery.resx">
+      <DependentUpon>ucRepairOrdersReadyForDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\ucRepairOrdersReadyForInvoicing.resx">
+      <DependentUpon>ucRepairOrdersReadyForInvoicing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ucSearchForUserInfo.resx">
+      <DependentUpon>ucSearchForUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\ucShowAllAcountsForAnEmployee.resx">
+      <DependentUpon>ucShowAllAcountsForAnEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ucShowUserInfo.resx">
+      <DependentUpon>ucShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identify1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-update %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
