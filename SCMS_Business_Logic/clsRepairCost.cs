@@ -19,7 +19,6 @@ namespace SCMS_Business_Logic
         public int RepairOrderID { set; get; }
 
         public clsRepairOrder RepairOrderInfo;
-
         public float PartsCost { get;  private set; }
 
         public float LaborCost { get; private set; }

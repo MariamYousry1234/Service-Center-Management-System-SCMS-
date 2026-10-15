@@ -114,7 +114,9 @@ namespace Service_Center_Management_System__SCMS_
 
             cancelRepairOrderToolStripMenuItem.Enabled = 
                 (_CurrentRepairOrder.Status != clsRepairOrder.enStatus.Cancelled)
-              && (_CurrentRepairOrder.Status != clsRepairOrder.enStatus.Delivered);
+              && (_CurrentRepairOrder.Status != clsRepairOrder.enStatus.Delivered) 
+              && (_CurrentRepairOrder.Status != clsRepairOrder.enStatus.Rejected);
+
 
             diagnosisToolStripMenuItem.Enabled =
                 _CurrentRepairOrder.Status == clsRepairOrder.enStatus.WaitingForDiagnosis ||

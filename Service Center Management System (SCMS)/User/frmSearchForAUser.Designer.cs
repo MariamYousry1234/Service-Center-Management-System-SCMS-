@@ -69,6 +69,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForUserInfo1);
             this.Name = "frmSearchForAUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSearchForAUser";
             this.ResumeLayout(false);
 

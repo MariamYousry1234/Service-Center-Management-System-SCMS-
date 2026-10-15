@@ -13,6 +13,8 @@ namespace SCMSControlsLib
 {
     public partial class ucShowAllDevicesForACustomer : UserControl
     {
+        public Action<int> ShowDeviceInfo;
+
         DataTable _AllDevices;
         public ucShowAllDevicesForACustomer()
         {
@@ -41,6 +43,16 @@ namespace SCMSControlsLib
                 dgvAllDevices.Columns[5].Width = 150;
                 dgvAllDevices.Columns[6].Width = 150;
             }
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            contextMenuStrip1.Enabled = dgvAllDevices.CurrentRow != null;
+        }
+
+        private void showDeviceInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowDeviceInfo?.Invoke((int)dgvAllDevices.CurrentRow.Cells[0].Value);
         }
     }
 }

@@ -210,6 +210,36 @@
     <Compile Include="Delivery\frmAddEditDelivery.Designer.cs">
       <DependentUpon>frmAddEditDelivery.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delivery\frmManageDeliveries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery\frmManageDeliveries.Designer.cs">
+      <DependentUpon>frmManageDeliveries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\frmShowAllPaymentsForCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\frmShowAllPaymentsForCustomer.Designer.cs">
+      <DependentUpon>frmShowAllPaymentsForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\frmShowDeliveryInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery\frmShowDeliveryInfo.Designer.cs">
+      <DependentUpon>frmShowDeliveryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\frmSearchForInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\frmSearchForInvoice.Designer.cs">
+      <DependentUpon>frmSearchForInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repair Order\frmViewRepairOrdersForDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Repair Order\frmViewRepairOrdersForDevice.Designer.cs">
+      <DependentUpon>frmViewRepairOrdersForDevice.cs</DependentUpon>
+    </Compile>
     <Compile Include="Invoice\frmInvoicesAwaitingPayment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -584,6 +614,21 @@
     <EmbeddedResource Include="Delivery\frmAddEditDelivery.resx">
       <DependentUpon>frmAddEditDelivery.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\frmManageDeliveries.resx">
+      <DependentUpon>frmManageDeliveries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\frmShowAllPaymentsForCustomer.resx">
+      <DependentUpon>frmShowAllPaymentsForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\frmShowDeliveryInfo.resx">
+      <DependentUpon>frmShowDeliveryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\frmSearchForInvoice.resx">
+      <DependentUpon>frmSearchForInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\frmViewRepairOrdersForDevice.resx">
+      <DependentUpon>frmViewRepairOrdersForDevice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Invoice\frmInvoicesAwaitingPayment.resx">
       <DependentUpon>frmInvoicesAwaitingPayment.cs</DependentUpon>
     </EmbeddedResource>
@@ -767,7 +812,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SCMSControlsLib\SCMSControlsLib.csproj">
-      <Project>{C3F03295-8A5D-45EB-9C75-3361A111DADF}</Project>
+      <Project>{c3f03295-8a5d-45eb-9c75-3361a111dadf}</Project>
       <Name>SCMSControlsLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\SCMS_Business_Logic\SCMS_Business_Logic.csproj">
@@ -987,6 +1032,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delivery1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

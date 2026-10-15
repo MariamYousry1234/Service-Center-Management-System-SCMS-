@@ -144,6 +144,16 @@ namespace Service_Center_Management_System__SCMS_
         private void ViewCustomerDevicesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_CurrentCustomer == null) return;
+
+            if (!_CurrentCustomer.HasDevices)
+            {
+                MessageBox.Show("This customer has no devices.",
+                    "Not Allowed",
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             frmShowAllDevicesForACustomer frm = new frmShowAllDevicesForACustomer(_CurrentCustomer.CustomerID);
 
             frm.ShowDialog();
@@ -152,24 +162,33 @@ namespace Service_Center_Management_System__SCMS_
         private void viewCustomersRepairOrdersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_CurrentCustomer == null) return;
+
+            if(!_CurrentCustomer.HasRepairOrders)
+            {
+                MessageBox.Show("This customer has no repair orders.",
+                    "Not Allowed",
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             frmShowCustomerRepairOrders frm = new frmShowCustomerRepairOrders(_CurrentCustomer.CustomerID);
 
             frm.ShowDialog();
         }
 
 
-        private void addAsEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void addAsEmployeeToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             if (_CurrentCustomer == null) return;
 
-            frmAddEditEmployee frm = new frmAddEditEmployee(_CurrentCustomer.CustomerID,true);
+            frmAddEditEmployee frm = new frmAddEditEmployee(_CurrentCustomer.CustomerID, true);
 
             frm.ShowDialog();
         }
 
-        private void deleteCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void deleteCustomerToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-
             int CustomerID = (int)dgvData.CurrentRow.Cells[0].Value;
 
             if (MessageBox.Show($"Are you sure you want to delete customer info with id= " +
@@ -189,6 +208,26 @@ namespace Service_Center_Management_System__SCMS_
                     "", MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
             }
+        }
+
+        private void viewCustomersPaymentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(!_CurrentCustomer.HasPayments)
+            {
+                MessageBox.Show(
+                      "This customer has no payments.",
+                      "No Payments",
+                       MessageBoxButtons.OK,
+                          MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            frmShowAllPaymentsForCustomer frm = 
+                new frmShowAllPaymentsForCustomer(_CurrentCustomer.CustomerID);
+
+            frm.ShowDialog();
+
         }
     }
 }

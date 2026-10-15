@@ -18,6 +18,8 @@ namespace Service_Center_Management_System__SCMS_
         private int CurrentPage = 1;
         private int NumberOfRowsEachPage = Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfRowsEachPage"]);
 
+        clsRepairOrder _CurrentRepairOrder;
+      
         public frmManageInvoices()
         {
             InitializeComponent();
@@ -86,15 +88,14 @@ namespace Service_Center_Management_System__SCMS_
 
         private void updateInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int InvoiceID = (int)dgvData.CurrentRow.Cells[0].Value;
-            clsInvoice Invoice = clsInvoice.Find(InvoiceID);
-
-            if (Invoice.RepairCostInfo.RepairOrderInfo.Status == clsRepairOrder.enStatus.Delivered
-                || Invoice.RepairCostInfo.RepairOrderInfo.Status == clsRepairOrder.enStatus.Cancelled)
+        
+            if (_CurrentRepairOrder.Status != clsRepairOrder.enStatus.InvoiceIssuing ||
+                     _CurrentRepairOrder.HasPayments
+                )
                 return;
 
 
-            frmIssueInvoice frm = new frmIssueInvoice(InvoiceID);
+            frmIssueInvoice frm = new frmIssueInvoice((int)dgvData.CurrentRow.Cells[0].Value);
 
             frm.ShowDialog();
             frmManageInvoices_Load(null, null);
@@ -102,8 +103,21 @@ namespace Service_Center_Management_System__SCMS_
 
         private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
-            guna2ContextMenuStrip1.Enabled = dgvData.CurrentRow != null;
 
+            if (dgvData.CurrentRow == null)
+            {
+                guna2ContextMenuStrip1.Enabled = false;
+                return;
+            }
+
+            guna2ContextMenuStrip1.Enabled = true;
+
+            _CurrentRepairOrder = clsRepairOrder.Find((int)dgvData.CurrentRow.Cells[1].Value);
+
+         
+            updateInfoToolStripMenuItem.Enabled = 
+                _CurrentRepairOrder.Status == clsRepairOrder.enStatus.InvoiceIssuing &&
+                !_CurrentRepairOrder.HasPayments;
         }
 
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -113,6 +127,14 @@ namespace Service_Center_Management_System__SCMS_
 
 
             frm.ShowDialog();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            frmSearchForInvoice frm = new frmSearchForInvoice();
+
+            frm.ShowDialog();
+
         }
     }
 }

@@ -35,7 +35,9 @@
             this.showCustomerInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ViewCustomerDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCustomersRepairOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewCustomersPaymentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addAsEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPages = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
@@ -44,7 +46,6 @@
             this.lblAllPersons = new System.Windows.Forms.Label();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
-            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -90,6 +91,7 @@
             this.showCustomerInfoToolStripMenuItem,
             this.ViewCustomerDevicesToolStripMenuItem,
             this.viewCustomersRepairOrdersToolStripMenuItem,
+            this.viewCustomersPaymentsToolStripMenuItem,
             this.addAsEmployeeToolStripMenuItem,
             this.deleteCustomerToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
@@ -137,13 +139,29 @@
             this.viewCustomersRepairOrdersToolStripMenuItem.Text = "View Customer\'s Repair Orders";
             this.viewCustomersRepairOrdersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersRepairOrdersToolStripMenuItem_Click);
             // 
+            // viewCustomersPaymentsToolStripMenuItem
+            // 
+            this.viewCustomersPaymentsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.transaction_history1;
+            this.viewCustomersPaymentsToolStripMenuItem.Name = "viewCustomersPaymentsToolStripMenuItem";
+            this.viewCustomersPaymentsToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.viewCustomersPaymentsToolStripMenuItem.Text = "View Customer\'s Payments";
+            this.viewCustomersPaymentsToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersPaymentsToolStripMenuItem_Click);
+            // 
             // addAsEmployeeToolStripMenuItem
             // 
             this.addAsEmployeeToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.manager;
             this.addAsEmployeeToolStripMenuItem.Name = "addAsEmployeeToolStripMenuItem";
             this.addAsEmployeeToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.addAsEmployeeToolStripMenuItem.Text = "Add as Employee";
-            this.addAsEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addAsEmployeeToolStripMenuItem_Click);
+            this.addAsEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addAsEmployeeToolStripMenuItem_Click_1);
+            // 
+            // deleteCustomerToolStripMenuItem
+            // 
+            this.deleteCustomerToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
+            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
+            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
+            this.deleteCustomerToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomerToolStripMenuItem_Click_1);
             // 
             // label3
             // 
@@ -266,14 +284,6 @@
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // deleteCustomerToolStripMenuItem
-            // 
-            this.deleteCustomerToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
-            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
-            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
-            this.deleteCustomerToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomerToolStripMenuItem_Click);
-            // 
             // frmManageCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +331,7 @@
         private System.Windows.Forms.ToolStripMenuItem showCustomerInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ViewCustomerDevicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewCustomersRepairOrdersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewCustomersPaymentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addAsEmployeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCustomerToolStripMenuItem;
     }

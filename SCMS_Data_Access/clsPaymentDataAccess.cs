@@ -370,5 +370,81 @@ namespace SCMS_Data_Access
 
             return NumberOfPages;
         }
+
+        public static async Task<DataTable> GetAllPaymentsForCustomer(int CustomerID)
+        {
+            DataTable dt = new DataTable();
+
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand("SP_GetAllPaymentsForCustomer", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue(
+                            "CustomerID",
+                            CustomerID);
+
+
+
+                        await Connection.OpenAsync();
+                      
+                        using (SqlDataReader Reader=await Command.ExecuteReaderAsync())
+                        {
+                            dt.Load(Reader);
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return dt;
+        }
+
+        public static bool IsCustomerHasPayments(int CustomerID)
+        {
+            bool HasPayments = false;
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand("SP_IsCustomerHasPayments", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue(
+                            "CustomerID",
+                            CustomerID);
+
+
+
+                         Connection.Open();
+
+                        HasPayments = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasPayments;
+        }
     }
 }

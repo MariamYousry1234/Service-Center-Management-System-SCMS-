@@ -14,6 +14,8 @@ namespace SCMSControlsLib
     public partial class ucRepairOrdersReadyForDelivery : UserControl
     {
         public Action<int> RecordDelivery;
+        public Action<int> ShowRepairOrderDetails;
+
         public ucRepairOrdersReadyForDelivery()
         {
             InitializeComponent();
@@ -35,5 +37,14 @@ namespace SCMSControlsLib
            await LoadRepairOrdersReadyforDelivery();
         }
 
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            contextMenuStrip1.Enabled = dgvAllRepairOrders.CurrentRow != null;               
+        }
+
+        private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowRepairOrderDetails?.Invoke((int)dgvAllRepairOrders.CurrentRow.Cells[0].Value);
+        }
     }
 }

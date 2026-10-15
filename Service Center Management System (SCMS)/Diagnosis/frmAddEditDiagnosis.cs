@@ -43,7 +43,7 @@ namespace Service_Center_Management_System__SCMS_
 
 
             //check if repair order already has diagnosis
-            if(_RepairOrder.DiagnosisInfo !=null)
+            if(_RepairOrder.DiagnosisInfo != null)
             {
                 MessageBox.Show(
                     $"Repair order with id ={RepairOrderID} already has diagnosis with id ={_RepairOrder.DiagnosisInfo.DiagnosisID}!",
@@ -98,10 +98,21 @@ namespace Service_Center_Management_System__SCMS_
             {
                 MessageBox.Show($"Can not found diagnosis with id ={_DiagnosisID}");
                 btnSave.Enabled = false;
-                this.Close();
+             
                 return;
             }
 
+            if(_Diagnosis.Status != null)
+            {
+                MessageBox.Show(
+                   "You cannot modify this diagnosis because it has already been processed.",
+                   "Not Allowed",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Warning);
+
+                btnSave.Enabled = false;
+                return;
+            }
 
             _RepairOrderID = _Diagnosis.RepairOrderID;
             lblRepairOrderID.Text = _RepairOrderID.ToString();

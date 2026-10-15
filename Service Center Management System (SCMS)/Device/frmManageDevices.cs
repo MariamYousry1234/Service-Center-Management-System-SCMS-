@@ -148,5 +148,13 @@ namespace Service_Center_Management_System__SCMS_
 
             frmManageDevices_Load(null, null);
         }
+
+        private void showRepairOrdersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmViewRepairOrdersForDevice frm =
+                new frmViewRepairOrdersForDevice((int)dgvData.CurrentRow.Cells[0].Value);
+
+            frm.ShowDialog();
+        }
     }
 }

@@ -32,7 +32,6 @@
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showTechnicianInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showAllAssignedRepairsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showCompletedRepairsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,6 +44,7 @@
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.deactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -87,11 +87,11 @@
             // 
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateInfoToolStripMenuItem,
-            this.deleteInfoToolStripMenuItem,
             this.showTechnicianInfoToolStripMenuItem,
             this.showAllAssignedRepairsToolStripMenuItem,
             this.showCompletedRepairsToolStripMenuItem,
-            this.showCurrentWorkloadToolStripMenuItem});
+            this.showCurrentWorkloadToolStripMenuItem,
+            this.deactivateToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -102,7 +102,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(213, 136);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(213, 158);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // updateInfoToolStripMenuItem
@@ -112,14 +112,6 @@
             this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
             this.updateInfoToolStripMenuItem.Text = "Update Info";
             this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
-            // 
-            // deleteInfoToolStripMenuItem
-            // 
-            this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
-            this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
-            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
-            this.deleteInfoToolStripMenuItem.Text = "Delete Info";
-            this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
             // 
             // showTechnicianInfoToolStripMenuItem
             // 
@@ -274,6 +266,14 @@
             this.btnSearch.TabIndex = 43;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // deactivateToolStripMenuItem
+            // 
+            this.deactivateToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.customer1;
+            this.deactivateToolStripMenuItem.Name = "deactivateToolStripMenuItem";
+            this.deactivateToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.deactivateToolStripMenuItem.Text = "Deactivate";
+            this.deactivateToolStripMenuItem.Click += new System.EventHandler(this.deactivateToolStripMenuItem_Click);
+            // 
             // frmManageTechnicians
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,10 +318,10 @@
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showTechnicianInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showAllAssignedRepairsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showCompletedRepairsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showCurrentWorkloadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deactivateToolStripMenuItem;
     }
 }

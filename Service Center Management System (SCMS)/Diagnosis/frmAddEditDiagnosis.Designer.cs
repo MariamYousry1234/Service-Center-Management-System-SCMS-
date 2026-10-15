@@ -217,11 +217,11 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(24, 707);
+            this.label8.Location = new System.Drawing.Point(16, 702);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 43);
+            this.label8.Size = new System.Drawing.Size(202, 43);
             this.label8.TabIndex = 13;
-            this.label8.Text = "Estimate Cost :";
+            this.label8.Text = "Estimated Cost :";
             // 
             // txtTehnicianNotes
             // 

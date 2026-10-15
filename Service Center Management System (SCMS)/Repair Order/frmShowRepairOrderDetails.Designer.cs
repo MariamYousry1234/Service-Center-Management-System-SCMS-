@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucShowRepairOrderDetails1 = new SCMSControlsLib.ucShowRepairOrderDetails();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucShowRepairOrderDetails1 = new SCMSControlsLib.ucShowRepairOrderDetails();
             this.SuspendLayout();
-            // 
-            // ucShowRepairOrderDetails1
-            // 
-            this.ucShowRepairOrderDetails1.BackColor = System.Drawing.Color.White;
-            this.ucShowRepairOrderDetails1.Location = new System.Drawing.Point(1, -3);
-            this.ucShowRepairOrderDetails1.Name = "ucShowRepairOrderDetails1";
-            this.ucShowRepairOrderDetails1.Size = new System.Drawing.Size(830, 710);
-            this.ucShowRepairOrderDetails1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -61,14 +53,22 @@
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucShowRepairOrderDetails1
+            // 
+            this.ucShowRepairOrderDetails1.BackColor = System.Drawing.Color.White;
+            this.ucShowRepairOrderDetails1.Location = new System.Drawing.Point(-1, -10);
+            this.ucShowRepairOrderDetails1.Name = "ucShowRepairOrderDetails1";
+            this.ucShowRepairOrderDetails1.Size = new System.Drawing.Size(830, 715);
+            this.ucShowRepairOrderDetails1.TabIndex = 25;
+            // 
             // frmShowRepairOrderDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(822, 759);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowRepairOrderDetails1);
+            this.Controls.Add(this.btnClose);
             this.Name = "frmShowRepairOrderDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Repair Order Details";
@@ -78,8 +78,7 @@
         }
 
         #endregion
-
-        private SCMSControlsLib.ucShowRepairOrderDetails ucShowRepairOrderDetails1;
         private Guna.UI2.WinForms.Guna2Button btnClose;
+        private SCMSControlsLib.ucShowRepairOrderDetails ucShowRepairOrderDetails1;
     }
 }

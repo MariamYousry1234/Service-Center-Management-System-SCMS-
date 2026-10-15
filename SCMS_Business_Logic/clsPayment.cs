@@ -211,6 +211,14 @@ namespace SCMS_Business_Logic
                 PaymentsEachPage);
         }
 
+        public static  Task<DataTable> GetAllPaymentsForCustomer(int CustomerID)
+        {
+            return clsPaymentDataAccess.GetAllPaymentsForCustomer(CustomerID);
+        }
 
-    }
+        public static bool IsCustomerHasPayments(int CustomerID)
+        {
+            return clsPaymentDataAccess.IsCustomerHasPayments(CustomerID);
+        }
+  }
 }

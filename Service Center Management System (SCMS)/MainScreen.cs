@@ -21,29 +21,6 @@ namespace Service_Center_Management_System__SCMS_
         }
 
      
-
-        private void manageUsersToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmManageUsers frm = new frmManageUsers();
-            frm.ShowDialog();
-        }
-
-        private void logOurToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            clsGlobal.CurrentUser = null;
-            _frmLogin.Show();
-            this.Close();
-        }
-
-        private void changePasswoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmChangePassword frm = new frmChangePassword((int)clsGlobal.CurrentUser.UserID);
-            
-            frm.ShowDialog();
-        }
-
-     
- 
         private void manageDeviceTypesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmManageDeviceTypes frm = new frmManageDeviceTypes();
@@ -186,6 +163,33 @@ namespace Service_Center_Management_System__SCMS_
             frmRepairOrdersReadyForDelivery frm = 
                 new frmRepairOrdersReadyForDelivery();
 
+            frm.ShowDialog();
+        }
+
+        private void deliveriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageDeliveries frm = new frmManageDeliveries();
+
+            frm.ShowDialog();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangePassword frm = new frmChangePassword(clsGlobal.CurrentUser.UserID);
+
+            frm.ShowDialog();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            clsGlobal.CurrentUser = null;
+            _frmLogin.Show();
+            this.Close();
+        }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageUsers frm = new frmManageUsers();
             frm.ShowDialog();
         }
     }

@@ -42,6 +42,7 @@
             this.lblAllPersons = new System.Windows.Forms.Label();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.showRepairOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -85,7 +86,8 @@
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateInfoToolStripMenuItem,
             this.deleteInfoToolStripMenuItem,
-            this.showDeviceDetailsToolStripMenuItem});
+            this.showDeviceDetailsToolStripMenuItem,
+            this.showRepairOrdersToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -96,7 +98,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(181, 92);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(181, 114);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // updateInfoToolStripMenuItem
@@ -111,7 +113,7 @@
             // 
             this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
             this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
-            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteInfoToolStripMenuItem.Text = "Delete Info";
             this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
             // 
@@ -119,7 +121,7 @@
             // 
             this.showDeviceDetailsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.page;
             this.showDeviceDetailsToolStripMenuItem.Name = "showDeviceDetailsToolStripMenuItem";
-            this.showDeviceDetailsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.showDeviceDetailsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.showDeviceDetailsToolStripMenuItem.Text = "Show Device Details";
             this.showDeviceDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDeviceDetailsToolStripMenuItem_Click);
             // 
@@ -244,6 +246,14 @@
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // showRepairOrdersToolStripMenuItem
+            // 
+            this.showRepairOrdersToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.repair;
+            this.showRepairOrdersToolStripMenuItem.Name = "showRepairOrdersToolStripMenuItem";
+            this.showRepairOrdersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showRepairOrdersToolStripMenuItem.Text = "View Repair Orders";
+            this.showRepairOrdersToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrdersToolStripMenuItem_Click);
+            // 
             // frmManageDevices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,5 +300,6 @@
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showDeviceDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showRepairOrdersToolStripMenuItem;
     }
 }

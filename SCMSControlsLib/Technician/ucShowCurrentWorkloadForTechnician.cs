@@ -24,7 +24,7 @@ namespace SCMSControlsLib
 
         private async Task _LoadTechnicianCurrentWorkload()
         {
-            dgvAllRepairs.DataSource = await _Technician.GetAllCompletedOrdersAsync();
+            dgvAllRepairs.DataSource = await _Technician.GetAllCurrentWorkloadOrdersAsync();
 
             lblTotalRepairs.Text = dgvAllRepairs.Rows.Count.ToString();
 

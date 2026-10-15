@@ -53,6 +53,30 @@ namespace SCMS_Business_Logic
 
         public DateTime? LastUpdatedDate { get; set; }
 
+        public bool HasAssignedRepairs
+        {
+            get
+            {
+                return clsRepairOrder.IsTechnicianHasAssignedRepairs(this.TechnicianID);
+            }
+        }
+
+        public bool HasCurrentWorkloadRepairs
+        {
+            get
+            {
+                return clsRepairOrder.IsTechnicianHasCurrentWorklodRepairs(this.TechnicianID);
+            }
+        }
+
+        public bool HasCompletedRepairs
+        {
+            get
+            {
+                return clsRepairOrder.IsTechnicianHasCompletedRepairs(this.TechnicianID);
+            }
+        }
+
         public clsTechnician()
         {
             this.LastUpdatedUserID = null;
@@ -315,6 +339,16 @@ namespace SCMS_Business_Logic
         {
             return clsRepairOrder.GetAllCurrentWorkloadOrdersForTechnicianAsync(this.TechnicianID);
         }
-        
+        public  bool Deactivate()
+        {       
+            return  this.EmployeeInfo.Deactivate();
+        }
+
+        public bool Activate()
+        {
+          
+          return this.EmployeeInfo.Activate();
+             
+        }
     }
-}
+    }

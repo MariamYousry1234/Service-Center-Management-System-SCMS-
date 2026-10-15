@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.gbAllPayments = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllRepairOrders = new System.Windows.Forms.DataGridView();
-            this.lblNumberOfRepairOrders = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.recordDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblNumberOfRepairOrders = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.showRepairOrderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbAllPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairOrders)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -68,6 +69,23 @@
             this.dgvAllRepairOrders.Size = new System.Drawing.Size(905, 261);
             this.dgvAllRepairOrders.TabIndex = 3;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recordDeliveryToolStripMenuItem,
+            this.showRepairOrderDetailsToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 70);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // recordDeliveryToolStripMenuItem
+            // 
+            this.recordDeliveryToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.delivery;
+            this.recordDeliveryToolStripMenuItem.Name = "recordDeliveryToolStripMenuItem";
+            this.recordDeliveryToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.recordDeliveryToolStripMenuItem.Text = "Record Delivery";
+            this.recordDeliveryToolStripMenuItem.Click += new System.EventHandler(this.recordDeliveryToolStripMenuItem_Click);
+            // 
             // lblNumberOfRepairOrders
             // 
             this.lblNumberOfRepairOrders.AutoSize = true;
@@ -91,20 +109,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Repair Orders  :";
             // 
-            // contextMenuStrip1
+            // showRepairOrderDetailsToolStripMenuItem
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.recordDeliveryToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
-            // 
-            // recordDeliveryToolStripMenuItem
-            // 
-            this.recordDeliveryToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.delivery;
-            this.recordDeliveryToolStripMenuItem.Name = "recordDeliveryToolStripMenuItem";
-            this.recordDeliveryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.recordDeliveryToolStripMenuItem.Text = "Record Delivery";
-            this.recordDeliveryToolStripMenuItem.Click += new System.EventHandler(this.recordDeliveryToolStripMenuItem_Click);
+            this.showRepairOrderDetailsToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.list;
+            this.showRepairOrderDetailsToolStripMenuItem.Name = "showRepairOrderDetailsToolStripMenuItem";
+            this.showRepairOrderDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.showRepairOrderDetailsToolStripMenuItem.Text = "Show Repair Order Details";
+            this.showRepairOrderDetailsToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrderDetailsToolStripMenuItem_Click);
             // 
             // ucRepairOrdersReadyForDelivery
             // 
@@ -129,5 +140,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem recordDeliveryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showRepairOrderDetailsToolStripMenuItem;
     }
 }

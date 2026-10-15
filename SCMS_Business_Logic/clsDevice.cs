@@ -79,6 +79,13 @@ namespace SCMS_Business_Logic
 
         public DateTime? LastUpdatedDate { set; get; }
 
+        public bool HasRepairOrders
+        {
+            get
+            {
+                return clsRepairOrder.IsDeviceHasRepairOrders(this.DeviceID);
+            }
+        }
         public clsDevice()
         {
 
@@ -397,5 +404,16 @@ namespace SCMS_Business_Logic
         {
             return clsDeviceDataAccess.GetDevicesForCustomer(CustomerID);
         }
-  }
+
+        public static bool IsCustomerHasDevices(int CustomerID)
+        {
+            return clsDeviceDataAccess.IsCustomerHasDevices(CustomerID);
+        }
+        public Task<DataTable> GetAllRepairOrdersForDeviceAsync()
+        {
+            return clsRepairOrder.GetAllRepairOrdersForDeviceAsync(this.DeviceID);
+        }
+
+
+    }
 }

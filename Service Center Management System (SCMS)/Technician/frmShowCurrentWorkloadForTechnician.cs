@@ -28,7 +28,7 @@ namespace Service_Center_Management_System__SCMS_
 
         private async void frmShowCurrentWorkloadForTechnician_Load(object sender, EventArgs e)
         {
-            ucShowCurrentWorkloadForTechnician1.ShowRepairDetails = _ShowRepairDetails;
+           ucShowCurrentWorkloadForTechnician1.ShowRepairDetails = _ShowRepairDetails;
            await ucShowCurrentWorkloadForTechnician1.LoadTechnicianCurrentWorkload(_TechnicianID);
         }
 

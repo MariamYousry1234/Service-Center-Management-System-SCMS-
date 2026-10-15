@@ -14,7 +14,7 @@ namespace SCMSControlsLib
     public partial class ucRepairOrdersReadyForInvoicing : UserControl
     {
         public Action<int> IssueInvoice;
-
+        public Action<int> ShowRepairOrderDetails;
         public ucRepairOrdersReadyForInvoicing()
         {
             InitializeComponent();
@@ -41,6 +41,11 @@ namespace SCMSControlsLib
            IssueInvoice?.Invoke(RepairOrderID);
 
            await LoadRepairOrdersReadyforInvoicing();
+        }
+
+        private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowRepairOrderDetails?.Invoke((int)dgvAllRepairOrders.CurrentRow.Cells[0].Value);
         }
     }
 }

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SCMSControlsLib
+namespace Service_Center_Management_System__SCMS_
 {
-    public partial class ucSearchForAUser : UserControl
+    public partial class frmSearchForInvoice : Form
     {
-        public ucSearchForAUser()
+        public frmSearchForInvoice()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

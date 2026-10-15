@@ -326,6 +326,24 @@
     <Compile Include="Repair Order\ucRepairOrdersReadyForInvoicing.Designer.cs">
       <DependentUpon>ucRepairOrdersReadyForInvoicing.cs</DependentUpon>
     </Compile>
+    <Compile Include="Repair Order\ucViewRepairOrdersForDevice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Repair Order\ucViewRepairOrdersForDevice.Designer.cs">
+      <DependentUpon>ucViewRepairOrdersForDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ucShowAllPaymentsForCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\ucShowAllPaymentsForCustomer.Designer.cs">
+      <DependentUpon>ucShowAllPaymentsForCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delivery\ucShowDeliveryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delivery\ucShowDeliveryInfo.Designer.cs">
+      <DependentUpon>ucShowDeliveryInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\ucSearchForUserInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -480,6 +498,15 @@
     <EmbeddedResource Include="Repair Order\ucRepairOrdersReadyForInvoicing.resx">
       <DependentUpon>ucRepairOrdersReadyForInvoicing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Repair Order\ucViewRepairOrdersForDevice.resx">
+      <DependentUpon>ucViewRepairOrdersForDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\ucShowAllPaymentsForCustomer.resx">
+      <DependentUpon>ucShowAllPaymentsForCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery\ucShowDeliveryInfo.resx">
+      <DependentUpon>ucShowDeliveryInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\ucSearchForUserInfo.resx">
       <DependentUpon>ucSearchForUserInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -543,6 +570,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

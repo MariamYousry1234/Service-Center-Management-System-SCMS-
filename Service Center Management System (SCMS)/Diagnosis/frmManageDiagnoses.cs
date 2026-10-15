@@ -18,7 +18,7 @@ namespace Service_Center_Management_System__SCMS_
         private int CurrentPage = 1;
         private int NumberOfRowsEachPage = Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfRowsEachPage"]);
 
-
+        private DataTable _AllDiagnosis;
         clsDiagnosis _CurrentDiagnosis;
         public frmManageDiagnoses()
         {
@@ -27,8 +27,8 @@ namespace Service_Center_Management_System__SCMS_
 
         private async Task _LoadDiagnosesDataAsync()
         {
-            DataTable Data = await clsDiagnosis.GetDiagnosesAsync(NumberOfRowsEachPage, CurrentPage);
-            dgvData.DataSource = Data;
+             _AllDiagnosis = await clsDiagnosis.GetDiagnosesAsync(NumberOfRowsEachPage, CurrentPage);
+            dgvData.DataSource = _AllDiagnosis;
             lblPageNumber.Text = CurrentPage.ToString();
 
             if (dgvData.Rows.Count > 0)
@@ -56,6 +56,9 @@ namespace Service_Center_Management_System__SCMS_
             else
                 btnNext.Enabled = true;
             await _LoadDiagnosesDataAsync();
+
+            cbFiltering.SelectedIndex = 0;
+            txtFiltering.Enabled = false;
         }
 
         private async void btnNext_Click(object sender, EventArgs e)
@@ -101,7 +104,8 @@ namespace Service_Center_Management_System__SCMS_
             _CurrentDiagnosis = 
                 clsDiagnosis.FindDiagnosis((int)dgvData.CurrentRow.Cells[0].Value);
 
-            updateInfoToolStripMenuItem.Enabled = _CurrentDiagnosis.Status == null;
+            updateInfoToolStripMenuItem.Enabled = _CurrentDiagnosis != null &&
+                _CurrentDiagnosis.Status == null;
         }
 
         private void updateInfoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,6 +128,58 @@ namespace Service_Center_Management_System__SCMS_
 
 
             frm.ShowDialog();
+        }
+
+        private void cbFiltering_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtFiltering.Clear();
+            if (cbFiltering.SelectedIndex == 0)
+            {
+                txtFiltering.Enabled = false;
+
+                _AllDiagnosis.DefaultView.RowFilter = "";
+            }
+            else
+            {
+                txtFiltering.Enabled = true;
+          
+                txtFiltering.Focus();
+
+
+                if (cbFiltering.Text == "RepairOrderID" ||
+                    cbFiltering.Text == "DeviceTypeID" 
+                 )
+                {
+                    txtFiltering.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+                }
+                else
+                {
+                    txtFiltering.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+                }
+            }
+        }
+
+        private void txtFiltering_TextChanged(object sender, EventArgs e)
+        {
+            if (!txtFiltering.IsValid()) return;
+
+            if(cbFiltering.Text !="None")
+            {
+                if (cbFiltering.Text == "RepairOrderID" ||
+                 cbFiltering.Text == "DeviceTypeID")
+                {
+                    if (string.IsNullOrEmpty(txtFiltering.Text))
+                        _AllDiagnosis.DefaultView.RowFilter = "";
+                    else
+                        _AllDiagnosis.DefaultView.RowFilter = $"{cbFiltering.Text} = {txtFiltering.Text.Trim()}";
+
+                }
+                else
+                {
+                    _AllDiagnosis.DefaultView.RowFilter = $"{cbFiltering.Text} like '{txtFiltering.Text}%'";
+                }
+            }
+        
         }
     }
 }

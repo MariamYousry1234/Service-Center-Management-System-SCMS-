@@ -35,9 +35,6 @@
             this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manageUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.techniciansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,6 +48,7 @@
             this.manageRepairOrdersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRepairOrderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.repairOrdersReadyForInvoicingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.repairOrdersReadyForDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.sparePartsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageSparePartsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +68,10 @@
             this.invoicesAwaitingPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.deliveriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.repairOrdersReadyForDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +105,9 @@
             this.toolStripMenuItem12,
             this.invoicesToolStripMenuItem,
             this.toolStripMenuItem13,
-            this.deliveriesToolStripMenuItem});
+            this.deliveriesToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.settingsToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -155,37 +158,11 @@
             // 
             // usersToolStripMenuItem
             // 
-            this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageUsersToolStripMenuItem,
-            this.logOurToolStripMenuItem,
-            this.changePasswoToolStripMenuItem});
             this.usersToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.man__2_;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(179, 27);
             this.usersToolStripMenuItem.Text = "Users";
-            // 
-            // manageUsersToolStripMenuItem
-            // 
-            this.manageUsersToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.manageUsersToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.management;
-            this.manageUsersToolStripMenuItem.Name = "manageUsersToolStripMenuItem";
-            this.manageUsersToolStripMenuItem.Size = new System.Drawing.Size(271, 28);
-            this.manageUsersToolStripMenuItem.Text = "Manage Users";
-            this.manageUsersToolStripMenuItem.Click += new System.EventHandler(this.manageUsersToolStripMenuItem_Click);
-            // 
-            // logOurToolStripMenuItem
-            // 
-            this.logOurToolStripMenuItem.Name = "logOurToolStripMenuItem";
-            this.logOurToolStripMenuItem.Size = new System.Drawing.Size(271, 28);
-            this.logOurToolStripMenuItem.Text = "Log Out";
-            this.logOurToolStripMenuItem.Click += new System.EventHandler(this.logOurToolStripMenuItem_Click);
-            // 
-            // changePasswoToolStripMenuItem
-            // 
-            this.changePasswoToolStripMenuItem.Name = "changePasswoToolStripMenuItem";
-            this.changePasswoToolStripMenuItem.Size = new System.Drawing.Size(271, 28);
-            this.changePasswoToolStripMenuItem.Text = "Change Password";
-            this.changePasswoToolStripMenuItem.Click += new System.EventHandler(this.changePasswoToolStripMenuItem_Click);
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -304,6 +281,15 @@
             this.repairOrdersReadyForInvoicingToolStripMenuItem.Size = new System.Drawing.Size(357, 22);
             this.repairOrdersReadyForInvoicingToolStripMenuItem.Text = "Repair Orders Ready For Invoicing";
             this.repairOrdersReadyForInvoicingToolStripMenuItem.Click += new System.EventHandler(this.repairOrdersReadyForInvoicingToolStripMenuItem_Click);
+            // 
+            // repairOrdersReadyForDeliveryToolStripMenuItem
+            // 
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delivery;
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Name = "repairOrdersReadyForDeliveryToolStripMenuItem";
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Size = new System.Drawing.Size(357, 22);
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Text = "Repair Orders Ready For Delivery";
+            this.repairOrdersReadyForDeliveryToolStripMenuItem.Click += new System.EventHandler(this.repairOrdersReadyForDeliveryToolStripMenuItem_Click_1);
             // 
             // toolStripMenuItem8
             // 
@@ -468,15 +454,43 @@
             this.deliveriesToolStripMenuItem.Name = "deliveriesToolStripMenuItem";
             this.deliveriesToolStripMenuItem.Size = new System.Drawing.Size(179, 27);
             this.deliveriesToolStripMenuItem.Text = "Deliveries";
+            this.deliveriesToolStripMenuItem.Click += new System.EventHandler(this.deliveriesToolStripMenuItem_Click);
             // 
-            // repairOrdersReadyForDeliveryToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delivery;
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Name = "repairOrdersReadyForDeliveryToolStripMenuItem";
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Size = new System.Drawing.Size(357, 22);
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Text = "Repair Orders Ready For Delivery";
-            this.repairOrdersReadyForDeliveryToolStripMenuItem.Click += new System.EventHandler(this.repairOrdersReadyForDeliveryToolStripMenuItem_Click_1);
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(179, 27);
+            this.toolStripMenuItem1.Text = "------------";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.changePasswordToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.settingsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.settings;
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(179, 27);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changePasswordToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.padlock;
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            this.changePasswordToolStripMenuItem.Click += new System.EventHandler(this.changePasswordToolStripMenuItem_Click);
+            // 
+            // logOutToolStripMenuItem
+            // 
+            this.logOutToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logOutToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.exit;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // MainScreen
             // 
@@ -505,9 +519,6 @@
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem manageUsersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logOurToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem changePasswoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem techniciansToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem devicesToolStripMenuItem;
@@ -540,5 +551,9 @@
         private System.Windows.Forms.ToolStripMenuItem manageInvoicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem invoicesAwaitingPaymentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem repairOrdersReadyForDeliveryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
     }
 }

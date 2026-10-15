@@ -510,5 +510,91 @@ namespace SCMS_Data_Access
 
             return TechnicianID;
         }
+
+        public static bool DeactivateTechnician(int TechnicianID)
+        {
+            bool IsDeactivated = false;
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand("SP_DeactivateTechnician", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("TechnicianID", TechnicianID);
+
+
+                        SqlParameter ReturnValue =
+                          new SqlParameter("ReturnValue", SqlDbType.Int)
+                          {
+                              Direction = ParameterDirection.ReturnValue
+                          };
+
+                        Command.Parameters.Add(ReturnValue);
+
+                        Connection.Open();
+
+                        Command.ExecuteNonQuery();
+
+                        IsDeactivated =(int) ReturnValue.Value > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return IsDeactivated;
+        }
+
+        public static bool ActivateTechnician(int TechnicianID)
+        {
+            bool IsActivated = false;
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand("SP_ActivateTechnician", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("TechnicianID", TechnicianID);
+
+
+                        SqlParameter ReturnValue =
+                          new SqlParameter("ReturnValue", SqlDbType.Int)
+                          {
+                              Direction = ParameterDirection.ReturnValue
+                          };
+
+                        Command.Parameters.Add(ReturnValue);
+
+                        Connection.Open();
+
+                        Command.ExecuteNonQuery();
+
+                        IsActivated = (int)ReturnValue.Value > 0;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return IsActivated;
+        }
     }
 }

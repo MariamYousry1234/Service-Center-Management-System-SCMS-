@@ -39,6 +39,8 @@
             this.lblAllPersons = new System.Windows.Forms.Label();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.txtFiltering = new SCMSControlsLib.cusTextBox();
+            this.cbFiltering = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -195,6 +197,41 @@
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // txtFiltering
+            // 
+            this.txtFiltering.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltering.IsRequired = false;
+            this.txtFiltering.Length = null;
+            this.txtFiltering.Location = new System.Drawing.Point(635, 115);
+            this.txtFiltering.Name = "txtFiltering";
+            this.txtFiltering.Size = new System.Drawing.Size(235, 35);
+            this.txtFiltering.TabIndex = 58;
+            this.txtFiltering.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtFiltering.TextChanged += new System.EventHandler(this.txtFiltering_TextChanged);
+            // 
+            // cbFiltering
+            // 
+            this.cbFiltering.BackColor = System.Drawing.Color.Transparent;
+            this.cbFiltering.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbFiltering.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFiltering.FillColor = System.Drawing.Color.Gainsboro;
+            this.cbFiltering.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbFiltering.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbFiltering.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFiltering.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbFiltering.ItemHeight = 30;
+            this.cbFiltering.Items.AddRange(new object[] {
+            "None",
+            "RepairOrderID",
+            "DeviceTypeID",
+            "DeviceTypeName",
+            "Status"});
+            this.cbFiltering.Location = new System.Drawing.Point(424, 115);
+            this.cbFiltering.Name = "cbFiltering";
+            this.cbFiltering.Size = new System.Drawing.Size(202, 36);
+            this.cbFiltering.TabIndex = 57;
+            this.cbFiltering.SelectedIndexChanged += new System.EventHandler(this.cbFiltering_SelectedIndexChanged);
+            // 
             // frmManageDiagnoses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +240,8 @@
             this.BackgroundImage = global::Service_Center_Management_System__SCMS_.Properties.Resources.identify1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(909, 545);
+            this.Controls.Add(this.txtFiltering);
+            this.Controls.Add(this.cbFiltering);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTotalPages);
@@ -235,5 +274,7 @@
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
+        private SCMSControlsLib.cusTextBox txtFiltering;
+        private Guna.UI2.WinForms.Guna2ComboBox cbFiltering;
     }
 }

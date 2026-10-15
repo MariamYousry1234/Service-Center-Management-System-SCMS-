@@ -48,7 +48,7 @@ namespace SCMSControlsLib
         {
             _RepairCostID = _RepairCost.RepairCostID;
             gbDetails.Text = 
-                $"Repair Cost Details For Repair Order ID ={_RepairCost.RepairOrderInfo.RepairOrderID}";
+                $"Repair Cost Details For Repair Order ID ={_RepairCost.RepairOrderID}";
             lblPartsCost.Text =_RepairCost.PartsCost.ToString();
             lblLaborCost.Text = _RepairCost.LaborCost.ToString();
             lblAdditionalServices.Text =_RepairCost.AdditionalServices.ToString();

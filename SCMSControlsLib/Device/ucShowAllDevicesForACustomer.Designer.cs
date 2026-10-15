@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gbAllDevices = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllDevices = new System.Windows.Forms.DataGridView();
             this.lblNumberOfDevices = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showDeviceInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbAllDevices.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllDevices)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbAllDevices
@@ -56,9 +60,11 @@
             this.dgvAllDevices.AllowUserToOrderColumns = true;
             this.dgvAllDevices.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllDevices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAllDevices.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvAllDevices.Location = new System.Drawing.Point(0, 60);
             this.dgvAllDevices.Name = "dgvAllDevices";
             this.dgvAllDevices.ReadOnly = true;
+            this.dgvAllDevices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAllDevices.Size = new System.Drawing.Size(1019, 175);
             this.dgvAllDevices.TabIndex = 3;
             // 
@@ -85,6 +91,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Devices :";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showDeviceInfoToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // showDeviceInfoToolStripMenuItem
+            // 
+            this.showDeviceInfoToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.list1;
+            this.showDeviceInfoToolStripMenuItem.Name = "showDeviceInfoToolStripMenuItem";
+            this.showDeviceInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.showDeviceInfoToolStripMenuItem.Text = "Show Device Info";
+            this.showDeviceInfoToolStripMenuItem.Click += new System.EventHandler(this.showDeviceInfoToolStripMenuItem_Click);
+            // 
             // ucShowAllDevicesForACustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,6 +117,7 @@
             this.gbAllDevices.ResumeLayout(false);
             this.gbAllDevices.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllDevices)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -105,5 +128,7 @@
         private System.Windows.Forms.DataGridView dgvAllDevices;
         private System.Windows.Forms.Label lblNumberOfDevices;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showDeviceInfoToolStripMenuItem;
     }
 }

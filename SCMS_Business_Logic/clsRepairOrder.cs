@@ -142,6 +142,9 @@ namespace SCMS_Business_Logic
                 return DeliveryInfo != null;
             }
         }
+
+        public DateTime? RepairCompletionDate { get; private set; }
+
         public clsRepairOrder()
         {
             AssignedTechnicianInfo = new clsTechnician();
@@ -150,7 +153,7 @@ namespace SCMS_Business_Logic
             LastUpdatedUserInfo = null;
             DiagnosisInfo = null;
             DeliveryInfo = null;
-
+     
             _Mode = enMode.AddNew;
         }
 
@@ -165,7 +168,8 @@ namespace SCMS_Business_Logic
        int CreatedByUserID,
        int? LastUpdatedUserID,
        DateTime? LastUpdatedDate,
-       string? BeforeRepairImagePath
+       string? BeforeRepairImagePath,
+       DateTime? RepairCompletionDate
    )
         {
             this.RepairOrderID = RepairOrderID;
@@ -180,7 +184,7 @@ namespace SCMS_Business_Logic
             this.LastUpdatedUserID = LastUpdatedUserID;
             this.LastUpdatedDate = LastUpdatedDate;
             this.BeforeRepairImagePath = BeforeRepairImagePath;
-             
+            this.RepairCompletionDate = RepairCompletionDate;
 
             AssignedTechnicianInfo = clsTechnician.FindTechnician(AssignedTechnicianID);
 
@@ -193,7 +197,7 @@ namespace SCMS_Business_Logic
 
             this.DiagnosisInfo = clsDiagnosis.FindDiagnosisByRepairOrder(RepairOrderID);
             this.DeliveryInfo = clsDelivery.FindDeliveryByRepairOrderID(RepairOrderID);
-
+          
             _Mode = enMode.Update;
         }
         public static bool IsRepairOrderExists(int RepairOrder)
@@ -259,6 +263,7 @@ namespace SCMS_Business_Logic
             int? LastUpdatedUserID = null;
             DateTime? LastUpdatedDate = null;
             string? BeforeRepairImagePath = null;
+            DateTime? RepairCompletionDate = DateTime.MinValue;
 
             if (clsRepairOrderDataAccess.FindRepairOrder(
                 RepairOrderID,
@@ -272,7 +277,8 @@ namespace SCMS_Business_Logic
                 ref CreatedByUserID,
                 ref LastUpdatedUserID,
                 ref LastUpdatedDate,
-                ref BeforeRepairImagePath
+                ref BeforeRepairImagePath,
+                ref RepairCompletionDate
               ))
             {
                 return new clsRepairOrder(
@@ -287,7 +293,8 @@ namespace SCMS_Business_Logic
                     CreatedByUserID,
                     LastUpdatedUserID,
                     LastUpdatedDate,
-                    BeforeRepairImagePath
+                    BeforeRepairImagePath,
+                    RepairCompletionDate
                 );
             }
 
@@ -416,6 +423,36 @@ namespace SCMS_Business_Logic
         public static  Task<DataTable> GetAllRepairOrdersReadyForDeliveryAsync()
         {
             return clsRepairOrderDataAccess.GetAllRepairOrdersReadyForDeliveryAsync();
+        }
+
+
+        public static bool IsCustomerHasRepairOrders(int CustomerID)
+        {
+            return clsRepairOrderDataAccess.IsCustomerHasRepairOrders(CustomerID);
+        }
+
+
+        public static Task<DataTable> GetAllRepairOrdersForDeviceAsync(int DeviceID)
+        {
+            return clsRepairOrderDataAccess.GetAllRepairOrdersForDeviceAsync(DeviceID);
+        }
+
+        public static bool IsDeviceHasRepairOrders(int DeviceID)
+        {
+            return clsRepairOrderDataAccess.IsDeviceHasRepairOrders(DeviceID);
+        }
+
+        public static bool IsTechnicianHasAssignedRepairs(int TechnicianID)
+        {
+            return clsRepairOrderDataAccess.IsTechnicianHasAssignedRepairs(TechnicianID);
+        }
+        public static bool IsTechnicianHasCurrentWorklodRepairs(int TechnicianID)
+        {
+            return clsRepairOrderDataAccess.IsTechnicianHasCurrentWorklodRepairs(TechnicianID);
+        }
+        public static bool IsTechnicianHasCompletedRepairs(int TechnicianID)
+        {
+            return clsRepairOrderDataAccess.IsTechnicianHasCompletedRepairs(TechnicianID);
         }
 
      }

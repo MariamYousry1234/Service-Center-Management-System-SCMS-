@@ -29,7 +29,30 @@ namespace SCMS_Business_Logic
 
         public DateTime? LastUpdatedDate { get; private set; }
 
-    
+        public bool HasRepairOrders
+        {
+            get
+            {
+                return clsRepairOrder.IsCustomerHasRepairOrders(this.CustomerID);
+            }
+        }
+
+        public bool HasDevices
+        {
+            get
+            {
+                return clsDevice.IsCustomerHasDevices(this.CustomerID);
+            }
+        }
+
+        public bool HasPayments
+        {
+            get
+            {
+                return clsPayment.IsCustomerHasPayments(this.CustomerID);
+            }
+        }
+
         public clsCustomer()
         {
             this.Notes = null;
@@ -307,5 +330,11 @@ namespace SCMS_Business_Logic
             return clsCustomerDataAccess.ConvertCustomerToEmployee(this.CustomerID, HireDate,
                 CreatedByUserID);
         }
+
+        public Task<DataTable> GetAllPayments()
+        {
+            return clsPayment.GetAllPaymentsForCustomer(this.CustomerID);
+        }
+
     }
 }

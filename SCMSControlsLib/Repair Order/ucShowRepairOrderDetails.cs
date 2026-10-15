@@ -62,7 +62,8 @@ namespace SCMSControlsLib
             lblLastUpdatedDate.Text = _RepairOrder.LastUpdatedDate?.ToString("dd/MM/yyyy") ?? "Un Known";
             lblProblemDescription.Text = _RepairOrder.ProblemDescription?? "Un Known";
             lblNotes.Text = _RepairOrder.Notes ?? "Un Known";
-
+            lblRepairCompletionDate.Text = 
+                _RepairOrder.RepairCompletionDate?.ToString("dd/MM/yyyy") ?? "Not Completed Yet";
 
             _LoadImage(_RepairOrder.BeforeRepairImagePath,enImageStatus.BeforRepair);
             _LoadImage(_RepairOrder.DeliveryInfo?.AfterRepairImagePath,enImageStatus.AfterRepair);

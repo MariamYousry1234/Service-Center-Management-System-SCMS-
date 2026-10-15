@@ -17,6 +17,9 @@ namespace Service_Center_Management_System__SCMS_
         private int TotalPages = 1;
         private int CurrentPage = 1;
         private int NumberOfTechniciansEachPage = Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfRowsEachPage"]);
+
+
+        clsTechnician _CurrentTechnician;
         public frmManageTechnicians()
         {
             InitializeComponent();
@@ -92,8 +95,19 @@ namespace Service_Center_Management_System__SCMS_
 
         private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
-            guna2ContextMenuStrip1.Enabled = dgvData.CurrentRow != null;
+            if (dgvData.CurrentRow == null)
+            {
+                guna2ContextMenuStrip1.Enabled =false;
+                return;
+            }
 
+            guna2ContextMenuStrip1.Enabled = true ;
+
+            _CurrentTechnician =
+                clsTechnician.FindTechnician((int)dgvData.CurrentRow.Cells[0].Value);
+
+            deactivateToolStripMenuItem.Text =_CurrentTechnician.EmployeeInfo.IsActive ? "Deactivate" :
+                "Activate";
         }
 
         private void deleteInfoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -143,6 +157,16 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showAllAssignedRepairsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_CurrentTechnician == null) return;
+
+            if(!_CurrentTechnician.HasAssignedRepairs)
+            {
+                MessageBox.Show("This technician has no assigned repair orders.",
+                   "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             frmShowAssignedRepairsForTechnician frm =
                 new frmShowAssignedRepairsForTechnician((int)dgvData.CurrentRow.Cells[0].Value);
 
@@ -151,6 +175,16 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showCompletedRepairsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_CurrentTechnician == null) return;
+
+            if (!_CurrentTechnician.HasCompletedRepairs)
+            {
+                MessageBox.Show("This technician has no completed repair orders.",
+                   "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             frmShowCompletedRepairsForTechnician frm =
                 new frmShowCompletedRepairsForTechnician((int)dgvData.CurrentRow.Cells[0].Value);
 
@@ -159,10 +193,62 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showCurrentWorkloadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (_CurrentTechnician == null) return;
+
+            if (!_CurrentTechnician.HasCurrentWorkloadRepairs)
+            {
+                MessageBox.Show("This technician has no current workload repair orders.",
+                   "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                return;
+            }
+
             frmShowCurrentWorkloadForTechnician frm =
                 new frmShowCurrentWorkloadForTechnician((int)dgvData.CurrentRow.Cells[0].Value);
 
             frm.ShowDialog();
         }
+
+        private void deactivateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_CurrentTechnician == null) return;
+
+            if (MessageBox.Show($"Are you sure you want to {deactivateToolStripMenuItem.Text}" +
+                $" Technician with id = {_CurrentTechnician.TechnicianID} ?", "Confirm",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.Cancel) return;
+
+
+
+            if (_CurrentTechnician.EmployeeInfo.IsActive)
+            {
+
+                if (_CurrentTechnician.Deactivate())
+                {
+                    MessageBox.Show("Technician deactivated successfully", "", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    frmManageTechnicians_Load(null, null);
+                    return;
+                }
+
+
+            }
+            else
+            {
+                if (_CurrentTechnician.Activate())
+                {
+                    MessageBox.Show("Technician activated successfully", "", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    frmManageTechnicians_Load(null, null);
+                    return;
+                }
+            }
+
+            MessageBox.Show("An Error occured", "", MessageBoxButtons.OK,
+                      MessageBoxIcon.Error);
+
+        }
+
     }
 }

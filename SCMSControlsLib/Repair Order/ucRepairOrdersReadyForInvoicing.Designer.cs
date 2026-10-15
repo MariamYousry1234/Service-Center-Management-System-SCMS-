@@ -34,6 +34,7 @@
             this.issueInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNumberOfRepairOrders = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.showRepairOrderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbAllPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairOrders)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -70,7 +71,8 @@
             // guna2ContextMenuStrip1
             // 
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.issueInvoiceToolStripMenuItem});
+            this.issueInvoiceToolStripMenuItem,
+            this.showRepairOrderDetailsToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -81,14 +83,14 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(142, 26);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(211, 70);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // issueInvoiceToolStripMenuItem
             // 
             this.issueInvoiceToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.invoice__1_;
             this.issueInvoiceToolStripMenuItem.Name = "issueInvoiceToolStripMenuItem";
-            this.issueInvoiceToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.issueInvoiceToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.issueInvoiceToolStripMenuItem.Text = "Issue Invoice";
             this.issueInvoiceToolStripMenuItem.Click += new System.EventHandler(this.issueInvoiceToolStripMenuItem_Click);
             // 
@@ -115,6 +117,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Repair Orders  :";
             // 
+            // showRepairOrderDetailsToolStripMenuItem
+            // 
+            this.showRepairOrderDetailsToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.list;
+            this.showRepairOrderDetailsToolStripMenuItem.Name = "showRepairOrderDetailsToolStripMenuItem";
+            this.showRepairOrderDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.showRepairOrderDetailsToolStripMenuItem.Text = "Show Repair Order Details";
+            this.showRepairOrderDetailsToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrderDetailsToolStripMenuItem_Click);
+            // 
             // ucRepairOrdersReadyForInvoicing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,5 +148,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem issueInvoiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showRepairOrderDetailsToolStripMenuItem;
     }
 }

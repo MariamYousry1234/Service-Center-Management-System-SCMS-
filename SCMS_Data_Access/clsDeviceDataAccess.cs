@@ -551,5 +551,35 @@ namespace SCMS_Data_Access
 
             return AllDevices;
         }
+
+        public static bool IsCustomerHasDevices(int CustomerID)
+        {
+            bool HasDevices = false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsCustomerHasDevices", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("CustomerID", CustomerID);
+
+                        Connection.Open();
+
+                        HasDevices = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasDevices;
+        }
+
     }
 }

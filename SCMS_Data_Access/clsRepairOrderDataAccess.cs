@@ -191,7 +191,8 @@ namespace SCMS_Data_Access
     ref int CreatedByUserID,
     ref int? LastUpdatedUserID,
     ref DateTime? LastUpdatedDate,
-    ref string? BeforeRepairImagePath
+    ref string? BeforeRepairImagePath,
+    ref DateTime? RepairCompletionDate
   )
         {
             bool IsFound = false;
@@ -251,6 +252,9 @@ namespace SCMS_Data_Access
                                             Reader["BeforeRepairImagePath"] == DBNull.Value
                                             ? null : (string?)Reader["BeforeRepairImagePath"];
 
+                                RepairCompletionDate =
+                                         Reader["RepairCompletionDate"] == DBNull.Value
+                                         ? null : (DateTime?)Reader["RepairCompletionDate"];
 
                                 IsFound = true;
                             }                 
@@ -857,6 +861,188 @@ namespace SCMS_Data_Access
 
         }
 
+        public static bool IsCustomerHasRepairOrders(int CustomerID)
+         {
+            bool HasRepairOrders = false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsCustomerHasRepairOrders", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("CustomerID", CustomerID);
+
+                         Connection.Open();
+
+                        HasRepairOrders = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasRepairOrders;
+        }
+
+        public static async Task<DataTable> GetAllRepairOrdersForDeviceAsync(int DeviceID)
+        {
+            DataTable AllRepairOrders = new DataTable();
+
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_GetAllRepairOrdersForDevice", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("DeviceID", DeviceID);
+
+                        await Connection.OpenAsync();
+
+                        using (SqlDataReader Reader=await Command.ExecuteReaderAsync())
+                        {
+                            AllRepairOrders.Load(Reader);
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+
+            return AllRepairOrders;
+
+        }
+
+        public static bool IsDeviceHasRepairOrders(int DeviceID)
+        {
+            bool HasRepairOrders= false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsDeviceHasRepairOrderss", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("DeviceID", DeviceID);
+
+                        Connection.Open();
+
+                        HasRepairOrders = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasRepairOrders;
+        }
+
+
+
+        public static bool IsTechnicianHasAssignedRepairs(int TechnicianID)
+        {
+            bool HasRepairOrders = false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsTechnicianHasAssignedRepairs", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("TechnicianID", TechnicianID);
+
+                        Connection.Open();
+
+                        HasRepairOrders = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasRepairOrders;
+        }
+
+
+        public static bool IsTechnicianHasCurrentWorklodRepairs(int TechnicianID)
+        {
+            bool HasRepairOrders = false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsTechnicianHasCurrentWorkloadRepairs", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("TechnicianID", TechnicianID);
+
+                        Connection.Open();
+
+                        HasRepairOrders = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasRepairOrders;
+        }
+
+        public static bool IsTechnicianHasCompletedRepairs(int TechnicianID)
+        {
+            bool HasRepairOrders = false;
+            try
+            {
+                using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command = new SqlCommand("SP_IsTechnicianHasCompletedOrders", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue("TechnicianID", TechnicianID);
+
+                        Connection.Open();
+
+                        HasRepairOrders = Command.ExecuteScalar() != null;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog
+                    (clsSettings.ApplicationName, e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasRepairOrders;
+        }
 
     }
 }

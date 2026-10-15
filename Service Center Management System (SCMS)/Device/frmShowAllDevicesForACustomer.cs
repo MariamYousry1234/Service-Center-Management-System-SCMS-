@@ -26,7 +26,16 @@ namespace Service_Center_Management_System__SCMS_
 
         private async void frmShowAllDevicesForACustomer_Load(object sender, EventArgs e)
         {
+            ucShowAllDevicesForACustomer1.ShowDeviceInfo = _ShowDeviceInfo;
+
            await ucShowAllDevicesForACustomer1.LoadAllDevicesByCustomerID(_CustomerID);
+        }
+
+        private void _ShowDeviceInfo(int DeviceID)
+        {
+            frmShowDeviceDetails frm = new frmShowDeviceDetails(DeviceID);
+
+            frm.ShowDialog();
         }
     }
 }
