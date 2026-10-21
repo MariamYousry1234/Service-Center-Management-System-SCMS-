@@ -1,8 +1,10 @@
 ﻿using SCMS_Business_Logic;
 using SCMSControlsLib;
+using SharedLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -23,6 +25,8 @@ namespace Service_Center_Management_System__SCMS_
         int _CustomerID;
         clsEmployee _Employee;
         int _EmployeeID;
+
+        private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
         public frmAddEditCustomer()
         {
             InitializeComponent();
@@ -209,6 +213,17 @@ namespace Service_Center_Management_System__SCMS_
                 _SetIntialInfo();
             
                 CustomerID?.Invoke(_CustomerID);
+
+                if(_Mode==enMode.AddNew ||
+                    _Mode==enMode.ConvertingToCustomer)
+                {
+
+                    clsEventLogger.WriteEntryToEventLog(
+                       ApplicationName,
+                       $"User with username = {clsGlobal.CurrentUser.Username} created customer with ID = {_CustomerID} successfully",
+                        System.Diagnostics.EventLogEntryType.Information);
+
+                }
             }
             else
             {

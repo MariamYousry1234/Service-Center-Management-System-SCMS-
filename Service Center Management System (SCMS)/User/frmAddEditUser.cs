@@ -98,7 +98,16 @@ namespace Service_Center_Management_System__SCMS_
                 errorProvider1.SetError(txtConfirmPassword,null);
             }
 
+            if(ucUserPermissions1.UserPermissions == null)
+            {
+                MessageBox.Show("Please select at least one permission.",
+                "Invalid Permissions",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
 
+
+                return;
+            }
 
             if (MessageBox.Show("Are you sure you want to save user data?", "Confirm",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
@@ -107,8 +116,8 @@ namespace Service_Center_Management_System__SCMS_
 
             _User.EmployeeID =(int) _EmployeeID;
             _User.Username = txtUsername.Text.Trim();
-            _User.Password = txtPassword.Text;
-            _User.Permissions = null;
+            _User.Password = txtPassword.Text;         
+            _User.Permissions = ucUserPermissions1.UserPermissions.Value;
        
 
             if(_User.Save())
@@ -143,6 +152,7 @@ namespace Service_Center_Management_System__SCMS_
                 lblUserID.Text = "[???]";
                 lblEmployeeID.Text= "[???]";
                 lblCreatedDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
             }
             else
             {
@@ -173,6 +183,7 @@ namespace Service_Center_Management_System__SCMS_
             chbIsActive.Checked = _User.IsActive;
             lblCreatedDate.Text = _User.CreatedDate.ToString("dd//MM/yyyy");
 
+            ucUserPermissions1.LoadUserPermissions(_User.Permissions);
         }
 
         private void frmAddEditUser_Load(object sender, EventArgs e)
@@ -183,5 +194,8 @@ namespace Service_Center_Management_System__SCMS_
                 _LoadDataToUpdate();
 
         }
+
+    
+      
     }
 }

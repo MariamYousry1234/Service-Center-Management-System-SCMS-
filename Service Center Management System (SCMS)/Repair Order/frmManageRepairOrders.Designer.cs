@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,25 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.BorderColor = System.Drawing.Color.White;
-            this.btnAdd.BorderRadius = 10;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.plus;
-            this.btnAdd.Location = new System.Drawing.Point(923, 122);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(58, 45);
-            this.btnAdd.TabIndex = 52;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dgvData
             // 
@@ -111,7 +91,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(214, 192);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(214, 170);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // updateInfoToolStripMenuItem
@@ -348,7 +328,6 @@
             this.ClientSize = new System.Drawing.Size(993, 548);
             this.Controls.Add(this.cbfiltering2);
             this.Controls.Add(this.cbFiltering);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblTotalPages);
@@ -370,7 +349,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotalPages;

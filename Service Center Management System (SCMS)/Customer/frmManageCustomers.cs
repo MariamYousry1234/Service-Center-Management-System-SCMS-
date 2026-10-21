@@ -1,14 +1,15 @@
 ﻿using SCMS_Business_Logic;
+using SharedLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 
 namespace Service_Center_Management_System__SCMS_
 {
@@ -18,6 +19,7 @@ namespace Service_Center_Management_System__SCMS_
         private int CurrentPage = 1;
         private int NumberOfCustomersEachPage =Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfRowsEachPage"]);
 
+        private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
 
         clsCustomer _CurrentCustomer;
         
@@ -199,6 +201,13 @@ namespace Service_Center_Management_System__SCMS_
             {
                 MessageBox.Show("Customer deleted successfully", "Done", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
+
+                clsEventLogger.WriteEntryToEventLog(
+                ApplicationName,
+                  $"User with username = {clsGlobal.CurrentUser.Username} deleted Customer with ID = {CustomerID} successfully",
+               System.Diagnostics.EventLogEntryType.Information);
+
 
                 frmManageCustomers_Load(null, null);
             }

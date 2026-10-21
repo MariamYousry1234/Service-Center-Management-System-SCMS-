@@ -17,7 +17,7 @@ namespace SCMS_Data_Access
     int EmployeeID,
     string Username,
     string Password,
-    int? Permissions)
+    int Permissions)
         {
             int? UserID = null;
 
@@ -36,8 +36,7 @@ namespace SCMS_Data_Access
                         Command.Parameters.AddWithValue("Password", Password);
 
                         Command.Parameters.AddWithValue(
-                            "Permissions",
-                            Permissions ?? (object)DBNull.Value);
+                            "Permissions",Permissions);
 
           
 
@@ -73,7 +72,7 @@ namespace SCMS_Data_Access
     ref int EmployeeID,
     ref string Username,
     ref string Password,
-    ref int? Permissions,
+    ref int Permissions,
     ref bool IsActive,
     ref DateTime CreatedDate)
         {
@@ -103,9 +102,7 @@ namespace SCMS_Data_Access
                             Password = (string)Data["Password"];
 
                             Permissions =
-                                Data["Permissions"] == DBNull.Value
-                                ? null
-                                : (int?)Data["Permissions"];
+                                (int)Data["Permissions"];
 
                             IsActive = (bool)Data["IsActive"];
 
@@ -134,7 +131,7 @@ namespace SCMS_Data_Access
     ref int UserID,
     ref int EmployeeID,
     ref string Password,
-    ref int? Permissions,
+    ref int Permissions,
     ref bool IsActive,
     ref DateTime CreatedDate)
         {
@@ -169,10 +166,8 @@ namespace SCMS_Data_Access
                                 Password =
                                     (string)Data["Password"];
 
-                                Permissions =
-                                    Data["Permissions"] == DBNull.Value
-                                    ? null
-                                    : (int?)Data["Permissions"];
+                                Permissions =          
+                                    (int)Data["Permissions"];
 
                                 IsActive =
                                     (bool)Data["IsActive"];
@@ -205,7 +200,7 @@ namespace SCMS_Data_Access
     ref int UserID,
     ref int EmployeeID,
     string Password,
-    ref int? Permissions,
+    ref int Permissions,
     ref bool IsActive,
     ref DateTime CreatedDate)
         {
@@ -241,9 +236,7 @@ namespace SCMS_Data_Access
                                     (int)Data["EmployeeID"];
 
                                 Permissions =
-                                    Data["Permissions"] == DBNull.Value
-                                    ? null
-                                    : (int?)Data["Permissions"];
+                                     (int)Data["Permissions"];
 
                                 IsActive =
                                     (bool)Data["IsActive"];
@@ -275,7 +268,7 @@ namespace SCMS_Data_Access
     int UserID,
     int EmployeeID,
     string Username,
-    int? Permissions
+    int Permissions
    )
         {
             bool IsUpdated = false;
@@ -296,8 +289,7 @@ namespace SCMS_Data_Access
  
 
                         Command.Parameters.AddWithValue(
-                            "Permissions",
-                            Permissions ?? (object)DBNull.Value);
+                            "Permissions", Permissions);
 
 
                         SqlParameter ReturnValue =

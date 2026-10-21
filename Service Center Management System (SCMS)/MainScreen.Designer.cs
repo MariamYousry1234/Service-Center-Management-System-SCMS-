@@ -52,7 +52,6 @@
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.sparePartsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageSparePartsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createSparePartPurchaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partBrandsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +59,8 @@
             this.suppliersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.purchasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managePuchasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createSparePartPurchaseToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,7 +73,9 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -303,7 +306,6 @@
             // 
             this.sparePartsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageSparePartsToolStripMenuItem,
-            this.createSparePartPurchaseToolStripMenuItem,
             this.manageToolStripMenuItem});
             this.sparePartsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.spare_parts;
             this.sparePartsToolStripMenuItem.Name = "sparePartsToolStripMenuItem";
@@ -318,15 +320,6 @@
             this.manageSparePartsToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
             this.manageSparePartsToolStripMenuItem.Text = "Manage Spare Parts";
             this.manageSparePartsToolStripMenuItem.Click += new System.EventHandler(this.manageSparePartsToolStripMenuItem_Click);
-            // 
-            // createSparePartPurchaseToolStripMenuItem
-            // 
-            this.createSparePartPurchaseToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createSparePartPurchaseToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.purchase;
-            this.createSparePartPurchaseToolStripMenuItem.Name = "createSparePartPurchaseToolStripMenuItem";
-            this.createSparePartPurchaseToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
-            this.createSparePartPurchaseToolStripMenuItem.Text = "Create Spare Part Purchase";
-            this.createSparePartPurchaseToolStripMenuItem.Click += new System.EventHandler(this.createSparePartPurchaseToolStripMenuItem_Click);
             // 
             // manageToolStripMenuItem
             // 
@@ -380,11 +373,31 @@
             // 
             // purchasesToolStripMenuItem
             // 
+            this.purchasesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.managePuchasesToolStripMenuItem,
+            this.createSparePartPurchaseToolStripMenuItem1});
             this.purchasesToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.shopping_bag;
             this.purchasesToolStripMenuItem.Name = "purchasesToolStripMenuItem";
             this.purchasesToolStripMenuItem.Size = new System.Drawing.Size(179, 27);
             this.purchasesToolStripMenuItem.Text = "Purchases";
-            this.purchasesToolStripMenuItem.Click += new System.EventHandler(this.purchasesToolStripMenuItem_Click);
+            // 
+            // managePuchasesToolStripMenuItem
+            // 
+            this.managePuchasesToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.managePuchasesToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.report;
+            this.managePuchasesToolStripMenuItem.Name = "managePuchasesToolStripMenuItem";
+            this.managePuchasesToolStripMenuItem.Size = new System.Drawing.Size(302, 22);
+            this.managePuchasesToolStripMenuItem.Text = "Manage Puchases";
+            this.managePuchasesToolStripMenuItem.Click += new System.EventHandler(this.managePuchasesToolStripMenuItem_Click);
+            // 
+            // createSparePartPurchaseToolStripMenuItem1
+            // 
+            this.createSparePartPurchaseToolStripMenuItem1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createSparePartPurchaseToolStripMenuItem1.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.purchase1;
+            this.createSparePartPurchaseToolStripMenuItem1.Name = "createSparePartPurchaseToolStripMenuItem1";
+            this.createSparePartPurchaseToolStripMenuItem1.Size = new System.Drawing.Size(302, 22);
+            this.createSparePartPurchaseToolStripMenuItem1.Text = "Create Spare Part Purchase";
+            this.createSparePartPurchaseToolStripMenuItem1.Click += new System.EventHandler(this.createSparePartPurchaseToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem11
             // 
@@ -421,6 +434,7 @@
             this.invoicesToolStripMenuItem.Name = "invoicesToolStripMenuItem";
             this.invoicesToolStripMenuItem.Size = new System.Drawing.Size(179, 27);
             this.invoicesToolStripMenuItem.Text = "Invoices";
+            this.invoicesToolStripMenuItem.Click += new System.EventHandler(this.invoicesToolStripMenuItem_Click);
             // 
             // manageInvoicesToolStripMenuItem
             // 
@@ -492,17 +506,29 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.SCMS_Computer_Service_Center_Dashboard;
+            this.pictureBox1.Location = new System.Drawing.Point(195, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1023, 818);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1217, 818);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCMS Main";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,7 +559,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
         private System.Windows.Forms.ToolStripMenuItem sparePartsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageSparePartsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem createSparePartPurchaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem suppliersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
@@ -555,5 +580,8 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem managePuchasesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem createSparePartPurchaseToolStripMenuItem1;
     }
 }

@@ -24,6 +24,7 @@ namespace Service_Center_Management_System__SCMS_
         clsRepairOrder _RepairOrder;
         int _RepairOrderID;
 
+        private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
 
         string RepairOrderImagesFolderPath = ConfigurationManager.AppSettings["ImagesFolderPath"];
         public frmAddEditRepairOrder()
@@ -278,6 +279,12 @@ namespace Service_Center_Management_System__SCMS_
                 ucSearchForATechnician1.LoadTechnicianInfo(_RepairOrder.AssignedTechnicianID);
 
                 _SetIntailInfo();
+
+
+                clsEventLogger.WriteEntryToEventLog(
+                   ApplicationName,
+                    $"User with username = {clsGlobal.CurrentUser.Username} saved Repair Order with ID = {_RepairOrderID} successfully",
+                   System.Diagnostics.EventLogEntryType.Information);
 
             }
             else

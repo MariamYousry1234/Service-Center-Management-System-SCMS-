@@ -20,19 +20,20 @@ namespace Service_Center_Management_System__SCMS_
         private string CurrentUserKeyPath = ConfigurationManager.AppSettings["CurrentUserKeyPath"];
         private string KeyPathWithoutRegistryHive = ConfigurationManager.AppSettings["KeyPathWithoutRegistryHive"];
         private string EncryptDecryptKey = ConfigurationManager.AppSettings["EncrytDecryptKey"];
+        private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
 
         public frmLoginScreen()
         {
             InitializeComponent();
-        }
 
+            clsEventLogger.CreateEventSource(ApplicationName);
+        }
         private void frmLoginScreen_Load(object sender, EventArgs e)
         {
         }
 
         private void frmLoginScreen_Activated(object sender, EventArgs e)
         {
-
             //read saved data if exists
             string Username = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNameUsername);
             string Password = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNamePassword);
@@ -74,7 +75,7 @@ namespace Service_Center_Management_System__SCMS_
                 clsUser.FindByUsernameAndPassword(txtUsername.Text.Trim(),
                 txtPassword.Text.Trim());
 
-            if(User ==null)
+            if(User == null)
             {
                 MessageBox.Show("Invalid username or password.",
                 "Login Failed",
@@ -84,9 +85,24 @@ namespace Service_Center_Management_System__SCMS_
                 return;
             }
 
+            if(!User.IsActive)
+            {
+                MessageBox.Show(
+                   "Your account is inactive. Please contact the administrator.",
+                   "Account Inactive",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Warning);
+
+                return;
+            }
             clsGlobal.CurrentUser = User;
             //save user data
             _SaveUsernameAndPasswordToRegistry();
+
+
+            clsEventLogger.WriteEntryToEventLog(ApplicationName,
+                $"User with username = {User.Username} logged into SCMS successfully",
+                System.Diagnostics.EventLogEntryType.Information);
 
             this.Hide();
 

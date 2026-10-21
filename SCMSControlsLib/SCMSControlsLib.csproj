@@ -344,6 +344,12 @@
     <Compile Include="Delivery\ucShowDeliveryInfo.Designer.cs">
       <DependentUpon>ucShowDeliveryInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUserPermissions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUserPermissions.Designer.cs">
+      <DependentUpon>ucUserPermissions.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\ucSearchForUserInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -506,6 +512,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Delivery\ucShowDeliveryInfo.resx">
       <DependentUpon>ucShowDeliveryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserPermissions.resx">
+      <DependentUpon>ucUserPermissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\ucSearchForUserInfo.resx">
       <DependentUpon>ucSearchForUserInfo.cs</DependentUpon>

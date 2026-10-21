@@ -633,6 +633,16 @@ namespace Service_Center_Management_System__SCMS_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap purchase1 {
+            get {
+                object obj = ResourceManager.GetObject("purchase1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ram_memory {
             get {
                 object obj = ResourceManager.GetObject("ram-memory", resourceCulture);
@@ -663,6 +673,16 @@ namespace Service_Center_Management_System__SCMS_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap report {
+            get {
+                object obj = ResourceManager.GetObject("report", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap responsive {
             get {
                 object obj = ResourceManager.GetObject("responsive", resourceCulture);
@@ -676,6 +696,26 @@ namespace Service_Center_Management_System__SCMS_.Properties {
         public static System.Drawing.Bitmap rewind_button {
             get {
                 object obj = ResourceManager.GetObject("rewind-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SCMS_Computer_Service_Center_Dashboard {
+            get {
+                object obj = ResourceManager.GetObject("SCMS Computer Service Center Dashboard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Screenshot_٢٠٢٦١٠١٦_١٦٠٠١٤ {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_٢٠٢٦١٠١٦-١٦٠٠١٤", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

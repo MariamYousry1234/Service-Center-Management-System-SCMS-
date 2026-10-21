@@ -14,6 +14,27 @@ namespace SCMS_Business_Logic
     {
         public enum enMode { AddNew = 1, Update = 2 }
         public enMode Mode = enMode.AddNew;
+
+        public enum enPermissions
+        {
+            All = -1,
+
+            Employees=1,
+            Customers=2,
+            Users=4,
+            Technicians=8,
+            Devices=16,
+            AddRepairOrder = 32,
+            ManageRepairOrder = 64,
+            ROReadyForInvoicing=128,
+            ROReadyForDelivery=256,
+            InvoicesAndPayments=512,
+            SpareParts=1024,
+            Suppliers=2048,
+            Puchases = 4096,
+            Deliveries=8192
+        }
+
         public int UserID { set; get; }
 
         public int EmployeeID { set; get; }
@@ -27,7 +48,7 @@ namespace SCMS_Business_Logic
             get;
         }
 
-        public int? Permissions { set; get; }
+        public int Permissions { set; get; }
 
         public bool IsActive { get; private set; }
 
@@ -45,7 +66,7 @@ namespace SCMS_Business_Logic
             int EmployeeID,
             string Username,
             string Password,
-            int? Permissions,
+            int Permissions,
             bool IsActive,
             DateTime CreatedDate)
         {
@@ -64,8 +85,6 @@ namespace SCMS_Business_Logic
 
         private bool AddNewUser()
         {
-            if (!this.EmployeeInfo.IsActive) return false;
-
             string EncryptPassword 
                 = clsSymmetric.Encrypt(this.Password, ConfigurationManager.AppSettings["EncrytDecryptKey"]);
 
@@ -122,7 +141,7 @@ namespace SCMS_Business_Logic
             int EmployeeID = 0;
             string Username = "";
             string EncryptPassword = "";
-            int? Permissions = null;
+            int Permissions = 0;
             bool IsActive = false;
             DateTime CreatedDate = DateTime.Now;
 
@@ -154,7 +173,7 @@ namespace SCMS_Business_Logic
             int UserID = 0;
             int EmployeeID = 0;
             string EncryptPassword = "";
-            int? Permissions = null;
+            int Permissions = 0;
             bool IsActive = false;
             DateTime CreatedDate = DateTime.Now;
 
@@ -185,7 +204,7 @@ namespace SCMS_Business_Logic
         {
             int UserID = 0;
             int EmployeeID = 0;
-            int? Permissions = null;
+            int Permissions = 0;
             bool IsActive = false;
             DateTime CreatedDate = DateTime.Now;
 
@@ -289,6 +308,15 @@ namespace SCMS_Business_Logic
         public static Task<DataTable> GetAccountsForAnEmployee(int EmployeeID)
         {
             return clsUserDataAccess.GetAccountsForAnEmployee(EmployeeID);
+        }
+
+        public bool HavePermissions(enPermissions Permission)
+        {
+            if (this.Permissions == -1) return true;
+
+
+            return (this.Permissions & (int)Permission) == (int)Permission;
+
         }
 
 

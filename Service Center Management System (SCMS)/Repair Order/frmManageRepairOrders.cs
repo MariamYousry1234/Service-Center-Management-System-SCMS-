@@ -1,14 +1,15 @@
 ﻿using SCMS_Business_Logic;
+using SharedLib;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
 
 namespace Service_Center_Management_System__SCMS_
 {
@@ -18,6 +19,7 @@ namespace Service_Center_Management_System__SCMS_
         private int CurrentPage = 1;
         private int NumberOfRepairOrdersEachPage = Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfRowsEachPage"]);
 
+        private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
 
         DataTable _CurrentData;
         clsRepairOrder _CurrentRepairOrder;
@@ -144,17 +146,7 @@ namespace Service_Center_Management_System__SCMS_
 
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            
-
-            frmAddEditRepairOrder frm = new frmAddEditRepairOrder();
-
-            frm.ShowDialog();
-
-            frmManageRepairOrders_Load(null, null);
-        }
-
+  
         private void updateInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (_CurrentRepairOrder == null) return;
@@ -195,6 +187,12 @@ namespace Service_Center_Management_System__SCMS_
             {
                 MessageBox.Show($"Repair order with id = {_CurrentRepairOrder.RepairOrderID} cancelled successfully",
                     "Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                clsEventLogger.WriteEntryToEventLog(
+                    ApplicationName,
+                    $"User with username = {clsGlobal.CurrentUser.Username} cancelled Repair Order with ID = {_CurrentRepairOrder.RepairOrderID} successfully",
+                    System.Diagnostics.EventLogEntryType.Information);
 
                 frmManageRepairOrders_Load(null, null);
 
