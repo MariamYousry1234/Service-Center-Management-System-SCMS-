@@ -97,9 +97,9 @@
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI Symbol", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.IsRequired = false;
             this.txtEmail.Length = null;
-            this.txtEmail.Location = new System.Drawing.Point(380, 283);
+            this.txtEmail.Location = new System.Drawing.Point(331, 305);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(201, 27);
+            this.txtEmail.Size = new System.Drawing.Size(249, 27);
             this.txtEmail.TabIndex = 29;
             this.txtEmail.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
@@ -174,7 +174,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Simplified Arabic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(304, 283);
+            this.label7.Location = new System.Drawing.Point(303, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 28);
             this.label7.TabIndex = 20;

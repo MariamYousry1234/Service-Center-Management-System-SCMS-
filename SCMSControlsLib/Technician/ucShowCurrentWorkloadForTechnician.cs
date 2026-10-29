@@ -30,12 +30,12 @@ namespace SCMSControlsLib
 
             if (dgvAllRepairs.Rows.Count > 0)
             {
-                dgvAllRepairs.Columns[1].Width = 200;
-                dgvAllRepairs.Columns[2].Width = 200;
+                dgvAllRepairs.Columns[1].Width = 250;
+                dgvAllRepairs.Columns[2].Width = 250;
                 dgvAllRepairs.Columns[3].Width = 200;
-                dgvAllRepairs.Columns[4].Width = 200;
-                dgvAllRepairs.Columns[5].Width = 200;
-                dgvAllRepairs.Columns[6].Width = 250;
+                dgvAllRepairs.Columns[4].Width = 150;
+                dgvAllRepairs.Columns[5].Width = 150;
+                dgvAllRepairs.Columns[6].Width = 170;
             }
         }
         public async Task LoadTechnicianCurrentWorkload(int TechnicianID)
@@ -46,6 +46,7 @@ namespace SCMSControlsLib
             {
                 MessageBox.Show($"Technician with id = {TechnicianID} Not found!", "",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+                gbAllRepairOrders.Text = "All Current Workload Repairs For Technician ID = [???]";
                 _TechnicianID = null;
                 return;
             }

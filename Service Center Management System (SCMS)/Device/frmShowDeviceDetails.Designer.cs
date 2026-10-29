@@ -36,7 +36,7 @@
             // 
             this.ucShowDeviceInfo1.Location = new System.Drawing.Point(-2, -3);
             this.ucShowDeviceInfo1.Name = "ucShowDeviceInfo1";
-            this.ucShowDeviceInfo1.Size = new System.Drawing.Size(786, 560);
+            this.ucShowDeviceInfo1.Size = new System.Drawing.Size(676, 406);
             this.ucShowDeviceInfo1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(310, 577);
+            this.btnClose.Location = new System.Drawing.Point(254, 414);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(777, 632);
+            this.ClientSize = new System.Drawing.Size(676, 471);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowDeviceInfo1);
             this.Name = "frmShowDeviceDetails";

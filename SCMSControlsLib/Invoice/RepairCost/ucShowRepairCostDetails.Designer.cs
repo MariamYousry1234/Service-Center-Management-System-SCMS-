@@ -80,7 +80,7 @@
             this.lblTotalRepairCost.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalRepairCost.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalRepairCost.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalRepairCost.Location = new System.Drawing.Point(255, 352);
+            this.lblTotalRepairCost.Location = new System.Drawing.Point(210, 352);
             this.lblTotalRepairCost.Name = "lblTotalRepairCost";
             this.lblTotalRepairCost.Size = new System.Drawing.Size(56, 30);
             this.lblTotalRepairCost.TabIndex = 15;
@@ -90,7 +90,7 @@
             // 
             this.lblCreatedDate.AutoSize = true;
             this.lblCreatedDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatedDate.Location = new System.Drawing.Point(217, 309);
+            this.lblCreatedDate.Location = new System.Drawing.Point(213, 309);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(52, 30);
             this.lblCreatedDate.TabIndex = 14;
@@ -100,7 +100,7 @@
             // 
             this.lblCreatedUser.AutoSize = true;
             this.lblCreatedUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatedUser.Location = new System.Drawing.Point(217, 266);
+            this.lblCreatedUser.Location = new System.Drawing.Point(212, 266);
             this.lblCreatedUser.Name = "lblCreatedUser";
             this.lblCreatedUser.Size = new System.Drawing.Size(52, 30);
             this.lblCreatedUser.TabIndex = 13;
@@ -110,7 +110,7 @@
             // 
             this.lblDiscount.AutoSize = true;
             this.lblDiscount.BackColor = System.Drawing.Color.Transparent;
-            this.lblDiscount.Location = new System.Drawing.Point(234, 223);
+            this.lblDiscount.Location = new System.Drawing.Point(212, 223);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(52, 30);
             this.lblDiscount.TabIndex = 12;
@@ -120,7 +120,7 @@
             // 
             this.lblTaxAmount.AutoSize = true;
             this.lblTaxAmount.BackColor = System.Drawing.Color.Transparent;
-            this.lblTaxAmount.Location = new System.Drawing.Point(207, 180);
+            this.lblTaxAmount.Location = new System.Drawing.Point(212, 180);
             this.lblTaxAmount.Name = "lblTaxAmount";
             this.lblTaxAmount.Size = new System.Drawing.Size(52, 30);
             this.lblTaxAmount.TabIndex = 11;
@@ -130,7 +130,7 @@
             // 
             this.lblAdditionalServices.AutoSize = true;
             this.lblAdditionalServices.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdditionalServices.Location = new System.Drawing.Point(237, 137);
+            this.lblAdditionalServices.Location = new System.Drawing.Point(211, 137);
             this.lblAdditionalServices.Name = "lblAdditionalServices";
             this.lblAdditionalServices.Size = new System.Drawing.Size(52, 30);
             this.lblAdditionalServices.TabIndex = 10;
@@ -140,7 +140,7 @@
             // 
             this.lblLaborCost.AutoSize = true;
             this.lblLaborCost.BackColor = System.Drawing.Color.Transparent;
-            this.lblLaborCost.Location = new System.Drawing.Point(205, 94);
+            this.lblLaborCost.Location = new System.Drawing.Point(211, 94);
             this.lblLaborCost.Name = "lblLaborCost";
             this.lblLaborCost.Size = new System.Drawing.Size(52, 30);
             this.lblLaborCost.TabIndex = 9;
@@ -150,7 +150,7 @@
             // 
             this.lblPartsCost.AutoSize = true;
             this.lblPartsCost.BackColor = System.Drawing.Color.Transparent;
-            this.lblPartsCost.Location = new System.Drawing.Point(205, 51);
+            this.lblPartsCost.Location = new System.Drawing.Point(213, 51);
             this.lblPartsCost.Name = "lblPartsCost";
             this.lblPartsCost.Size = new System.Drawing.Size(52, 30);
             this.lblPartsCost.TabIndex = 8;
@@ -162,7 +162,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(33, 352);
+            this.label8.Location = new System.Drawing.Point(20, 352);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(190, 30);
             this.label8.TabIndex = 7;
@@ -172,7 +172,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(48, 309);
+            this.label7.Location = new System.Drawing.Point(66, 309);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(146, 30);
             this.label7.TabIndex = 6;
@@ -182,7 +182,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(48, 266);
+            this.label6.Location = new System.Drawing.Point(66, 266);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 30);
             this.label6.TabIndex = 5;
@@ -202,7 +202,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(48, 180);
+            this.label4.Location = new System.Drawing.Point(74, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 30);
             this.label4.TabIndex = 3;
@@ -212,7 +212,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(11, 137);
+            this.label3.Location = new System.Drawing.Point(9, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(199, 30);
             this.label3.TabIndex = 2;
@@ -222,7 +222,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(48, 94);
+            this.label2.Location = new System.Drawing.Point(86, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 30);
             this.label2.TabIndex = 1;
@@ -232,7 +232,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(48, 51);
+            this.label1.Location = new System.Drawing.Point(93, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 30);
             this.label1.TabIndex = 0;

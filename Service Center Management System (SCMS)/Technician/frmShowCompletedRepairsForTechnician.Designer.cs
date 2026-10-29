@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucShowCompletedRepairsForTechnician1 = new SCMSControlsLib.ucShowCompletedRepairsForTechnician();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucShowCompletedRepairsForTechnician1 = new SCMSControlsLib.ucShowCompletedRepairsForTechnician();
             this.SuspendLayout();
-            // 
-            // ucShowCompletedRepairsForTechnician1
-            // 
-            this.ucShowCompletedRepairsForTechnician1.Location = new System.Drawing.Point(0, -1);
-            this.ucShowCompletedRepairsForTechnician1.Name = "ucShowCompletedRepairsForTechnician1";
-            this.ucShowCompletedRepairsForTechnician1.Size = new System.Drawing.Size(894, 327);
-            this.ucShowCompletedRepairsForTechnician1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,19 +46,26 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(366, 332);
+            this.btnClose.Location = new System.Drawing.Point(487, 423);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 23;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucShowCompletedRepairsForTechnician1
+            // 
+            this.ucShowCompletedRepairsForTechnician1.Location = new System.Drawing.Point(0, -2);
+            this.ucShowCompletedRepairsForTechnician1.Name = "ucShowCompletedRepairsForTechnician1";
+            this.ucShowCompletedRepairsForTechnician1.Size = new System.Drawing.Size(1142, 417);
+            this.ucShowCompletedRepairsForTechnician1.TabIndex = 0;
+            // 
             // frmShowCompletedRepairsForTechnician
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(900, 386);
+            this.ClientSize = new System.Drawing.Size(1139, 475);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowCompletedRepairsForTechnician1);
             this.Name = "frmShowCompletedRepairsForTechnician";

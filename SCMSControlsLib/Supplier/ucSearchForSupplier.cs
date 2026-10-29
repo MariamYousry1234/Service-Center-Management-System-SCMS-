@@ -46,6 +46,10 @@ namespace SCMSControlsLib
             }
         }
 
+        public void txtFocus()
+        {
+            txtSearch.Focus();
+        }
         private void cbField_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtSearch.Clear();
@@ -54,6 +58,10 @@ namespace SCMSControlsLib
             if(cbField.SelectedItem.ToString() == "Phone Number")
             {
                 txtSearch.Length = 11;
+                txtSearch.WritingType = cusTextBox.enWritingType.Numbers;
+            }
+            else if (cbField.SelectedItem.ToString() == "Supplier ID")
+            {
                 txtSearch.WritingType = cusTextBox.enWritingType.Numbers;
             }
             else

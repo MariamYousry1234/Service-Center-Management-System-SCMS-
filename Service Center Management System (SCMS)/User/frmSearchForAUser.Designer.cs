@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucSearchForUserInfo1 = new SCMSControlsLib.ucSearchForUserInfo();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucSearchForUserInfo1 = new SCMSControlsLib.ucSearchForUserInfo();
             this.SuspendLayout();
-            // 
-            // ucSearchForUserInfo1
-            // 
-            this.ucSearchForUserInfo1.Location = new System.Drawing.Point(0, -4);
-            this.ucSearchForUserInfo1.Name = "ucSearchForUserInfo1";
-            this.ucSearchForUserInfo1.Size = new System.Drawing.Size(558, 456);
-            this.ucSearchForUserInfo1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,24 +46,32 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(204, 473);
+            this.btnClose.Location = new System.Drawing.Point(149, 473);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucSearchForUserInfo1
+            // 
+            this.ucSearchForUserInfo1.Location = new System.Drawing.Point(0, -4);
+            this.ucSearchForUserInfo1.Name = "ucSearchForUserInfo1";
+            this.ucSearchForUserInfo1.Size = new System.Drawing.Size(455, 456);
+            this.ucSearchForUserInfo1.TabIndex = 0;
+            // 
             // frmSearchForAUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(551, 530);
+            this.ClientSize = new System.Drawing.Size(451, 530);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForUserInfo1);
             this.Name = "frmSearchForAUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSearchForAUser";
+            this.Activated += new System.EventHandler(this.frmSearchForAUser_Activated);
             this.ResumeLayout(false);
 
         }

@@ -32,7 +32,6 @@
             this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cbField = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTitle = new System.Windows.Forms.Label();
             this.ucShowUserInfo1 = new SCMSControlsLib.ucShowUserInfo();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -42,12 +41,11 @@
             this.guna2GroupBox1.Controls.Add(this.txtSearch);
             this.guna2GroupBox1.Controls.Add(this.btnSearch);
             this.guna2GroupBox1.Controls.Add(this.cbField);
-            this.guna2GroupBox1.Controls.Add(this.txtTitle);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(0, 1);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(558, 101);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(456, 101);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Search 🔍";
             // 
@@ -56,7 +54,7 @@
             this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.IsRequired = true;
             this.txtSearch.Length = null;
-            this.txtSearch.Location = new System.Drawing.Point(272, 53);
+            this.txtSearch.Location = new System.Drawing.Point(172, 54);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(180, 35);
             this.txtSearch.TabIndex = 8;
@@ -75,7 +73,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::SCMSControlsLib.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(485, 49);
+            this.btnSearch.Location = new System.Drawing.Point(385, 50);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(58, 45);
             this.btnSearch.TabIndex = 7;
@@ -95,29 +93,17 @@
             this.cbField.Items.AddRange(new object[] {
             "User ID",
             "Username"});
-            this.cbField.Location = new System.Drawing.Point(122, 52);
+            this.cbField.Location = new System.Drawing.Point(22, 53);
             this.cbField.Name = "cbField";
             this.cbField.Size = new System.Drawing.Size(137, 36);
             this.cbField.TabIndex = 1;
             this.cbField.SelectedIndexChanged += new System.EventHandler(this.cbField_SelectedIndexChanged);
             // 
-            // txtTitle
-            // 
-            this.txtTitle.AutoSize = true;
-            this.txtTitle.BackColor = System.Drawing.Color.Transparent;
-            this.txtTitle.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.Black;
-            this.txtTitle.Location = new System.Drawing.Point(8, 58);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(110, 23);
-            this.txtTitle.TabIndex = 0;
-            this.txtTitle.Text = "Search By :";
-            // 
             // ucShowUserInfo1
             // 
             this.ucShowUserInfo1.Location = new System.Drawing.Point(0, 101);
             this.ucShowUserInfo1.Name = "ucShowUserInfo1";
-            this.ucShowUserInfo1.Size = new System.Drawing.Size(558, 358);
+            this.ucShowUserInfo1.Size = new System.Drawing.Size(456, 358);
             this.ucShowUserInfo1.TabIndex = 3;
             // 
             // ucSearchForUserInfo
@@ -127,7 +113,7 @@
             this.Controls.Add(this.ucShowUserInfo1);
             this.Controls.Add(this.guna2GroupBox1);
             this.Name = "ucSearchForUserInfo";
-            this.Size = new System.Drawing.Size(558, 456);
+            this.Size = new System.Drawing.Size(454, 456);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -140,7 +126,6 @@
         private cusTextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbField;
-        private System.Windows.Forms.Label txtTitle;
         private ucShowUserInfo ucShowUserInfo1;
     }
 }

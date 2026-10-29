@@ -67,7 +67,7 @@ namespace Service_Center_Management_System__SCMS_
 
             lblBrandID.Text = _PartBrand.PartBrandID.ToString();
             txtBrandName.Text = _PartBrand.PartBrandName;
-
+            txtBrandName.SelectionStart = txtBrandName.Text.Length;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

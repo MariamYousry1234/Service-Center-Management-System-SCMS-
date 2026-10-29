@@ -30,11 +30,14 @@ namespace SCMSControlsLib
 
             if (dgvAllRepairs.Rows.Count > 0)
             {
-                dgvAllRepairs.Columns[1].Width = 200;
-                dgvAllRepairs.Columns[2].Width = 200;
-                dgvAllRepairs.Columns[3].Width = 150;
-                dgvAllRepairs.Columns[4].Width = 100;
-                dgvAllRepairs.Columns[5].Width = 150;
+                dgvAllRepairs.Columns[1].Width = 100;
+                dgvAllRepairs.Columns[2].Width = 250;
+                dgvAllRepairs.Columns[3].Width = 100;
+                dgvAllRepairs.Columns[4].Width = 250;
+                dgvAllRepairs.Columns[5].Width = 100;
+                dgvAllRepairs.Columns[6].Width = 200;
+                dgvAllRepairs.Columns[9].Width = 170;
+                dgvAllRepairs.Columns[10].Width = 170;
             }
         }
         public async Task LoadRepairOrdersForDevice(int DeviceID)

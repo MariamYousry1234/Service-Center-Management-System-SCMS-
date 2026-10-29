@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.lblNumberOfPayments = new System.Windows.Forms.Label();
             this.gbAllPayments = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -69,7 +70,7 @@
             this.gbAllPayments.Controls.Add(this.lblNumberOfPayments);
             this.gbAllPayments.Controls.Add(this.label1);
             this.gbAllPayments.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllPayments.ForeColor = System.Drawing.Color.Black;
+            this.gbAllPayments.ForeColor = System.Drawing.Color.Red;
             this.gbAllPayments.Location = new System.Drawing.Point(0, 1);
             this.gbAllPayments.Name = "gbAllPayments";
             this.gbAllPayments.Size = new System.Drawing.Size(907, 289);
@@ -84,6 +85,14 @@
             this.dgvAllPayments.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllPayments.ContextMenuStrip = this.guna2ContextMenuStrip1;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllPayments.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAllPayments.Location = new System.Drawing.Point(-1, 59);
             this.dgvAllPayments.Name = "dgvAllPayments";
             this.dgvAllPayments.ReadOnly = true;

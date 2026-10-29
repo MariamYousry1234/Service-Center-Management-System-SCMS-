@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPages = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAllPersons = new System.Windows.Forms.Label();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
@@ -57,8 +57,42 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(512, 272);
+            this.dgvData.Size = new System.Drawing.Size(511, 272);
             this.dgvData.TabIndex = 42;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateInfoToolStripMenuItem,
+            this.deleteInfoToolStripMenuItem});
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(137, 48);
+            this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
+            // 
+            // updateInfoToolStripMenuItem
+            // 
+            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
+            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.updateInfoToolStripMenuItem.Text = "Update Info";
+            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
+            // 
+            // deleteInfoToolStripMenuItem
+            // 
+            this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
+            this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
+            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.deleteInfoToolStripMenuItem.Text = "Delete Info";
+            this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
             // 
             // label3
             // 
@@ -119,24 +153,6 @@
             this.lblAllPersons.TabIndex = 36;
             this.lblAllPersons.Text = "Manage Device Types";
             // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateInfoToolStripMenuItem,
-            this.deleteInfoToolStripMenuItem});
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(137, 48);
-            this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
-            // 
             // btnAdd
             // 
             this.btnAdd.BackColor = System.Drawing.Color.White;
@@ -155,22 +171,6 @@
             this.btnAdd.Size = new System.Drawing.Size(58, 45);
             this.btnAdd.TabIndex = 43;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // updateInfoToolStripMenuItem
-            // 
-            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
-            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.updateInfoToolStripMenuItem.Text = "Update Info";
-            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
-            // 
-            // deleteInfoToolStripMenuItem
-            // 
-            this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
-            this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
-            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            this.deleteInfoToolStripMenuItem.Text = "Delete Info";
-            this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
             // 
             // btnSearch
             // 

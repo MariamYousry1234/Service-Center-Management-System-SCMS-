@@ -39,8 +39,9 @@ namespace Service_Center_Management_System__SCMS_
                 dgvData.Columns[1].Width = 200;
                 dgvData.Columns[2].Width = 200;
                 dgvData.Columns[3].Width = 150;
-                dgvData.Columns[4].Width = 100;
+                dgvData.Columns[4].Width = 70;
                 dgvData.Columns[5].Width = 150;
+                dgvData.Columns[6].Width = 120;
             }
             cbFiltering.SelectedIndex = 0;
         }
@@ -252,7 +253,19 @@ namespace Service_Center_Management_System__SCMS_
                     break;
             }
 
-            cbfiltering2.Enabled = cbFiltering.Text != "None";
+
+            if (cbFiltering.Text == "None")
+            {
+                cbfiltering2.Enabled = false;
+
+               _CurrentData.DefaultView.RowFilter = "";     
+                
+            }
+            else
+            {
+                cbfiltering2.Enabled = true;
+            }
+
         }
 
         private void cbfiltering2_SelectedIndexChanged(object sender, EventArgs e)

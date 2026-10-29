@@ -32,9 +32,9 @@
             this.dgvAllRepairOrders = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.issueInvoiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRepairOrderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNumberOfRepairOrders = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.showRepairOrderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbAllPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairOrders)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -46,10 +46,10 @@
             this.gbAllPayments.Controls.Add(this.lblNumberOfRepairOrders);
             this.gbAllPayments.Controls.Add(this.label1);
             this.gbAllPayments.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllPayments.ForeColor = System.Drawing.Color.Black;
+            this.gbAllPayments.ForeColor = System.Drawing.Color.Red;
             this.gbAllPayments.Location = new System.Drawing.Point(-1, -1);
             this.gbAllPayments.Name = "gbAllPayments";
-            this.gbAllPayments.Size = new System.Drawing.Size(907, 404);
+            this.gbAllPayments.Size = new System.Drawing.Size(1162, 404);
             this.gbAllPayments.TabIndex = 3;
             this.gbAllPayments.Text = "All Repair Orders Ready For Invoicing";
             // 
@@ -65,7 +65,7 @@
             this.dgvAllRepairOrders.Name = "dgvAllRepairOrders";
             this.dgvAllRepairOrders.ReadOnly = true;
             this.dgvAllRepairOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllRepairOrders.Size = new System.Drawing.Size(905, 261);
+            this.dgvAllRepairOrders.Size = new System.Drawing.Size(1157, 261);
             this.dgvAllRepairOrders.TabIndex = 3;
             // 
             // guna2ContextMenuStrip1
@@ -94,6 +94,14 @@
             this.issueInvoiceToolStripMenuItem.Text = "Issue Invoice";
             this.issueInvoiceToolStripMenuItem.Click += new System.EventHandler(this.issueInvoiceToolStripMenuItem_Click);
             // 
+            // showRepairOrderDetailsToolStripMenuItem
+            // 
+            this.showRepairOrderDetailsToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.list;
+            this.showRepairOrderDetailsToolStripMenuItem.Name = "showRepairOrderDetailsToolStripMenuItem";
+            this.showRepairOrderDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.showRepairOrderDetailsToolStripMenuItem.Text = "Show Repair Order Details";
+            this.showRepairOrderDetailsToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrderDetailsToolStripMenuItem_Click);
+            // 
             // lblNumberOfRepairOrders
             // 
             this.lblNumberOfRepairOrders.AutoSize = true;
@@ -117,21 +125,13 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Repair Orders  :";
             // 
-            // showRepairOrderDetailsToolStripMenuItem
-            // 
-            this.showRepairOrderDetailsToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.list;
-            this.showRepairOrderDetailsToolStripMenuItem.Name = "showRepairOrderDetailsToolStripMenuItem";
-            this.showRepairOrderDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.showRepairOrderDetailsToolStripMenuItem.Text = "Show Repair Order Details";
-            this.showRepairOrderDetailsToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrderDetailsToolStripMenuItem_Click);
-            // 
             // ucRepairOrdersReadyForInvoicing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbAllPayments);
             this.Name = "ucRepairOrdersReadyForInvoicing";
-            this.Size = new System.Drawing.Size(903, 397);
+            this.Size = new System.Drawing.Size(1161, 397);
             this.gbAllPayments.ResumeLayout(false);
             this.gbAllPayments.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairOrders)).EndInit();

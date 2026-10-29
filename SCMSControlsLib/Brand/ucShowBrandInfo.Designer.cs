@@ -55,7 +55,7 @@
             this.lblBrandName.AutoSize = true;
             this.lblBrandName.BackColor = System.Drawing.Color.Transparent;
             this.lblBrandName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrandName.Location = new System.Drawing.Point(237, 140);
+            this.lblBrandName.Location = new System.Drawing.Point(217, 140);
             this.lblBrandName.Name = "lblBrandName";
             this.lblBrandName.Size = new System.Drawing.Size(73, 37);
             this.lblBrandName.TabIndex = 3;
@@ -77,7 +77,7 @@
             this.lblBrandID.AutoSize = true;
             this.lblBrandID.BackColor = System.Drawing.Color.Transparent;
             this.lblBrandID.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrandID.Location = new System.Drawing.Point(237, 75);
+            this.lblBrandID.Location = new System.Drawing.Point(217, 75);
             this.lblBrandID.Name = "lblBrandID";
             this.lblBrandID.Size = new System.Drawing.Size(73, 37);
             this.lblBrandID.TabIndex = 1;

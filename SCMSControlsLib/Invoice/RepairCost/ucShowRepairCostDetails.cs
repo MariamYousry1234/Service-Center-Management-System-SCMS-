@@ -51,9 +51,9 @@ namespace SCMSControlsLib
                 $"Repair Cost Details For Repair Order ID ={_RepairCost.RepairOrderID}";
             lblPartsCost.Text =_RepairCost.PartsCost.ToString();
             lblLaborCost.Text = _RepairCost.LaborCost.ToString();
-            lblAdditionalServices.Text =_RepairCost.AdditionalServices.ToString();
-            lblTaxAmount.Text = _RepairCost.TaxAmount.ToString();
-            lblDiscount.Text = _RepairCost.DiscountAmount.ToString();
+            lblAdditionalServices.Text =_RepairCost.AdditionalServices?.ToString()?? "0";
+            lblTaxAmount.Text = _RepairCost.TaxAmount?.ToString() ?? "0";
+            lblDiscount.Text = _RepairCost.DiscountAmount?.ToString() ?? "0";
             lblTotalRepairCost.Text = _RepairCost.TotalRepairCost.ToString();
             lblCreatedDate.Text =_RepairCost.CreatedDate.ToString("dd/MM/yyyy");
             lblCreatedUser.Text = _RepairCost.CreatedUserInfo.Username;

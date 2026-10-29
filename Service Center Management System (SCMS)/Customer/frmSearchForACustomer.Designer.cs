@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(212, 688);
+            this.btnClose.Location = new System.Drawing.Point(162, 615);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 32;
@@ -56,9 +56,9 @@
             // ucSearchForCustomer1
             // 
             this.ucSearchForCustomer1.gbEnabled = true;
-            this.ucSearchForCustomer1.Location = new System.Drawing.Point(0, 0);
+            this.ucSearchForCustomer1.Location = new System.Drawing.Point(0, -1);
             this.ucSearchForCustomer1.Name = "ucSearchForCustomer1";
-            this.ucSearchForCustomer1.Size = new System.Drawing.Size(597, 676);
+            this.ucSearchForCustomer1.Size = new System.Drawing.Size(484, 599);
             this.ucSearchForCustomer1.TabIndex = 0;
             // 
             // frmSearchForACustomer
@@ -66,12 +66,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(590, 741);
+            this.ClientSize = new System.Drawing.Size(481, 668);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForCustomer1);
             this.Name = "frmSearchForACustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For A Customer";
+            this.Activated += new System.EventHandler(this.frmSearchForACustomer_Activated);
             this.ResumeLayout(false);
 
         }

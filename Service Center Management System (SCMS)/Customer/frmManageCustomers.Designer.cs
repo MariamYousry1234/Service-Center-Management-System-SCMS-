@@ -77,11 +77,11 @@
             this.dgvData.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.ContextMenuStrip = this.guna2ContextMenuStrip1;
-            this.dgvData.Location = new System.Drawing.Point(27, 144);
+            this.dgvData.Location = new System.Drawing.Point(8, 144);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(815, 272);
+            this.dgvData.Size = new System.Drawing.Size(837, 272);
             this.dgvData.TabIndex = 32;
             // 
             // guna2ContextMenuStrip1
@@ -202,6 +202,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(24, 92);

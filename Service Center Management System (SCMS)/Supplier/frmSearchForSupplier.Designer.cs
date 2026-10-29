@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucSearchForSupplier1 = new SCMSControlsLib.ucSearchForSupplier();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucSearchForSupplier1 = new SCMSControlsLib.ucSearchForSupplier();
             this.SuspendLayout();
-            // 
-            // ucSearchForSupplier1
-            // 
-            this.ucSearchForSupplier1.Location = new System.Drawing.Point(-1, -2);
-            this.ucSearchForSupplier1.Name = "ucSearchForSupplier1";
-            this.ucSearchForSupplier1.Size = new System.Drawing.Size(714, 432);
-            this.ucSearchForSupplier1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,24 +46,33 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(274, 447);
+            this.btnClose.Location = new System.Drawing.Point(233, 365);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 43;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucSearchForSupplier1
+            // 
+            this.ucSearchForSupplier1.gbEnabled = true;
+            this.ucSearchForSupplier1.Location = new System.Drawing.Point(-1, -2);
+            this.ucSearchForSupplier1.Name = "ucSearchForSupplier1";
+            this.ucSearchForSupplier1.Size = new System.Drawing.Size(610, 350);
+            this.ucSearchForSupplier1.TabIndex = 0;
+            // 
             // frmSearchForSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(710, 504);
+            this.ClientSize = new System.Drawing.Size(606, 420);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForSupplier1);
             this.Name = "frmSearchForSupplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For Supplier";
+            this.Activated += new System.EventHandler(this.frmSearchForSupplier_Activated);
             this.ResumeLayout(false);
 
         }

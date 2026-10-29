@@ -105,15 +105,15 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(17, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 31);
+            this.label2.Size = new System.Drawing.Size(266, 31);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Total Parts = ";
+            this.label2.Text = "Total Used Parts = ";
             // 
             // lblTotalParts
             // 
             this.lblTotalParts.AutoSize = true;
             this.lblTotalParts.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalParts.Location = new System.Drawing.Point(237, 219);
+            this.lblTotalParts.Location = new System.Drawing.Point(289, 219);
             this.lblTotalParts.Name = "lblTotalParts";
             this.lblTotalParts.Size = new System.Drawing.Size(62, 31);
             this.lblTotalParts.TabIndex = 4;

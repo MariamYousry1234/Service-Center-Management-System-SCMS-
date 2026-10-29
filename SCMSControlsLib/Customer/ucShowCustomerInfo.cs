@@ -55,10 +55,10 @@ namespace SCMSControlsLib
             lblCustomerID.Text = _CustomerID.ToString();
             lblCreatedByUser.Text = _Customer.CreatedUserInfo.Username;
             lblCreatedDate.Text = _Customer.CreatedDate.ToString("dd/MM/yyyy");
-            lblLastUpdatedDate.Text = _Customer.LastUpdatedDate?.ToString("dd/MM/yyyy");
-            lblLastUpdatedUser.Text = _Customer.LastUpdatedUserInfo ==null ? "Not found":
+            lblLastUpdatedDate.Text = _Customer.LastUpdatedDate?.ToString("dd/MM/yyyy")?? "Un Known";
+            lblLastUpdatedUser.Text = _Customer.LastUpdatedUserInfo ==null ? "Un Known" :
                 _Customer.LastUpdatedUserInfo.Username;
-            lblNotes.Text = _Customer.Notes ?? "Not found";
+            lblNotes.Text = _Customer.Notes ?? "Un Known";
         }
 
         public void LoadCustomerInfo(int CustomerID)

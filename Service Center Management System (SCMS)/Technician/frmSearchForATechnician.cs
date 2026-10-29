@@ -26,5 +26,10 @@ namespace Service_Center_Management_System__SCMS_
         {
             ucSearchForATechnician1.AddEditVisible = false;
         }
+
+        private void frmSearchForATechnician_Activated(object sender, EventArgs e)
+        {
+            ucSearchForATechnician1.txtFocus();
+        }
     }
 }

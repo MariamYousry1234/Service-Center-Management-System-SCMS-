@@ -36,7 +36,7 @@
             // 
             this.ucShowEmployeeInfo1.Location = new System.Drawing.Point(0, 0);
             this.ucShowEmployeeInfo1.Name = "ucShowEmployeeInfo1";
-            this.ucShowEmployeeInfo1.Size = new System.Drawing.Size(595, 474);
+            this.ucShowEmployeeInfo1.Size = new System.Drawing.Size(487, 448);
             this.ucShowEmployeeInfo1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(221, 480);
+            this.btnClose.Location = new System.Drawing.Point(168, 456);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 20;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(595, 534);
+            this.ClientSize = new System.Drawing.Size(488, 512);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowEmployeeInfo1);
             this.Name = "frmShowEmployeeInfo";

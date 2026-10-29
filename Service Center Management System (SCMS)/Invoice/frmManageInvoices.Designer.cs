@@ -33,6 +33,7 @@
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showPaymentsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPages = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
@@ -57,7 +58,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(840, 147);
+            this.btnSearch.Location = new System.Drawing.Point(942, 147);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(58, 45);
             this.btnSearch.TabIndex = 53;
@@ -75,14 +76,15 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(877, 264);
+            this.dgvData.Size = new System.Drawing.Size(987, 264);
             this.dgvData.TabIndex = 51;
             // 
             // guna2ContextMenuStrip1
             // 
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateInfoToolStripMenuItem,
-            this.showDetailsToolStripMenuItem});
+            this.showDetailsToolStripMenuItem,
+            this.showPaymentsHistoryToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -93,14 +95,14 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(142, 48);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(200, 70);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // updateInfoToolStripMenuItem
             // 
             this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
             this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.updateInfoToolStripMenuItem.Text = "Update Info";
             this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
             // 
@@ -108,9 +110,17 @@
             // 
             this.showDetailsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.list;
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
+            // 
+            // showPaymentsHistoryToolStripMenuItem
+            // 
+            this.showPaymentsHistoryToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.transaction_history1;
+            this.showPaymentsHistoryToolStripMenuItem.Name = "showPaymentsHistoryToolStripMenuItem";
+            this.showPaymentsHistoryToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.showPaymentsHistoryToolStripMenuItem.Text = "Show Payments History";
+            this.showPaymentsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showPaymentsHistoryToolStripMenuItem_Click);
             // 
             // label3
             // 
@@ -166,7 +176,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.Blue;
-            this.lblAllPersons.Location = new System.Drawing.Point(249, 26);
+            this.lblAllPersons.Location = new System.Drawing.Point(302, 20);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(409, 56);
             this.lblAllPersons.TabIndex = 46;
@@ -187,7 +197,7 @@
             this.btnPrevious.ForeColor = System.Drawing.Color.Black;
             this.btnPrevious.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.rewind_button;
             this.btnPrevious.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPrevious.Location = new System.Drawing.Point(257, 486);
+            this.btnPrevious.Location = new System.Drawing.Point(312, 487);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(168, 45);
             this.btnPrevious.TabIndex = 45;
@@ -208,7 +218,7 @@
             this.btnNext.ForeColor = System.Drawing.Color.Black;
             this.btnNext.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.next__1_;
             this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.Location = new System.Drawing.Point(491, 487);
+            this.btnNext.Location = new System.Drawing.Point(546, 488);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(156, 45);
             this.btnNext.TabIndex = 44;
@@ -222,7 +232,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Service_Center_Management_System__SCMS_.Properties.Resources.invoice__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(908, 544);
+            this.ClientSize = new System.Drawing.Size(1019, 544);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label3);
@@ -258,5 +268,6 @@
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showPaymentsHistoryToolStripMenuItem;
     }
 }

@@ -69,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(372, 64);
+            this.label2.Location = new System.Drawing.Point(388, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 30);
             this.label2.TabIndex = 25;
@@ -80,7 +80,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-            this.lblTitle.Location = new System.Drawing.Point(266, 9);
+            this.lblTitle.Location = new System.Drawing.Point(282, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(245, 45);
             this.lblTitle.TabIndex = 23;
@@ -137,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(266, 99);
+            this.label1.Location = new System.Drawing.Point(282, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(145, 38);
             this.label1.TabIndex = 24;
@@ -148,7 +148,7 @@
             this.lblUserID.AutoSize = true;
             this.lblUserID.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserID.ForeColor = System.Drawing.Color.Blue;
-            this.lblUserID.Location = new System.Drawing.Point(429, 99);
+            this.lblUserID.Location = new System.Drawing.Point(445, 99);
             this.lblUserID.Name = "lblUserID";
             this.lblUserID.Size = new System.Drawing.Size(90, 38);
             this.lblUserID.TabIndex = 26;

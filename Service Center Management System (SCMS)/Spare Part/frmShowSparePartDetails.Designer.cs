@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucShowSparePartDetails1 = new SCMSControlsLib.ucShowSparePartDetails();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucShowSparePartDetails1 = new SCMSControlsLib.ucShowSparePartDetails();
             this.SuspendLayout();
-            // 
-            // ucShowSparePartDetails1
-            // 
-            this.ucShowSparePartDetails1.Location = new System.Drawing.Point(1, -4);
-            this.ucShowSparePartDetails1.Name = "ucShowSparePartDetails1";
-            this.ucShowSparePartDetails1.Size = new System.Drawing.Size(764, 441);
-            this.ucShowSparePartDetails1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,19 +46,26 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(308, 443);
+            this.btnClose.Location = new System.Drawing.Point(231, 304);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 41;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucShowSparePartDetails1
+            // 
+            this.ucShowSparePartDetails1.Location = new System.Drawing.Point(1, -4);
+            this.ucShowSparePartDetails1.Name = "ucShowSparePartDetails1";
+            this.ucShowSparePartDetails1.Size = new System.Drawing.Size(622, 290);
+            this.ucShowSparePartDetails1.TabIndex = 0;
+            // 
             // frmShowSparePartDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(763, 495);
+            this.ClientSize = new System.Drawing.Size(620, 355);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowSparePartDetails1);
             this.Name = "frmShowSparePartDetails";

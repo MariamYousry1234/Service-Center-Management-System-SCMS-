@@ -58,6 +58,11 @@ namespace SCMSControlsLib
             }
         }
 
+
+        public void txtFocus()
+        {
+            txtSearch.Focus();
+        }
         //update case
         public void LoadTechnicianInfo(int? TechnicianID = null)
         {

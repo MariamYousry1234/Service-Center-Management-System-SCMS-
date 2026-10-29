@@ -146,7 +146,7 @@ namespace Service_Center_Management_System__SCMS_
                 lblPaidDate.Text = _Payment.DatePaid.ToString("dd/MM/yyyy");
                 lblRemaining.Text = _Payment.Remaining.ToString();
                 txtTotalPaid.Text = _Payment.TotalPaid.ToString();
-
+                txtTotalPaid.SelectionStart = txtTotalPaid.Text.Length;
             }
 
         }

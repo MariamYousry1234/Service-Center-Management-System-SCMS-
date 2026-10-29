@@ -39,7 +39,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(121, 9);
+            this.lblAllPersons.Location = new System.Drawing.Point(64, 9);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(344, 44);
             this.lblAllPersons.TabIndex = 28;
@@ -47,9 +47,9 @@
             // 
             // ucShowTechnicianInfo1
             // 
-            this.ucShowTechnicianInfo1.Location = new System.Drawing.Point(-4, 56);
+            this.ucShowTechnicianInfo1.Location = new System.Drawing.Point(-2, 56);
             this.ucShowTechnicianInfo1.Name = "ucShowTechnicianInfo1";
-            this.ucShowTechnicianInfo1.Size = new System.Drawing.Size(592, 650);
+            this.ucShowTechnicianInfo1.Size = new System.Drawing.Size(486, 606);
             this.ucShowTechnicianInfo1.TabIndex = 29;
             // 
             // btnClose
@@ -66,7 +66,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(215, 712);
+            this.btnClose.Location = new System.Drawing.Point(164, 667);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 32;
@@ -78,7 +78,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(589, 767);
+            this.ClientSize = new System.Drawing.Size(482, 718);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowTechnicianInfo1);
             this.Controls.Add(this.lblAllPersons);

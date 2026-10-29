@@ -14,6 +14,8 @@ namespace SCMSControlsLib
     public partial class ucShowAllPreviousOperationsForPart : UserControl
     {
         public Action <int>ShowPurchaseDetails;
+   
+        public Action<int> ShowSupplierDetails;
         clsSparePart _SparePart;
         public ucShowAllPreviousOperationsForPart()
         {
@@ -28,10 +30,10 @@ namespace SCMSControlsLib
 
             if (dgvAllOperations.Rows.Count > 0)
             {
-                dgvAllOperations.Columns[1].Width = 250;
+                dgvAllOperations.Columns[1].Width = 200;
                 dgvAllOperations.Columns[2].Width = 180;
-                dgvAllOperations.Columns[5].Width = 250;
-                dgvAllOperations.Columns[7].Width = 250;
+                dgvAllOperations.Columns[6].Width = 250;
+                dgvAllOperations.Columns[8].Width = 250;
             
             }
         }
@@ -62,6 +64,13 @@ namespace SCMSControlsLib
         private void guna2ContextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
             guna2ContextMenuStrip1.Enabled = dgvAllOperations.CurrentRow != null;
+        }
+
+      
+
+        private void showSupplierDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowSupplierDetails?.Invoke((int)dgvAllOperations.CurrentRow.Cells[5].Value);
         }
     }
 }

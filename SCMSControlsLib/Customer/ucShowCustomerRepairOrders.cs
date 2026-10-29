@@ -31,11 +31,12 @@ namespace SCMSControlsLib
 
             if (dgvAllRepairOrders.Rows.Count > 0)
             {
-                dgvAllRepairOrders.Columns[1].Width = 200;
-                dgvAllRepairOrders.Columns[2].Width = 200;
+                dgvAllRepairOrders.Columns[1].Width = 250;
+                dgvAllRepairOrders.Columns[2].Width = 250;
                 dgvAllRepairOrders.Columns[3].Width = 150;
                 dgvAllRepairOrders.Columns[4].Width = 100;
-                dgvAllRepairOrders.Columns[5].Width = 150;
+                dgvAllRepairOrders.Columns[5].Width = 180;
+                dgvAllRepairOrders.Columns[6].Width = 200;
             }
         }
         public async Task LoadCustomerRepairOrders(int CustomerID)

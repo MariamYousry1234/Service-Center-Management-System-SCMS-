@@ -142,5 +142,11 @@ namespace Service_Center_Management_System__SCMS_
         {
             this.Close();
         }
+
+        private void frmAddEditSupplier_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                txtSupplierName.Focus();
+        }
     }
 }

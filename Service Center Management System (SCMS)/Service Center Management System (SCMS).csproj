@@ -216,6 +216,12 @@
     <Compile Include="Delivery\frmManageDeliveries.Designer.cs">
       <DependentUpon>frmManageDeliveries.cs</DependentUpon>
     </Compile>
+    <Compile Include="Supplier\frmShowSupplierInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier\frmShowSupplierInfo.Designer.cs">
+      <DependentUpon>frmShowSupplierInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment\frmShowAllPaymentsForCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -616,6 +622,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Delivery\frmManageDeliveries.resx">
       <DependentUpon>frmManageDeliveries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier\frmShowSupplierInfo.resx">
+      <DependentUpon>frmShowSupplierInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\frmShowAllPaymentsForCustomer.resx">
       <DependentUpon>frmShowAllPaymentsForCustomer.cs</DependentUpon>

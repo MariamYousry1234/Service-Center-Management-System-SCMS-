@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucRepairOrdersReadyForDelivery1 = new SCMSControlsLib.ucRepairOrdersReadyForDelivery();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucRepairOrdersReadyForDelivery1 = new SCMSControlsLib.ucRepairOrdersReadyForDelivery();
             this.SuspendLayout();
-            // 
-            // ucRepairOrdersReadyForDelivery1
-            // 
-            this.ucRepairOrdersReadyForDelivery1.Location = new System.Drawing.Point(-2, -3);
-            this.ucRepairOrdersReadyForDelivery1.Name = "ucRepairOrdersReadyForDelivery1";
-            this.ucRepairOrdersReadyForDelivery1.Size = new System.Drawing.Size(906, 401);
-            this.ucRepairOrdersReadyForDelivery1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,19 +46,26 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(373, 404);
+            this.btnClose.Location = new System.Drawing.Point(501, 407);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 32;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucRepairOrdersReadyForDelivery1
+            // 
+            this.ucRepairOrdersReadyForDelivery1.Location = new System.Drawing.Point(-2, -3);
+            this.ucRepairOrdersReadyForDelivery1.Name = "ucRepairOrdersReadyForDelivery1";
+            this.ucRepairOrdersReadyForDelivery1.Size = new System.Drawing.Size(1163, 401);
+            this.ucRepairOrdersReadyForDelivery1.TabIndex = 0;
+            // 
             // frmRepairOrdersReadyForDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(907, 459);
+            this.ClientSize = new System.Drawing.Size(1159, 459);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucRepairOrdersReadyForDelivery1);
             this.Name = "frmRepairOrdersReadyForDelivery";

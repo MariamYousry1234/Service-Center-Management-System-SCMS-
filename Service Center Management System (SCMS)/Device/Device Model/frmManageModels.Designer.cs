@@ -57,7 +57,7 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(518, 272);
+            this.dgvData.Size = new System.Drawing.Size(620, 272);
             this.dgvData.TabIndex = 62;
             // 
             // guna2ContextMenuStrip1
@@ -147,7 +147,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(135, 9);
+            this.lblAllPersons.Location = new System.Drawing.Point(177, 9);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(298, 44);
             this.lblAllPersons.TabIndex = 56;
@@ -166,7 +166,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.plus;
-            this.btnAdd.Location = new System.Drawing.Point(408, 95);
+            this.btnAdd.Location = new System.Drawing.Point(513, 95);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(48, 45);
             this.btnAdd.TabIndex = 63;
@@ -185,7 +185,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(480, 96);
+            this.btnSearch.Location = new System.Drawing.Point(585, 96);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(48, 44);
             this.btnSearch.TabIndex = 57;
@@ -206,7 +206,7 @@
             this.btnPrevious.ForeColor = System.Drawing.Color.Black;
             this.btnPrevious.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.rewind_button;
             this.btnPrevious.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPrevious.Location = new System.Drawing.Point(99, 440);
+            this.btnPrevious.Location = new System.Drawing.Point(143, 440);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(168, 45);
             this.btnPrevious.TabIndex = 55;
@@ -227,7 +227,7 @@
             this.btnNext.ForeColor = System.Drawing.Color.Black;
             this.btnNext.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.next__1_;
             this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.Location = new System.Drawing.Point(298, 440);
+            this.btnNext.Location = new System.Drawing.Point(342, 440);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(156, 45);
             this.btnNext.TabIndex = 54;
@@ -239,7 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(542, 497);
+            this.ClientSize = new System.Drawing.Size(644, 497);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label3);

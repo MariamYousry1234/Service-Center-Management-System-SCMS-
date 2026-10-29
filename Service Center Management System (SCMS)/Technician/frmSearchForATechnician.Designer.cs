@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(211, 753);
+            this.btnClose.Location = new System.Drawing.Point(165, 709);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 9;
@@ -58,7 +58,7 @@
             this.ucSearchForATechnician1.gbEnabeld = true;
             this.ucSearchForATechnician1.Location = new System.Drawing.Point(0, -1);
             this.ucSearchForATechnician1.Name = "ucSearchForATechnician1";
-            this.ucSearchForATechnician1.Size = new System.Drawing.Size(596, 745);
+            this.ucSearchForATechnician1.Size = new System.Drawing.Size(485, 704);
             this.ucSearchForATechnician1.TabIndex = 0;
             // 
             // frmSearchForATechnician
@@ -66,12 +66,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(591, 804);
+            this.ClientSize = new System.Drawing.Size(483, 764);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForATechnician1);
             this.Name = "frmSearchForATechnician";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For A Technician";
+            this.Activated += new System.EventHandler(this.frmSearchForATechnician_Activated);
             this.Load += new System.EventHandler(this.frmSearchForATechnician_Load);
             this.ResumeLayout(false);
 

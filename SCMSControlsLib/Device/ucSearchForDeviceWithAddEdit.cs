@@ -35,6 +35,10 @@ namespace SCMSControlsLib
             }
         }
 
+        public void txtFocus()
+        {
+            ucSearchForADevice1.txtFocus();
+        }
         public void LoadDeviceInfo(int? DeviceID = null)
         {
             if (DeviceID == null)

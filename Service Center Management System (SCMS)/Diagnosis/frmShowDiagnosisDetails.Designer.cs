@@ -36,7 +36,7 @@
             // 
             this.ucShowDiagnosisDetails1.Location = new System.Drawing.Point(0, 0);
             this.ucShowDiagnosisDetails1.Name = "ucShowDiagnosisDetails1";
-            this.ucShowDiagnosisDetails1.Size = new System.Drawing.Size(837, 573);
+            this.ucShowDiagnosisDetails1.Size = new System.Drawing.Size(837, 502);
             this.ucShowDiagnosisDetails1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(341, 593);
+            this.btnClose.Location = new System.Drawing.Point(335, 510);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 43;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(833, 652);
+            this.ClientSize = new System.Drawing.Size(833, 566);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowDiagnosisDetails1);
             this.Name = "frmShowDiagnosisDetails";

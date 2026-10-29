@@ -172,14 +172,13 @@ namespace Service_Center_Management_System__SCMS_
             }
 
 
-            if (MessageBox.Show("Are you sure you want to save employee date?", "Confirm",
-                MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
-                == DialogResult.Cancel) return;
+            if (MessageBox.Show("Are you sure you want to save employee data?", "Confirm",
+                  MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
+                  == DialogResult.Cancel) return;
 
             if (_Mode == enMode.ConvertingToEmployee)
             {
                 _ConvertCustomerToEmployee();
-            
             }
             else
             {
@@ -187,7 +186,6 @@ namespace Service_Center_Management_System__SCMS_
                      ucPersonalInfo1.GetFinalInfo();
 
                 if (Info == null) return;
-
 
                 //Personal info
                 _Employee.FirstName = Info.Value.FirstName;
@@ -234,11 +232,12 @@ namespace Service_Center_Management_System__SCMS_
             }
            
 
-         
-
-
         }
 
-      
+        private void frmAddEditEmployee_Activated(object sender, EventArgs e)
+        {
+            if(_Mode==enMode.AddNew)
+                ucPersonalInfo1.txtFocus();
+        }
     }
 }

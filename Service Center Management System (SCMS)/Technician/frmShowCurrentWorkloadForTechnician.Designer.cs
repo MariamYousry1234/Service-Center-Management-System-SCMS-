@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(484, 330);
+            this.btnClose.Location = new System.Drawing.Point(490, 420);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 23;
@@ -57,7 +57,7 @@
             // 
             this.ucShowCurrentWorkloadForTechnician1.Location = new System.Drawing.Point(-3, -1);
             this.ucShowCurrentWorkloadForTechnician1.Name = "ucShowCurrentWorkloadForTechnician1";
-            this.ucShowCurrentWorkloadForTechnician1.Size = new System.Drawing.Size(1125, 325);
+            this.ucShowCurrentWorkloadForTechnician1.Size = new System.Drawing.Size(1141, 415);
             this.ucShowCurrentWorkloadForTechnician1.TabIndex = 24;
             // 
             // frmShowCurrentWorkloadForTechnician
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1120, 379);
+            this.ClientSize = new System.Drawing.Size(1135, 473);
             this.Controls.Add(this.ucShowCurrentWorkloadForTechnician1);
             this.Controls.Add(this.btnClose);
             this.Name = "frmShowCurrentWorkloadForTechnician";

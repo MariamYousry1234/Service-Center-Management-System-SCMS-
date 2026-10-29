@@ -30,7 +30,8 @@ namespace Service_Center_Management_System__SCMS_
 
             if (dgvData.Rows.Count > 0)
             {
-                dgvData.Columns[1].Width = 200;
+                dgvData.Columns[0].Width = 150;
+                dgvData.Columns[1].Width = 250;
              
             }
         }

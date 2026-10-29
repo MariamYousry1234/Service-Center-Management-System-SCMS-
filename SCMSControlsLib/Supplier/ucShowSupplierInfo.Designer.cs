@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.gbInfo = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.lblIsActive = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblSupplierName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblSupplierID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblPhoneNumber = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblIsActive = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.gbInfo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,18 +56,84 @@
             this.gbInfo.Controls.Add(this.label1);
             this.gbInfo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbInfo.ForeColor = System.Drawing.Color.Black;
-            this.gbInfo.Location = new System.Drawing.Point(-1, 2);
+            this.gbInfo.Location = new System.Drawing.Point(-1, 1);
             this.gbInfo.Name = "gbInfo";
-            this.gbInfo.Size = new System.Drawing.Size(764, 339);
+            this.gbInfo.Size = new System.Drawing.Size(610, 253);
             this.gbInfo.TabIndex = 1;
             this.gbInfo.Text = "Information For Supplier ID = [???]";
+            // 
+            // lblIsActive
+            // 
+            this.lblIsActive.AutoSize = true;
+            this.lblIsActive.BackColor = System.Drawing.Color.Transparent;
+            this.lblIsActive.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIsActive.Location = new System.Drawing.Point(495, 59);
+            this.lblIsActive.Name = "lblIsActive";
+            this.lblIsActive.Size = new System.Drawing.Size(56, 30);
+            this.lblIsActive.TabIndex = 11;
+            this.lblIsActive.Text = "[???]";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(379, 59);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 30);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Is Active :";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(201, 202);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(56, 30);
+            this.lblAddress.TabIndex = 9;
+            this.lblAddress.Text = "[???]";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(91, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Address :";
+            // 
+            // lblPhoneNumber
+            // 
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
+            this.lblPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhoneNumber.Location = new System.Drawing.Point(200, 155);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(56, 30);
+            this.lblPhoneNumber.TabIndex = 7;
+            this.lblPhoneNumber.Text = "[???]";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(19, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(175, 30);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Phone Number :";
             // 
             // lblSupplierName
             // 
             this.lblSupplierName.AutoSize = true;
             this.lblSupplierName.BackColor = System.Drawing.Color.Transparent;
             this.lblSupplierName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplierName.Location = new System.Drawing.Point(264, 130);
+            this.lblSupplierName.Location = new System.Drawing.Point(198, 108);
             this.lblSupplierName.Name = "lblSupplierName";
             this.lblSupplierName.Size = new System.Drawing.Size(56, 30);
             this.lblSupplierName.TabIndex = 5;
@@ -78,7 +144,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 130);
+            this.label2.Location = new System.Drawing.Point(24, 108);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(177, 30);
             this.label2.TabIndex = 4;
@@ -90,7 +156,7 @@
             this.lblSupplierID.BackColor = System.Drawing.Color.Transparent;
             this.lblSupplierID.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSupplierID.ForeColor = System.Drawing.Color.Red;
-            this.lblSupplierID.Location = new System.Drawing.Point(259, 59);
+            this.lblSupplierID.Location = new System.Drawing.Point(196, 59);
             this.lblSupplierID.Name = "lblSupplierID";
             this.lblSupplierID.Size = new System.Drawing.Size(64, 32);
             this.lblSupplierID.TabIndex = 3;
@@ -101,77 +167,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(65, 59);
+            this.label1.Location = new System.Drawing.Point(36, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Supplier ID : ";
-            // 
-            // lblPhoneNumber
-            // 
-            this.lblPhoneNumber.AutoSize = true;
-            this.lblPhoneNumber.BackColor = System.Drawing.Color.Transparent;
-            this.lblPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhoneNumber.Location = new System.Drawing.Point(267, 199);
-            this.lblPhoneNumber.Name = "lblPhoneNumber";
-            this.lblPhoneNumber.Size = new System.Drawing.Size(56, 30);
-            this.lblPhoneNumber.TabIndex = 7;
-            this.lblPhoneNumber.Text = "[???]";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(175, 30);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Phone Number :";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(269, 268);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(56, 30);
-            this.lblAddress.TabIndex = 9;
-            this.lblAddress.Text = "[???]";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(127, 268);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Address :";
-            // 
-            // lblIsActive
-            // 
-            this.lblIsActive.AutoSize = true;
-            this.lblIsActive.BackColor = System.Drawing.Color.Transparent;
-            this.lblIsActive.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIsActive.Location = new System.Drawing.Point(595, 61);
-            this.lblIsActive.Name = "lblIsActive";
-            this.lblIsActive.Size = new System.Drawing.Size(56, 30);
-            this.lblIsActive.TabIndex = 11;
-            this.lblIsActive.Text = "[???]";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(453, 61);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 30);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Is Active :";
             // 
             // ucShowSupplierInfo
             // 
@@ -179,7 +179,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbInfo);
             this.Name = "ucShowSupplierInfo";
-            this.Size = new System.Drawing.Size(759, 340);
+            this.Size = new System.Drawing.Size(605, 248);
             this.gbInfo.ResumeLayout(false);
             this.gbInfo.PerformLayout();
             this.ResumeLayout(false);

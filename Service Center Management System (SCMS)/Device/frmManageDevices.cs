@@ -34,7 +34,7 @@ namespace Service_Center_Management_System__SCMS_
                 dgvData.Columns[3].Width = 150;
                 dgvData.Columns[4].Width = 150;
                 dgvData.Columns[5].Width = 150;
-                dgvData.Columns[6].Width = 150;
+             
             }
         }
 

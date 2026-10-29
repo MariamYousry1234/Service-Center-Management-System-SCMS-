@@ -53,7 +53,22 @@ namespace Service_Center_Management_System__SCMS_
 
         private async void frmInvoicesAwaitingPayment_Load(object sender, EventArgs e)
         {
-           await ucInvoicesAwaitingPayment1.LoadInvoiceAwaitingPayment();
+           await ucInvoicesAwaitingPayment1.LoadInvoicesAwaitingPayment();
+        }
+
+        private void ucInvoicesAwaitingPayment1_OnShowInvoiceDetailsClick(object sender, SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs e)
+        {
+            frmShowInvoiceDetails frm =
+                new frmShowInvoiceDetails(e.RepairOrderID,true);
+
+            frm.ShowDialog();
+        }
+
+        private void ucInvoicesAwaitingPayment1_OnShowRepairOrderDetailsClick(object sender, SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs e)
+        {
+            frmShowRepairOrderDetails frm = new frmShowRepairOrderDetails(e.RepairOrderID);
+
+            frm.ShowDialog();
         }
     }
 }

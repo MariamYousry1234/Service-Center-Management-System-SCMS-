@@ -72,6 +72,7 @@
             this.Name = "frmSearchForInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For Invoice";
+            this.Activated += new System.EventHandler(this.frmSearchForInvoice_Activated);
             this.ResumeLayout(false);
 
         }

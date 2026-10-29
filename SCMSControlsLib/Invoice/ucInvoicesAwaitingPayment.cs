@@ -26,18 +26,26 @@ namespace SCMSControlsLib
 
         public event EventHandler <SCMSArgs> OnRecordPaymentClick;
         public event EventHandler<SCMSArgs> OnShowPaymentHistoryClick;
+        public event EventHandler<SCMSArgs> OnShowInvoiceDetailsClick;
+        public event EventHandler<SCMSArgs> OnShowRepairOrderDetailsClick;
+
 
         public ucInvoicesAwaitingPayment()
         {
             InitializeComponent();
         }
 
-        public async Task LoadInvoiceAwaitingPayment()
+        public async Task LoadInvoicesAwaitingPayment()
         {
             DataTable _AllInvoices =
                 await clsInvoice.GetAllInvoicesAwaitingPaymentAsync();
 
             dgvAllRepairOrders.DataSource = _AllInvoices;
+
+            if(dgvAllRepairOrders.Rows.Count>0)
+            {
+                dgvAllRepairOrders.Columns[8].Width = 150;
+            }
             lblNumberOfRepairOrders.Text = _AllInvoices.Rows.Count.ToString();
         }
 
@@ -52,7 +60,7 @@ namespace SCMSControlsLib
             OnShowPaymentHistoryClick?.Invoke(this,
                 new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
 
-            await LoadInvoiceAwaitingPayment();
+            await LoadInvoicesAwaitingPayment();
         }
 
         private async void recordPaymentToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,7 +68,19 @@ namespace SCMSControlsLib
             OnRecordPaymentClick?.Invoke(this,
                 new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
 
-            await LoadInvoiceAwaitingPayment();
+            await LoadInvoicesAwaitingPayment();
+        }
+
+        private void showInvoiceDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OnShowInvoiceDetailsClick?.Invoke(this,
+                new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
+        }
+
+        private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OnShowRepairOrderDetailsClick?.Invoke(this,
+                new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
         }
     }
 }

@@ -38,7 +38,7 @@
             this.ucSearchForAnEmployee1.gbEnabled = true;
             this.ucSearchForAnEmployee1.Location = new System.Drawing.Point(-3, 0);
             this.ucSearchForAnEmployee1.Name = "ucSearchForAnEmployee1";
-            this.ucSearchForAnEmployee1.Size = new System.Drawing.Size(599, 574);
+            this.ucSearchForAnEmployee1.Size = new System.Drawing.Size(485, 543);
             this.ucSearchForAnEmployee1.TabIndex = 0;
             // 
             // btnClose
@@ -55,7 +55,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(246, 580);
+            this.btnClose.Location = new System.Drawing.Point(141, 556);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 23;
@@ -76,7 +76,7 @@
             this.btnSelect.ForeColor = System.Drawing.Color.Black;
             this.btnSelect.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.check;
             this.btnSelect.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSelect.Location = new System.Drawing.Point(425, 580);
+            this.btnSelect.Location = new System.Drawing.Point(320, 556);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(157, 45);
             this.btnSelect.TabIndex = 22;
@@ -88,13 +88,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(591, 635);
+            this.ClientSize = new System.Drawing.Size(483, 608);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.ucSearchForAnEmployee1);
             this.Name = "frmSelectEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Employee";
+            this.Activated += new System.EventHandler(this.frmSelectEmployee_Activated);
             this.ResumeLayout(false);
 
         }

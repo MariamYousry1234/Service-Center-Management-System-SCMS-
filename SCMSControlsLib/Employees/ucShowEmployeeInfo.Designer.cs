@@ -51,11 +51,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(339, 54);
+            this.label5.Location = new System.Drawing.Point(278, 50);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 22);
+            this.label5.Size = new System.Drawing.Size(89, 19);
             this.label5.TabIndex = 21;
             this.label5.Text = "Hire Date :";
             // 
@@ -63,11 +63,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(364, 84);
+            this.label6.Location = new System.Drawing.Point(287, 81);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 22);
+            this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 23;
             this.label6.Text = "Is Active :";
             // 
@@ -75,11 +75,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(2, 79);
+            this.label7.Location = new System.Drawing.Point(2, 80);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 22);
+            this.label7.Size = new System.Drawing.Size(119, 19);
             this.label7.TabIndex = 25;
             this.label7.Text = "Created User :";
             // 
@@ -87,11 +87,11 @@
             // 
             this.lblCreatedByUser.AutoSize = true;
             this.lblCreatedByUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatedByUser.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedByUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedByUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedByUser.Location = new System.Drawing.Point(150, 81);
+            this.lblCreatedByUser.Location = new System.Drawing.Point(128, 80);
             this.lblCreatedByUser.Name = "lblCreatedByUser";
-            this.lblCreatedByUser.Size = new System.Drawing.Size(46, 22);
+            this.lblCreatedByUser.Size = new System.Drawing.Size(39, 19);
             this.lblCreatedByUser.TabIndex = 26;
             this.lblCreatedByUser.Text = "???";
             // 
@@ -113,9 +113,9 @@
             this.guna2GroupBox1.Controls.Add(this.label5);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(-2, 304);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(-2, 277);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(595, 169);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(489, 169);
             this.guna2GroupBox1.TabIndex = 1;
             this.guna2GroupBox1.Text = "Employee Information";
             // 
@@ -123,11 +123,11 @@
             // 
             this.lblIsActive.AutoSize = true;
             this.lblIsActive.BackColor = System.Drawing.Color.Transparent;
-            this.lblIsActive.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIsActive.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIsActive.ForeColor = System.Drawing.Color.Blue;
-            this.lblIsActive.Location = new System.Drawing.Point(478, 86);
+            this.lblIsActive.Location = new System.Drawing.Point(374, 81);
             this.lblIsActive.Name = "lblIsActive";
-            this.lblIsActive.Size = new System.Drawing.Size(46, 22);
+            this.lblIsActive.Size = new System.Drawing.Size(39, 19);
             this.lblIsActive.TabIndex = 36;
             this.lblIsActive.Text = "???";
             // 
@@ -135,11 +135,11 @@
             // 
             this.lblEmployeeID.AutoSize = true;
             this.lblEmployeeID.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmployeeID.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmployeeID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeID.ForeColor = System.Drawing.Color.Blue;
-            this.lblEmployeeID.Location = new System.Drawing.Point(164, 50);
+            this.lblEmployeeID.Location = new System.Drawing.Point(132, 50);
             this.lblEmployeeID.Name = "lblEmployeeID";
-            this.lblEmployeeID.Size = new System.Drawing.Size(46, 22);
+            this.lblEmployeeID.Size = new System.Drawing.Size(39, 19);
             this.lblEmployeeID.TabIndex = 35;
             this.lblEmployeeID.Text = "???";
             // 
@@ -147,11 +147,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label2.Location = new System.Drawing.Point(6, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 22);
+            this.label2.Size = new System.Drawing.Size(115, 19);
             this.label2.TabIndex = 34;
             this.label2.Text = "Employee ID :";
             // 
@@ -159,11 +159,11 @@
             // 
             this.lblLastUpdatedUser.AutoSize = true;
             this.lblLastUpdatedUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastUpdatedUser.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastUpdatedUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedUser.Location = new System.Drawing.Point(210, 141);
+            this.lblLastUpdatedUser.Location = new System.Drawing.Point(174, 140);
             this.lblLastUpdatedUser.Name = "lblLastUpdatedUser";
-            this.lblLastUpdatedUser.Size = new System.Drawing.Size(46, 22);
+            this.lblLastUpdatedUser.Size = new System.Drawing.Size(39, 19);
             this.lblLastUpdatedUser.TabIndex = 33;
             this.lblLastUpdatedUser.Text = "???";
             // 
@@ -171,11 +171,11 @@
             // 
             this.lblLastUpdatedDate.AutoSize = true;
             this.lblLastUpdatedDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastUpdatedDate.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastUpdatedDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedDate.Location = new System.Drawing.Point(142, 110);
+            this.lblLastUpdatedDate.Location = new System.Drawing.Point(99, 110);
             this.lblLastUpdatedDate.Name = "lblLastUpdatedDate";
-            this.lblLastUpdatedDate.Size = new System.Drawing.Size(46, 22);
+            this.lblLastUpdatedDate.Size = new System.Drawing.Size(39, 19);
             this.lblLastUpdatedDate.TabIndex = 32;
             this.lblLastUpdatedDate.Text = "???";
             // 
@@ -183,11 +183,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label9.Location = new System.Drawing.Point(6, 110);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 22);
+            this.label9.Size = new System.Drawing.Size(84, 19);
             this.label9.TabIndex = 31;
             this.label9.Text = "L.U.Date :";
             // 
@@ -195,11 +195,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(6, 140);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 22);
+            this.label4.Size = new System.Drawing.Size(161, 19);
             this.label4.TabIndex = 30;
             this.label4.Text = "Last Updated User :";
             // 
@@ -207,11 +207,11 @@
             // 
             this.lblCreatedDate.AutoSize = true;
             this.lblCreatedDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatedDate.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedDate.Location = new System.Drawing.Point(478, 117);
+            this.lblCreatedDate.Location = new System.Drawing.Point(375, 112);
             this.lblCreatedDate.Name = "lblCreatedDate";
-            this.lblCreatedDate.Size = new System.Drawing.Size(46, 22);
+            this.lblCreatedDate.Size = new System.Drawing.Size(39, 19);
             this.lblCreatedDate.TabIndex = 29;
             this.lblCreatedDate.Text = "???";
             // 
@@ -219,11 +219,11 @@
             // 
             this.lblHireDate.AutoSize = true;
             this.lblHireDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblHireDate.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHireDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHireDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblHireDate.Location = new System.Drawing.Point(468, 54);
+            this.lblHireDate.Location = new System.Drawing.Point(373, 50);
             this.lblHireDate.Name = "lblHireDate";
-            this.lblHireDate.Size = new System.Drawing.Size(46, 22);
+            this.lblHireDate.Size = new System.Drawing.Size(39, 19);
             this.lblHireDate.TabIndex = 28;
             this.lblHireDate.Text = "???";
             // 
@@ -231,11 +231,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(323, 117);
+            this.label1.Location = new System.Drawing.Point(251, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 22);
+            this.label1.Size = new System.Drawing.Size(118, 19);
             this.label1.TabIndex = 27;
             this.label1.Text = "Created Date :";
             // 
@@ -243,7 +243,7 @@
             // 
             this.ucShowPersonInfo1.Location = new System.Drawing.Point(-3, -4);
             this.ucShowPersonInfo1.Name = "ucShowPersonInfo1";
-            this.ucShowPersonInfo1.Size = new System.Drawing.Size(600, 310);
+            this.ucShowPersonInfo1.Size = new System.Drawing.Size(487, 282);
             this.ucShowPersonInfo1.TabIndex = 0;
             // 
             // ucShowEmployeeInfo
@@ -253,7 +253,7 @@
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.ucShowPersonInfo1);
             this.Name = "ucShowEmployeeInfo";
-            this.Size = new System.Drawing.Size(595, 473);
+            this.Size = new System.Drawing.Size(487, 445);
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
             this.ResumeLayout(false);

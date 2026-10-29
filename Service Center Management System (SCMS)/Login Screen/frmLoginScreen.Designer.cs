@@ -98,6 +98,7 @@
             this.chbRememberme.UncheckedState.BorderRadius = 0;
             this.chbRememberme.UncheckedState.BorderThickness = 0;
             this.chbRememberme.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.chbRememberme.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.User_KeyPress);
             // 
             // txtPassword
             // 
@@ -111,6 +112,7 @@
             this.txtPassword.Size = new System.Drawing.Size(258, 35);
             this.txtPassword.TabIndex = 10;
             this.txtPassword.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.User_KeyPress);
             // 
             // txtUsername
             // 
@@ -123,6 +125,7 @@
             this.txtUsername.Size = new System.Drawing.Size(258, 35);
             this.txtUsername.TabIndex = 9;
             this.txtUsername.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.User_KeyPress);
             // 
             // pictureBox1
             // 

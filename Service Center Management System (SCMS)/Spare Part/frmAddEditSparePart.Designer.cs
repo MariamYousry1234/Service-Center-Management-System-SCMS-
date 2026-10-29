@@ -118,7 +118,7 @@
             this.cbPartCategory.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPartCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbPartCategory.ItemHeight = 30;
-            this.cbPartCategory.Location = new System.Drawing.Point(241, 197);
+            this.cbPartCategory.Location = new System.Drawing.Point(240, 197);
             this.cbPartCategory.Name = "cbPartCategory";
             this.cbPartCategory.Size = new System.Drawing.Size(269, 36);
             this.cbPartCategory.TabIndex = 5;
@@ -144,7 +144,7 @@
             this.cbPartBrand.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPartBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbPartBrand.ItemHeight = 30;
-            this.cbPartBrand.Location = new System.Drawing.Point(241, 275);
+            this.cbPartBrand.Location = new System.Drawing.Point(240, 275);
             this.cbPartBrand.Name = "cbPartBrand";
             this.cbPartBrand.Size = new System.Drawing.Size(269, 36);
             this.cbPartBrand.TabIndex = 7;
@@ -169,7 +169,7 @@
             // 
             // nudQuantity
             // 
-            this.nudQuantity.Location = new System.Drawing.Point(243, 424);
+            this.nudQuantity.Location = new System.Drawing.Point(239, 424);
             this.nudQuantity.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -200,7 +200,7 @@
             // 
             // nudMSLevel
             // 
-            this.nudMSLevel.Location = new System.Drawing.Point(325, 492);
+            this.nudMSLevel.Location = new System.Drawing.Point(294, 492);
             this.nudMSLevel.Minimum = new decimal(new int[] {
             1,
             0,
@@ -274,7 +274,7 @@
             // 
             this.txtSellingPrice.IsRequired = true;
             this.txtSellingPrice.Length = null;
-            this.txtSellingPrice.Location = new System.Drawing.Point(243, 350);
+            this.txtSellingPrice.Location = new System.Drawing.Point(241, 350);
             this.txtSellingPrice.Name = "txtSellingPrice";
             this.txtSellingPrice.Size = new System.Drawing.Size(267, 39);
             this.txtSellingPrice.TabIndex = 18;
@@ -363,6 +363,7 @@
             this.Name = "frmAddEditSparePart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Spare Part";
+            this.Activated += new System.EventHandler(this.frmAddEditSparePart_Activated);
             this.Load += new System.EventHandler(this.frmAddEditSparePart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudMSLevel)).EndInit();

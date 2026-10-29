@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllRepairOrders = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllRepairOrders = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
@@ -45,10 +46,10 @@
             this.gbAllRepairOrders.Controls.Add(this.lblTotalRepairOrders);
             this.gbAllRepairOrders.Controls.Add(this.label1);
             this.gbAllRepairOrders.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllRepairOrders.ForeColor = System.Drawing.Color.Black;
-            this.gbAllRepairOrders.Location = new System.Drawing.Point(0, 2);
+            this.gbAllRepairOrders.ForeColor = System.Drawing.Color.Red;
+            this.gbAllRepairOrders.Location = new System.Drawing.Point(1, 2);
             this.gbAllRepairOrders.Name = "gbAllRepairOrders";
-            this.gbAllRepairOrders.Size = new System.Drawing.Size(896, 330);
+            this.gbAllRepairOrders.Size = new System.Drawing.Size(1169, 422);
             this.gbAllRepairOrders.TabIndex = 1;
             this.gbAllRepairOrders.Text = "All Repair Orders For Customer ID = [???]";
             // 
@@ -63,8 +64,11 @@
             this.dgvAllRepairOrders.Location = new System.Drawing.Point(1, 59);
             this.dgvAllRepairOrders.Name = "dgvAllRepairOrders";
             this.dgvAllRepairOrders.ReadOnly = true;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvAllRepairOrders.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAllRepairOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllRepairOrders.Size = new System.Drawing.Size(893, 205);
+            this.dgvAllRepairOrders.Size = new System.Drawing.Size(1165, 312);
             this.dgvAllRepairOrders.TabIndex = 3;
             // 
             // guna2ContextMenuStrip1
@@ -98,7 +102,7 @@
             this.lblTotalRepairOrders.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalRepairOrders.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalRepairOrders.ForeColor = System.Drawing.Color.Blue;
-            this.lblTotalRepairOrders.Location = new System.Drawing.Point(252, 287);
+            this.lblTotalRepairOrders.Location = new System.Drawing.Point(260, 378);
             this.lblTotalRepairOrders.Name = "lblTotalRepairOrders";
             this.lblTotalRepairOrders.Size = new System.Drawing.Size(65, 32);
             this.lblTotalRepairOrders.TabIndex = 2;
@@ -109,7 +113,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 287);
+            this.label1.Location = new System.Drawing.Point(13, 378);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 32);
             this.label1.TabIndex = 1;
@@ -121,7 +125,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbAllRepairOrders);
             this.Name = "ucShowCustomerRepairOrders";
-            this.Size = new System.Drawing.Size(893, 332);
+            this.Size = new System.Drawing.Size(1173, 427);
             this.gbAllRepairOrders.ResumeLayout(false);
             this.gbAllRepairOrders.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairOrders)).EndInit();

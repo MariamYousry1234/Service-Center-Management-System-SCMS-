@@ -293,5 +293,11 @@ namespace Service_Center_Management_System__SCMS_
                    MessageBoxIcon.Error);
             }
         }
+
+        private void frmAddEditRepairOrder_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                ucSearchForDeviceWithAddEdit1.txtFocus();
+        }
     }
 }

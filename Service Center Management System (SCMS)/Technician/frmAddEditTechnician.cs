@@ -192,5 +192,11 @@ namespace Service_Center_Management_System__SCMS_
             }
 
         }
+
+        private void frmAddEditTechnician_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                ucSearchForEmployeeWithAddingEditing1.txtFocus();
+        }
     }
 }

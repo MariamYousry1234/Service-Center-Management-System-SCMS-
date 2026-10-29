@@ -47,6 +47,11 @@ namespace SCMSControlsLib
             }
         }
 
+        public void txtFocus()
+        {
+            txtSearch.Focus();
+        }
+
         public void LoadPartData(int SparePartID)
         {
             txtSearch.Text = SparePartID.ToString();

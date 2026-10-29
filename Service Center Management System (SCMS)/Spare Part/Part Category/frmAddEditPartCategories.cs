@@ -65,7 +65,7 @@ namespace Service_Center_Management_System__SCMS_
 
             lblCategoryID.Text = _PartCategory.PartCategoryID.ToString();
             txtCategoryName.Text = _PartCategory.PartCategoryName;
-
+            txtCategoryName.SelectionStart = txtCategoryName.Text.Length;
         }
         private void btnClose_Click(object sender, EventArgs e)
         {

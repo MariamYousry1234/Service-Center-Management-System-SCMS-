@@ -33,7 +33,7 @@ namespace Service_Center_Management_System__SCMS_
 
             if (dgvData.Rows.Count > 0)
             {
-                dgvData.Columns[8].Width = 200;
+                dgvData.Columns[8].Width = 150;
                 
             }
         }
@@ -135,6 +135,28 @@ namespace Service_Center_Management_System__SCMS_
 
             frm.ShowDialog();
 
+        }
+
+        private void showPaymentsHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!_CurrentRepairOrder.HasPayments)
+            {
+                MessageBox.Show(
+                     "There is no payment history for this repair order.",
+                      "No Payment History",
+                      MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+
+
+                return;
+            }
+
+            frmShowPaymentHistory frm =
+                    new frmShowPaymentHistory((int)dgvData.CurrentRow.Cells[1].Value);
+
+            frm.ShowDialog();
+
+            frmManageInvoices_Load(null, null);
         }
     }
 }

@@ -28,8 +28,8 @@ namespace SCMSControlsLib
 
             if (dgvAllModels.Rows.Count>0)
             {
-                dgvAllModels.Columns[1].Width = 200;
-                dgvAllModels.Columns[2].Width =200;
+                dgvAllModels.Columns[1].Width = 250;
+                dgvAllModels.Columns[2].Width =250;
             }
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllAccounts = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllAcounts = new System.Windows.Forms.DataGridView();
             this.lblNumberOfAccounts = new System.Windows.Forms.Label();
@@ -42,8 +43,8 @@
             this.gbAllAccounts.Controls.Add(this.lblNumberOfAccounts);
             this.gbAllAccounts.Controls.Add(this.label1);
             this.gbAllAccounts.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllAccounts.ForeColor = System.Drawing.Color.Black;
-            this.gbAllAccounts.Location = new System.Drawing.Point(3, 3);
+            this.gbAllAccounts.ForeColor = System.Drawing.Color.Red;
+            this.gbAllAccounts.Location = new System.Drawing.Point(1, 1);
             this.gbAllAccounts.Name = "gbAllAccounts";
             this.gbAllAccounts.Size = new System.Drawing.Size(896, 289);
             this.gbAllAccounts.TabIndex = 0;
@@ -56,6 +57,15 @@
             this.dgvAllAcounts.AllowUserToOrderColumns = true;
             this.dgvAllAcounts.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllAcounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllAcounts.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAllAcounts.GridColor = System.Drawing.Color.Black;
             this.dgvAllAcounts.Location = new System.Drawing.Point(0, 60);
             this.dgvAllAcounts.Name = "dgvAllAcounts";
             this.dgvAllAcounts.ReadOnly = true;
@@ -91,7 +101,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.gbAllAccounts);
             this.Name = "ucShowAllAcountsForAnEmployee";
-            this.Size = new System.Drawing.Size(899, 295);
+            this.Size = new System.Drawing.Size(898, 292);
             this.gbAllAccounts.ResumeLayout(false);
             this.gbAllAccounts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllAcounts)).EndInit();

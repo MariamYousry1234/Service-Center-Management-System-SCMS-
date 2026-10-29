@@ -36,7 +36,7 @@
             // 
             this.ucShowUserInfo1.Location = new System.Drawing.Point(0, -2);
             this.ucShowUserInfo1.Name = "ucShowUserInfo1";
-            this.ucShowUserInfo1.Size = new System.Drawing.Size(558, 358);
+            this.ucShowUserInfo1.Size = new System.Drawing.Size(454, 358);
             this.ucShowUserInfo1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(202, 370);
+            this.btnClose.Location = new System.Drawing.Point(149, 370);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 21;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(558, 427);
+            this.ClientSize = new System.Drawing.Size(454, 427);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowUserInfo1);
             this.Name = "frmShowUserInfo";

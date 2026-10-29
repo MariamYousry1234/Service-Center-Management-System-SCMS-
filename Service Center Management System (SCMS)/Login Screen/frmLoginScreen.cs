@@ -110,5 +110,11 @@ namespace Service_Center_Management_System__SCMS_
 
             frmMainScreen.ShowDialog();
         }
+
+        private void User_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                btnLogin.PerformClick();
+        }
     }
 }

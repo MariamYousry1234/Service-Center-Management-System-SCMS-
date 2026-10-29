@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(335, 711);
+            this.btnClose.Location = new System.Drawing.Point(307, 683);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 24;
@@ -58,7 +58,7 @@
             this.ucShowRepairOrderDetails1.BackColor = System.Drawing.Color.White;
             this.ucShowRepairOrderDetails1.Location = new System.Drawing.Point(-1, -10);
             this.ucShowRepairOrderDetails1.Name = "ucShowRepairOrderDetails1";
-            this.ucShowRepairOrderDetails1.Size = new System.Drawing.Size(830, 715);
+            this.ucShowRepairOrderDetails1.Size = new System.Drawing.Size(771, 687);
             this.ucShowRepairOrderDetails1.TabIndex = 25;
             // 
             // frmShowRepairOrderDetails
@@ -66,7 +66,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(822, 759);
+            this.ClientSize = new System.Drawing.Size(770, 737);
             this.Controls.Add(this.ucShowRepairOrderDetails1);
             this.Controls.Add(this.btnClose);
             this.Name = "frmShowRepairOrderDetails";

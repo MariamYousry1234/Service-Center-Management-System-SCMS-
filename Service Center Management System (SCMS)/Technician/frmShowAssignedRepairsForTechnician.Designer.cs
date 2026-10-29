@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(493, 345);
+            this.btnClose.Location = new System.Drawing.Point(490, 428);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
@@ -57,7 +57,7 @@
             // 
             this.ucShowAssignedRepairsForTechnician1.Location = new System.Drawing.Point(-1, -1);
             this.ucShowAssignedRepairsForTechnician1.Name = "ucShowAssignedRepairsForTechnician1";
-            this.ucShowAssignedRepairsForTechnician1.Size = new System.Drawing.Size(1140, 328);
+            this.ucShowAssignedRepairsForTechnician1.Size = new System.Drawing.Size(1140, 414);
             this.ucShowAssignedRepairsForTechnician1.TabIndex = 0;
             // 
             // frmShowAssignedRepairsForTechnician
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1136, 402);
+            this.ClientSize = new System.Drawing.Size(1136, 480);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAssignedRepairsForTechnician1);
             this.Name = "frmShowAssignedRepairsForTechnician";

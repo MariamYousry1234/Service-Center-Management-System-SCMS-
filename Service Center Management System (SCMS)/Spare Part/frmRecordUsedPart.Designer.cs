@@ -31,21 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ucSearchForSparePart1 = new SCMSControlsLib.ucSearchForSparePart();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblUsedDate = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblRepairOrderID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblTotalPartPrice = new System.Windows.Forms.Label();
             this.guna2NotificationPaint1 = new Guna.UI2.WinForms.Guna2NotificationPaint(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.ucSearchForSparePart1 = new SCMSControlsLib.ucSearchForSparePart();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblRepairOrderID = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblUsedDate = new System.Windows.Forms.Label();
+            this.lblTotalPartPrice = new System.Windows.Forms.Label();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -64,7 +64,7 @@
             this.guna2TabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.guna2TabControl1.SelectedIndex = 0;
             this.guna2TabControl1.ShowToolTips = true;
-            this.guna2TabControl1.Size = new System.Drawing.Size(950, 554);
+            this.guna2TabControl1.Size = new System.Drawing.Size(808, 402);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -92,25 +92,33 @@
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(762, 546);
+            this.tabPage1.Size = new System.Drawing.Size(620, 394);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Spare Part";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // ucSearchForSparePart1
+            // 
+            this.ucSearchForSparePart1.gbEnabled = true;
+            this.ucSearchForSparePart1.Location = new System.Drawing.Point(3, -2);
+            this.ucSearchForSparePart1.Name = "ucSearchForSparePart1";
+            this.ucSearchForSparePart1.Size = new System.Drawing.Size(616, 398);
+            this.ucSearchForSparePart1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.lblTotalPartPrice);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.nudQuantity);
-            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.lblUsedDate);
             this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.lblRepairOrderID);
+            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.lblRepairOrderID);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.nudQuantity);
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(762, 546);
+            this.tabPage2.Size = new System.Drawing.Size(620, 394);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Additional Information";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -118,7 +126,7 @@
             // nudQuantity
             // 
             this.nudQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudQuantity.Location = new System.Drawing.Point(362, 185);
+            this.nudQuantity.Location = new System.Drawing.Point(252, 124);
             this.nudQuantity.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -138,67 +146,12 @@
             0,
             0});
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(168, 182);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 38);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Quantity :";
-            // 
-            // lblUsedDate
-            // 
-            this.lblUsedDate.AutoSize = true;
-            this.lblUsedDate.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsedDate.ForeColor = System.Drawing.Color.Black;
-            this.lblUsedDate.Location = new System.Drawing.Point(367, 270);
-            this.lblUsedDate.Name = "lblUsedDate";
-            this.lblUsedDate.Size = new System.Drawing.Size(90, 38);
-            this.lblUsedDate.TabIndex = 37;
-            this.lblUsedDate.Text = "[???]";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(141, 270);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 38);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "Used Date :";
-            // 
-            // lblRepairOrderID
-            // 
-            this.lblRepairOrderID.AutoSize = true;
-            this.lblRepairOrderID.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepairOrderID.ForeColor = System.Drawing.Color.Blue;
-            this.lblRepairOrderID.Location = new System.Drawing.Point(367, 34);
-            this.lblRepairOrderID.Name = "lblRepairOrderID";
-            this.lblRepairOrderID.Size = new System.Drawing.Size(90, 38);
-            this.lblRepairOrderID.TabIndex = 33;
-            this.lblRepairOrderID.Text = "[???]";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(83, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(263, 38);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Repair Order ID :";
-            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Red;
-            this.lblTitle.Location = new System.Drawing.Point(325, 5);
+            this.lblTitle.Location = new System.Drawing.Point(237, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(295, 45);
             this.lblTitle.TabIndex = 36;
@@ -218,7 +171,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(609, 611);
+            this.btnClose.Location = new System.Drawing.Point(468, 461);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 38;
@@ -239,54 +192,101 @@
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.people;
             this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSave.Location = new System.Drawing.Point(788, 611);
+            this.btnSave.Location = new System.Drawing.Point(647, 461);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(157, 45);
             this.btnSave.TabIndex = 37;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(78, 344);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(268, 38);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Total Part Price :";
-            // 
-            // lblTotalPartPrice
-            // 
-            this.lblTotalPartPrice.AutoSize = true;
-            this.lblTotalPartPrice.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPartPrice.ForeColor = System.Drawing.Color.Red;
-            this.lblTotalPartPrice.Location = new System.Drawing.Point(379, 345);
-            this.lblTotalPartPrice.Name = "lblTotalPartPrice";
-            this.lblTotalPartPrice.Size = new System.Drawing.Size(90, 38);
-            this.lblTotalPartPrice.TabIndex = 41;
-            this.lblTotalPartPrice.Text = "[???]";
-            // 
             // notifyIcon1
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // ucSearchForSparePart1
+            // label3
             // 
-            this.ucSearchForSparePart1.gbEnabled = true;
-            this.ucSearchForSparePart1.Location = new System.Drawing.Point(1, -1);
-            this.ucSearchForSparePart1.Name = "ucSearchForSparePart1";
-            this.ucSearchForSparePart1.Size = new System.Drawing.Size(762, 537);
-            this.ucSearchForSparePart1.TabIndex = 0;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(59, 33);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(186, 29);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "Repair Order ID :";
+            // 
+            // lblRepairOrderID
+            // 
+            this.lblRepairOrderID.AutoSize = true;
+            this.lblRepairOrderID.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepairOrderID.ForeColor = System.Drawing.Color.Blue;
+            this.lblRepairOrderID.Location = new System.Drawing.Point(251, 33);
+            this.lblRepairOrderID.Name = "lblRepairOrderID";
+            this.lblRepairOrderID.Size = new System.Drawing.Size(62, 29);
+            this.lblRepairOrderID.TabIndex = 43;
+            this.lblRepairOrderID.Text = "[???]";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(132, 124);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 29);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "Quantity :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(118, 195);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 29);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Used Date :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(64, 257);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(180, 29);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Total Part Price :";
+            // 
+            // lblUsedDate
+            // 
+            this.lblUsedDate.AutoSize = true;
+            this.lblUsedDate.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsedDate.ForeColor = System.Drawing.Color.Black;
+            this.lblUsedDate.Location = new System.Drawing.Point(247, 195);
+            this.lblUsedDate.Name = "lblUsedDate";
+            this.lblUsedDate.Size = new System.Drawing.Size(62, 29);
+            this.lblUsedDate.TabIndex = 47;
+            this.lblUsedDate.Text = "[???]";
+            // 
+            // lblTotalPartPrice
+            // 
+            this.lblTotalPartPrice.AutoSize = true;
+            this.lblTotalPartPrice.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPartPrice.ForeColor = System.Drawing.Color.Red;
+            this.lblTotalPartPrice.Location = new System.Drawing.Point(246, 257);
+            this.lblTotalPartPrice.Name = "lblTotalPartPrice";
+            this.lblTotalPartPrice.Size = new System.Drawing.Size(62, 29);
+            this.lblTotalPartPrice.TabIndex = 48;
+            this.lblTotalPartPrice.Text = "[???]";
             // 
             // frmRecordUsedPart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(953, 666);
+            this.ClientSize = new System.Drawing.Size(813, 514);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblTitle);
@@ -294,6 +294,7 @@
             this.Name = "frmRecordUsedPart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Record Used Part";
+            this.Activated += new System.EventHandler(this.frmRecordUsedPart_Activated);
             this.Load += new System.EventHandler(this.frmRecordUsedPart_Load);
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -310,19 +311,19 @@
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblUsedDate;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblRepairOrderID;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI2.WinForms.Guna2Button btnClose;
         private Guna.UI2.WinForms.Guna2Button btnSave;
         private SCMSControlsLib.ucSearchForSparePart ucSearchForSparePart1;
         private System.Windows.Forms.NumericUpDown nudQuantity;
-        private System.Windows.Forms.Label lblTotalPartPrice;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2NotificationPaint guna2NotificationPaint1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Label lblRepairOrderID;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotalPartPrice;
+        private System.Windows.Forms.Label lblUsedDate;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
     }
 }

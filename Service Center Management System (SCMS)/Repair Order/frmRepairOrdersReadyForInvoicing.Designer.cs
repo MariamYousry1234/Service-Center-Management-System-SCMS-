@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(375, 412);
+            this.btnClose.Location = new System.Drawing.Point(497, 412);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 31;
@@ -57,7 +57,7 @@
             // 
             this.ucRepairOrdersReadyForInvoicing1.Location = new System.Drawing.Point(-1, -4);
             this.ucRepairOrdersReadyForInvoicing1.Name = "ucRepairOrdersReadyForInvoicing1";
-            this.ucRepairOrdersReadyForInvoicing1.Size = new System.Drawing.Size(906, 397);
+            this.ucRepairOrdersReadyForInvoicing1.Size = new System.Drawing.Size(1156, 397);
             this.ucRepairOrdersReadyForInvoicing1.TabIndex = 0;
             // 
             // frmRepairOrdersReadyForInvoicing
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(900, 469);
+            this.ClientSize = new System.Drawing.Size(1161, 469);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucRepairOrdersReadyForInvoicing1);
             this.Name = "frmRepairOrdersReadyForInvoicing";

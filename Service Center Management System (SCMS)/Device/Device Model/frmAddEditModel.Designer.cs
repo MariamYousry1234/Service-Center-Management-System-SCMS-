@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbBrands = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtModelName = new SCMSControlsLib.cusTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblModelID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbBrands = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtModelName = new SCMSControlsLib.cusTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +54,46 @@
             this.groupBox1.Size = new System.Drawing.Size(450, 266);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
+            // 
+            // cbBrands
+            // 
+            this.cbBrands.BackColor = System.Drawing.Color.Transparent;
+            this.cbBrands.BorderColor = System.Drawing.Color.Gray;
+            this.cbBrands.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbBrands.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbBrands.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbBrands.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbBrands.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbBrands.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBrands.ForeColor = System.Drawing.Color.Black;
+            this.cbBrands.ItemHeight = 30;
+            this.cbBrands.Location = new System.Drawing.Point(174, 97);
+            this.cbBrands.Name = "cbBrands";
+            this.cbBrands.Size = new System.Drawing.Size(232, 36);
+            this.cbBrands.TabIndex = 41;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(46, 95);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 38);
+            this.label3.TabIndex = 40;
+            this.label3.Text = "Brand :";
+            // 
+            // txtModelName
+            // 
+            this.txtModelName.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModelName.IsRequired = true;
+            this.txtModelName.Length = null;
+            this.txtModelName.Location = new System.Drawing.Point(58, 207);
+            this.txtModelName.Multiline = true;
+            this.txtModelName.Name = "txtModelName";
+            this.txtModelName.Size = new System.Drawing.Size(336, 37);
+            this.txtModelName.TabIndex = 39;
+            this.txtModelName.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
             // label2
             // 
@@ -140,45 +180,6 @@
             this.btnSave.TabIndex = 39;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(46, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 38);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Brand :";
-            // 
-            // cbBrands
-            // 
-            this.cbBrands.BackColor = System.Drawing.Color.Transparent;
-            this.cbBrands.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbBrands.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbBrands.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.cbBrands.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbBrands.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbBrands.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbBrands.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbBrands.ItemHeight = 30;
-            this.cbBrands.Location = new System.Drawing.Point(174, 97);
-            this.cbBrands.Name = "cbBrands";
-            this.cbBrands.Size = new System.Drawing.Size(232, 36);
-            this.cbBrands.TabIndex = 41;
-            // 
-            // txtModelName
-            // 
-            this.txtModelName.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModelName.IsRequired = true;
-            this.txtModelName.Length = null;
-            this.txtModelName.Location = new System.Drawing.Point(58, 207);
-            this.txtModelName.Multiline = true;
-            this.txtModelName.Name = "txtModelName";
-            this.txtModelName.Size = new System.Drawing.Size(336, 37);
-            this.txtModelName.TabIndex = 39;
-            this.txtModelName.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
             // frmAddEditModel
             // 

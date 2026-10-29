@@ -183,5 +183,11 @@ namespace Service_Center_Management_System__SCMS_
                    MessageBoxIcon.Error);
             }
         }
+
+        private void frmAddEditSparePart_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                txtPartName.Focus();
+        }
     }
 }

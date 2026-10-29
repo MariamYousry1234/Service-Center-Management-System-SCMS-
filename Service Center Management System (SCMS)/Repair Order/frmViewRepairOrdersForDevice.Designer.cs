@@ -34,9 +34,9 @@
             // 
             // ucViewRepairOrdersForDevice1
             // 
-            this.ucViewRepairOrdersForDevice1.Location = new System.Drawing.Point(-1, -2);
+            this.ucViewRepairOrdersForDevice1.Location = new System.Drawing.Point(0, -2);
             this.ucViewRepairOrdersForDevice1.Name = "ucViewRepairOrdersForDevice1";
-            this.ucViewRepairOrdersForDevice1.Size = new System.Drawing.Size(1175, 329);
+            this.ucViewRepairOrdersForDevice1.Size = new System.Drawing.Size(1179, 441);
             this.ucViewRepairOrdersForDevice1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(515, 343);
+            this.btnClose.Location = new System.Drawing.Point(511, 455);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 31;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1179, 396);
+            this.ClientSize = new System.Drawing.Size(1179, 507);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucViewRepairOrdersForDevice1);
             this.Name = "frmViewRepairOrdersForDevice";

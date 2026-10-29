@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucShowAllModelsForBrand1 = new SCMSControlsLib.ucShowAllModelsForBrand();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucShowAllModelsForBrand1 = new SCMSControlsLib.ucShowAllModelsForBrand();
             this.SuspendLayout();
-            // 
-            // ucShowAllModelsForBrand1
-            // 
-            this.ucShowAllModelsForBrand1.Location = new System.Drawing.Point(12, 12);
-            this.ucShowAllModelsForBrand1.Name = "ucShowAllModelsForBrand1";
-            this.ucShowAllModelsForBrand1.Size = new System.Drawing.Size(608, 293);
-            this.ucShowAllModelsForBrand1.TabIndex = 0;
             // 
             // btnClose
             // 
@@ -53,19 +46,26 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(238, 311);
+            this.btnClose.Location = new System.Drawing.Point(261, 451);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 37;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucShowAllModelsForBrand1
+            // 
+            this.ucShowAllModelsForBrand1.Location = new System.Drawing.Point(-1, -1);
+            this.ucShowAllModelsForBrand1.Name = "ucShowAllModelsForBrand1";
+            this.ucShowAllModelsForBrand1.Size = new System.Drawing.Size(672, 441);
+            this.ucShowAllModelsForBrand1.TabIndex = 0;
+            // 
             // frmShowAllModelsForBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(632, 362);
+            this.ClientSize = new System.Drawing.Size(671, 504);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAllModelsForBrand1);
             this.Name = "frmShowAllModelsForBrand";

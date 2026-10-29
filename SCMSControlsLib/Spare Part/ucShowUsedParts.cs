@@ -54,6 +54,10 @@ namespace SCMSControlsLib
             lblTitle.Text = $"Repair Order ID = {RepairOrderID}";
             dgvData.DataSource = await _RepairOrder.GetAllUsedParts();
             
+            if(dgvData.Rows.Count>0)
+            {
+                dgvData.Columns[7].Width = 120;
+            }
             lblTotalParts.Text = dgvData.Rows.Count.ToString();
 
         }

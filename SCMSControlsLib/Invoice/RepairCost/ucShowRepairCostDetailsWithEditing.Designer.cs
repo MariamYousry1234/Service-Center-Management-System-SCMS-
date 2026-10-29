@@ -37,7 +37,7 @@
             // 
             this.ucShowRepairCostDetails1.Location = new System.Drawing.Point(0, -2);
             this.ucShowRepairCostDetails1.Name = "ucShowRepairCostDetails1";
-            this.ucShowRepairCostDetails1.Size = new System.Drawing.Size(596, 390);
+            this.ucShowRepairCostDetails1.Size = new System.Drawing.Size(596, 389);
             this.ucShowRepairCostDetails1.TabIndex = 0;
             // 
             // label9
@@ -46,7 +46,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(132, 390);
+            this.label9.Location = new System.Drawing.Point(132, 385);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(325, 30);
             this.label9.TabIndex = 36;
@@ -65,7 +65,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
             this.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnEdit.Location = new System.Drawing.Point(174, 423);
+            this.btnEdit.Location = new System.Drawing.Point(174, 418);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(235, 45);
             this.btnEdit.TabIndex = 35;
@@ -81,7 +81,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.ucShowRepairCostDetails1);
             this.Name = "ucShowRepairCostDetailsWithEditing";
-            this.Size = new System.Drawing.Size(596, 474);
+            this.Size = new System.Drawing.Size(596, 467);
             this.ResumeLayout(false);
             this.PerformLayout();
 

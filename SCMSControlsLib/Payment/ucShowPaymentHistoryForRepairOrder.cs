@@ -62,6 +62,7 @@ namespace SCMSControlsLib
             if (dgvAllPayments.Rows.Count > 0)
             {
                 dgvAllPayments.Columns[5].Width = 170;
+                dgvAllPayments.Columns[6].Width = 250;
             }
 
             lblNumberOfPayments.Text = dgvAllPayments.Rows.Count.ToString();
@@ -84,6 +85,7 @@ namespace SCMSControlsLib
                 guna2ContextMenuStrip1.Enabled = false;
                 return;
             } 
+
             guna2ContextMenuStrip1.Enabled =
                 dgvAllPayments.CurrentRow != null &&
                Invoice.PaymentStatus !=

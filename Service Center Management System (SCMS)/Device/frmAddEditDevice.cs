@@ -236,5 +236,11 @@ namespace Service_Center_Management_System__SCMS_
 
             await _SetModelsComboBox(CurrentBrandID);
         }
+
+        private void frmAddEditDevice_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                ucSearchForCustomerWithAddEdit1.txtFocus();
+        }
     }
 }

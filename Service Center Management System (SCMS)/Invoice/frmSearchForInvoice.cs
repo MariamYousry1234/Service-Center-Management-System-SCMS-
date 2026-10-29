@@ -21,5 +21,10 @@ namespace Service_Center_Management_System__SCMS_
         {
             this.Close();
         }
+
+        private void frmSearchForInvoice_Activated(object sender, EventArgs e)
+        {
+            ucSearchForInvoice1.txtFocus();
+        }
     }
 }

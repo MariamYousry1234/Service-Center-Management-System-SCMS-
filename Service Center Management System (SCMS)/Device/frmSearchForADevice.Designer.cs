@@ -34,9 +34,10 @@
             // 
             // ucSearchForADevice1
             // 
+            this.ucSearchForADevice1.gbEnabled = true;
             this.ucSearchForADevice1.Location = new System.Drawing.Point(0, -1);
             this.ucSearchForADevice1.Name = "ucSearchForADevice1";
-            this.ucSearchForADevice1.Size = new System.Drawing.Size(779, 658);
+            this.ucSearchForADevice1.Size = new System.Drawing.Size(673, 500);
             this.ucSearchForADevice1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +54,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(314, 665);
+            this.btnClose.Location = new System.Drawing.Point(256, 515);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
@@ -65,7 +66,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(778, 719);
+            this.ClientSize = new System.Drawing.Size(674, 569);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForADevice1);
             this.Name = "frmSearchForADevice";

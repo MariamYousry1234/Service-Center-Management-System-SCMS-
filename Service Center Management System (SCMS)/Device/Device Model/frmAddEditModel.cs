@@ -85,7 +85,7 @@ namespace Service_Center_Management_System__SCMS_
             lblModelID.Text = _Model.ModelID.ToString();
             cbBrands.SelectedItem = _Model.BrandInfo.BrandName;
             txtModelName.Text = _Model.ModelName;
-
+            txtModelName.SelectionStart = txtModelName.Text.Length;
         }
 
         private void frmAddEditModel_Load(object sender, EventArgs e)

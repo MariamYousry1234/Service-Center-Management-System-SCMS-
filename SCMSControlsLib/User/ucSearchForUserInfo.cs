@@ -19,6 +19,10 @@ namespace SCMSControlsLib
             cbField.SelectedIndex = 0;
         }
 
+        public void txtFocus()
+        {
+            txtSearch.Focus();
+        }
         private void cbField_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtSearch.Clear();
@@ -27,6 +31,8 @@ namespace SCMSControlsLib
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            if (!txtSearch.IsValid()) return;
+
             switch(cbField.SelectedItem.ToString())
             {
                 case "User ID":

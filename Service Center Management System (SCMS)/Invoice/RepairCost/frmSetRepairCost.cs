@@ -159,10 +159,33 @@ namespace Service_Center_Management_System__SCMS_
             this.Close();
         }
 
+        private float _GetTotalRepairCostWithoutDiscount()
+        {
+            return Convert.ToSingle(lblTotalPartsCost.Text) + Convert.ToSingle(lblLaborCost.Text)
+              + (!string.IsNullOrEmpty(txtAdditionalServices.Text) ?
+              Convert.ToSingle(txtAdditionalServices.Text) : 0) +
+              (!string.IsNullOrEmpty(txtTaxAmount.Text) ?
+              Convert.ToSingle(txtTaxAmount.Text) : 0);           
+               
+        }
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (!txtAdditionalServices.IsValid() || !txtDiscount.IsValid()
                 || !txtTaxAmount.IsValid()) return;
+
+
+
+            float TotalRepairCostWithoutDiscount = _GetTotalRepairCostWithoutDiscount();
+
+            if(!string.IsNullOrEmpty(txtDiscount.Text) &&
+                TotalRepairCostWithoutDiscount < Convert.ToSingle(txtDiscount.Text))
+            {
+
+                MessageBox.Show("Discount amount cannot exceed the total repair cost.",
+                   "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
 
             if (MessageBox.Show("Are you sure you want to save repair cost data?", "Confirm",
               MessageBoxButtons.OKCancel, MessageBoxIcon.Question)

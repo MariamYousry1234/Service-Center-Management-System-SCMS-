@@ -49,7 +49,7 @@
             this.guna2GroupBox1.Controls.Add(this.label1);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2GroupBox1.Location = new System.Drawing.Point(1, 601);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(1, 522);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(833, 128);
             this.guna2GroupBox1.TabIndex = 1;
@@ -134,7 +134,7 @@
             // 
             this.ucShowDiagnosisDetails1.Location = new System.Drawing.Point(0, 0);
             this.ucShowDiagnosisDetails1.Name = "ucShowDiagnosisDetails1";
-            this.ucShowDiagnosisDetails1.Size = new System.Drawing.Size(837, 577);
+            this.ucShowDiagnosisDetails1.Size = new System.Drawing.Size(837, 501);
             this.ucShowDiagnosisDetails1.TabIndex = 0;
             // 
             // btnCancel
@@ -151,7 +151,7 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCancel.Location = new System.Drawing.Point(489, 740);
+            this.btnCancel.Location = new System.Drawing.Point(489, 660);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(156, 45);
             this.btnCancel.TabIndex = 42;
@@ -171,7 +171,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.people;
             this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSave.Location = new System.Drawing.Point(668, 741);
+            this.btnSave.Location = new System.Drawing.Point(668, 661);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(157, 45);
             this.btnSave.TabIndex = 41;
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(831, 795);
+            this.ClientSize = new System.Drawing.Size(831, 713);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2GroupBox1);

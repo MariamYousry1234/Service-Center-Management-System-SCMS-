@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.gbSearch = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cbField = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTitle = new System.Windows.Forms.Label();
             this.ucShowEmployeeInfo1 = new SCMSControlsLib.ucShowEmployeeInfo();
-            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.gbSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,14 +41,25 @@
             this.gbSearch.Controls.Add(this.txtSearch);
             this.gbSearch.Controls.Add(this.btnSearch);
             this.gbSearch.Controls.Add(this.cbField);
-            this.gbSearch.Controls.Add(this.txtTitle);
             this.gbSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gbSearch.Location = new System.Drawing.Point(3, 0);
+            this.gbSearch.Location = new System.Drawing.Point(0, 0);
             this.gbSearch.Name = "gbSearch";
-            this.gbSearch.Size = new System.Drawing.Size(599, 101);
+            this.gbSearch.Size = new System.Drawing.Size(488, 101);
             this.gbSearch.TabIndex = 2;
             this.gbSearch.Text = "Search 🔍";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.IsRequired = true;
+            this.txtSearch.Length = null;
+            this.txtSearch.Location = new System.Drawing.Point(187, 49);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(180, 35);
+            this.txtSearch.TabIndex = 8;
+            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // btnSearch
             // 
@@ -64,7 +74,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::SCMSControlsLib.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(525, 49);
+            this.btnSearch.Location = new System.Drawing.Point(412, 45);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(58, 45);
             this.btnSearch.TabIndex = 7;
@@ -84,42 +94,18 @@
             this.cbField.Items.AddRange(new object[] {
             "Employee ID",
             "Phone Number"});
-            this.cbField.Location = new System.Drawing.Point(133, 52);
+            this.cbField.Location = new System.Drawing.Point(20, 48);
             this.cbField.Name = "cbField";
             this.cbField.Size = new System.Drawing.Size(150, 36);
             this.cbField.TabIndex = 1;
             this.cbField.SelectedIndexChanged += new System.EventHandler(this.cbField_SelectedIndexChanged);
             // 
-            // txtTitle
-            // 
-            this.txtTitle.AutoSize = true;
-            this.txtTitle.BackColor = System.Drawing.Color.Transparent;
-            this.txtTitle.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.Black;
-            this.txtTitle.Location = new System.Drawing.Point(8, 58);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(110, 23);
-            this.txtTitle.TabIndex = 0;
-            this.txtTitle.Text = "Search By :";
-            // 
             // ucShowEmployeeInfo1
             // 
-            this.ucShowEmployeeInfo1.Location = new System.Drawing.Point(2, 101);
+            this.ucShowEmployeeInfo1.Location = new System.Drawing.Point(1, 98);
             this.ucShowEmployeeInfo1.Name = "ucShowEmployeeInfo1";
-            this.ucShowEmployeeInfo1.Size = new System.Drawing.Size(597, 477);
+            this.ucShowEmployeeInfo1.Size = new System.Drawing.Size(483, 445);
             this.ucShowEmployeeInfo1.TabIndex = 3;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.IsRequired = true;
-            this.txtSearch.Length = null;
-            this.txtSearch.Location = new System.Drawing.Point(300, 53);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(180, 35);
-            this.txtSearch.TabIndex = 8;
-            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // ucSearchForAnEmployee
             // 
@@ -128,7 +114,7 @@
             this.Controls.Add(this.ucShowEmployeeInfo1);
             this.Controls.Add(this.gbSearch);
             this.Name = "ucSearchForAnEmployee";
-            this.Size = new System.Drawing.Size(599, 573);
+            this.Size = new System.Drawing.Size(484, 541);
             this.gbSearch.ResumeLayout(false);
             this.gbSearch.PerformLayout();
             this.ResumeLayout(false);
@@ -141,7 +127,6 @@
         private cusTextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbField;
-        private System.Windows.Forms.Label txtTitle;
         private ucShowEmployeeInfo ucShowEmployeeInfo1;
     }
 }

@@ -35,6 +35,11 @@ namespace SCMSControlsLib
                 return ucSearchForAnEmployee1.EmployeeInfo;
             }
         }
+
+        public void txtFocus()
+        {
+            ucSearchForAnEmployee1.txtFocus();
+        }
         public void LoadEmployeeInfo(int? EmployeeID=null)
         {
             if(EmployeeID ==null)

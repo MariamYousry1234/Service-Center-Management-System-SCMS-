@@ -71,6 +71,7 @@
             this.Name = "frmSearchForAModel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For A Model";
+            this.Activated += new System.EventHandler(this.frmSearchForAModel_Activated);
             this.ResumeLayout(false);
 
         }

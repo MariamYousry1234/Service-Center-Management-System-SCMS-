@@ -56,10 +56,10 @@
             this.txtOldPassword.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOldPassword.IsRequired = true;
             this.txtOldPassword.Length = null;
-            this.txtOldPassword.Location = new System.Drawing.Point(233, 405);
+            this.txtOldPassword.Location = new System.Drawing.Point(195, 403);
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.PasswordChar = '•';
-            this.txtOldPassword.Size = new System.Drawing.Size(258, 35);
+            this.txtOldPassword.Size = new System.Drawing.Size(233, 35);
             this.txtOldPassword.TabIndex = 12;
             this.txtOldPassword.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
@@ -68,7 +68,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(56, 413);
+            this.label2.Location = new System.Drawing.Point(37, 411);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 24);
             this.label2.TabIndex = 11;
@@ -81,10 +81,10 @@
             this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPassword.IsRequired = true;
             this.txtNewPassword.Length = null;
-            this.txtNewPassword.Location = new System.Drawing.Point(233, 467);
+            this.txtNewPassword.Location = new System.Drawing.Point(196, 465);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '•';
-            this.txtNewPassword.Size = new System.Drawing.Size(258, 35);
+            this.txtNewPassword.Size = new System.Drawing.Size(233, 35);
             this.txtNewPassword.TabIndex = 14;
             this.txtNewPassword.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
@@ -93,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(47, 473);
+            this.label1.Location = new System.Drawing.Point(28, 471);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 24);
             this.label1.TabIndex = 13;
@@ -105,10 +105,10 @@
             this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmPassword.IsRequired = true;
             this.txtConfirmPassword.Length = null;
-            this.txtConfirmPassword.Location = new System.Drawing.Point(233, 529);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(197, 527);
             this.txtConfirmPassword.Name = "txtConfirmPassword";
             this.txtConfirmPassword.PasswordChar = '•';
-            this.txtConfirmPassword.Size = new System.Drawing.Size(258, 35);
+            this.txtConfirmPassword.Size = new System.Drawing.Size(233, 35);
             this.txtConfirmPassword.TabIndex = 16;
             this.txtConfirmPassword.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
             // 
@@ -117,7 +117,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(17, 537);
+            this.label3.Location = new System.Drawing.Point(-2, 535);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(196, 24);
             this.label3.TabIndex = 15;
@@ -137,7 +137,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(94, 605);
+            this.btnClose.Location = new System.Drawing.Point(51, 605);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 25;
@@ -158,7 +158,7 @@
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.check;
             this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnSave.Location = new System.Drawing.Point(290, 605);
+            this.btnSave.Location = new System.Drawing.Point(247, 605);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(157, 45);
             this.btnSave.TabIndex = 24;
@@ -174,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(558, 669);
+            this.ClientSize = new System.Drawing.Size(454, 669);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtConfirmPassword);
@@ -187,6 +187,7 @@
             this.Name = "frmChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChangePassword";
+            this.Activated += new System.EventHandler(this.frmChangePassword_Activated);
             this.Load += new System.EventHandler(this.frmChangePassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

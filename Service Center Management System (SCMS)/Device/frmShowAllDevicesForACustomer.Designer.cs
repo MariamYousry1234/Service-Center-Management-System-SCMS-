@@ -34,9 +34,9 @@
             // 
             // ucShowAllDevicesForACustomer1
             // 
-            this.ucShowAllDevicesForACustomer1.Location = new System.Drawing.Point(-2, -2);
+            this.ucShowAllDevicesForACustomer1.Location = new System.Drawing.Point(-1, -2);
             this.ucShowAllDevicesForACustomer1.Name = "ucShowAllDevicesForACustomer1";
-            this.ucShowAllDevicesForACustomer1.Size = new System.Drawing.Size(1031, 286);
+            this.ucShowAllDevicesForACustomer1.Size = new System.Drawing.Size(1096, 359);
             this.ucShowAllDevicesForACustomer1.TabIndex = 1;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(432, 293);
+            this.btnClose.Location = new System.Drawing.Point(476, 363);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1019, 350);
+            this.ClientSize = new System.Drawing.Size(1095, 414);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAllDevicesForACustomer1);
             this.Name = "frmShowAllDevicesForACustomer";

@@ -35,5 +35,10 @@ namespace Service_Center_Management_System__SCMS_
             EmployeeID?.Invoke(ucSearchForAnEmployee1.EmployeeID);
             this.Close();
         }
+
+        private void frmSelectEmployee_Activated(object sender, EventArgs e)
+        {
+            ucSearchForAnEmployee1.txtFocus();
+        }
     }
 }

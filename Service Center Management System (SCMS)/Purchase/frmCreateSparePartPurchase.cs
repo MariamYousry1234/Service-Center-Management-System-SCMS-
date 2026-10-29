@@ -115,5 +115,15 @@ namespace Service_Center_Management_System__SCMS_
             lblPurchaseDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
             _Purchase = new clsPurchase();
         }
+
+        private void lblTotalPrice_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCreateSparePartPurchase_Activated(object sender, EventArgs e)
+        {
+            ucSearchForSparePart1.txtFocus();
+        }
     }
 }

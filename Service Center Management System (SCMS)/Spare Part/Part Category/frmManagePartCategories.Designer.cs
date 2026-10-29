@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvData = new System.Windows.Forms.DataGridView();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblAllPersons = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.lblNumberOfCategories = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -54,32 +54,8 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(593, 259);
+            this.dgvData.Size = new System.Drawing.Size(532, 259);
             this.dgvData.TabIndex = 57;
-            // 
-            // lblAllPersons
-            // 
-            this.lblAllPersons.AutoSize = true;
-            this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
-            this.lblAllPersons.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(92, 28);
-            this.lblAllPersons.Name = "lblAllPersons";
-            this.lblAllPersons.Size = new System.Drawing.Size(411, 41);
-            this.lblAllPersons.TabIndex = 52;
-            this.lblAllPersons.Text = "Manage Part Categories";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 453);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(280, 29);
-            this.label2.TabIndex = 61;
-            this.label2.Text = "Number Of Categories :";
             // 
             // guna2ContextMenuStrip1
             // 
@@ -96,8 +72,48 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(181, 70);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(137, 48);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
+            // 
+            // updateInfoToolStripMenuItem
+            // 
+            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
+            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.updateInfoToolStripMenuItem.Text = "Update Info";
+            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.deleteToolStripMenuItem.Text = "Delete ";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            // 
+            // lblAllPersons
+            // 
+            this.lblAllPersons.AutoSize = true;
+            this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
+            this.lblAllPersons.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblAllPersons.Location = new System.Drawing.Point(64, 28);
+            this.lblAllPersons.Name = "lblAllPersons";
+            this.lblAllPersons.Size = new System.Drawing.Size(411, 41);
+            this.lblAllPersons.TabIndex = 52;
+            this.lblAllPersons.Text = "Manage Part Categories";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(3, 453);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 29);
+            this.label2.TabIndex = 61;
+            this.label2.Text = "Number Of Categories :";
             // 
             // txtSearch
             // 
@@ -118,7 +134,7 @@
             this.lblNumberOfCategories.BackColor = System.Drawing.Color.Transparent;
             this.lblNumberOfCategories.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfCategories.ForeColor = System.Drawing.Color.Blue;
-            this.lblNumberOfCategories.Location = new System.Drawing.Point(298, 454);
+            this.lblNumberOfCategories.Location = new System.Drawing.Point(289, 454);
             this.lblNumberOfCategories.Name = "lblNumberOfCategories";
             this.lblNumberOfCategories.Size = new System.Drawing.Size(26, 29);
             this.lblNumberOfCategories.TabIndex = 70;
@@ -138,7 +154,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(438, 444);
+            this.btnClose.Location = new System.Drawing.Point(383, 443);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 67;
@@ -158,27 +174,11 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.plus;
-            this.btnAdd.Location = new System.Drawing.Point(542, 110);
+            this.btnAdd.Location = new System.Drawing.Point(478, 114);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(58, 45);
             this.btnAdd.TabIndex = 66;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // updateInfoToolStripMenuItem
-            // 
-            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
-            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.updateInfoToolStripMenuItem.Text = "Update Info";
-            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteToolStripMenuItem.Text = "Delete ";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // frmManagePartCategories
             // 
@@ -186,7 +186,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(613, 501);
+            this.ClientSize = new System.Drawing.Size(552, 501);
             this.Controls.Add(this.lblNumberOfCategories);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnClose);

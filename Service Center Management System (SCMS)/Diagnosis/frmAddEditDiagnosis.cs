@@ -155,6 +155,14 @@ namespace Service_Center_Management_System__SCMS_
                 return;
             }
 
+            if(Convert.ToSingle(txtEstimatedCost.Text)< Convert.ToSingle(txtLaborCost.Text))
+            {
+                MessageBox.Show("Estimated cost cannot be less than labor cost.",
+                   "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
             if (MessageBox.Show("Are you sure you want to save diagnosis data?", "Confirm",
             MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
             == DialogResult.Cancel) return;
@@ -197,6 +205,12 @@ namespace Service_Center_Management_System__SCMS_
                 MessageBox.Show("Failed to save diagnosis data.", "An error occurred", MessageBoxButtons.OK,
                    MessageBoxIcon.Error);
             }
+        }
+
+        private void frmAddEditDiagnosis_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                txtDetectedProblems.Focus();
         }
     }
 }

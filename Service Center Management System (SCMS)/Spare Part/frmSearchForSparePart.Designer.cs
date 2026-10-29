@@ -34,9 +34,10 @@
             // 
             // ucSearchForSparePart1
             // 
+            this.ucSearchForSparePart1.gbEnabled = true;
             this.ucSearchForSparePart1.Location = new System.Drawing.Point(-4, -6);
             this.ucSearchForSparePart1.Name = "ucSearchForSparePart1";
-            this.ucSearchForSparePart1.Size = new System.Drawing.Size(765, 633);
+            this.ucSearchForSparePart1.Size = new System.Drawing.Size(621, 390);
             this.ucSearchForSparePart1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +54,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(295, 633);
+            this.btnClose.Location = new System.Drawing.Point(229, 404);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 42;
@@ -65,12 +66,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(754, 687);
+            this.ClientSize = new System.Drawing.Size(617, 461);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForSparePart1);
             this.Name = "frmSearchForSparePart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For Spare Part";
+            this.Activated += new System.EventHandler(this.frmSearchForSparePart_Activated);
             this.ResumeLayout(false);
 
         }

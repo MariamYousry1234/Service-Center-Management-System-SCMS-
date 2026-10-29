@@ -25,6 +25,11 @@ namespace SCMSControlsLib
                 return ucSearchForCustomer1.CustomerID;
             }
         }
+
+        public void txtFocus()
+        {
+            ucSearchForCustomer1.txtFocus();
+        }
         public void LoadCustomerInfo(int? CustomerID=null)
         {
             //Add New

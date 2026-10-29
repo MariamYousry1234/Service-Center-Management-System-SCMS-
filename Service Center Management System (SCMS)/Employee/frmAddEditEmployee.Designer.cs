@@ -261,6 +261,7 @@
             // 
             // ucPersonalInfo1
             // 
+            this.ucPersonalInfo1.gbEnabled = true;
             this.ucPersonalInfo1.Location = new System.Drawing.Point(0, 118);
             this.ucPersonalInfo1.Name = "ucPersonalInfo1";
             this.ucPersonalInfo1.Size = new System.Drawing.Size(603, 395);
@@ -283,6 +284,7 @@
             this.Name = "frmAddEditEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Employee";
+            this.Activated += new System.EventHandler(this.frmAddEditEmployee_Activated);
             this.Load += new System.EventHandler(this.frmAddEditEmployee_Load);
             this.guna2GroupBox2.ResumeLayout(false);
             this.guna2GroupBox2.PerformLayout();

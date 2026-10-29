@@ -74,6 +74,9 @@ namespace Service_Center_Management_System__SCMS_
             txtNewPassword.Focus();
         }
 
-       
+        private void frmChangePassword_Activated(object sender, EventArgs e)
+        {
+            txtNewPassword.Focus();
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace Service_Center_Management_System__SCMS_
 
             lblDeviceTypeID.Text = _DeviceType.DeviceTypeID.ToString();
             txtDeviceName.Text = _DeviceType.DeviceTypeName;
-            
+            txtDeviceName.SelectionStart = txtDeviceName.Text.Length;
         }
         private void frmAddEditDeviceType_Load(object sender, EventArgs e)
         {

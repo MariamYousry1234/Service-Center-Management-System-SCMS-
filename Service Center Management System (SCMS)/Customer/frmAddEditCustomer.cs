@@ -159,7 +159,7 @@ namespace Service_Center_Management_System__SCMS_
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are you sure you want to save customer date?", "Confirm",
+            if (MessageBox.Show("Are you sure you want to save customer data?", "Confirm",
                 MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.Cancel) return;
 
@@ -232,7 +232,10 @@ namespace Service_Center_Management_System__SCMS_
             }
         }
 
-     
-    
+        private void frmAddEditCustomer_Activated(object sender, EventArgs e)
+        {
+            if (_Mode == enMode.AddNew)
+                ucPersonalInfo1.txtFocus();
+        }
     }
 }

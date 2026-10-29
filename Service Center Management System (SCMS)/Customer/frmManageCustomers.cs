@@ -37,10 +37,10 @@ namespace Service_Center_Management_System__SCMS_
 
             if (dgvData.Rows.Count > 0)
             {
-                dgvData.Columns[2].Width = 200;
-                dgvData.Columns["Email"].Width = 170;
+                dgvData.Columns[1].Width = 200;
+                dgvData.Columns[4].Width = 170;
 
-                dgvData.Columns["Created Date"].Width = 170;
+                dgvData.Columns[5].Width = 130;
             }
         }
 

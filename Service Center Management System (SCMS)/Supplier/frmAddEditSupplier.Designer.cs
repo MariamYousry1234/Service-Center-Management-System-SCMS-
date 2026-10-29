@@ -236,6 +236,7 @@
             this.Name = "frmAddEditSupplier";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Supplier";
+            this.Activated += new System.EventHandler(this.frmAddEditSupplier_Activated);
             this.Load += new System.EventHandler(this.frmAddEditSupplier_Load);
             this.gbInfo.ResumeLayout(false);
             this.gbInfo.PerformLayout();

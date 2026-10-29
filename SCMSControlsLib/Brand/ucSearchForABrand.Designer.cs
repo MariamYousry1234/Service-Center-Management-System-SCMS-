@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.gbSearch = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cbField = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTitle = new System.Windows.Forms.Label();
             this.ucShowBrandInfo1 = new SCMSControlsLib.ucShowBrandInfo();
+            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.gbSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,18 +50,6 @@
             this.gbSearch.Size = new System.Drawing.Size(534, 101);
             this.gbSearch.TabIndex = 3;
             this.gbSearch.Text = "Search 🔍";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.IsRequired = true;
-            this.txtSearch.Length = null;
-            this.txtSearch.Location = new System.Drawing.Point(268, 53);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(180, 35);
-            this.txtSearch.TabIndex = 8;
-            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
-            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // btnSearch
             // 
@@ -116,10 +104,22 @@
             // 
             // ucShowBrandInfo1
             // 
-            this.ucShowBrandInfo1.Location = new System.Drawing.Point(1, 100);
+            this.ucShowBrandInfo1.Location = new System.Drawing.Point(0, 100);
             this.ucShowBrandInfo1.Name = "ucShowBrandInfo1";
-            this.ucShowBrandInfo1.Size = new System.Drawing.Size(516, 233);
+            this.ucShowBrandInfo1.Size = new System.Drawing.Size(519, 227);
             this.ucShowBrandInfo1.TabIndex = 4;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.IsRequired = true;
+            this.txtSearch.Length = null;
+            this.txtSearch.Location = new System.Drawing.Point(268, 53);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(180, 35);
+            this.txtSearch.TabIndex = 8;
+            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // ucSearchForABrand
             // 

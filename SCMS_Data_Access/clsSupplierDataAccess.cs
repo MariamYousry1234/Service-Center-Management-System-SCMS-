@@ -249,6 +249,8 @@ namespace SCMS_Data_Access
                                     (string)Data["SupplierName"];
 
 
+                                PhoneNumber =
+                                    (string)Data["PhoneNumber"];
 
                                 Address =
                                     Data["Address"] == DBNull.Value

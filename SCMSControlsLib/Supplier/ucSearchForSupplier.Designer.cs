@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.gbSearch = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cbField = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTitle = new System.Windows.Forms.Label();
             this.ucShowSupplierInfo1 = new SCMSControlsLib.ucShowSupplierInfo();
+            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.gbSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,26 +41,13 @@
             this.gbSearch.Controls.Add(this.txtSearch);
             this.gbSearch.Controls.Add(this.btnSearch);
             this.gbSearch.Controls.Add(this.cbField);
-            this.gbSearch.Controls.Add(this.txtTitle);
             this.gbSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.gbSearch.Location = new System.Drawing.Point(-1, 1);
             this.gbSearch.Name = "gbSearch";
-            this.gbSearch.Size = new System.Drawing.Size(719, 101);
+            this.gbSearch.Size = new System.Drawing.Size(610, 101);
             this.gbSearch.TabIndex = 4;
             this.gbSearch.Text = "Search 🔍";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.IsRequired = true;
-            this.txtSearch.Length = null;
-            this.txtSearch.Location = new System.Drawing.Point(333, 53);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(241, 35);
-            this.txtSearch.TabIndex = 8;
-            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
-            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // btnSearch
             // 
@@ -76,7 +62,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::SCMSControlsLib.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(633, 44);
+            this.btnSearch.Location = new System.Drawing.Point(510, 44);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(58, 45);
             this.btnSearch.TabIndex = 7;
@@ -97,30 +83,30 @@
             "Supplier ID",
             "Supplier Name",
             "Phone Number"});
-            this.cbField.Location = new System.Drawing.Point(145, 53);
+            this.cbField.Location = new System.Drawing.Point(24, 52);
             this.cbField.Name = "cbField";
             this.cbField.Size = new System.Drawing.Size(172, 36);
             this.cbField.TabIndex = 1;
             this.cbField.SelectedIndexChanged += new System.EventHandler(this.cbField_SelectedIndexChanged);
             // 
-            // txtTitle
-            // 
-            this.txtTitle.AutoSize = true;
-            this.txtTitle.BackColor = System.Drawing.Color.Transparent;
-            this.txtTitle.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitle.ForeColor = System.Drawing.Color.Black;
-            this.txtTitle.Location = new System.Drawing.Point(30, 60);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(110, 23);
-            this.txtTitle.TabIndex = 0;
-            this.txtTitle.Text = "Search By :";
-            // 
             // ucShowSupplierInfo1
             // 
             this.ucShowSupplierInfo1.Location = new System.Drawing.Point(0, 96);
             this.ucShowSupplierInfo1.Name = "ucShowSupplierInfo1";
-            this.ucShowSupplierInfo1.Size = new System.Drawing.Size(713, 334);
+            this.ucShowSupplierInfo1.Size = new System.Drawing.Size(609, 252);
             this.ucShowSupplierInfo1.TabIndex = 5;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.IsRequired = true;
+            this.txtSearch.Length = null;
+            this.txtSearch.Location = new System.Drawing.Point(212, 52);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(241, 35);
+            this.txtSearch.TabIndex = 8;
+            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // ucSearchForSupplier
             // 
@@ -129,7 +115,7 @@
             this.Controls.Add(this.ucShowSupplierInfo1);
             this.Controls.Add(this.gbSearch);
             this.Name = "ucSearchForSupplier";
-            this.Size = new System.Drawing.Size(714, 432);
+            this.Size = new System.Drawing.Size(609, 348);
             this.gbSearch.ResumeLayout(false);
             this.gbSearch.PerformLayout();
             this.ResumeLayout(false);
@@ -142,7 +128,6 @@
         private cusTextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2ComboBox cbField;
-        private System.Windows.Forms.Label txtTitle;
         private ucShowSupplierInfo ucShowSupplierInfo1;
     }
 }

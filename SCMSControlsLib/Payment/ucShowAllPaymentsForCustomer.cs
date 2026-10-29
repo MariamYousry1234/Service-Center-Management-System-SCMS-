@@ -50,6 +50,12 @@ namespace SCMSControlsLib
             _AllPayments= await _Customer.GetAllPayments();
             dgvAllPayments.DataSource = _AllPayments;
 
+            if(dgvAllPayments.Rows.Count>0)
+            {
+                dgvAllPayments.Columns[2].Width = 150;
+                dgvAllPayments.Columns[4].Width = 170;
+                dgvAllPayments.Columns[6].Width = 170;
+            }
             lblNumberOfRepairOrders.Text = dgvAllPayments.Rows.Count.ToString();
             cbFiltering.Enabled = true;
             cbFiltering.SelectedIndex = 0;

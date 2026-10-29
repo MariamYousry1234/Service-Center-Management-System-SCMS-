@@ -46,7 +46,7 @@
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnCancel.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnCancel.Location = new System.Drawing.Point(370, 350);
+            this.btnCancel.Location = new System.Drawing.Point(442, 350);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(156, 45);
             this.btnCancel.TabIndex = 45;
@@ -57,7 +57,7 @@
             // 
             this.ucShowAllPreviousOperationsForPart1.Location = new System.Drawing.Point(-1, -2);
             this.ucShowAllPreviousOperationsForPart1.Name = "ucShowAllPreviousOperationsForPart1";
-            this.ucShowAllPreviousOperationsForPart1.Size = new System.Drawing.Size(896, 330);
+            this.ucShowAllPreviousOperationsForPart1.Size = new System.Drawing.Size(1043, 330);
             this.ucShowAllPreviousOperationsForPart1.TabIndex = 0;
             // 
             // frmShowAllPreviousPuchaseOperationsForPart
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(901, 407);
+            this.ClientSize = new System.Drawing.Size(1042, 407);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.ucShowAllPreviousOperationsForPart1);
             this.Name = "frmShowAllPreviousPuchaseOperationsForPart";

@@ -69,7 +69,7 @@ namespace Service_Center_Management_System__SCMS_
 
             lblBrandID.Text = _Brand.BrandID.ToString();
             txtBrandName.Text = _Brand.BrandName;
-
+            txtBrandName.SelectionStart = txtBrandName.Text.Length;
         }
 
         private void frmAddEditBrand_Load(object sender, EventArgs e)

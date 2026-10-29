@@ -22,7 +22,9 @@ namespace Service_Center_Management_System__SCMS_
 
         private async void frmShowAllPreviousPuchaseOperationsForPart_Load(object sender, EventArgs e)
         {
-            ucShowAllPreviousOperationsForPart1.ShowPurchaseDetails = LoadPurchaseDetailsForm;
+            ucShowAllPreviousOperationsForPart1.ShowPurchaseDetails = _LoadPurchaseDetailsForm;
+            ucShowAllPreviousOperationsForPart1.ShowSupplierDetails = _LoadSupplierDetailsForm;
+
             await ucShowAllPreviousOperationsForPart1.LoadAllPrevoiusPurchaseOperations(_PartID);
         }
 
@@ -31,11 +33,18 @@ namespace Service_Center_Management_System__SCMS_
             this.Close();
         }
 
-        private void LoadPurchaseDetailsForm(int PurchaseID)
+        private void _LoadPurchaseDetailsForm(int PurchaseID)
         {
             frmShowPurchaseDetails frm = new frmShowPurchaseDetails(PurchaseID);
 
             frm.ShowDialog();
+        }
+
+        private void _LoadSupplierDetailsForm(int SupplierID)
+        {
+           frmShowSupplierInfo frm = new frmShowSupplierInfo(SupplierID);
+
+           frm.ShowDialog();
         }
     }
 }

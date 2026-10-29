@@ -37,11 +37,11 @@ namespace SCMSControlsLib
 
             if (dgvAllDevices.Rows.Count > 0)
             {
-                dgvAllDevices.Columns[2].Width = 200;
-                dgvAllDevices.Columns[3].Width = 150;
-                dgvAllDevices.Columns[4].Width = 150;
-                dgvAllDevices.Columns[5].Width = 150;
-                dgvAllDevices.Columns[6].Width = 150;
+                dgvAllDevices.Columns[2].Width = 250;
+                dgvAllDevices.Columns[3].Width = 200;
+                dgvAllDevices.Columns[4].Width = 200;
+                dgvAllDevices.Columns[5].Width = 200;
+               
             }
         }
 

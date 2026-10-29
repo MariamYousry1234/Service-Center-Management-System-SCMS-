@@ -28,18 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ucInvoicesAwaitingPayment1 = new SCMSControlsLib.ucInvoicesAwaitingPayment();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.ucInvoicesAwaitingPayment1 = new SCMSControlsLib.ucInvoicesAwaitingPayment();
             this.SuspendLayout();
-            // 
-            // ucInvoicesAwaitingPayment1
-            // 
-            this.ucInvoicesAwaitingPayment1.Location = new System.Drawing.Point(-1, -3);
-            this.ucInvoicesAwaitingPayment1.Name = "ucInvoicesAwaitingPayment1";
-            this.ucInvoicesAwaitingPayment1.Size = new System.Drawing.Size(908, 400);
-            this.ucInvoicesAwaitingPayment1.TabIndex = 0;
-            this.ucInvoicesAwaitingPayment1.OnRecordPaymentClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnRecordPaymentClick);
-            this.ucInvoicesAwaitingPayment1.OnShowPaymentHistoryClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnShowPaymentHistoryClick);
             // 
             // btnClose
             // 
@@ -55,19 +46,30 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(373, 404);
+            this.btnClose.Location = new System.Drawing.Point(422, 403);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Close";
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // ucInvoicesAwaitingPayment1
+            // 
+            this.ucInvoicesAwaitingPayment1.Location = new System.Drawing.Point(-1, -3);
+            this.ucInvoicesAwaitingPayment1.Name = "ucInvoicesAwaitingPayment1";
+            this.ucInvoicesAwaitingPayment1.Size = new System.Drawing.Size(1001, 400);
+            this.ucInvoicesAwaitingPayment1.TabIndex = 0;
+            this.ucInvoicesAwaitingPayment1.OnRecordPaymentClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnRecordPaymentClick);
+            this.ucInvoicesAwaitingPayment1.OnShowPaymentHistoryClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnShowPaymentHistoryClick);
+            this.ucInvoicesAwaitingPayment1.OnShowInvoiceDetailsClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnShowInvoiceDetailsClick);
+            this.ucInvoicesAwaitingPayment1.OnShowRepairOrderDetailsClick += new System.EventHandler<SCMSControlsLib.ucInvoicesAwaitingPayment.SCMSArgs>(this.ucInvoicesAwaitingPayment1_OnShowRepairOrderDetailsClick);
+            // 
             // frmInvoicesAwaitingPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(906, 457);
+            this.ClientSize = new System.Drawing.Size(997, 457);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucInvoicesAwaitingPayment1);
             this.Name = "frmInvoicesAwaitingPayment";

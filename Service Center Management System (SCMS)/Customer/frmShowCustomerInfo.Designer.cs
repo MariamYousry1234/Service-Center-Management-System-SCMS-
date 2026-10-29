@@ -37,7 +37,7 @@
             // 
             this.ucShowCustomerInfo1.Location = new System.Drawing.Point(-2, 56);
             this.ucShowCustomerInfo1.Name = "ucShowCustomerInfo1";
-            this.ucShowCustomerInfo1.Size = new System.Drawing.Size(598, 576);
+            this.ucShowCustomerInfo1.Size = new System.Drawing.Size(487, 499);
             this.ucShowCustomerInfo1.TabIndex = 0;
             // 
             // lblAllPersons
@@ -46,7 +46,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(133, 9);
+            this.lblAllPersons.Location = new System.Drawing.Point(81, 9);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(325, 44);
             this.lblAllPersons.TabIndex = 27;
@@ -66,7 +66,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(215, 642);
+            this.btnClose.Location = new System.Drawing.Point(165, 573);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 31;
@@ -78,7 +78,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(595, 697);
+            this.ClientSize = new System.Drawing.Size(487, 629);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblAllPersons);
             this.Controls.Add(this.ucShowCustomerInfo1);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllRepairOrders = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllRepairs = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
@@ -45,10 +46,10 @@
             this.gbAllRepairOrders.Controls.Add(this.lblTotalRepairs);
             this.gbAllRepairOrders.Controls.Add(this.label1);
             this.gbAllRepairOrders.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllRepairOrders.ForeColor = System.Drawing.Color.Black;
+            this.gbAllRepairOrders.ForeColor = System.Drawing.Color.Red;
             this.gbAllRepairOrders.Location = new System.Drawing.Point(0, 0);
             this.gbAllRepairOrders.Name = "gbAllRepairOrders";
-            this.gbAllRepairOrders.Size = new System.Drawing.Size(1136, 330);
+            this.gbAllRepairOrders.Size = new System.Drawing.Size(1136, 415);
             this.gbAllRepairOrders.TabIndex = 2;
             this.gbAllRepairOrders.Text = "All Assigned Repairs For Technician ID = [???]";
             // 
@@ -60,11 +61,19 @@
             this.dgvAllRepairs.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllRepairs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllRepairs.ContextMenuStrip = this.guna2ContextMenuStrip1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllRepairs.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvAllRepairs.Location = new System.Drawing.Point(1, 59);
             this.dgvAllRepairs.Name = "dgvAllRepairs";
             this.dgvAllRepairs.ReadOnly = true;
             this.dgvAllRepairs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllRepairs.Size = new System.Drawing.Size(1132, 205);
+            this.dgvAllRepairs.Size = new System.Drawing.Size(1132, 308);
             this.dgvAllRepairs.TabIndex = 3;
             // 
             // guna2ContextMenuStrip1
@@ -98,7 +107,7 @@
             this.lblTotalRepairs.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalRepairs.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalRepairs.ForeColor = System.Drawing.Color.Blue;
-            this.lblTotalRepairs.Location = new System.Drawing.Point(186, 288);
+            this.lblTotalRepairs.Location = new System.Drawing.Point(196, 377);
             this.lblTotalRepairs.Name = "lblTotalRepairs";
             this.lblTotalRepairs.Size = new System.Drawing.Size(65, 32);
             this.lblTotalRepairs.TabIndex = 2;
@@ -109,7 +118,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 287);
+            this.label1.Location = new System.Drawing.Point(15, 376);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 32);
             this.label1.TabIndex = 1;
@@ -121,7 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbAllRepairOrders);
             this.Name = "ucShowAssignedRepairsForTechnician";
-            this.Size = new System.Drawing.Size(1136, 328);
+            this.Size = new System.Drawing.Size(1136, 418);
             this.gbAllRepairOrders.ResumeLayout(false);
             this.gbAllRepairOrders.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllRepairs)).EndInit();

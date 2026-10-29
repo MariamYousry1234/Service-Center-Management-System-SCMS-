@@ -25,6 +25,7 @@ namespace Service_Center_Management_System__SCMS_
         private async void frmRepairOrdersReadyForInvoicing_Load(object sender, EventArgs e)
         {
             ucRepairOrdersReadyForInvoicing1.IssueInvoice = _IssueInvoice;
+            ucRepairOrdersReadyForInvoicing1.ShowRepairOrderDetails = _ShowRepairOrderDetails;
 
             await ucRepairOrdersReadyForInvoicing1.LoadRepairOrdersReadyforInvoicing();
         }
@@ -37,5 +38,11 @@ namespace Service_Center_Management_System__SCMS_
             frm.ShowDialog();
         }
 
+        private void _ShowRepairOrderDetails(int RepairOrderID)
+        {
+            frmShowRepairOrderDetails frm = new frmShowRepairOrderDetails(RepairOrderID);
+
+            frm.ShowDialog();
+        }
     }
 }

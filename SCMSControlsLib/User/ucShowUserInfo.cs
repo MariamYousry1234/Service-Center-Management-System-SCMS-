@@ -40,6 +40,8 @@ namespace SCMSControlsLib
             lblEmployeeID.Text= "[???]";
             lblIsActive.Text= "[???]";
             lblCreatedDate.Text= "[???]";
+            lblFullName.Text = "[???]";
+            lblGender.Text = "[???]";
         }
 
         private void _LoadDate()
@@ -50,7 +52,8 @@ namespace SCMSControlsLib
             lblEmployeeID.Text = _User.EmployeeID.ToString();
             lblIsActive.Text = _User.IsActive ? "Yes" : "No";
             lblCreatedDate.Text = _User.CreatedDate.ToString("dd/MM/yyyy");
-
+            lblFullName.Text = _User.EmployeeInfo.FullName;
+            lblGender.Text = _User.EmployeeInfo.Gender == clPerson.enGender.Male ? "Male" : "Female";
         }
         public void LoadUserInfo(int UserID)
         {

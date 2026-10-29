@@ -26,6 +26,15 @@ namespace SCMSControlsLib
                 await clsRepairOrder.GetAllRepairOrdersReadyForInvoicingAsync();
 
             dgvAllRepairOrders.DataSource = _AllRepairOrders;
+
+            if(dgvAllRepairOrders.Rows.Count > 0)
+            {
+                dgvAllRepairOrders.Columns[2].Width = 250;
+                dgvAllRepairOrders.Columns[4].Width = 250;
+                dgvAllRepairOrders.Columns[6].Width = 200;
+                dgvAllRepairOrders.Columns[8].Width = 150;
+                dgvAllRepairOrders.Columns[9].Width = 150;
+            }
             lblNumberOfRepairOrders.Text = _AllRepairOrders.Rows.Count.ToString();
         }
 

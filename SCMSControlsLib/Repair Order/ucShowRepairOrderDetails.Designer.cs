@@ -82,7 +82,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(226, 14);
+            this.label1.Location = new System.Drawing.Point(178, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(375, 46);
             this.label1.TabIndex = 0;
@@ -91,7 +91,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = global::SCMSControlsLib.Properties.Resources.page;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.groupBox1.Controls.Add(this.lblRepairCompletionDate);
             this.groupBox1.Controls.Add(this.label22);
@@ -135,9 +134,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.lblRepairOrderID);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(7, 63);
+            this.groupBox1.Location = new System.Drawing.Point(4, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(813, 650);
+            this.groupBox1.Size = new System.Drawing.Size(768, 623);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -145,11 +144,11 @@
             // 
             this.lblRepairCompletionDate.AutoSize = true;
             this.lblRepairCompletionDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblRepairCompletionDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepairCompletionDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepairCompletionDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblRepairCompletionDate.Location = new System.Drawing.Point(265, 621);
+            this.lblRepairCompletionDate.Location = new System.Drawing.Point(215, 582);
             this.lblRepairCompletionDate.Name = "lblRepairCompletionDate";
-            this.lblRepairCompletionDate.Size = new System.Drawing.Size(55, 24);
+            this.lblRepairCompletionDate.Size = new System.Drawing.Size(49, 20);
             this.lblRepairCompletionDate.TabIndex = 43;
             this.lblRepairCompletionDate.Text = "[???]";
             // 
@@ -157,11 +156,11 @@
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(13, 621);
+            this.label22.Location = new System.Drawing.Point(-1, 582);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(243, 24);
+            this.label22.Size = new System.Drawing.Size(211, 20);
             this.label22.TabIndex = 42;
             this.label22.Text = "Repair Completion Date :";
             // 
@@ -169,7 +168,7 @@
             // 
             this.pbAfterRepair.BackColor = System.Drawing.Color.Transparent;
             this.pbAfterRepair.Image = global::SCMSControlsLib.Properties.Resources.image;
-            this.pbAfterRepair.Location = new System.Drawing.Point(480, 46);
+            this.pbAfterRepair.Location = new System.Drawing.Point(419, 46);
             this.pbAfterRepair.Name = "pbAfterRepair";
             this.pbAfterRepair.Size = new System.Drawing.Size(199, 112);
             this.pbAfterRepair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -181,7 +180,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Blue;
-            this.label13.Location = new System.Drawing.Point(509, 15);
+            this.label13.Location = new System.Drawing.Point(448, 15);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(138, 25);
             this.label13.TabIndex = 40;
@@ -192,7 +191,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(137, 15);
+            this.label10.Location = new System.Drawing.Point(84, 15);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(156, 25);
             this.label10.TabIndex = 39;
@@ -202,7 +201,7 @@
             // 
             this.pbBeforeRepair.BackColor = System.Drawing.Color.Transparent;
             this.pbBeforeRepair.Image = global::SCMSControlsLib.Properties.Resources.image;
-            this.pbBeforeRepair.Location = new System.Drawing.Point(127, 47);
+            this.pbBeforeRepair.Location = new System.Drawing.Point(74, 47);
             this.pbBeforeRepair.Name = "pbBeforeRepair";
             this.pbBeforeRepair.Size = new System.Drawing.Size(190, 112);
             this.pbBeforeRepair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,11 +212,11 @@
             // 
             this.lblLastUpdatedDate.AutoSize = true;
             this.lblLastUpdatedDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastUpdatedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastUpdatedDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedDate.Location = new System.Drawing.Point(592, 483);
+            this.lblLastUpdatedDate.Location = new System.Drawing.Point(525, 459);
             this.lblLastUpdatedDate.Name = "lblLastUpdatedDate";
-            this.lblLastUpdatedDate.Size = new System.Drawing.Size(55, 24);
+            this.lblLastUpdatedDate.Size = new System.Drawing.Size(49, 20);
             this.lblLastUpdatedDate.TabIndex = 36;
             this.lblLastUpdatedDate.Text = "[???]";
             // 
@@ -225,11 +224,11 @@
             // 
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Red;
-            this.label23.Location = new System.Drawing.Point(487, 483);
+            this.label23.Location = new System.Drawing.Point(432, 459);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(101, 24);
+            this.label23.Size = new System.Drawing.Size(91, 20);
             this.label23.TabIndex = 35;
             this.label23.Text = "L.U.Date :";
             // 
@@ -237,11 +236,11 @@
             // 
             this.lblLastUpdatedUser.AutoSize = true;
             this.lblLastUpdatedUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastUpdatedUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastUpdatedUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedUser.Location = new System.Drawing.Point(590, 437);
+            this.lblLastUpdatedUser.Location = new System.Drawing.Point(523, 418);
             this.lblLastUpdatedUser.Name = "lblLastUpdatedUser";
-            this.lblLastUpdatedUser.Size = new System.Drawing.Size(55, 24);
+            this.lblLastUpdatedUser.Size = new System.Drawing.Size(49, 20);
             this.lblLastUpdatedUser.TabIndex = 34;
             this.lblLastUpdatedUser.Text = "[???]";
             // 
@@ -249,11 +248,11 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Red;
-            this.label21.Location = new System.Drawing.Point(477, 437);
+            this.label21.Location = new System.Drawing.Point(433, 418);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(102, 24);
+            this.label21.Size = new System.Drawing.Size(90, 20);
             this.label21.TabIndex = 33;
             this.label21.Text = "L.U.User :";
             // 
@@ -261,11 +260,11 @@
             // 
             this.lblCreatedUser.AutoSize = true;
             this.lblCreatedUser.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatedUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedUser.Location = new System.Drawing.Point(157, 483);
+            this.lblCreatedUser.Location = new System.Drawing.Point(188, 459);
             this.lblCreatedUser.Name = "lblCreatedUser";
-            this.lblCreatedUser.Size = new System.Drawing.Size(55, 24);
+            this.lblCreatedUser.Size = new System.Drawing.Size(49, 20);
             this.lblCreatedUser.TabIndex = 32;
             this.lblCreatedUser.Text = "[???]";
             // 
@@ -273,11 +272,11 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(8, 483);
+            this.label20.Location = new System.Drawing.Point(55, 459);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(144, 24);
+            this.label20.Size = new System.Drawing.Size(126, 20);
             this.label20.TabIndex = 31;
             this.label20.Text = "Created User :";
             // 
@@ -285,11 +284,11 @@
             // 
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerName.ForeColor = System.Drawing.Color.Blue;
-            this.lblCustomerName.Location = new System.Drawing.Point(201, 437);
+            this.lblCustomerName.Location = new System.Drawing.Point(190, 418);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(55, 24);
+            this.lblCustomerName.Size = new System.Drawing.Size(49, 20);
             this.lblCustomerName.TabIndex = 30;
             this.lblCustomerName.Text = "[???]";
             // 
@@ -297,11 +296,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(1, 437);
+            this.label19.Location = new System.Drawing.Point(39, 418);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(172, 24);
+            this.label19.Size = new System.Drawing.Size(147, 20);
             this.label19.TabIndex = 29;
             this.label19.Text = "Customer Name :";
             // 
@@ -309,11 +308,11 @@
             // 
             this.lblCustomerID.AutoSize = true;
             this.lblCustomerID.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerID.ForeColor = System.Drawing.Color.Blue;
-            this.lblCustomerID.Location = new System.Drawing.Point(627, 391);
+            this.lblCustomerID.Location = new System.Drawing.Point(526, 377);
             this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(55, 24);
+            this.lblCustomerID.Size = new System.Drawing.Size(49, 20);
             this.lblCustomerID.TabIndex = 28;
             this.lblCustomerID.Text = "[???]";
             // 
@@ -321,11 +320,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(468, 391);
+            this.label18.Location = new System.Drawing.Point(396, 377);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(142, 24);
+            this.label18.Size = new System.Drawing.Size(125, 20);
             this.label18.TabIndex = 27;
             this.label18.Text = "Customer ID  :";
             // 
@@ -333,11 +332,11 @@
             // 
             this.lblDeviceID.AutoSize = true;
             this.lblDeviceID.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeviceID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeviceID.ForeColor = System.Drawing.Color.Blue;
-            this.lblDeviceID.Location = new System.Drawing.Point(613, 345);
+            this.lblDeviceID.Location = new System.Drawing.Point(524, 336);
             this.lblDeviceID.Name = "lblDeviceID";
-            this.lblDeviceID.Size = new System.Drawing.Size(55, 24);
+            this.lblDeviceID.Size = new System.Drawing.Size(49, 20);
             this.lblDeviceID.TabIndex = 26;
             this.lblDeviceID.Text = "[???]";
             // 
@@ -345,11 +344,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(477, 345);
+            this.label17.Location = new System.Drawing.Point(419, 336);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(117, 24);
+            this.label17.Size = new System.Drawing.Size(102, 20);
             this.label17.TabIndex = 25;
             this.label17.Text = "Device ID  :";
             // 
@@ -357,11 +356,11 @@
             // 
             this.lblDeviceTypeName.AutoSize = true;
             this.lblDeviceTypeName.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeviceTypeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceTypeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeviceTypeName.ForeColor = System.Drawing.Color.Blue;
-            this.lblDeviceTypeName.Location = new System.Drawing.Point(228, 391);
+            this.lblDeviceTypeName.Location = new System.Drawing.Point(188, 377);
             this.lblDeviceTypeName.Name = "lblDeviceTypeName";
-            this.lblDeviceTypeName.Size = new System.Drawing.Size(55, 24);
+            this.lblDeviceTypeName.Size = new System.Drawing.Size(49, 20);
             this.lblDeviceTypeName.TabIndex = 24;
             this.lblDeviceTypeName.Text = "[???]";
             // 
@@ -369,11 +368,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(8, 391);
+            this.label15.Location = new System.Drawing.Point(21, 377);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(200, 24);
+            this.label15.Size = new System.Drawing.Size(167, 20);
             this.label15.TabIndex = 23;
             this.label15.Text = "Device Type Name :";
             // 
@@ -381,11 +380,11 @@
             // 
             this.lblAssignedTechnicianName.AutoSize = true;
             this.lblAssignedTechnicianName.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssignedTechnicianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssignedTechnicianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignedTechnicianName.ForeColor = System.Drawing.Color.Blue;
-            this.lblAssignedTechnicianName.Location = new System.Drawing.Point(235, 345);
+            this.lblAssignedTechnicianName.Location = new System.Drawing.Point(188, 336);
             this.lblAssignedTechnicianName.Name = "lblAssignedTechnicianName";
-            this.lblAssignedTechnicianName.Size = new System.Drawing.Size(55, 24);
+            this.lblAssignedTechnicianName.Size = new System.Drawing.Size(49, 20);
             this.lblAssignedTechnicianName.TabIndex = 22;
             this.lblAssignedTechnicianName.Text = "[???]";
             // 
@@ -393,11 +392,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(-5, 345);
+            this.label14.Location = new System.Drawing.Point(-2, 336);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(227, 24);
+            this.label14.Size = new System.Drawing.Size(191, 20);
             this.label14.TabIndex = 21;
             this.label14.Text = "Ass.Technician Name :";
             // 
@@ -405,11 +404,11 @@
             // 
             this.lblAssignedTechnicianID.AutoSize = true;
             this.lblAssignedTechnicianID.BackColor = System.Drawing.Color.Transparent;
-            this.lblAssignedTechnicianID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAssignedTechnicianID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignedTechnicianID.ForeColor = System.Drawing.Color.Blue;
-            this.lblAssignedTechnicianID.Location = new System.Drawing.Point(619, 299);
+            this.lblAssignedTechnicianID.Location = new System.Drawing.Point(526, 295);
             this.lblAssignedTechnicianID.Name = "lblAssignedTechnicianID";
-            this.lblAssignedTechnicianID.Size = new System.Drawing.Size(55, 24);
+            this.lblAssignedTechnicianID.Size = new System.Drawing.Size(49, 20);
             this.lblAssignedTechnicianID.TabIndex = 20;
             this.lblAssignedTechnicianID.Text = "[???]";
             // 
@@ -417,11 +416,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(411, 299);
+            this.label12.Location = new System.Drawing.Point(350, 295);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(197, 24);
+            this.label12.Size = new System.Drawing.Size(169, 20);
             this.label12.TabIndex = 19;
             this.label12.Text = "Ass.Technician ID  :";
             // 
@@ -429,11 +428,11 @@
             // 
             this.lblNotes.AutoSize = true;
             this.lblNotes.BackColor = System.Drawing.Color.Transparent;
-            this.lblNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotes.ForeColor = System.Drawing.Color.Blue;
-            this.lblNotes.Location = new System.Drawing.Point(115, 575);
+            this.lblNotes.Location = new System.Drawing.Point(188, 541);
             this.lblNotes.Name = "lblNotes";
-            this.lblNotes.Size = new System.Drawing.Size(55, 24);
+            this.lblNotes.Size = new System.Drawing.Size(49, 20);
             this.lblNotes.TabIndex = 18;
             this.lblNotes.Text = "[???]";
             // 
@@ -441,11 +440,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(13, 575);
+            this.label11.Location = new System.Drawing.Point(115, 541);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 24);
+            this.label11.Size = new System.Drawing.Size(66, 20);
             this.label11.TabIndex = 17;
             this.label11.Text = "Notes :";
             // 
@@ -453,11 +452,11 @@
             // 
             this.lblProblemDescription.AutoSize = true;
             this.lblProblemDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblProblemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProblemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProblemDescription.ForeColor = System.Drawing.Color.Blue;
-            this.lblProblemDescription.Location = new System.Drawing.Point(233, 529);
+            this.lblProblemDescription.Location = new System.Drawing.Point(189, 500);
             this.lblProblemDescription.Name = "lblProblemDescription";
-            this.lblProblemDescription.Size = new System.Drawing.Size(55, 24);
+            this.lblProblemDescription.Size = new System.Drawing.Size(49, 20);
             this.lblProblemDescription.TabIndex = 16;
             this.lblProblemDescription.Text = "[???]";
             // 
@@ -465,11 +464,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(12, 529);
+            this.label4.Location = new System.Drawing.Point(1, 500);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 24);
+            this.label4.Size = new System.Drawing.Size(180, 20);
             this.label4.TabIndex = 15;
             this.label4.Text = "Problem Description :";
             // 
@@ -477,11 +476,11 @@
             // 
             this.lblDateDelivered.AutoSize = true;
             this.lblDateDelivered.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateDelivered.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateDelivered.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateDelivered.ForeColor = System.Drawing.Color.Blue;
-            this.lblDateDelivered.Location = new System.Drawing.Point(571, 207);
+            this.lblDateDelivered.Location = new System.Drawing.Point(523, 213);
             this.lblDateDelivered.Name = "lblDateDelivered";
-            this.lblDateDelivered.Size = new System.Drawing.Size(55, 24);
+            this.lblDateDelivered.Size = new System.Drawing.Size(49, 20);
             this.lblDateDelivered.TabIndex = 14;
             this.lblDateDelivered.Text = "[???]";
             // 
@@ -489,11 +488,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(411, 207);
+            this.label9.Location = new System.Drawing.Point(379, 213);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(159, 24);
+            this.label9.Size = new System.Drawing.Size(138, 20);
             this.label9.TabIndex = 13;
             this.label9.Text = "Date Delivered :";
             // 
@@ -501,11 +500,11 @@
             // 
             this.lblActualCost.AutoSize = true;
             this.lblActualCost.BackColor = System.Drawing.Color.Transparent;
-            this.lblActualCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActualCost.ForeColor = System.Drawing.Color.Blue;
-            this.lblActualCost.Location = new System.Drawing.Point(566, 161);
+            this.lblActualCost.Location = new System.Drawing.Point(522, 172);
             this.lblActualCost.Name = "lblActualCost";
-            this.lblActualCost.Size = new System.Drawing.Size(55, 24);
+            this.lblActualCost.Size = new System.Drawing.Size(49, 20);
             this.lblActualCost.TabIndex = 12;
             this.lblActualCost.Text = "[???]";
             // 
@@ -513,11 +512,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(425, 161);
+            this.label8.Location = new System.Drawing.Point(401, 172);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 24);
+            this.label8.Size = new System.Drawing.Size(112, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "Actual Cost :";
             // 
@@ -525,11 +524,11 @@
             // 
             this.lblEstimatedCost.AutoSize = true;
             this.lblEstimatedCost.BackColor = System.Drawing.Color.Transparent;
-            this.lblEstimatedCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstimatedCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstimatedCost.ForeColor = System.Drawing.Color.Blue;
-            this.lblEstimatedCost.Location = new System.Drawing.Point(168, 253);
+            this.lblEstimatedCost.Location = new System.Drawing.Point(149, 254);
             this.lblEstimatedCost.Name = "lblEstimatedCost";
-            this.lblEstimatedCost.Size = new System.Drawing.Size(55, 24);
+            this.lblEstimatedCost.Size = new System.Drawing.Size(49, 20);
             this.lblEstimatedCost.TabIndex = 10;
             this.lblEstimatedCost.Text = "[???]";
             // 
@@ -537,11 +536,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(5, 253);
+            this.label7.Location = new System.Drawing.Point(7, 254);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 24);
+            this.label7.Size = new System.Drawing.Size(142, 20);
             this.label7.TabIndex = 9;
             this.label7.Text = "Estimated Cost :";
             // 
@@ -549,11 +548,11 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.Blue;
-            this.lblStatus.Location = new System.Drawing.Point(526, 253);
+            this.lblStatus.Location = new System.Drawing.Point(523, 254);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(55, 24);
+            this.lblStatus.Size = new System.Drawing.Size(49, 20);
             this.lblStatus.TabIndex = 8;
             this.lblStatus.Text = "[???]";
             // 
@@ -561,11 +560,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(444, 253);
+            this.label6.Location = new System.Drawing.Point(444, 254);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 24);
+            this.label6.Size = new System.Drawing.Size(72, 20);
             this.label6.TabIndex = 7;
             this.label6.Text = "Status :";
             // 
@@ -573,11 +572,11 @@
             // 
             this.lblPriority.AutoSize = true;
             this.lblPriority.BackColor = System.Drawing.Color.Transparent;
-            this.lblPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPriority.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPriority.ForeColor = System.Drawing.Color.Blue;
-            this.lblPriority.Location = new System.Drawing.Point(124, 299);
+            this.lblPriority.Location = new System.Drawing.Point(149, 295);
             this.lblPriority.Name = "lblPriority";
-            this.lblPriority.Size = new System.Drawing.Size(55, 24);
+            this.lblPriority.Size = new System.Drawing.Size(49, 20);
             this.lblPriority.TabIndex = 6;
             this.lblPriority.Text = "[???]";
             // 
@@ -585,11 +584,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(32, 299);
+            this.label3.Location = new System.Drawing.Point(71, 295);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 24);
+            this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 5;
             this.label3.Text = "Priority :";
             // 
@@ -597,11 +596,11 @@
             // 
             this.lblDateReceived.AutoSize = true;
             this.lblDateReceived.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateReceived.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDateReceived.ForeColor = System.Drawing.Color.Blue;
-            this.lblDateReceived.Location = new System.Drawing.Point(171, 207);
+            this.lblDateReceived.Location = new System.Drawing.Point(148, 213);
             this.lblDateReceived.Name = "lblDateReceived";
-            this.lblDateReceived.Size = new System.Drawing.Size(55, 24);
+            this.lblDateReceived.Size = new System.Drawing.Size(49, 20);
             this.lblDateReceived.TabIndex = 4;
             this.lblDateReceived.Text = "[???]";
             // 
@@ -609,11 +608,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(8, 207);
+            this.label5.Location = new System.Drawing.Point(9, 213);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 24);
+            this.label5.Size = new System.Drawing.Size(137, 20);
             this.label5.TabIndex = 3;
             this.label5.Text = "Date Received :";
             // 
@@ -621,11 +620,11 @@
             // 
             this.lblRepairOrderID.AutoSize = true;
             this.lblRepairOrderID.BackColor = System.Drawing.Color.Transparent;
-            this.lblRepairOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepairOrderID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepairOrderID.ForeColor = System.Drawing.Color.Blue;
-            this.lblRepairOrderID.Location = new System.Drawing.Point(180, 161);
+            this.lblRepairOrderID.Location = new System.Drawing.Point(151, 172);
             this.lblRepairOrderID.Name = "lblRepairOrderID";
-            this.lblRepairOrderID.Size = new System.Drawing.Size(55, 24);
+            this.lblRepairOrderID.Size = new System.Drawing.Size(49, 20);
             this.lblRepairOrderID.TabIndex = 2;
             this.lblRepairOrderID.Text = "[???]";
             // 
@@ -633,11 +632,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(6, 161);
+            this.label2.Location = new System.Drawing.Point(4, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 24);
+            this.label2.Size = new System.Drawing.Size(146, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Repair Order ID :";
             // 
@@ -649,7 +648,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "ucShowRepairOrderDetails";
-            this.Size = new System.Drawing.Size(830, 715);
+            this.Size = new System.Drawing.Size(773, 692);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAfterRepair)).EndInit();
