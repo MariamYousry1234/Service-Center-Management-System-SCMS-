@@ -158,6 +158,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditBrand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Brand";

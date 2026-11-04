@@ -73,7 +73,7 @@
             this.lblSpecialization.BackColor = System.Drawing.Color.Transparent;
             this.lblSpecialization.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSpecialization.ForeColor = System.Drawing.Color.Blue;
-            this.lblSpecialization.Location = new System.Drawing.Point(374, 47);
+            this.lblSpecialization.Location = new System.Drawing.Point(363, 47);
             this.lblSpecialization.Name = "lblSpecialization";
             this.lblSpecialization.Size = new System.Drawing.Size(28, 15);
             this.lblSpecialization.TabIndex = 46;
@@ -85,7 +85,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(245, 44);
+            this.label2.Location = new System.Drawing.Point(235, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 19);
             this.label2.TabIndex = 45;
@@ -157,7 +157,7 @@
             this.lblCreatedDate.BackColor = System.Drawing.Color.Transparent;
             this.lblCreatedDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedDate.Location = new System.Drawing.Point(372, 75);
+            this.lblCreatedDate.Location = new System.Drawing.Point(371, 75);
             this.lblCreatedDate.Name = "lblCreatedDate";
             this.lblCreatedDate.Size = new System.Drawing.Size(39, 19);
             this.lblCreatedDate.TabIndex = 39;

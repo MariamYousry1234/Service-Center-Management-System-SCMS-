@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(676, 471);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowDeviceInfo1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowDeviceDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Device Details";

@@ -320,6 +320,10 @@ namespace SCMS_Business_Logic
                 case enStatus.RepairCostDetermined:
                     return "Repair Cost Determined";
 
+                case enStatus.InvoiceIssuing:
+                    return "Invoice Issuing";
+
+
                 case enStatus.ReadyForDelivery:
                     return "Ready For Delivery";
 

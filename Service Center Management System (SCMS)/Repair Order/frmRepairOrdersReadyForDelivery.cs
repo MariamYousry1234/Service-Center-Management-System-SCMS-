@@ -20,6 +20,7 @@ namespace Service_Center_Management_System__SCMS_
         private async void frmRepairOrdersReadyForDelivery_Load(object sender, EventArgs e)
         {
             ucRepairOrdersReadyForDelivery1.RecordDelivery = _RecordDelivery;
+            ucRepairOrdersReadyForDelivery1.ShowRepairOrderDetails = _ShowRepairOrderDetails;
 
             await ucRepairOrdersReadyForDelivery1.LoadRepairOrdersReadyforDelivery();
         }
@@ -30,6 +31,14 @@ namespace Service_Center_Management_System__SCMS_
             frmAddEditDelivery frm = new frmAddEditDelivery(RepairOrderID, true);
 
             frm.ShowDialog();   
+        }
+
+        private void _ShowRepairOrderDetails(int RepairOrderID)
+        {
+            frmShowRepairOrderDetails frm = new frmShowRepairOrderDetails(RepairOrderID);
+
+
+            frm.ShowDialog();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

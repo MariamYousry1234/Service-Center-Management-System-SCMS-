@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(698, 477);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowDeliveryInfo1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowDeliveryInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Delivery Info";

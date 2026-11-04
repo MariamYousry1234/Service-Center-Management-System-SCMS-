@@ -322,6 +322,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.gbInfo);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditDiagnosis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Diagnosis";

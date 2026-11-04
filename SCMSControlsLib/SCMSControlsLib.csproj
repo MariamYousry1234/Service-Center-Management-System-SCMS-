@@ -134,34 +134,34 @@
     <Compile Include="DeviceType\ucShowDeviceTypeInfo.Designer.cs">
       <DependentUpon>ucShowDeviceTypeInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Brand\ucSearchForABrand.cs">
+    <Compile Include="Device\Brand\ucSearchForABrand.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Brand\ucSearchForABrand.Designer.cs">
+    <Compile Include="Device\Brand\ucSearchForABrand.Designer.cs">
       <DependentUpon>ucSearchForABrand.cs</DependentUpon>
     </Compile>
-    <Compile Include="Brand\ucShowBrandInfo.cs">
+    <Compile Include="Device\Brand\ucShowBrandInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Brand\ucShowBrandInfo.Designer.cs">
+    <Compile Include="Device\Brand\ucShowBrandInfo.Designer.cs">
       <DependentUpon>ucShowBrandInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Brand\ucShowAllModelsForBrand.cs">
+    <Compile Include="Device\Brand\ucShowAllModelsForBrand.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Brand\ucShowAllModelsForBrand.Designer.cs">
+    <Compile Include="Device\Brand\ucShowAllModelsForBrand.Designer.cs">
       <DependentUpon>ucShowAllModelsForBrand.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\ucSearchForAModel.cs">
+    <Compile Include="Device\Model\ucSearchForAModel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\ucSearchForAModel.Designer.cs">
+    <Compile Include="Device\Model\ucSearchForAModel.Designer.cs">
       <DependentUpon>ucSearchForAModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\ucShowModelInfo.cs">
+    <Compile Include="Device\Model\ucShowModelInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Model\ucShowModelInfo.Designer.cs">
+    <Compile Include="Device\Model\ucShowModelInfo.Designer.cs">
       <DependentUpon>ucShowModelInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Device\ucSearchForADevice.cs">
@@ -408,19 +408,19 @@
     <EmbeddedResource Include="DeviceType\ucShowDeviceTypeInfo.resx">
       <DependentUpon>ucShowDeviceTypeInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Brand\ucSearchForABrand.resx">
+    <EmbeddedResource Include="Device\Brand\ucSearchForABrand.resx">
       <DependentUpon>ucSearchForABrand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Brand\ucShowBrandInfo.resx">
+    <EmbeddedResource Include="Device\Brand\ucShowBrandInfo.resx">
       <DependentUpon>ucShowBrandInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Brand\ucShowAllModelsForBrand.resx">
+    <EmbeddedResource Include="Device\Brand\ucShowAllModelsForBrand.resx">
       <DependentUpon>ucShowAllModelsForBrand.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\ucSearchForAModel.resx">
+    <EmbeddedResource Include="Device\Model\ucSearchForAModel.resx">
       <DependentUpon>ucSearchForAModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\ucShowModelInfo.resx">
+    <EmbeddedResource Include="Device\Model\ucShowModelInfo.resx">
       <DependentUpon>ucShowModelInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Device\ucSearchForADevice.resx">

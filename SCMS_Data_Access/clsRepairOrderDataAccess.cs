@@ -932,7 +932,7 @@ namespace SCMS_Data_Access
             {
                 using (SqlConnection Connection = new SqlConnection(clsSettings.ConnectionString))
                 {
-                    using (SqlCommand Command = new SqlCommand("SP_IsDeviceHasRepairOrderss", Connection))
+                    using (SqlCommand Command = new SqlCommand("SP_IsDeviceHasRepairOrders", Connection))
                     {
                         Command.CommandType = CommandType.StoredProcedure;
 

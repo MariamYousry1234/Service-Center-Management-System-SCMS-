@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(454, 427);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowUserInfo1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowUserInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmShowUserInfo";

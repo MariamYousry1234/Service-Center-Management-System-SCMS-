@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1095, 414);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAllDevicesForACustomer1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowAllDevicesForACustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show All Devices For A Customer";

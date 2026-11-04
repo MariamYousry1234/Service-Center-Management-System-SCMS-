@@ -158,5 +158,15 @@ namespace Service_Center_Management_System__SCMS_
 
             frmManageInvoices_Load(null, null);
         }
+
+        private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (_CurrentRepairOrder == null) return;
+
+            frmShowRepairOrderDetails frm =
+                new frmShowRepairOrderDetails(_CurrentRepairOrder.RepairOrderID);
+
+            frm.ShowDialog();
+        }
     }
 }

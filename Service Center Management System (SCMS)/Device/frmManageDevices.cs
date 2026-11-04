@@ -151,8 +151,23 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showRepairOrdersToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            int DeviceID = (int)dgvData.CurrentRow.Cells[0].Value;
+
+            bool IsDeviceHasRepairOrders = clsDevice.FindDevice(DeviceID).HasRepairOrders;
+
+            if(!IsDeviceHasRepairOrders)
+            {
+
+                MessageBox.Show("This device has no repair orders.",
+                     "No Repair Orders",
+                         MessageBoxButtons.OK,
+                 MessageBoxIcon.Information);
+
+                return;
+            }
+
             frmViewRepairOrdersForDevice frm =
-                new frmViewRepairOrdersForDevice((int)dgvData.CurrentRow.Cells[0].Value);
+                new frmViewRepairOrdersForDevice(DeviceID);
 
             frm.ShowDialog();
         }

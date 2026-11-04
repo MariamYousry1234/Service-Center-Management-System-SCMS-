@@ -528,8 +528,6 @@ namespace SCMS_Data_Access
                             PartID);
 
 
-
-
                         await Connection.OpenAsync();
 
                         using (SqlDataReader Data = await Command.ExecuteReaderAsync())

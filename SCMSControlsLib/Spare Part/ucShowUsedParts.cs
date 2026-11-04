@@ -98,10 +98,18 @@ namespace SCMSControlsLib
      
         private void addUsedSparePartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddUsedPart?.Invoke((int)dgvData.CurrentRow.Cells[1].Value);
+            if (_RepairOrderID == null) return;
+
+
+            AddUsedPart?.Invoke(_RepairOrderID.Value);
         }
 
-        
-     
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+            showSparePartDetailsToolStripMenuItem.Enabled = dgvData.CurrentRow != null;
+
+            deleteSparePartToolStripMenuItem.Enabled = dgvData.CurrentRow != null;
+        }
     }
 }

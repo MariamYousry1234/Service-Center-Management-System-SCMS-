@@ -288,6 +288,7 @@ namespace SCMS_Data_Access
             int PartID,
             string PartName,
             float SellingPrice,
+            int Quantity,
             byte MinimumStockLevel,
             int PartCategoryID,
             int PartBrandID,
@@ -319,6 +320,12 @@ namespace SCMS_Data_Access
                         Command.Parameters.AddWithValue(
                             "SellingPrice",
                             SellingPrice);
+
+
+
+                        Command.Parameters.AddWithValue(
+                            "Quantity",
+                            Quantity);
 
                         Command.Parameters.AddWithValue(
                             "MinimumStockLevel",
@@ -707,6 +714,60 @@ namespace SCMS_Data_Access
             }
 
             return NumberOfPages;
+        }
+
+        public static bool IsSparePartHasPreviousPuchases(int SparePartID)
+        {
+            bool HasPreviousPuchases = false;
+
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand(
+                            "SP_IsSparePartHasPreviousPuchases",
+                            Connection))
+                    {
+                        Command.CommandType =
+                            CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue(
+                            "SparePartID",
+                             SparePartID);
+
+                        SqlParameter ReturnValue =
+                            new SqlParameter(
+                                "ReturnValue",
+                                SqlDbType.Int)
+                            {
+                                Direction =
+                                    ParameterDirection.ReturnValue
+                            };
+
+                        Command.Parameters.Add(
+                            ReturnValue);
+
+
+                        Connection.Open();
+
+                        Command.ExecuteNonQuery();
+
+                        HasPreviousPuchases = ((int)ReturnValue.Value == 1);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+
+            return HasPreviousPuchases;
         }
     }
 }

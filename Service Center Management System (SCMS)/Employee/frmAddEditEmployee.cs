@@ -108,7 +108,8 @@ namespace Service_Center_Management_System__SCMS_
                 dtpHireDate.Value = _Employee.HireDate;
                 chbIsActive.Checked = _Employee.IsActive;
                 lblCreatedDate.Text = _Employee.CreatedDate.ToString("dd/MM/yyyy");
-                lblCreatedByUser.Text = clsUser.FindUser(_Employee.CreatedByUserID).Username;
+                lblCreatedByUser.Text = _Employee.CreatedByUserID != null?
+                    clsUser.FindUser(_Employee.CreatedByUserID.Value).Username : "Un Known" ;
             }
             else
             {
@@ -203,7 +204,7 @@ namespace Service_Center_Management_System__SCMS_
                 if (_Mode == enMode.AddNew)
                 {
 
-                    _Employee.CreatedByUserID = clsGlobal.CurrentUser.UserID;
+                   _Employee.CreatedByUserID = clsGlobal.CurrentUser.UserID;
                 }
                 else
                 {
@@ -213,7 +214,7 @@ namespace Service_Center_Management_System__SCMS_
 
                 if (_Employee.Save())
                 {
-                    MessageBox.Show($"Data Saved Successfull", "Saved", MessageBoxButtons.OK,
+                    MessageBox.Show($"Data Saved Successfully", "Saved", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
 
 

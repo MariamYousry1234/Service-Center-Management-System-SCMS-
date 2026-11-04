@@ -46,7 +46,7 @@
             this.gbAllAccounts.ForeColor = System.Drawing.Color.Red;
             this.gbAllAccounts.Location = new System.Drawing.Point(1, 1);
             this.gbAllAccounts.Name = "gbAllAccounts";
-            this.gbAllAccounts.Size = new System.Drawing.Size(896, 289);
+            this.gbAllAccounts.Size = new System.Drawing.Size(896, 376);
             this.gbAllAccounts.TabIndex = 0;
             this.gbAllAccounts.Text = "All Acounts ";
             // 
@@ -59,18 +59,18 @@
             this.dgvAllAcounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvAllAcounts.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAllAcounts.GridColor = System.Drawing.Color.Black;
-            this.dgvAllAcounts.Location = new System.Drawing.Point(0, 60);
+            this.dgvAllAcounts.Location = new System.Drawing.Point(-2, 61);
             this.dgvAllAcounts.Name = "dgvAllAcounts";
             this.dgvAllAcounts.ReadOnly = true;
             this.dgvAllAcounts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllAcounts.Size = new System.Drawing.Size(893, 175);
+            this.dgvAllAcounts.Size = new System.Drawing.Size(893, 258);
             this.dgvAllAcounts.TabIndex = 3;
             // 
             // lblNumberOfAccounts
@@ -78,7 +78,7 @@
             this.lblNumberOfAccounts.AutoSize = true;
             this.lblNumberOfAccounts.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfAccounts.ForeColor = System.Drawing.Color.Blue;
-            this.lblNumberOfAccounts.Location = new System.Drawing.Point(305, 253);
+            this.lblNumberOfAccounts.Location = new System.Drawing.Point(303, 333);
             this.lblNumberOfAccounts.Name = "lblNumberOfAccounts";
             this.lblNumberOfAccounts.Size = new System.Drawing.Size(65, 32);
             this.lblNumberOfAccounts.TabIndex = 2;
@@ -88,7 +88,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(5, 253);
+            this.label1.Location = new System.Drawing.Point(3, 333);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(269, 32);
             this.label1.TabIndex = 1;
@@ -101,7 +101,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.gbAllAccounts);
             this.Name = "ucShowAllAcountsForAnEmployee";
-            this.Size = new System.Drawing.Size(898, 292);
+            this.Size = new System.Drawing.Size(898, 377);
             this.gbAllAccounts.ResumeLayout(false);
             this.gbAllAccounts.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllAcounts)).EndInit();

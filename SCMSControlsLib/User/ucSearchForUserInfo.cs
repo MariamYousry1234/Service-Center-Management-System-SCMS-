@@ -25,6 +25,9 @@ namespace SCMSControlsLib
         }
         private void cbField_SelectedIndexChanged(object sender, EventArgs e)
         {
+            txtSearch.WritingType = cbField.Text == "Username" ? cusTextBox.enWritingType.Text :
+                cusTextBox.enWritingType.Numbers;
+
             txtSearch.Clear();
             txtSearch.Focus();
         }
@@ -47,6 +50,12 @@ namespace SCMSControlsLib
                     }
                     break;
             }
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                btnSearch.PerformClick();
         }
     }
 }

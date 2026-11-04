@@ -270,25 +270,25 @@
             this.cbColor.ItemHeight = 30;
             this.cbColor.Items.AddRange(new object[] {
             "Black ",
-            "White ",
+            "White",
             "Silver",
             "Gray",
             "Blue",
             "Red",
-            "Green ",
+            "Green",
             "Yellow",
             "Orange",
-            "Purple ",
+            "Purple",
             "Pink",
-            "Gold ",
-            "Brown ",
-            "Beige ",
+            "Gold",
+            "Brown",
+            "Beige",
             "Bronze",
-            "NavyBlue ",
-            "DarkGray ",
-            "LightGray ",
+            "NavyBlue",
+            "DarkGray",
+            "LightGray",
             "Other"});
-            this.cbColor.Location = new System.Drawing.Point(180, 388);
+            this.cbColor.Location = new System.Drawing.Point(178, 388);
             this.cbColor.Name = "cbColor";
             this.cbColor.Size = new System.Drawing.Size(274, 36);
             this.cbColor.TabIndex = 47;
@@ -297,9 +297,9 @@
             // 
             this.txtSerialNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSerialNumber.IsRequired = true;
-            this.txtSerialNumber.Location = new System.Drawing.Point(185, 321);
+            this.txtSerialNumber.Location = new System.Drawing.Point(184, 321);
             this.txtSerialNumber.Name = "txtSerialNumber";
-            this.txtSerialNumber.Size = new System.Drawing.Size(274, 35);
+            this.txtSerialNumber.Size = new System.Drawing.Size(268, 35);
             this.txtSerialNumber.TabIndex = 45;
             this.txtSerialNumber.WritingType = ControlsLib.cusTextBox.enWritingType.None;
             // 
@@ -315,7 +315,7 @@
             this.cbModelName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbModelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbModelName.ItemHeight = 30;
-            this.cbModelName.Location = new System.Drawing.Point(183, 253);
+            this.cbModelName.Location = new System.Drawing.Point(179, 253);
             this.cbModelName.Name = "cbModelName";
             this.cbModelName.Size = new System.Drawing.Size(274, 36);
             this.cbModelName.TabIndex = 43;
@@ -332,7 +332,7 @@
             this.cbBrandName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbBrandName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbBrandName.ItemHeight = 30;
-            this.cbBrandName.Location = new System.Drawing.Point(184, 185);
+            this.cbBrandName.Location = new System.Drawing.Point(182, 185);
             this.cbBrandName.Name = "cbBrandName";
             this.cbBrandName.Size = new System.Drawing.Size(269, 36);
             this.cbBrandName.TabIndex = 41;
@@ -350,7 +350,7 @@
             this.cbDeviceType.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDeviceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbDeviceType.ItemHeight = 30;
-            this.cbDeviceType.Location = new System.Drawing.Point(185, 117);
+            this.cbDeviceType.Location = new System.Drawing.Point(183, 117);
             this.cbDeviceType.Name = "cbDeviceType";
             this.cbDeviceType.Size = new System.Drawing.Size(269, 36);
             this.cbDeviceType.TabIndex = 39;
@@ -418,6 +418,8 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2TabControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditDevice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Device";

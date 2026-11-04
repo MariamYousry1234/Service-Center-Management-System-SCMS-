@@ -273,6 +273,8 @@
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageDevices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Devices";

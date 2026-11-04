@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.cbField = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ucShowUserInfo1 = new SCMSControlsLib.ucShowUserInfo();
+            this.txtSearch = new SCMSControlsLib.cusTextBox();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,17 +48,6 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(456, 101);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Search 🔍";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.IsRequired = true;
-            this.txtSearch.Length = null;
-            this.txtSearch.Location = new System.Drawing.Point(172, 54);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(180, 35);
-            this.txtSearch.TabIndex = 8;
-            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
             // 
             // btnSearch
             // 
@@ -105,6 +94,18 @@
             this.ucShowUserInfo1.Name = "ucShowUserInfo1";
             this.ucShowUserInfo1.Size = new System.Drawing.Size(456, 358);
             this.ucShowUserInfo1.TabIndex = 3;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.IsRequired = true;
+            this.txtSearch.Length = null;
+            this.txtSearch.Location = new System.Drawing.Point(172, 54);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(180, 35);
+            this.txtSearch.TabIndex = 8;
+            this.txtSearch.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // ucSearchForUserInfo
             // 

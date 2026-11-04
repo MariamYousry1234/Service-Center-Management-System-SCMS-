@@ -92,6 +92,8 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.ucSearchForAnEmployee1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSelectEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Employee";

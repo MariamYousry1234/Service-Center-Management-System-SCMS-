@@ -57,7 +57,7 @@ namespace Service_Center_Management_System__SCMS_
             }
             else
             {
-                MessageBox.Show($"Data Saved Successfull", "Saved", MessageBoxButtons.OK,
+                MessageBox.Show($"Data Saved Successfully", "Saved", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
                 this.Close();
             }

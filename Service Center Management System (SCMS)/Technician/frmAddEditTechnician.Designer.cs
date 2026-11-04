@@ -283,6 +283,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2TabControl1);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditTechnician";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAddEditTechnician";

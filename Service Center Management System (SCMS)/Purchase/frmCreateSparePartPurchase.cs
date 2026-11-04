@@ -69,7 +69,7 @@ namespace Service_Center_Management_System__SCMS_
                 return;
             }
 
-            if(Convert.ToSingle(txtPurchasePrice.Text)<0)
+            if(Convert.ToSingle(txtPurchasePrice.Text.Trim())<0)
             {
                 MessageBox.Show("Purchase price cannot be negative.", "Not allowed",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -84,7 +84,7 @@ namespace Service_Center_Management_System__SCMS_
 
             _Purchase.PartID = ucSearchForSparePart1.SparePartID.Value;
             _Purchase.SupplierID = ucSearchForSupplier1.SupplierID.Value;
-            _Purchase.PurchasePrice = Convert.ToSingle(txtPurchasePrice.Text);
+            _Purchase.PurchasePrice = Convert.ToSingle(txtPurchasePrice.Text.Trim());
             _Purchase.Quantity = (int) nudQuantity.Value;
             _Purchase.CreatedByUserID = clsGlobal.CurrentUser.UserID;
 

@@ -184,6 +184,8 @@
             this.Controls.Add(this.txtOldPassword);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ucShowUserInfo1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChangePassword";

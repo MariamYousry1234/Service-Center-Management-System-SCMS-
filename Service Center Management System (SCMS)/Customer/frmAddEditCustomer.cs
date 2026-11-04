@@ -139,7 +139,8 @@ namespace Service_Center_Management_System__SCMS_
 
         private void _ConvertEmployeeToCustomer()
         {
-            int? CustomerId = _Employee.ConvertToCustomer(txtNotes.Text,
+            int? CustomerId = _Employee.ConvertToCustomer(string.IsNullOrEmpty(
+                txtNotes.Text)?null:txtNotes.Text,
               clsGlobal.CurrentUser.UserID);
 
             if (CustomerId != null)

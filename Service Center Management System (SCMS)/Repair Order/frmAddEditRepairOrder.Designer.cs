@@ -30,29 +30,29 @@
         {
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ucSearchForDeviceWithAddEdit1 = new SCMSControlsLib.ucSearchForDeviceWithAddEdit();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ucSearchForATechnician1 = new SCMSControlsLib.ucSearchForATechnician();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lblCreatedDate = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblUserCreated = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblRepairOrderID = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.llRemoveImage = new System.Windows.Forms.LinkLabel();
             this.llAddDeviceImage = new System.Windows.Forms.LinkLabel();
             this.cbPriority = new Guna.UI2.WinForms.Guna2ComboBox();
             this.pbDeviceImage = new System.Windows.Forms.PictureBox();
+            this.txtNotes = new SCMSControlsLib.cusTextBox();
+            this.txtProblemDescription = new SCMSControlsLib.cusTextBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.ucSearchForDeviceWithAddEdit1 = new SCMSControlsLib.ucSearchForDeviceWithAddEdit();
-            this.ucSearchForATechnician1 = new SCMSControlsLib.ucSearchForATechnician();
-            this.txtNotes = new SCMSControlsLib.cusTextBox();
-            this.txtProblemDescription = new SCMSControlsLib.cusTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblRepairOrderID = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lblUserCreated = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCreatedDate = new System.Windows.Forms.Label();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -105,6 +105,14 @@
             this.tabPage2.Text = "Device ID";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // ucSearchForDeviceWithAddEdit1
+            // 
+            this.ucSearchForDeviceWithAddEdit1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ucSearchForDeviceWithAddEdit1.Location = new System.Drawing.Point(2, 48);
+            this.ucSearchForDeviceWithAddEdit1.Name = "ucSearchForDeviceWithAddEdit1";
+            this.ucSearchForDeviceWithAddEdit1.Size = new System.Drawing.Size(640, 607);
+            this.ucSearchForDeviceWithAddEdit1.TabIndex = 0;
+            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.White;
@@ -114,6 +122,14 @@
             this.tabPage3.Size = new System.Drawing.Size(645, 701);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Assigned Technician ID";
+            // 
+            // ucSearchForATechnician1
+            // 
+            this.ucSearchForATechnician1.gbEnabeld = true;
+            this.ucSearchForATechnician1.Location = new System.Drawing.Point(81, -4);
+            this.ucSearchForATechnician1.Name = "ucSearchForATechnician1";
+            this.ucSearchForATechnician1.Size = new System.Drawing.Size(489, 700);
+            this.ucSearchForATechnician1.TabIndex = 0;
             // 
             // tabPage4
             // 
@@ -138,6 +154,105 @@
             this.tabPage4.Size = new System.Drawing.Size(645, 701);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Additional Information";
+            // 
+            // lblCreatedDate
+            // 
+            this.lblCreatedDate.AutoSize = true;
+            this.lblCreatedDate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedDate.ForeColor = System.Drawing.Color.Black;
+            this.lblCreatedDate.Location = new System.Drawing.Point(210, 577);
+            this.lblCreatedDate.Name = "lblCreatedDate";
+            this.lblCreatedDate.Size = new System.Drawing.Size(59, 27);
+            this.lblCreatedDate.TabIndex = 63;
+            this.lblCreatedDate.Text = "[???]";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(46, 577);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 27);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Created Date :";
+            // 
+            // lblUserCreated
+            // 
+            this.lblUserCreated.AutoSize = true;
+            this.lblUserCreated.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserCreated.ForeColor = System.Drawing.Color.Black;
+            this.lblUserCreated.Location = new System.Drawing.Point(208, 526);
+            this.lblUserCreated.Name = "lblUserCreated";
+            this.lblUserCreated.Size = new System.Drawing.Size(59, 27);
+            this.lblUserCreated.TabIndex = 61;
+            this.lblUserCreated.Text = "[???]";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(20, 526);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(184, 27);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Created By User :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(9, 362);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 27);
+            this.label3.TabIndex = 59;
+            this.label3.Text = "Notes :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(10, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 27);
+            this.label1.TabIndex = 58;
+            this.label1.Text = "Problem Description :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(88, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 27);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "Priority :";
+            // 
+            // lblRepairOrderID
+            // 
+            this.lblRepairOrderID.AutoSize = true;
+            this.lblRepairOrderID.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRepairOrderID.ForeColor = System.Drawing.Color.Blue;
+            this.lblRepairOrderID.Location = new System.Drawing.Point(251, 32);
+            this.lblRepairOrderID.Name = "lblRepairOrderID";
+            this.lblRepairOrderID.Size = new System.Drawing.Size(59, 27);
+            this.lblRepairOrderID.TabIndex = 56;
+            this.lblRepairOrderID.Text = "[???]";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(22, 32);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(181, 27);
+            this.label7.TabIndex = 55;
+            this.label7.Text = "Repair Order ID :";
             // 
             // llRemoveImage
             // 
@@ -196,6 +311,30 @@
             this.pbDeviceImage.TabIndex = 52;
             this.pbDeviceImage.TabStop = false;
             // 
+            // txtNotes
+            // 
+            this.txtNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNotes.IsRequired = false;
+            this.txtNotes.Length = null;
+            this.txtNotes.Location = new System.Drawing.Point(41, 392);
+            this.txtNotes.Multiline = true;
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(341, 86);
+            this.txtNotes.TabIndex = 51;
+            this.txtNotes.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            // 
+            // txtProblemDescription
+            // 
+            this.txtProblemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProblemDescription.IsRequired = false;
+            this.txtProblemDescription.Length = null;
+            this.txtProblemDescription.Location = new System.Drawing.Point(32, 212);
+            this.txtProblemDescription.Multiline = true;
+            this.txtProblemDescription.Name = "txtProblemDescription";
+            this.txtProblemDescription.Size = new System.Drawing.Size(350, 113);
+            this.txtProblemDescription.TabIndex = 49;
+            this.txtProblemDescription.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
@@ -253,145 +392,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ucSearchForDeviceWithAddEdit1
-            // 
-            this.ucSearchForDeviceWithAddEdit1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ucSearchForDeviceWithAddEdit1.Location = new System.Drawing.Point(2, 48);
-            this.ucSearchForDeviceWithAddEdit1.Name = "ucSearchForDeviceWithAddEdit1";
-            this.ucSearchForDeviceWithAddEdit1.Size = new System.Drawing.Size(640, 607);
-            this.ucSearchForDeviceWithAddEdit1.TabIndex = 0;
-            // 
-            // ucSearchForATechnician1
-            // 
-            this.ucSearchForATechnician1.gbEnabeld = true;
-            this.ucSearchForATechnician1.Location = new System.Drawing.Point(81, -4);
-            this.ucSearchForATechnician1.Name = "ucSearchForATechnician1";
-            this.ucSearchForATechnician1.Size = new System.Drawing.Size(489, 700);
-            this.ucSearchForATechnician1.TabIndex = 0;
-            // 
-            // txtNotes
-            // 
-            this.txtNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNotes.IsRequired = false;
-            this.txtNotes.Length = null;
-            this.txtNotes.Location = new System.Drawing.Point(41, 392);
-            this.txtNotes.Multiline = true;
-            this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(341, 86);
-            this.txtNotes.TabIndex = 51;
-            this.txtNotes.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
-            // 
-            // txtProblemDescription
-            // 
-            this.txtProblemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProblemDescription.IsRequired = false;
-            this.txtProblemDescription.Length = null;
-            this.txtProblemDescription.Location = new System.Drawing.Point(32, 212);
-            this.txtProblemDescription.Multiline = true;
-            this.txtProblemDescription.Name = "txtProblemDescription";
-            this.txtProblemDescription.Size = new System.Drawing.Size(350, 113);
-            this.txtProblemDescription.TabIndex = 49;
-            this.txtProblemDescription.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(22, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 27);
-            this.label7.TabIndex = 55;
-            this.label7.Text = "Repair Order ID :";
-            // 
-            // lblRepairOrderID
-            // 
-            this.lblRepairOrderID.AutoSize = true;
-            this.lblRepairOrderID.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRepairOrderID.ForeColor = System.Drawing.Color.Blue;
-            this.lblRepairOrderID.Location = new System.Drawing.Point(251, 32);
-            this.lblRepairOrderID.Name = "lblRepairOrderID";
-            this.lblRepairOrderID.Size = new System.Drawing.Size(59, 27);
-            this.lblRepairOrderID.TabIndex = 56;
-            this.lblRepairOrderID.Text = "[???]";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(88, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 27);
-            this.label4.TabIndex = 57;
-            this.label4.Text = "Priority :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(10, 173);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 27);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Problem Description :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(9, 362);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 27);
-            this.label3.TabIndex = 59;
-            this.label3.Text = "Notes :";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(20, 526);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 27);
-            this.label6.TabIndex = 60;
-            this.label6.Text = "Created By User :";
-            // 
-            // lblUserCreated
-            // 
-            this.lblUserCreated.AutoSize = true;
-            this.lblUserCreated.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserCreated.ForeColor = System.Drawing.Color.Black;
-            this.lblUserCreated.Location = new System.Drawing.Point(208, 526);
-            this.lblUserCreated.Name = "lblUserCreated";
-            this.lblUserCreated.Size = new System.Drawing.Size(59, 27);
-            this.lblUserCreated.TabIndex = 61;
-            this.lblUserCreated.Text = "[???]";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(46, 577);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 27);
-            this.label2.TabIndex = 62;
-            this.label2.Text = "Created Date :";
-            // 
-            // lblCreatedDate
-            // 
-            this.lblCreatedDate.AutoSize = true;
-            this.lblCreatedDate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedDate.ForeColor = System.Drawing.Color.Black;
-            this.lblCreatedDate.Location = new System.Drawing.Point(210, 577);
-            this.lblCreatedDate.Name = "lblCreatedDate";
-            this.lblCreatedDate.Size = new System.Drawing.Size(59, 27);
-            this.lblCreatedDate.TabIndex = 63;
-            this.lblCreatedDate.Text = "[???]";
-            // 
             // frmAddEditRepairOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,6 +402,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.guna2TabControl1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditRepairOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Repair Order";

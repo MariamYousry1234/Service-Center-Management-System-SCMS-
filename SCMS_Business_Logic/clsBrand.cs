@@ -18,6 +18,14 @@ namespace SCMS_Business_Logic
 
         public string BrandName { set; get; }
 
+        public bool HasModels
+        {
+            get
+            {
+                return clsBrandDataAccess.IsBrandHasModels(this.BrandID);
+            }
+
+        }
 
         public clsBrand()
         {

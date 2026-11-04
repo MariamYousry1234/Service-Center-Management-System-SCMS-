@@ -182,7 +182,7 @@ namespace SCMS_Business_Logic
                 SecondName = "",
                 PhoneNumber = "", 
                 Address = "";
-            string? ThirdName = null, LastName = null, Email = null, Notes = null; ;
+            string? ThirdName = null, LastName = null, Email = null, Notes = null; 
 
             byte Gender = 0;
 

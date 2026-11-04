@@ -459,5 +459,51 @@ namespace SCMS_Data_Access
             return BrandsData;
         }
 
+
+        public static bool IsBrandHasModels(int BrandID)
+        {
+            bool HasModels = false;
+
+            try
+            {
+                using (SqlConnection Connection =
+                    new SqlConnection(clsSettings.ConnectionString))
+                {
+                    using (SqlCommand Command =
+                        new SqlCommand("SP_IsBrandHasModels", Connection))
+                    {
+                        Command.CommandType = CommandType.StoredProcedure;
+
+                        Command.Parameters.AddWithValue(
+                            "BrandID", BrandID);
+
+                        SqlParameter BrandHasModels =
+                       new SqlParameter(
+                           "HasModels",
+                           SqlDbType.Int)
+                       {
+                           Direction =
+                               ParameterDirection.ReturnValue
+                       };
+
+                        Command.Parameters.Add(BrandHasModels);
+
+                        Connection.Open();
+                        Command.ExecuteNonQuery();
+
+                        HasModels =((int)BrandHasModels.Value==1);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                clsEventLogger.WriteEntryToEventLog(
+                    clsSettings.ApplicationName,
+                    e.Message,
+                    EventLogEntryType.Error);
+            }
+
+            return HasModels;
+        }
     }
 }

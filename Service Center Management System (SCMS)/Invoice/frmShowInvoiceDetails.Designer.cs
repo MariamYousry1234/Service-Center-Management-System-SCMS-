@@ -69,6 +69,8 @@
             this.ClientSize = new System.Drawing.Size(595, 676);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowInvoiceDetails1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowInvoiceDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Invoice Details";

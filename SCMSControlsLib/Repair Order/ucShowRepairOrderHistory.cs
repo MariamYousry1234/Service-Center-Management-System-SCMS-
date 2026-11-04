@@ -26,11 +26,11 @@ namespace SCMSControlsLib
 
             if(dgvAllChanges.Rows.Count>0)
             {
-                dgvAllChanges.Columns[0].Width = 250;
+                dgvAllChanges.Columns[0].Width = 150;
                 dgvAllChanges.Columns[1].Width = 250;
                 dgvAllChanges.Columns[2].Width = 250;
                 dgvAllChanges.Columns[3].Width = 200;
-                dgvAllChanges.Columns[4].Width = 170;
+                dgvAllChanges.Columns[4].Width = 190;
             }
         }
         public async void LoadRepairOrderHistory(int RepairOrderID)

@@ -30,6 +30,7 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDiscount = new SCMSControlsLib.cusTextBox();
             this.lblCreatedUser = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblCreatedDate = new System.Windows.Forms.Label();
@@ -37,19 +38,18 @@
             this.lblTotalRepairCost = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtTaxAmount = new SCMSControlsLib.cusTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtAdditionalServices = new SCMSControlsLib.cusTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblLaborCost = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblTotalPartsCost = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.ucShowUsedParts1 = new SCMSControlsLib.ucShowUsedParts();
             this.label2 = new System.Windows.Forms.Label();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.txtDiscount = new SCMSControlsLib.cusTextBox();
-            this.txtTaxAmount = new SCMSControlsLib.cusTextBox();
-            this.txtAdditionalServices = new SCMSControlsLib.cusTextBox();
-            this.ucShowUsedParts1 = new SCMSControlsLib.ucShowUsedParts();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +90,17 @@
             this.groupBox1.Size = new System.Drawing.Size(887, 633);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // txtDiscount
+            // 
+            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiscount.IsRequired = false;
+            this.txtDiscount.Length = null;
+            this.txtDiscount.Location = new System.Drawing.Point(618, 381);
+            this.txtDiscount.Name = "txtDiscount";
+            this.txtDiscount.Size = new System.Drawing.Size(238, 35);
+            this.txtDiscount.TabIndex = 19;
+            this.txtDiscount.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
             // 
             // lblCreatedUser
             // 
@@ -168,6 +179,17 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "Discount Amount :";
             // 
+            // txtTaxAmount
+            // 
+            this.txtTaxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTaxAmount.IsRequired = false;
+            this.txtTaxAmount.Length = null;
+            this.txtTaxAmount.Location = new System.Drawing.Point(624, 307);
+            this.txtTaxAmount.Name = "txtTaxAmount";
+            this.txtTaxAmount.Size = new System.Drawing.Size(238, 35);
+            this.txtTaxAmount.TabIndex = 10;
+            this.txtTaxAmount.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -178,6 +200,17 @@
             this.label4.Size = new System.Drawing.Size(200, 36);
             this.label4.TabIndex = 9;
             this.label4.Text = "Tax Amount :";
+            // 
+            // txtAdditionalServices
+            // 
+            this.txtAdditionalServices.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAdditionalServices.IsRequired = false;
+            this.txtAdditionalServices.Length = null;
+            this.txtAdditionalServices.Location = new System.Drawing.Point(322, 451);
+            this.txtAdditionalServices.Name = "txtAdditionalServices";
+            this.txtAdditionalServices.Size = new System.Drawing.Size(228, 35);
+            this.txtAdditionalServices.TabIndex = 8;
+            this.txtAdditionalServices.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
             // 
             // label6
             // 
@@ -234,6 +267,14 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Total Parts Cost :";
             // 
+            // ucShowUsedParts1
+            // 
+            this.ucShowUsedParts1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ucShowUsedParts1.Location = new System.Drawing.Point(-1, 2);
+            this.ucShowUsedParts1.Name = "ucShowUsedParts1";
+            this.ucShowUsedParts1.Size = new System.Drawing.Size(890, 262);
+            this.ucShowUsedParts1.TabIndex = 2;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -286,47 +327,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtDiscount
-            // 
-            this.txtDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscount.IsRequired = false;
-            this.txtDiscount.Length = null;
-            this.txtDiscount.Location = new System.Drawing.Point(618, 381);
-            this.txtDiscount.Name = "txtDiscount";
-            this.txtDiscount.Size = new System.Drawing.Size(238, 35);
-            this.txtDiscount.TabIndex = 19;
-            this.txtDiscount.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            // 
-            // txtTaxAmount
-            // 
-            this.txtTaxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaxAmount.IsRequired = false;
-            this.txtTaxAmount.Length = null;
-            this.txtTaxAmount.Location = new System.Drawing.Point(624, 307);
-            this.txtTaxAmount.Name = "txtTaxAmount";
-            this.txtTaxAmount.Size = new System.Drawing.Size(238, 35);
-            this.txtTaxAmount.TabIndex = 10;
-            this.txtTaxAmount.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            // 
-            // txtAdditionalServices
-            // 
-            this.txtAdditionalServices.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAdditionalServices.IsRequired = false;
-            this.txtAdditionalServices.Length = null;
-            this.txtAdditionalServices.Location = new System.Drawing.Point(322, 451);
-            this.txtAdditionalServices.Name = "txtAdditionalServices";
-            this.txtAdditionalServices.Size = new System.Drawing.Size(228, 35);
-            this.txtAdditionalServices.TabIndex = 8;
-            this.txtAdditionalServices.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            // 
-            // ucShowUsedParts1
-            // 
-            this.ucShowUsedParts1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ucShowUsedParts1.Location = new System.Drawing.Point(-1, 2);
-            this.ucShowUsedParts1.Name = "ucShowUsedParts1";
-            this.ucShowUsedParts1.Size = new System.Drawing.Size(890, 262);
-            this.ucShowUsedParts1.TabIndex = 2;
-            // 
             // frmSetRepairCost
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +337,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSetRepairCost";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Set Repair Cost";

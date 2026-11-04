@@ -34,6 +34,7 @@
             this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showPaymentsHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showRepairOrderDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPages = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
@@ -84,7 +85,8 @@
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateInfoToolStripMenuItem,
             this.showDetailsToolStripMenuItem,
-            this.showPaymentsHistoryToolStripMenuItem});
+            this.showPaymentsHistoryToolStripMenuItem,
+            this.showRepairOrderDetailsToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -95,14 +97,14 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(200, 70);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(211, 92);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
             // 
             // updateInfoToolStripMenuItem
             // 
             this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
             this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.updateInfoToolStripMenuItem.Text = "Update Info";
             this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
             // 
@@ -110,7 +112,7 @@
             // 
             this.showDetailsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.list;
             this.showDetailsToolStripMenuItem.Name = "showDetailsToolStripMenuItem";
-            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.showDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.showDetailsToolStripMenuItem.Text = "Show Details";
             this.showDetailsToolStripMenuItem.Click += new System.EventHandler(this.showDetailsToolStripMenuItem_Click);
             // 
@@ -118,9 +120,17 @@
             // 
             this.showPaymentsHistoryToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.transaction_history1;
             this.showPaymentsHistoryToolStripMenuItem.Name = "showPaymentsHistoryToolStripMenuItem";
-            this.showPaymentsHistoryToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.showPaymentsHistoryToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.showPaymentsHistoryToolStripMenuItem.Text = "Show Payments History";
             this.showPaymentsHistoryToolStripMenuItem.Click += new System.EventHandler(this.showPaymentsHistoryToolStripMenuItem_Click);
+            // 
+            // showRepairOrderDetailsToolStripMenuItem
+            // 
+            this.showRepairOrderDetailsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.repair;
+            this.showRepairOrderDetailsToolStripMenuItem.Name = "showRepairOrderDetailsToolStripMenuItem";
+            this.showRepairOrderDetailsToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.showRepairOrderDetailsToolStripMenuItem.Text = "Show Repair Order Details";
+            this.showRepairOrderDetailsToolStripMenuItem.Click += new System.EventHandler(this.showRepairOrderDetailsToolStripMenuItem_Click);
             // 
             // label3
             // 
@@ -243,6 +253,8 @@
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageInvoices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Invoices";
@@ -269,5 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem updateInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showPaymentsHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showRepairOrderDetailsToolStripMenuItem;
     }
 }

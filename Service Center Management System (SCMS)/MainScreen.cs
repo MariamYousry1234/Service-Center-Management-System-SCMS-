@@ -22,8 +22,8 @@ namespace Service_Center_Management_System__SCMS_
         public MainScreen(frmLoginScreen frmLogin)
         {
             InitializeComponent();
-
-            _frmLogin = frmLogin;
+ 
+           _frmLogin = frmLogin;
         }
 
      

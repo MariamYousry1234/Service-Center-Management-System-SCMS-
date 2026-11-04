@@ -41,6 +41,15 @@ namespace SCMS_Business_Logic
 
         public DateTime? LastUpdatedDate { get; private set; }
 
+
+        public bool HasPreviousPuchases
+        {
+            get
+            {
+                return clsSparePartDataAccess.IsSparePartHasPreviousPuchases(this.PartID);
+            }
+
+        }
         public clsSparePart()
         {
             PartID = -1;
@@ -124,6 +133,7 @@ namespace SCMS_Business_Logic
                 this.PartID,
                 this.PartName,
                 this.SellingPrice,
+                this.Quantity,
                 this.MinimumStockLevel,
                 this.PartCategoryID,
                 this.PartBrandID,

@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1139, 475);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowCompletedRepairsForTechnician1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowCompletedRepairsForTechnician";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Completed Repairs For Technician";

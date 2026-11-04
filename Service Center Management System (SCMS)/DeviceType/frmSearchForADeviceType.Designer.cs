@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(581, 373);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForDeviceType1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSearchForADeviceType";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For A Device Type";

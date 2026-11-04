@@ -24,7 +24,7 @@ namespace SCMS_Data_Access
            string? Email,
             string Address,
             DateTime HireDate,  
-            int CreatedByUserID
+            int? CreatedByUserID
          )
         {
             int? EmployeeID = null;
@@ -81,7 +81,7 @@ namespace SCMS_Data_Access
 
                         Command.Parameters.AddWithValue(
                             "CreatedByUserID",
-                            CreatedByUserID );
+                            CreatedByUserID ?? (object)DBNull.Value);
 
 
                         SqlParameter EmployeeIDParameter =
@@ -128,7 +128,7 @@ namespace SCMS_Data_Access
           ref string Address,
             ref DateTime HireDate,
             ref bool IsActive,
-            ref int CreatedByUserID,
+            ref int? CreatedByUserID,
             ref DateTime CreatedDate,
             ref int? LastUpdatedUserID,
             ref DateTime? LastUpdatedDate)
@@ -173,7 +173,8 @@ namespace SCMS_Data_Access
 
                                 PhoneNumber = (string)Data["PhoneNumber"];
 
-                                Email = Data["Email"] == DBNull.Value ? null : (string)Data["Email"];
+                                Email = Data["Email"] == DBNull.Value ? 
+                                    null : (string)Data["Email"];
 
                                 Address = (string)Data["Address"];
 
@@ -184,8 +185,9 @@ namespace SCMS_Data_Access
                                 IsActive =
                                     (bool)Data["IsActive"];
 
-                                CreatedByUserID =
-                                    (int)Data["CreatedByUserID"];
+                                CreatedByUserID = Data["CreatedByUserID"] == DBNull.Value ?
+                                    null : (int?)Data["CreatedByUserID"];
+                                  
 
                                 CreatedDate =
                                   (DateTime)Data["CreatedDate"];
@@ -234,7 +236,7 @@ namespace SCMS_Data_Access
              ref string Address,
             ref DateTime HireDate,
             ref bool IsActive,
-            ref int CreatedByUserID,
+            ref int? CreatedByUserID,
             ref DateTime CreatedDate,
             ref int? LastUpdatedUserID,
             ref DateTime? LastUpdatedDate)
@@ -296,8 +298,8 @@ namespace SCMS_Data_Access
                                 IsActive =
                                     (bool)Data["IsActive"];
 
-                                CreatedByUserID =
-                                     (int)Data["CreatedByUserID"];
+                                CreatedByUserID = Data["CreatedByUserID"] == DBNull.Value ?
+                                     null : (int?)Data["CreatedByUserID"];
 
                                 CreatedDate =
                                      (DateTime)Data["CreatedDate"];

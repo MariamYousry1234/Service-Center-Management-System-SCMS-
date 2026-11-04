@@ -169,7 +169,8 @@ namespace SCMS_Data_Access
 
                                 PhoneNumber = (string)Data["PhoneNumber"];
 
-                                Email = Data["Email"] == DBNull.Value ? null : (string)Data["Email"];
+                                Email = Data["Email"] == DBNull.Value ?
+                                    null : (string)Data["Email"];
                                
                                 Address = (string)Data["Address"];
 

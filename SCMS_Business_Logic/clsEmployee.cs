@@ -22,7 +22,7 @@ namespace SCMS_Business_Logic
 
         public bool IsActive { get; private set; }
 
-        public int CreatedByUserID { get; set; }
+        public int? CreatedByUserID { get; set; }
 
         public DateTime CreatedDate { get; private set; }
 
@@ -53,7 +53,7 @@ namespace SCMS_Business_Logic
             string Address,
             DateTime HireDate,
             bool IsActive,
-            int CreatedByUserID,
+            int? CreatedByUserID,
             DateTime CreatedDate,
             int? LastUpdatedUserID,
             DateTime? LastUpdatedDate)
@@ -157,7 +157,7 @@ namespace SCMS_Business_Logic
             DateTime HireDate = DateTime.Now;
             bool IsActive = false;
 
-            int CreatedByUserID = 0;
+            int? CreatedByUserID = null;
             DateTime CreatedDate = DateTime.MinValue;
 
             int? LastUpdatedUserID = null;
@@ -216,7 +216,7 @@ namespace SCMS_Business_Logic
             DateTime HireDate = DateTime.Now;
             bool IsActive = false;
             byte Gender = 0;
-            int CreatedByUserID = 0;
+            int? CreatedByUserID = 0;
             DateTime CreatedDate = DateTime.MinValue;
 
             int? LastUpdatedUserID = null;
@@ -315,7 +315,7 @@ namespace SCMS_Business_Logic
             return clsEmployeeDataAccess.IsEmployeeAlreadyCustomer(this.EmployeeID);
         }
 
-        public  int? ConvertToCustomer( string? Notes,
+        public  int? ConvertToCustomer(string? Notes,
            int CreatedByUserID)
         {
            return clsEmployeeDataAccess.ConvertEmployeeToCustomer(this.EmployeeID, Notes,

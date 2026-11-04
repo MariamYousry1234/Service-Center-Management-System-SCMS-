@@ -20,6 +20,8 @@ namespace Service_Center_Management_System__SCMS_
 
         clsDevice _Device;
         int _DeviceID;
+
+        bool _IsLoadingData=false;
         public frmAddEditDevice()
         {
             InitializeComponent();
@@ -43,8 +45,7 @@ namespace Service_Center_Management_System__SCMS_
             {
                 cbDeviceType.Items.Add(Row["DeviceTypeName"].ToString());
             }
-
-            cbDeviceType.SelectedIndex = 0;
+    
         }
 
         private async Task _SetBrandsComboBox()
@@ -55,7 +56,6 @@ namespace Service_Center_Management_System__SCMS_
             {
                 cbBrandName.Items.Add(Row["BrandName"].ToString());
             }
-            cbBrandName.SelectedIndex = 0;
         }
 
         private async Task _SetModelsComboBox(int BrandID)
@@ -67,6 +67,7 @@ namespace Service_Center_Management_System__SCMS_
             {
                 cbModelName.Items.Add(Row["Model Name"].ToString());
             }
+
             cbModelName.SelectedIndex = 0;
         }
         private async Task _SetIntialData()
@@ -75,12 +76,7 @@ namespace Service_Center_Management_System__SCMS_
             Task task2 =  _SetBrandsComboBox();
 
             await Task.WhenAll(task1,task2);
-
-            int CurrentBrandID = clsBrand.FindBrand(cbBrandName.Text).BrandID;
-
-            await _SetModelsComboBox(CurrentBrandID);
-
-            cbColor.SelectedIndex = 0;
+      
             if (_Mode==enMode.AddNew)
             {
                 this.Text = "Add New Device";
@@ -88,6 +84,9 @@ namespace Service_Center_Management_System__SCMS_
                 lblDeviceID.Text = "???";
                 lblUserCreated.Text = clsGlobal.CurrentUser.Username;
                 lblCreatedDate.Text = DateTime.Now.ToString("dd/MM/yyyy");
+                cbDeviceType.SelectedIndex = 0;
+                cbBrandName.SelectedIndex = 0;
+                cbColor.SelectedIndex = 0;
             }
             else
             {
@@ -119,14 +118,37 @@ namespace Service_Center_Management_System__SCMS_
 
                 lblDeviceID.Text = _DeviceID.ToString();
                 cbDeviceType.SelectedItem = _Device.DeviceTypeInfo.DeviceTypeName;
+
+                //
+                _IsLoadingData = true;
+
                 cbBrandName.SelectedItem = _Device.BrandInfo.BrandName;
+                await _LoadModelsForBrand();
                 cbModelName.SelectedItem = _Device.ModelInfo.ModelName;
                 txtSerialNumber.Text = _Device.SerialNumber;
                 cbColor.SelectedItem = _Device.txtColor;
                 lblUserCreated.Text = _Device.CreatedUserInfo.Username;
                 lblCreatedDate.Text = _Device.CreatedDate.ToString("dd/MM/yyyy");
+
+                _IsLoadingData = false;
+                //
             }
 
+        }
+        private async Task _LoadModelsForBrand()
+        {
+            int CurrentBrandID = clsBrand.FindBrand(cbBrandName.Text).BrandID;
+
+            await _SetModelsComboBox(CurrentBrandID);
+
+
+        }
+        private async void cbBrandName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (_IsLoadingData) return;
+
+            await _LoadModelsForBrand();
         }
 
         private async void frmAddEditDevice_Load(object sender, EventArgs e)
@@ -154,8 +176,11 @@ namespace Service_Center_Management_System__SCMS_
             int? DeviceID = clsDevice.GetDeviceIDBySerialNnumber(txtSerialNumber.Text.Trim());
 
             //is serial number exists
-            if (DeviceID != null)
+            if ((_Mode == enMode.AddNew && DeviceID != null )
+                || (_Mode == enMode.Update  && DeviceID != null
+                && DeviceID != _Device.DeviceID))
             {
+              
                 MessageBox.Show($"This device with serial number = {txtSerialNumber.Text.Trim()} already exists with id= {DeviceID}",
                     "",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
@@ -230,13 +255,7 @@ namespace Service_Center_Management_System__SCMS_
             return NewCustomerID;
         }
 
-        private async void cbBrandName_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int CurrentBrandID = clsBrand.FindBrand(cbBrandName.Text).BrandID;
-
-            await _SetModelsComboBox(CurrentBrandID);
-        }
-
+   
         private void frmAddEditDevice_Activated(object sender, EventArgs e)
         {
             if (_Mode == enMode.AddNew)

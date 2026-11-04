@@ -69,6 +69,8 @@
             this.ClientSize = new System.Drawing.Size(617, 461);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForSparePart1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSearchForSparePart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For Spare Part";

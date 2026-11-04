@@ -77,10 +77,10 @@ namespace SCMSControlsLib
                 new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
         }
 
-        private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+       private void showRepairOrderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OnShowRepairOrderDetailsClick?.Invoke(this,
                 new SCMSArgs((int)dgvAllRepairOrders.CurrentRow.Cells[1].Value));
-        }
+        } 
     }
 }

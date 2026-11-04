@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1135, 473);
             this.Controls.Add(this.ucShowCurrentWorkloadForTechnician1);
             this.Controls.Add(this.btnClose);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowCurrentWorkloadForTechnician";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Current Workload For Technician";

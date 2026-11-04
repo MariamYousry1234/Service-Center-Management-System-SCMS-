@@ -188,6 +188,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.ucShowDiagnosisDetails1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCustomerApproval";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Approval";

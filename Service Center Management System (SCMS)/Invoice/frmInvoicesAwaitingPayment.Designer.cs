@@ -72,6 +72,8 @@
             this.ClientSize = new System.Drawing.Size(997, 457);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucInvoicesAwaitingPayment1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmInvoicesAwaitingPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Invoices Awaiting Payment";

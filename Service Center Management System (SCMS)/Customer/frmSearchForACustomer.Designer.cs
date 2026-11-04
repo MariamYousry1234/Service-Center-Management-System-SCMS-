@@ -69,6 +69,8 @@
             this.ClientSize = new System.Drawing.Size(481, 668);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForCustomer1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSearchForACustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For A Customer";

@@ -57,7 +57,9 @@ namespace SCMSControlsLib
             lblHireDate.Text = _Employee.HireDate.ToString("dd/MM/yyyy");
      
            lblIsActive.Text = _Employee.IsActive?"Yes":"No";
-            lblCreatedByUser.Text =clsUser.FindUser((int)_Employee.CreatedByUserID).Username;
+           lblCreatedByUser.Text = _Employee.CreatedByUserID!=null?
+                clsUser.FindUser((int)_Employee.CreatedByUserID).Username : "UnKnown";
+
             lblCreatedDate.Text = _Employee.CreatedDate.ToString("dd/MM/yyyy") ?? "UnKnown";
             lblLastUpdatedUser.Text =_Employee.LastUpdatedUserID==null? "Un Known" :
                clsUser.FindUser((int)_Employee.LastUpdatedUserID).Username;

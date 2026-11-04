@@ -248,6 +248,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ucShowInvoiceDetails1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Payment";

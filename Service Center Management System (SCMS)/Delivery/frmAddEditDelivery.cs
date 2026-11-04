@@ -150,6 +150,7 @@ namespace Service_Center_Management_System__SCMS_
         }
         private void _SetIntialData()
         {
+           
             if (_Mode == enMode.AddNew)
             {
                 this.Text = "Add New Delivery";

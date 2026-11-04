@@ -30,15 +30,15 @@
         {
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showBrandsModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotalPages = new System.Windows.Forms.Label();
             this.lblPageNumber = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAllPersons = new System.Windows.Forms.Label();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.updateInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showBrandsModelsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
@@ -79,6 +79,30 @@
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(188, 70);
             this.guna2ContextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.guna2ContextMenuStrip1_Opening);
+            // 
+            // updateInfoToolStripMenuItem
+            // 
+            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
+            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
+            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.updateInfoToolStripMenuItem.Text = "Update Info";
+            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
+            // 
+            // deleteInfoToolStripMenuItem
+            // 
+            this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
+            this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
+            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.deleteInfoToolStripMenuItem.Text = "Delete Info";
+            this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
+            // 
+            // showBrandsModelsToolStripMenuItem
+            // 
+            this.showBrandsModelsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources._3d_modeling;
+            this.showBrandsModelsToolStripMenuItem.Name = "showBrandsModelsToolStripMenuItem";
+            this.showBrandsModelsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.showBrandsModelsToolStripMenuItem.Text = "Show Brand\'s Models";
+            this.showBrandsModelsToolStripMenuItem.Click += new System.EventHandler(this.showBrandsModelsToolStripMenuItem_Click_1);
             // 
             // label3
             // 
@@ -158,30 +182,6 @@
             this.btnAdd.TabIndex = 53;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // updateInfoToolStripMenuItem
-            // 
-            this.updateInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.system_update;
-            this.updateInfoToolStripMenuItem.Name = "updateInfoToolStripMenuItem";
-            this.updateInfoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.updateInfoToolStripMenuItem.Text = "Update Info";
-            this.updateInfoToolStripMenuItem.Click += new System.EventHandler(this.updateInfoToolStripMenuItem_Click);
-            // 
-            // deleteInfoToolStripMenuItem
-            // 
-            this.deleteInfoToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.delete;
-            this.deleteInfoToolStripMenuItem.Name = "deleteInfoToolStripMenuItem";
-            this.deleteInfoToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.deleteInfoToolStripMenuItem.Text = "Delete Info";
-            this.deleteInfoToolStripMenuItem.Click += new System.EventHandler(this.deleteInfoToolStripMenuItem_Click);
-            // 
-            // showBrandsModelsToolStripMenuItem
-            // 
-            this.showBrandsModelsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources._3d_modeling;
-            this.showBrandsModelsToolStripMenuItem.Name = "showBrandsModelsToolStripMenuItem";
-            this.showBrandsModelsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.showBrandsModelsToolStripMenuItem.Text = "Show Brand\'s Models";
-            this.showBrandsModelsToolStripMenuItem.Click += new System.EventHandler(this.showBrandsModelsToolStripMenuItem_Click_1);
-            // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.White;
@@ -260,6 +260,8 @@
             this.Controls.Add(this.lblAllPersons);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageBands";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Bands";

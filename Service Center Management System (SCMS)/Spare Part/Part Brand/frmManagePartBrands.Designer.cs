@@ -193,6 +193,8 @@
             this.Controls.Add(this.lblNumberOfBrands);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAllPersons);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManagePartBrands";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Part Brands";

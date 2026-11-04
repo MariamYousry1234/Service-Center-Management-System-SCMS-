@@ -41,6 +41,8 @@ namespace Service_Center_Management_System__SCMS_
             frmCreateSparePartPurchase frm = new frmCreateSparePartPurchase();
 
             frm.ShowDialog();
+
+            frmManagePurchases_Load(null, null);
         }
 
         private async void frmManagePurchases_Load(object sender, EventArgs e)
@@ -110,12 +112,41 @@ namespace Service_Center_Management_System__SCMS_
         {
             int PurchaseID = (int)dgvData.CurrentRow.Cells[0].Value;
 
+            clsPurchase PurchaseInfo =
+                 clsPurchase.FindPurchase(PurchaseID);
+
+            if(PurchaseInfo.IsCancelled)
+            {
+
+                MessageBox.Show(
+                       "This purchase has already been cancelled.",
+                       "Purchase Already Cancelled",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Information);
+
+
+                return;
+            }
+
+            if(PurchaseInfo.PartInfo.Quantity < PurchaseInfo.Quantity)
+            {
+
+                MessageBox.Show(
+                  "Cannot cancel this purchase because the current spare part quantity is insufficient.",
+                 "Cancellation Failed",
+                 MessageBoxButtons.OK,
+                  MessageBoxIcon.Error);
+
+
+                return;
+            }
+
+
             if (MessageBox.Show($"Are you sure you want to cancel this purchase with id = {PurchaseID}",
                 "confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Question)
                 == DialogResult.Cancel) return;
 
 
-            clsPurchase PurchaseInfo = clsPurchase.FindPurchase(PurchaseID);
 
             if(PurchaseInfo.Cancel(clsGlobal.CurrentUser.UserID))
             {
@@ -130,6 +161,7 @@ namespace Service_Center_Management_System__SCMS_
             MessageBox.Show($"Purchase with id = {PurchaseID} could not be cancelled",
                   "Cancel Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
 
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {

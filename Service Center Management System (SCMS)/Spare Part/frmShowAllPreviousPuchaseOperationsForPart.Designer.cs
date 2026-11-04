@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1042, 407);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.ucShowAllPreviousOperationsForPart1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowAllPreviousPuchaseOperationsForPart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show All Previous Puchase Operations For Part";

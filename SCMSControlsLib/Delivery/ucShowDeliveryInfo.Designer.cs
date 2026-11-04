@@ -172,7 +172,7 @@
             this.lblDeviceTypeName.AutoSize = true;
             this.lblDeviceTypeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeviceTypeName.ForeColor = System.Drawing.Color.Blue;
-            this.lblDeviceTypeName.Location = new System.Drawing.Point(457, 176);
+            this.lblDeviceTypeName.Location = new System.Drawing.Point(442, 176);
             this.lblDeviceTypeName.Name = "lblDeviceTypeName";
             this.lblDeviceTypeName.Size = new System.Drawing.Size(50, 24);
             this.lblDeviceTypeName.TabIndex = 11;
@@ -182,7 +182,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(281, 178);
+            this.label6.Location = new System.Drawing.Point(267, 178);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(187, 24);
             this.label6.TabIndex = 10;
@@ -214,7 +214,7 @@
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerName.ForeColor = System.Drawing.Color.Blue;
-            this.lblCustomerName.Location = new System.Drawing.Point(456, 135);
+            this.lblCustomerName.Location = new System.Drawing.Point(440, 135);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(50, 24);
             this.lblCustomerName.TabIndex = 7;
@@ -224,7 +224,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(301, 135);
+            this.label5.Location = new System.Drawing.Point(287, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 24);
             this.label5.TabIndex = 6;

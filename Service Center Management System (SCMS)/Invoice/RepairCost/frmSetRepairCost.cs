@@ -161,11 +161,11 @@ namespace Service_Center_Management_System__SCMS_
 
         private float _GetTotalRepairCostWithoutDiscount()
         {
-            return Convert.ToSingle(lblTotalPartsCost.Text) + Convert.ToSingle(lblLaborCost.Text)
-              + (!string.IsNullOrEmpty(txtAdditionalServices.Text) ?
-              Convert.ToSingle(txtAdditionalServices.Text) : 0) +
-              (!string.IsNullOrEmpty(txtTaxAmount.Text) ?
-              Convert.ToSingle(txtTaxAmount.Text) : 0);           
+            return Convert.ToSingle(lblTotalPartsCost.Text) + Convert.ToSingle(lblLaborCost.Text.Trim())
+              + (!string.IsNullOrEmpty(txtAdditionalServices.Text.Trim()) ?
+              Convert.ToSingle(txtAdditionalServices.Text.Trim()) : 0) +
+              (!string.IsNullOrEmpty(txtTaxAmount.Text.Trim()) ?
+              Convert.ToSingle(txtTaxAmount.Text.Trim()) : 0);           
                
         }
         private void btnSave_Click(object sender, EventArgs e)
@@ -177,8 +177,8 @@ namespace Service_Center_Management_System__SCMS_
 
             float TotalRepairCostWithoutDiscount = _GetTotalRepairCostWithoutDiscount();
 
-            if(!string.IsNullOrEmpty(txtDiscount.Text) &&
-                TotalRepairCostWithoutDiscount < Convert.ToSingle(txtDiscount.Text))
+            if(!string.IsNullOrEmpty(txtDiscount.Text.Trim()) &&
+                TotalRepairCostWithoutDiscount < Convert.ToSingle(txtDiscount.Text.Trim()))
             {
 
                 MessageBox.Show("Discount amount cannot exceed the total repair cost.",
@@ -193,17 +193,17 @@ namespace Service_Center_Management_System__SCMS_
 
 
             _RepairCost.RepairOrderID = ucShowUsedParts1.RepairOrderID.Value;
-            _RepairCost.AdditionalServices = string.IsNullOrEmpty(txtAdditionalServices.Text)?
+            _RepairCost.AdditionalServices = string.IsNullOrEmpty(txtAdditionalServices.Text.Trim())?
                 null:
                 (float?)Convert.ToSingle(txtAdditionalServices.Text);
 
-            _RepairCost.TaxAmount = string.IsNullOrEmpty(txtTaxAmount.Text) ?
+            _RepairCost.TaxAmount = string.IsNullOrEmpty(txtTaxAmount.Text.Trim()) ?
                 null :
-                (float?)Convert.ToSingle(txtTaxAmount.Text);
+                (float?)Convert.ToSingle(txtTaxAmount.Text.Trim());
 
-            _RepairCost.DiscountAmount = string.IsNullOrEmpty(txtDiscount.Text) ?
+            _RepairCost.DiscountAmount = string.IsNullOrEmpty(txtDiscount.Text.Trim()) ?
                 null :
-                (float?)Convert.ToSingle(txtDiscount.Text); 
+                (float?)Convert.ToSingle(txtDiscount.Text.Trim()); 
 
 
             if(_Mode==enMode.AddNew)

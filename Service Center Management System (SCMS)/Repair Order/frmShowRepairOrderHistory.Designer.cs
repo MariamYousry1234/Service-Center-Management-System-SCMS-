@@ -46,7 +46,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(472, 273);
+            this.btnClose.Location = new System.Drawing.Point(466, 372);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 24;
@@ -57,7 +57,7 @@
             // 
             this.ucShowRepairOrderHistory1.Location = new System.Drawing.Point(-1, -2);
             this.ucShowRepairOrderHistory1.Name = "ucShowRepairOrderHistory1";
-            this.ucShowRepairOrderHistory1.Size = new System.Drawing.Size(1091, 267);
+            this.ucShowRepairOrderHistory1.Size = new System.Drawing.Size(1091, 364);
             this.ucShowRepairOrderHistory1.TabIndex = 0;
             // 
             // frmShowRepairOrderHistory
@@ -65,9 +65,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1090, 330);
+            this.ClientSize = new System.Drawing.Size(1090, 430);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowRepairOrderHistory1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowRepairOrderHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Repair Order History";

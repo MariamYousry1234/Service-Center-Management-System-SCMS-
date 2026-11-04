@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1136, 480);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAssignedRepairsForTechnician1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowAssignedRepairsForTechnician";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Assigned Repairs For Technician";

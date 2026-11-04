@@ -18,7 +18,6 @@ namespace SCMSControlsLib
             BeforRepair=1,
             AfterRepair=2
         }
-        enImageStatus _ImageStatus;
 
         clsRepairOrder _RepairOrder;
         public ucShowRepairOrderDetails()

@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(671, 504);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAllModelsForBrand1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowAllModelsForBrand";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show All Models For Brand";

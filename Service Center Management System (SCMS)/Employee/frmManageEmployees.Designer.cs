@@ -61,7 +61,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.Black;
             this.btnSearch.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(1026, 146);
+            this.btnSearch.Location = new System.Drawing.Point(916, 153);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(58, 45);
             this.btnSearch.TabIndex = 15;
@@ -73,7 +73,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(283, -1);
+            this.lblAllPersons.Location = new System.Drawing.Point(254, -1);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(492, 85);
             this.lblAllPersons.TabIndex = 12;
@@ -94,7 +94,7 @@
             this.btnPrevious.ForeColor = System.Drawing.Color.Black;
             this.btnPrevious.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.rewind_button;
             this.btnPrevious.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPrevious.Location = new System.Drawing.Point(349, 501);
+            this.btnPrevious.Location = new System.Drawing.Point(291, 501);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(168, 45);
             this.btnPrevious.TabIndex = 11;
@@ -115,7 +115,7 @@
             this.btnNext.ForeColor = System.Drawing.Color.Black;
             this.btnNext.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.next__1_;
             this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.Location = new System.Drawing.Point(583, 502);
+            this.btnNext.Location = new System.Drawing.Point(525, 502);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(156, 45);
             this.btnNext.TabIndex = 10;
@@ -177,11 +177,11 @@
             this.dgvData.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.ContextMenuStrip = this.guna2ContextMenuStrip1;
-            this.dgvData.Location = new System.Drawing.Point(28, 204);
+            this.dgvData.Location = new System.Drawing.Point(22, 204);
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(1057, 260);
+            this.dgvData.Size = new System.Drawing.Size(953, 260);
             this.dgvData.TabIndex = 22;
             // 
             // guna2ContextMenuStrip1
@@ -258,7 +258,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
             this.btnAdd.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.plus;
-            this.btnAdd.Location = new System.Drawing.Point(938, 145);
+            this.btnAdd.Location = new System.Drawing.Point(828, 152);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(58, 45);
             this.btnAdd.TabIndex = 23;
@@ -271,7 +271,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Service_Center_Management_System__SCMS_.Properties.Resources.division;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1100, 558);
+            this.ClientSize = new System.Drawing.Size(987, 558);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label3);
@@ -283,6 +283,8 @@
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageEmployees";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Employees";

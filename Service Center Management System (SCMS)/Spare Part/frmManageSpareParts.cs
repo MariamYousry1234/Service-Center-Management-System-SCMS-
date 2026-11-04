@@ -192,8 +192,23 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showAllPuchaseOperationsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            int PartID = (int)dgvData.CurrentRow.Cells[0].Value;
+
+            bool HasPreviousPuchases = clsSparePart.FindSparePart(PartID).HasPreviousPuchases;
+
+            if(!HasPreviousPuchases)
+            {
+                MessageBox.Show("This spare part has no previous purchase operations.",
+                      "No Purchase History",
+                      MessageBoxButtons.OK,
+                      MessageBoxIcon.Information);
+
+
+                return;
+            }
+
             frmShowAllPreviousPuchaseOperationsForPart frm = 
-                new frmShowAllPreviousPuchaseOperationsForPart((int)dgvData.CurrentRow.Cells[0].Value);
+                new frmShowAllPreviousPuchaseOperationsForPart(PartID);
 
 
             frm.ShowDialog();

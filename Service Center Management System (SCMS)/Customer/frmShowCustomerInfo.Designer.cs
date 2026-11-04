@@ -82,6 +82,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblAllPersons);
             this.Controls.Add(this.ucShowCustomerInfo1);
+            this.MinimizeBox = false;
             this.Name = "frmShowCustomerInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Customer Info";

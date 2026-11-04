@@ -383,6 +383,8 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.gbInfo);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditDelivery";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Delivery";

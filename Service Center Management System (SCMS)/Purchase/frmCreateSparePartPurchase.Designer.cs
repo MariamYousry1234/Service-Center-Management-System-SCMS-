@@ -35,20 +35,20 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ucSearchForSupplier1 = new SCMSControlsLib.ucSearchForSupplier();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.txtPurchasePrice = new SCMSControlsLib.cusTextBox();
-            this.nudQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblPurchaseID = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.lblPurchaseDate = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblCreatedUser = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblPurchaseDate = new System.Windows.Forms.Label();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblPurchaseID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nudQuantity = new System.Windows.Forms.NumericUpDown();
+            this.txtPurchasePrice = new SCMSControlsLib.cusTextBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -163,6 +163,150 @@
             this.tabPage3.Text = "Additional Information";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // lblPurchaseDate
+            // 
+            this.lblPurchaseDate.AutoSize = true;
+            this.lblPurchaseDate.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurchaseDate.ForeColor = System.Drawing.Color.Black;
+            this.lblPurchaseDate.Location = new System.Drawing.Point(236, 343);
+            this.lblPurchaseDate.Name = "lblPurchaseDate";
+            this.lblPurchaseDate.Size = new System.Drawing.Size(65, 30);
+            this.lblPurchaseDate.TabIndex = 63;
+            this.lblPurchaseDate.Text = "[???]";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(60, 345);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(178, 30);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Purchase Date :";
+            // 
+            // lblCreatedUser
+            // 
+            this.lblCreatedUser.AutoSize = true;
+            this.lblCreatedUser.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreatedUser.ForeColor = System.Drawing.Color.Black;
+            this.lblCreatedUser.Location = new System.Drawing.Point(237, 284);
+            this.lblCreatedUser.Name = "lblCreatedUser";
+            this.lblCreatedUser.Size = new System.Drawing.Size(65, 30);
+            this.lblCreatedUser.TabIndex = 61;
+            this.lblCreatedUser.Text = "[???]";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(38, 283);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(202, 30);
+            this.label6.TabIndex = 60;
+            this.label6.Text = "Created By User :";
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPrice.ForeColor = System.Drawing.Color.Black;
+            this.lblTotalPrice.Location = new System.Drawing.Point(241, 225);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(65, 30);
+            this.lblTotalPrice.TabIndex = 59;
+            this.lblTotalPrice.Text = "[???]";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(96, 221);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 30);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Total Price :";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(119, 159);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 30);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "Quantity :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(52, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(188, 30);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Purchase Price  :";
+            // 
+            // lblPurchaseID
+            // 
+            this.lblPurchaseID.AutoSize = true;
+            this.lblPurchaseID.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPurchaseID.ForeColor = System.Drawing.Color.Blue;
+            this.lblPurchaseID.Location = new System.Drawing.Point(277, 30);
+            this.lblPurchaseID.Name = "lblPurchaseID";
+            this.lblPurchaseID.Size = new System.Drawing.Size(65, 30);
+            this.lblPurchaseID.TabIndex = 54;
+            this.lblPurchaseID.Text = "[???]";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(85, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 30);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Purchase ID :";
+            // 
+            // nudQuantity
+            // 
+            this.nudQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQuantity.Location = new System.Drawing.Point(247, 161);
+            this.nudQuantity.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nudQuantity.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nudQuantity.Name = "nudQuantity";
+            this.nudQuantity.Size = new System.Drawing.Size(142, 35);
+            this.nudQuantity.TabIndex = 50;
+            this.nudQuantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // txtPurchasePrice
+            // 
+            this.txtPurchasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPurchasePrice.IsRequired = true;
+            this.txtPurchasePrice.Length = null;
+            this.txtPurchasePrice.Location = new System.Drawing.Point(249, 97);
+            this.txtPurchasePrice.Name = "txtPurchasePrice";
+            this.txtPurchasePrice.Size = new System.Drawing.Size(279, 35);
+            this.txtPurchasePrice.TabIndex = 48;
+            this.txtPurchasePrice.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+            // 
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.White;
@@ -205,150 +349,6 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtPurchasePrice
-            // 
-            this.txtPurchasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPurchasePrice.IsRequired = true;
-            this.txtPurchasePrice.Length = null;
-            this.txtPurchasePrice.Location = new System.Drawing.Point(249, 97);
-            this.txtPurchasePrice.Name = "txtPurchasePrice";
-            this.txtPurchasePrice.Size = new System.Drawing.Size(279, 35);
-            this.txtPurchasePrice.TabIndex = 48;
-            this.txtPurchasePrice.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            // 
-            // nudQuantity
-            // 
-            this.nudQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudQuantity.Location = new System.Drawing.Point(247, 161);
-            this.nudQuantity.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.nudQuantity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudQuantity.Name = "nudQuantity";
-            this.nudQuantity.Size = new System.Drawing.Size(142, 35);
-            this.nudQuantity.TabIndex = 50;
-            this.nudQuantity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(85, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 30);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "Purchase ID :";
-            // 
-            // lblPurchaseID
-            // 
-            this.lblPurchaseID.AutoSize = true;
-            this.lblPurchaseID.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchaseID.ForeColor = System.Drawing.Color.Blue;
-            this.lblPurchaseID.Location = new System.Drawing.Point(277, 30);
-            this.lblPurchaseID.Name = "lblPurchaseID";
-            this.lblPurchaseID.Size = new System.Drawing.Size(65, 30);
-            this.lblPurchaseID.TabIndex = 54;
-            this.lblPurchaseID.Text = "[???]";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(52, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(188, 30);
-            this.label5.TabIndex = 55;
-            this.label5.Text = "Purchase Price  :";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(119, 159);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(121, 30);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "Quantity :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(96, 221);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 30);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "Total Price :";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPrice.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalPrice.Location = new System.Drawing.Point(241, 225);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(65, 30);
-            this.lblTotalPrice.TabIndex = 59;
-            this.lblTotalPrice.Text = "[???]";
-            // 
-            // lblCreatedUser
-            // 
-            this.lblCreatedUser.AutoSize = true;
-            this.lblCreatedUser.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatedUser.ForeColor = System.Drawing.Color.Black;
-            this.lblCreatedUser.Location = new System.Drawing.Point(237, 284);
-            this.lblCreatedUser.Name = "lblCreatedUser";
-            this.lblCreatedUser.Size = new System.Drawing.Size(65, 30);
-            this.lblCreatedUser.TabIndex = 61;
-            this.lblCreatedUser.Text = "[???]";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(38, 283);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(202, 30);
-            this.label6.TabIndex = 60;
-            this.label6.Text = "Created By User :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(60, 345);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 30);
-            this.label2.TabIndex = 62;
-            this.label2.Text = "Purchase Date :";
-            // 
-            // lblPurchaseDate
-            // 
-            this.lblPurchaseDate.AutoSize = true;
-            this.lblPurchaseDate.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchaseDate.ForeColor = System.Drawing.Color.Black;
-            this.lblPurchaseDate.Location = new System.Drawing.Point(236, 343);
-            this.lblPurchaseDate.Name = "lblPurchaseDate";
-            this.lblPurchaseDate.Size = new System.Drawing.Size(65, 30);
-            this.lblPurchaseDate.TabIndex = 63;
-            this.lblPurchaseDate.Text = "[???]";
-            // 
             // frmCreateSparePartPurchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -359,6 +359,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2TabControl1);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCreateSparePartPurchase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create Spare Part Purchase";

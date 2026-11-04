@@ -66,7 +66,7 @@
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
             this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvData.Size = new System.Drawing.Size(1038, 264);
+            this.dgvData.Size = new System.Drawing.Size(1069, 264);
             this.dgvData.TabIndex = 51;
             // 
             // guna2ContextMenuStrip1
@@ -231,7 +231,7 @@
             this.lblAllPersons.BackColor = System.Drawing.Color.Transparent;
             this.lblAllPersons.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllPersons.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAllPersons.Location = new System.Drawing.Point(251, 9);
+            this.lblAllPersons.Location = new System.Drawing.Point(268, 9);
             this.lblAllPersons.Name = "lblAllPersons";
             this.lblAllPersons.Size = new System.Drawing.Size(538, 56);
             this.lblAllPersons.TabIndex = 46;
@@ -252,7 +252,7 @@
             this.btnPrevious.ForeColor = System.Drawing.Color.Black;
             this.btnPrevious.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.rewind_button;
             this.btnPrevious.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnPrevious.Location = new System.Drawing.Point(336, 482);
+            this.btnPrevious.Location = new System.Drawing.Point(343, 482);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(168, 45);
             this.btnPrevious.TabIndex = 45;
@@ -273,7 +273,7 @@
             this.btnNext.ForeColor = System.Drawing.Color.Black;
             this.btnNext.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.next__1_;
             this.btnNext.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnNext.Location = new System.Drawing.Point(570, 483);
+            this.btnNext.Location = new System.Drawing.Point(577, 483);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(156, 45);
             this.btnNext.TabIndex = 44;
@@ -295,7 +295,7 @@
             "None",
             "Status",
             "Priority"});
-            this.cbFiltering.Location = new System.Drawing.Point(616, 119);
+            this.cbFiltering.Location = new System.Drawing.Point(651, 119);
             this.cbFiltering.Name = "cbFiltering";
             this.cbFiltering.Size = new System.Drawing.Size(156, 36);
             this.cbFiltering.TabIndex = 54;
@@ -312,7 +312,7 @@
             this.cbfiltering2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbfiltering2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbfiltering2.ItemHeight = 30;
-            this.cbfiltering2.Location = new System.Drawing.Point(778, 120);
+            this.cbfiltering2.Location = new System.Drawing.Point(813, 120);
             this.cbfiltering2.Name = "cbfiltering2";
             this.cbfiltering2.Size = new System.Drawing.Size(255, 36);
             this.cbfiltering2.TabIndex = 55;
@@ -325,7 +325,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::Service_Center_Management_System__SCMS_.Properties.Resources.repair;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1074, 548);
+            this.ClientSize = new System.Drawing.Size(1092, 548);
             this.Controls.Add(this.cbfiltering2);
             this.Controls.Add(this.cbFiltering);
             this.Controls.Add(this.dgvData);
@@ -337,6 +337,8 @@
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageRepairOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Repair Orders";

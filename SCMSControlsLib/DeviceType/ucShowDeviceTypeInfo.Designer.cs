@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblDeviceTypeID = new System.Windows.Forms.Label();
             this.lblDeviceTypeName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblDeviceTypeID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,34 +50,12 @@
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "Device Type Information";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(41, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Device Type ID :";
-            // 
-            // lblDeviceTypeID
-            // 
-            this.lblDeviceTypeID.AutoSize = true;
-            this.lblDeviceTypeID.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeviceTypeID.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeviceTypeID.Location = new System.Drawing.Point(312, 75);
-            this.lblDeviceTypeID.Name = "lblDeviceTypeID";
-            this.lblDeviceTypeID.Size = new System.Drawing.Size(73, 37);
-            this.lblDeviceTypeID.TabIndex = 1;
-            this.lblDeviceTypeID.Text = "[???]";
-            // 
             // lblDeviceTypeName
             // 
             this.lblDeviceTypeName.AutoSize = true;
             this.lblDeviceTypeName.BackColor = System.Drawing.Color.Transparent;
             this.lblDeviceTypeName.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeviceTypeName.Location = new System.Drawing.Point(312, 140);
+            this.lblDeviceTypeName.Location = new System.Drawing.Point(288, 140);
             this.lblDeviceTypeName.Name = "lblDeviceTypeName";
             this.lblDeviceTypeName.Size = new System.Drawing.Size(73, 37);
             this.lblDeviceTypeName.TabIndex = 3;
@@ -93,6 +71,28 @@
             this.label3.Size = new System.Drawing.Size(269, 37);
             this.label3.TabIndex = 2;
             this.label3.Text = "Device Type Name :";
+            // 
+            // lblDeviceTypeID
+            // 
+            this.lblDeviceTypeID.AutoSize = true;
+            this.lblDeviceTypeID.BackColor = System.Drawing.Color.Transparent;
+            this.lblDeviceTypeID.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeviceTypeID.Location = new System.Drawing.Point(291, 75);
+            this.lblDeviceTypeID.Name = "lblDeviceTypeID";
+            this.lblDeviceTypeID.Size = new System.Drawing.Size(73, 37);
+            this.lblDeviceTypeID.TabIndex = 1;
+            this.lblDeviceTypeID.Text = "[???]";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Device Type ID :";
             // 
             // ucShowDeviceTypeInfo
             // 

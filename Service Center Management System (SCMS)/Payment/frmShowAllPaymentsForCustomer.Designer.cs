@@ -36,7 +36,7 @@
             // 
             this.ucShowAllPaymentsForCustomer1.Location = new System.Drawing.Point(-1, -2);
             this.ucShowAllPaymentsForCustomer1.Name = "ucShowAllPaymentsForCustomer1";
-            this.ucShowAllPaymentsForCustomer1.Size = new System.Drawing.Size(909, 385);
+            this.ucShowAllPaymentsForCustomer1.Size = new System.Drawing.Size(909, 468);
             this.ucShowAllPaymentsForCustomer1.TabIndex = 0;
             // 
             // btnClose
@@ -53,7 +53,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnClose.Location = new System.Drawing.Point(372, 403);
+            this.btnClose.Location = new System.Drawing.Point(381, 482);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(156, 45);
             this.btnClose.TabIndex = 22;
@@ -65,9 +65,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(907, 462);
+            this.ClientSize = new System.Drawing.Size(907, 535);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowAllPaymentsForCustomer1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowAllPaymentsForCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show All Payments For Customer";

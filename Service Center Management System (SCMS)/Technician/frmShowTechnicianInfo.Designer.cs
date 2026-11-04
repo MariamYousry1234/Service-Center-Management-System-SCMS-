@@ -82,6 +82,8 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowTechnicianInfo1);
             this.Controls.Add(this.lblAllPersons);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowTechnicianInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Technician Info";

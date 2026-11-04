@@ -154,7 +154,7 @@ namespace Service_Center_Management_System__SCMS_
         {
             if (!txtTotalPaid.IsValid()) return;
 
-            if(Convert.ToSingle(txtTotalPaid.Text) > 
+            if(Convert.ToSingle(txtTotalPaid.Text.Trim()) > 
                _RepairOrder.PaymentRemaining && _Mode==enMode.AddNew)
             {
                 MessageBox.Show(
@@ -168,7 +168,7 @@ namespace Service_Center_Management_System__SCMS_
             }
 
 
-            if(_Mode==enMode.Update && Convert.ToSingle(txtTotalPaid.Text) >
+            if(_Mode==enMode.Update && Convert.ToSingle(txtTotalPaid.Text.Trim()) >
                (_Payment.TotalPaid + _RepairOrder.PaymentRemaining))
             {
                 MessageBox.Show(
@@ -187,13 +187,15 @@ namespace Service_Center_Management_System__SCMS_
 
 
             _Payment.InvoiceID = ucShowInvoiceDetails1.InvoiceInfo.InvoiceID;
-            _Payment.TotalPaid = Convert.ToSingle(txtTotalPaid.Text);
+            _Payment.TotalPaid = Convert.ToSingle(txtTotalPaid.Text.Trim());
 
             if (_Mode == enMode.AddNew)
                 _Payment.CreatedByUserID = clsGlobal.CurrentUser.UserID;
+            else
+                _Payment.LastUpdatedUserID = clsGlobal.CurrentUser.UserID;
 
- 
-           if(_Payment.Save())
+
+           if (_Payment.Save())
             {
                 MessageBox.Show(
                     "Payment saved successfully.",
@@ -202,10 +204,10 @@ namespace Service_Center_Management_System__SCMS_
                     MessageBoxIcon.Information);
 
 
-                _Mode = enMode.Update;
-                _SetIntialData();
                 lblPaymentID.Text = _Payment.PaymentID.ToString();
                 lblRemaining.Text = _Payment.Remaining.ToString();
+                txtTotalPaid.Enabled = false;
+                btnSave.Enabled = false;
             }
             else
             {

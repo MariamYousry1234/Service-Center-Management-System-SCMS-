@@ -73,7 +73,7 @@
             this.lblCustomerID.BackColor = System.Drawing.Color.Transparent;
             this.lblCustomerID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerID.ForeColor = System.Drawing.Color.Blue;
-            this.lblCustomerID.Location = new System.Drawing.Point(133, 48);
+            this.lblCustomerID.Location = new System.Drawing.Point(122, 48);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(39, 19);
             this.lblCustomerID.TabIndex = 37;
@@ -97,7 +97,7 @@
             this.lblNotes.BackColor = System.Drawing.Color.Transparent;
             this.lblNotes.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotes.ForeColor = System.Drawing.Color.Blue;
-            this.lblNotes.Location = new System.Drawing.Point(82, 188);
+            this.lblNotes.Location = new System.Drawing.Point(69, 188);
             this.lblNotes.Name = "lblNotes";
             this.lblNotes.Size = new System.Drawing.Size(39, 19);
             this.lblNotes.TabIndex = 35;
@@ -122,7 +122,7 @@
             this.lblLastUpdatedUser.BackColor = System.Drawing.Color.Transparent;
             this.lblLastUpdatedUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedUser.Location = new System.Drawing.Point(176, 118);
+            this.lblLastUpdatedUser.Location = new System.Drawing.Point(168, 118);
             this.lblLastUpdatedUser.Name = "lblLastUpdatedUser";
             this.lblLastUpdatedUser.Size = new System.Drawing.Size(39, 19);
             this.lblLastUpdatedUser.TabIndex = 33;
@@ -134,7 +134,7 @@
             this.lblLastUpdatedDate.BackColor = System.Drawing.Color.Transparent;
             this.lblLastUpdatedDate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLastUpdatedDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblLastUpdatedDate.Location = new System.Drawing.Point(175, 153);
+            this.lblLastUpdatedDate.Location = new System.Drawing.Point(166, 153);
             this.lblLastUpdatedDate.Name = "lblLastUpdatedDate";
             this.lblLastUpdatedDate.Size = new System.Drawing.Size(39, 19);
             this.lblLastUpdatedDate.TabIndex = 32;
@@ -194,7 +194,7 @@
             this.lblCreatedByUser.BackColor = System.Drawing.Color.Transparent;
             this.lblCreatedByUser.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedByUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedByUser.Location = new System.Drawing.Point(131, 83);
+            this.lblCreatedByUser.Location = new System.Drawing.Point(123, 83);
             this.lblCreatedByUser.Name = "lblCreatedByUser";
             this.lblCreatedByUser.Size = new System.Drawing.Size(39, 19);
             this.lblCreatedByUser.TabIndex = 26;

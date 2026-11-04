@@ -146,7 +146,7 @@
             this.lblRepairCompletionDate.BackColor = System.Drawing.Color.Transparent;
             this.lblRepairCompletionDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRepairCompletionDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblRepairCompletionDate.Location = new System.Drawing.Point(215, 582);
+            this.lblRepairCompletionDate.Location = new System.Drawing.Point(213, 582);
             this.lblRepairCompletionDate.Name = "lblRepairCompletionDate";
             this.lblRepairCompletionDate.Size = new System.Drawing.Size(49, 20);
             this.lblRepairCompletionDate.TabIndex = 43;
@@ -262,7 +262,7 @@
             this.lblCreatedUser.BackColor = System.Drawing.Color.Transparent;
             this.lblCreatedUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreatedUser.ForeColor = System.Drawing.Color.Blue;
-            this.lblCreatedUser.Location = new System.Drawing.Point(188, 459);
+            this.lblCreatedUser.Location = new System.Drawing.Point(176, 459);
             this.lblCreatedUser.Name = "lblCreatedUser";
             this.lblCreatedUser.Size = new System.Drawing.Size(49, 20);
             this.lblCreatedUser.TabIndex = 32;
@@ -274,7 +274,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Red;
-            this.label20.Location = new System.Drawing.Point(55, 459);
+            this.label20.Location = new System.Drawing.Point(47, 459);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(126, 20);
             this.label20.TabIndex = 31;
@@ -286,7 +286,7 @@
             this.lblCustomerName.BackColor = System.Drawing.Color.Transparent;
             this.lblCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCustomerName.ForeColor = System.Drawing.Color.Blue;
-            this.lblCustomerName.Location = new System.Drawing.Point(190, 418);
+            this.lblCustomerName.Location = new System.Drawing.Point(175, 418);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(49, 20);
             this.lblCustomerName.TabIndex = 30;
@@ -298,7 +298,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(39, 418);
+            this.label19.Location = new System.Drawing.Point(29, 418);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(147, 20);
             this.label19.TabIndex = 29;
@@ -358,7 +358,7 @@
             this.lblDeviceTypeName.BackColor = System.Drawing.Color.Transparent;
             this.lblDeviceTypeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeviceTypeName.ForeColor = System.Drawing.Color.Blue;
-            this.lblDeviceTypeName.Location = new System.Drawing.Point(188, 377);
+            this.lblDeviceTypeName.Location = new System.Drawing.Point(173, 377);
             this.lblDeviceTypeName.Name = "lblDeviceTypeName";
             this.lblDeviceTypeName.Size = new System.Drawing.Size(49, 20);
             this.lblDeviceTypeName.TabIndex = 24;
@@ -370,7 +370,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(21, 377);
+            this.label15.Location = new System.Drawing.Point(7, 377);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(167, 20);
             this.label15.TabIndex = 23;
@@ -382,7 +382,7 @@
             this.lblAssignedTechnicianName.BackColor = System.Drawing.Color.Transparent;
             this.lblAssignedTechnicianName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAssignedTechnicianName.ForeColor = System.Drawing.Color.Blue;
-            this.lblAssignedTechnicianName.Location = new System.Drawing.Point(188, 336);
+            this.lblAssignedTechnicianName.Location = new System.Drawing.Point(149, 336);
             this.lblAssignedTechnicianName.Name = "lblAssignedTechnicianName";
             this.lblAssignedTechnicianName.Size = new System.Drawing.Size(49, 20);
             this.lblAssignedTechnicianName.TabIndex = 22;
@@ -394,11 +394,11 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(-2, 336);
+            this.label14.Location = new System.Drawing.Point(29, 336);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(191, 20);
+            this.label14.Size = new System.Drawing.Size(115, 20);
             this.label14.TabIndex = 21;
-            this.label14.Text = "Ass.Technician Name :";
+            this.label14.Text = "Ass.T.Name :";
             // 
             // lblAssignedTechnicianID
             // 
@@ -430,7 +430,7 @@
             this.lblNotes.BackColor = System.Drawing.Color.Transparent;
             this.lblNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotes.ForeColor = System.Drawing.Color.Blue;
-            this.lblNotes.Location = new System.Drawing.Point(188, 541);
+            this.lblNotes.Location = new System.Drawing.Point(185, 541);
             this.lblNotes.Name = "lblNotes";
             this.lblNotes.Size = new System.Drawing.Size(49, 20);
             this.lblNotes.TabIndex = 18;
@@ -454,7 +454,7 @@
             this.lblProblemDescription.BackColor = System.Drawing.Color.Transparent;
             this.lblProblemDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProblemDescription.ForeColor = System.Drawing.Color.Blue;
-            this.lblProblemDescription.Location = new System.Drawing.Point(189, 500);
+            this.lblProblemDescription.Location = new System.Drawing.Point(187, 500);
             this.lblProblemDescription.Name = "lblProblemDescription";
             this.lblProblemDescription.Size = new System.Drawing.Size(49, 20);
             this.lblProblemDescription.TabIndex = 16;
@@ -548,11 +548,11 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.Blue;
-            this.lblStatus.Location = new System.Drawing.Point(523, 254);
+            this.lblStatus.Location = new System.Drawing.Point(526, 256);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(49, 20);
+            this.lblStatus.Size = new System.Drawing.Size(41, 16);
             this.lblStatus.TabIndex = 8;
             this.lblStatus.Text = "[???]";
             // 

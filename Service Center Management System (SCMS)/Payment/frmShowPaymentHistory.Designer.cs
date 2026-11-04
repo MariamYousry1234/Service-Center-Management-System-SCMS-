@@ -69,6 +69,8 @@
             this.ClientSize = new System.Drawing.Size(909, 347);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowPaymentHistoryForRepairOrder1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowPaymentHistory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Payment History";

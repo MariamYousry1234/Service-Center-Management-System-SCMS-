@@ -139,7 +139,21 @@ namespace Service_Center_Management_System__SCMS_
 
         private void showBrandsModelsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            frmShowAllModelsForBrand frm = new frmShowAllModelsForBrand((int)dgvData.CurrentRow.Cells[0].Value);
+            int BrandID = (int)dgvData.CurrentRow.Cells[0].Value;
+
+            clsBrand BrandInfo = clsBrand.FindBrand(BrandID);
+         
+
+            if(!BrandInfo.HasModels)
+            {
+                MessageBox.Show("This brand has no models.", "No Models Found",
+                  MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                return;
+            }
+
+            frmShowAllModelsForBrand frm = 
+                new frmShowAllModelsForBrand(BrandID);
 
             frm.ShowDialog();
         }

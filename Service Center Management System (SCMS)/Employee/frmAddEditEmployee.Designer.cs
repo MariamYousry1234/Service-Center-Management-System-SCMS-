@@ -281,6 +281,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAddEditEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Edit Employee";

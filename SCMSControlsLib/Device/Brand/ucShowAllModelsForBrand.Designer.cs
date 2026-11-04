@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllModels = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllModels = new System.Windows.Forms.DataGridView();
             this.lblNumberOfModels = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteModelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbAllModels.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllModels)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbAllModels
@@ -57,6 +61,7 @@
             this.dgvAllModels.AllowUserToOrderColumns = true;
             this.dgvAllModels.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllModels.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAllModels.ContextMenuStrip = this.contextMenuStrip1;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,7 +83,7 @@
             this.lblNumberOfModels.BackColor = System.Drawing.Color.Transparent;
             this.lblNumberOfModels.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfModels.ForeColor = System.Drawing.Color.Blue;
-            this.lblNumberOfModels.Location = new System.Drawing.Point(269, 401);
+            this.lblNumberOfModels.Location = new System.Drawing.Point(256, 401);
             this.lblNumberOfModels.Name = "lblNumberOfModels";
             this.lblNumberOfModels.Size = new System.Drawing.Size(65, 32);
             this.lblNumberOfModels.TabIndex = 2;
@@ -95,6 +100,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Models :";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteModelToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // deleteModelToolStripMenuItem
+            // 
+            this.deleteModelToolStripMenuItem.Image = global::SCMSControlsLib.Properties.Resources.delete;
+            this.deleteModelToolStripMenuItem.Name = "deleteModelToolStripMenuItem";
+            this.deleteModelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteModelToolStripMenuItem.Text = "Delete Model";
+            this.deleteModelToolStripMenuItem.Click += new System.EventHandler(this.deleteModelToolStripMenuItem_Click);
+            // 
             // ucShowAllModelsForBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,6 +126,7 @@
             this.gbAllModels.ResumeLayout(false);
             this.gbAllModels.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllModels)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -115,5 +137,7 @@
         private System.Windows.Forms.DataGridView dgvAllModels;
         private System.Windows.Forms.Label lblNumberOfModels;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem deleteModelToolStripMenuItem;
     }
 }

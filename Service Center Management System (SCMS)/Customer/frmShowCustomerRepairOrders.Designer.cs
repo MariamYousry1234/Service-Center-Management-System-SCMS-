@@ -68,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1167, 484);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucShowCustomerRepairOrders1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmShowCustomerRepairOrders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Customer Repair Orders";

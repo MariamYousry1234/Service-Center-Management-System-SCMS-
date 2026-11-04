@@ -95,7 +95,7 @@ namespace Service_Center_Management_System__SCMS_
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!txtSupplierName.IsValid() &&
+            if (!txtSupplierName.IsValid() ||
                 !txtPhoneNumber.IsValid()) return;
 
             if(_Mode==enMode.AddNew && clsSupplier.IsSupplierExists(txtSupplierName.Text))

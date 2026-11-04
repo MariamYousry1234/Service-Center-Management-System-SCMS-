@@ -73,6 +73,7 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -110,13 +111,14 @@
             this.toolStripMenuItem13,
             this.deliveriesToolStripMenuItem,
             this.toolStripMenuItem1,
-            this.settingsToolStripMenuItem});
+            this.settingsToolStripMenuItem,
+            this.toolStripMenuItem14});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 7);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(192, 818);
+            this.menuStrip1.Size = new System.Drawing.Size(192, 804);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -317,7 +319,7 @@
             this.manageSparePartsToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageSparePartsToolStripMenuItem.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.spare_parts__1_;
             this.manageSparePartsToolStripMenuItem.Name = "manageSparePartsToolStripMenuItem";
-            this.manageSparePartsToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.manageSparePartsToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.manageSparePartsToolStripMenuItem.Text = "Manage Spare Parts";
             this.manageSparePartsToolStripMenuItem.Click += new System.EventHandler(this.manageSparePartsToolStripMenuItem_Click);
             // 
@@ -328,7 +330,7 @@
             this.partBrandsToolStripMenuItem});
             this.manageToolStripMenuItem.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(283, 22);
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(241, 22);
             this.manageToolStripMenuItem.Text = "Manage...";
             // 
             // partCategoriesToolStripMenuItem
@@ -506,12 +508,19 @@
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem14
+            // 
+            this.toolStripMenuItem14.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(179, 27);
+            this.toolStripMenuItem14.Text = "**********";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Service_Center_Management_System__SCMS_.Properties.Resources.SCMS_Computer_Service_Center_Dashboard;
-            this.pictureBox1.Location = new System.Drawing.Point(195, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(195, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1023, 818);
+            this.pictureBox1.Size = new System.Drawing.Size(1023, 806);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -520,9 +529,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 818);
+            this.ClientSize = new System.Drawing.Size(1217, 804);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SCMS Main";
@@ -583,5 +594,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem managePuchasesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem createSparePartPurchaseToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
     }
 }

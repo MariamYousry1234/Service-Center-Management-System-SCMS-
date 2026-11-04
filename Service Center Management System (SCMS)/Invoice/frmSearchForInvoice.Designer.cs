@@ -69,6 +69,8 @@
             this.ClientSize = new System.Drawing.Size(593, 772);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.ucSearchForInvoice1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSearchForInvoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search For Invoice";

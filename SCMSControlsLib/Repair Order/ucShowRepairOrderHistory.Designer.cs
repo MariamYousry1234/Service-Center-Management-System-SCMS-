@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllHistory = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgvAllChanges = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,10 +41,10 @@
             this.gbAllHistory.Controls.Add(this.dgvAllChanges);
             this.gbAllHistory.Controls.Add(this.label1);
             this.gbAllHistory.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbAllHistory.ForeColor = System.Drawing.Color.Black;
+            this.gbAllHistory.ForeColor = System.Drawing.Color.Red;
             this.gbAllHistory.Location = new System.Drawing.Point(0, -1);
             this.gbAllHistory.Name = "gbAllHistory";
-            this.gbAllHistory.Size = new System.Drawing.Size(1090, 267);
+            this.gbAllHistory.Size = new System.Drawing.Size(1090, 367);
             this.gbAllHistory.TabIndex = 3;
             this.gbAllHistory.Text = "History For RepairOrderID = [???] ";
             // 
@@ -54,11 +55,19 @@
             this.dgvAllChanges.AllowUserToOrderColumns = true;
             this.dgvAllChanges.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllChanges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAllChanges.Location = new System.Drawing.Point(1, 52);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAllChanges.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvAllChanges.Location = new System.Drawing.Point(1, 51);
             this.dgvAllChanges.Name = "dgvAllChanges";
             this.dgvAllChanges.ReadOnly = true;
             this.dgvAllChanges.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllChanges.Size = new System.Drawing.Size(1086, 205);
+            this.dgvAllChanges.Size = new System.Drawing.Size(1086, 304);
             this.dgvAllChanges.TabIndex = 3;
             // 
             // label1
@@ -77,7 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbAllHistory);
             this.Name = "ucShowRepairOrderHistory";
-            this.Size = new System.Drawing.Size(1090, 267);
+            this.Size = new System.Drawing.Size(1090, 369);
             this.gbAllHistory.ResumeLayout(false);
             this.gbAllHistory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllChanges)).EndInit();

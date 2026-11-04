@@ -202,6 +202,8 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.lblAllPersons);
             this.DoubleBuffered = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmManageSuppliers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Suppliers";

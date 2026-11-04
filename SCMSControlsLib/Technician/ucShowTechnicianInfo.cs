@@ -55,8 +55,8 @@ namespace SCMSControlsLib
             lblSpecialization.Text = _Technician.txtSpecialization;
             lblCreatedByUser.Text = _Technician.CreatedByUserInfo.Username;
             lblCreatedDate.Text = _Technician.CreatedDate.ToString("dd/MM/yyyy");
-            lblLastUpdatedDate.Text = _Technician.LastUpdatedDate?.ToString("dd/MM/yyyy");
-            lblLastUpdatedUser.Text = _Technician.LastUpdatedUserInfo?.Username ?? "";
+            lblLastUpdatedDate.Text = _Technician.LastUpdatedDate?.ToString("dd/MM/yyyy") ?? "Un Known";
+            lblLastUpdatedUser.Text = _Technician.LastUpdatedUserInfo?.Username ?? "Un Known";
         }
         public void LoadTechnicianInfo(int TechnicianID)
         {

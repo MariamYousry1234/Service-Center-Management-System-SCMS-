@@ -128,7 +128,7 @@ namespace Service_Center_Management_System__SCMS_
             if (!txtPartName.IsValid() || !txtSellingPrice.IsValid()) return;
 
 
-            if (Convert.ToSingle(txtSellingPrice.Text) < 0)
+            if (Convert.ToSingle(txtSellingPrice.Text.Trim()) < 0)
             {
                 MessageBox.Show("Selling price cannot be negative.", "Not allowed",
                    MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -152,7 +152,7 @@ namespace Service_Center_Management_System__SCMS_
             _SparePart.PartName = txtPartName.Text;
             _SparePart.PartCategoryID = clsPartCategory.FindPartCategory(cbPartCategory.Text).PartCategoryID;
             _SparePart.PartBrandID = clsPartBrand.FindPartBrand(cbPartBrand.Text).PartBrandID;
-            _SparePart.SellingPrice = Convert.ToSingle(txtSellingPrice.Text);
+            _SparePart.SellingPrice = Convert.ToSingle(txtSellingPrice.Text.Trim());
             _SparePart.Quantity = Convert.ToInt32(nudQuantity.Value);
             _SparePart.MinimumStockLevel = Convert.ToByte(nudMSLevel.Value);
 

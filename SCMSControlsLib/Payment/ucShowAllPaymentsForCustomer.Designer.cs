@@ -30,10 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gbAllPayments = new Guna.UI2.WinForms.Guna2GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtFiltering = new SCMSControlsLib.cusTextBox();
             this.cbFiltering = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dgvAllPayments = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -42,6 +40,7 @@
             this.showCreatedUserInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNumberOfRepairOrders = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtFiltering = new SCMSControlsLib.cusTextBox();
             this.gbAllPayments.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPayments)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -59,7 +58,7 @@
             this.gbAllPayments.ForeColor = System.Drawing.Color.Red;
             this.gbAllPayments.Location = new System.Drawing.Point(0, 2);
             this.gbAllPayments.Name = "gbAllPayments";
-            this.gbAllPayments.Size = new System.Drawing.Size(907, 385);
+            this.gbAllPayments.Size = new System.Drawing.Size(907, 473);
             this.gbAllPayments.TabIndex = 4;
             this.gbAllPayments.Text = "All Payments For Customer ID = [???]";
             // 
@@ -74,18 +73,6 @@
             this.label2.Size = new System.Drawing.Size(121, 32);
             this.label2.TabIndex = 59;
             this.label2.Text = "Filter By :";
-            // 
-            // txtFiltering
-            // 
-            this.txtFiltering.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFiltering.IsRequired = false;
-            this.txtFiltering.Length = null;
-            this.txtFiltering.Location = new System.Drawing.Point(358, 57);
-            this.txtFiltering.Name = "txtFiltering";
-            this.txtFiltering.Size = new System.Drawing.Size(235, 35);
-            this.txtFiltering.TabIndex = 58;
-            this.txtFiltering.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
-            this.txtFiltering.TextChanged += new System.EventHandler(this.txtFiltering_TextChanged);
             // 
             // cbFiltering
             // 
@@ -116,22 +103,14 @@
             this.dgvAllPayments.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgvAllPayments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAllPayments.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAllPayments.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvAllPayments.Location = new System.Drawing.Point(-1, 99);
+            this.dgvAllPayments.Location = new System.Drawing.Point(-1, 112);
             this.dgvAllPayments.Name = "dgvAllPayments";
             this.dgvAllPayments.ReadOnly = true;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dgvAllPayments.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgvAllPayments.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAllPayments.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAllPayments.Size = new System.Drawing.Size(905, 236);
+            this.dgvAllPayments.Size = new System.Drawing.Size(905, 314);
             this.dgvAllPayments.TabIndex = 3;
             // 
             // contextMenuStrip1
@@ -174,7 +153,7 @@
             this.lblNumberOfRepairOrders.BackColor = System.Drawing.Color.Transparent;
             this.lblNumberOfRepairOrders.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfRepairOrders.ForeColor = System.Drawing.Color.Blue;
-            this.lblNumberOfRepairOrders.Location = new System.Drawing.Point(255, 344);
+            this.lblNumberOfRepairOrders.Location = new System.Drawing.Point(247, 429);
             this.lblNumberOfRepairOrders.Name = "lblNumberOfRepairOrders";
             this.lblNumberOfRepairOrders.Size = new System.Drawing.Size(65, 32);
             this.lblNumberOfRepairOrders.TabIndex = 2;
@@ -185,11 +164,23 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 346);
+            this.label1.Location = new System.Drawing.Point(4, 431);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(236, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Number Of Payments :";
+            // 
+            // txtFiltering
+            // 
+            this.txtFiltering.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFiltering.IsRequired = false;
+            this.txtFiltering.Length = null;
+            this.txtFiltering.Location = new System.Drawing.Point(358, 57);
+            this.txtFiltering.Name = "txtFiltering";
+            this.txtFiltering.Size = new System.Drawing.Size(235, 35);
+            this.txtFiltering.TabIndex = 58;
+            this.txtFiltering.WritingType = SCMSControlsLib.cusTextBox.enWritingType.Numbers;
+            this.txtFiltering.TextChanged += new System.EventHandler(this.txtFiltering_TextChanged);
             // 
             // ucShowAllPaymentsForCustomer
             // 
@@ -197,7 +188,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gbAllPayments);
             this.Name = "ucShowAllPaymentsForCustomer";
-            this.Size = new System.Drawing.Size(909, 385);
+            this.Size = new System.Drawing.Size(909, 478);
             this.gbAllPayments.ResumeLayout(false);
             this.gbAllPayments.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAllPayments)).EndInit();
