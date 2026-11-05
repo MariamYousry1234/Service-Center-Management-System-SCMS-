@@ -228,7 +228,6 @@ namespace Service_Center_Management_System__SCMS_
                    "Waiting For Customer Approval",
                    "Approval",
                    "Under Repair",
-                   "Waiting For Parts",
                    "Ready For Delivery",
                    "Delivered",
                    "Cancelled"
@@ -238,7 +237,24 @@ namespace Service_Center_Management_System__SCMS_
         }
         private void cbFiltering_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch(cbFiltering.SelectedItem.ToString())
+            _CurrentData.DefaultView.RowFilter = "";
+
+            if (cbFiltering.Text == "None")
+            {
+                cbfiltering2.Visible = false;
+                txtName.Visible = false;
+
+                return;
+            }
+
+            cbfiltering2.Visible =
+                cbFiltering.Text == "Status" || cbFiltering.Text == "Priority";
+
+           txtName.Visible =
+                cbFiltering.Text == "Customer Name" || cbFiltering.Text == "Technician Name";
+
+            
+            switch (cbFiltering.SelectedItem.ToString())
             {
                 case "Status":
                     _FillComboBoxWithStatus();
@@ -246,25 +262,14 @@ namespace Service_Center_Management_System__SCMS_
 
                 case "Priority":
                     _FillComboBoxWithPriority();
-                        break;
+                    break;
 
                 default:
-                    cbfiltering2.Items.Clear();
+                    txtName.Clear();
+                    txtName.Focus();
                     break;
             }
 
-
-            if (cbFiltering.Text == "None")
-            {
-                cbfiltering2.Enabled = false;
-
-               _CurrentData.DefaultView.RowFilter = "";     
-                
-            }
-            else
-            {
-                cbfiltering2.Enabled = true;
-            }
 
         }
 
@@ -279,7 +284,7 @@ namespace Service_Center_Management_System__SCMS_
                 _CurrentData.DefaultView.RowFilter = "";
          
             dgvData.DataSource = _CurrentData;
-            lblPageNumber.Text = CurrentPage.ToString();
+
         }
 
         private void showRepairOrderHistoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -339,6 +344,13 @@ namespace Service_Center_Management_System__SCMS_
 
             frmManageRepairOrders_Load(null, null);
         }
- 
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtName.Text))
+                _CurrentData.DefaultView.RowFilter = "";
+            else
+                _CurrentData.DefaultView.RowFilter = $"[{cbFiltering.Text}] like '{txtName.Text}%'";
+        }
     }
 }

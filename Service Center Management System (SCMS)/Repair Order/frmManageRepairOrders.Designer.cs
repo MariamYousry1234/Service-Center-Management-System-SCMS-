@@ -50,6 +50,7 @@
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
             this.cbFiltering = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbfiltering2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtName = new SCMSControlsLib.cusTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.guna2ContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -294,7 +295,9 @@
             this.cbFiltering.Items.AddRange(new object[] {
             "None",
             "Status",
-            "Priority"});
+            "Priority",
+            "Customer Name",
+            "Technician Name"});
             this.cbFiltering.Location = new System.Drawing.Point(651, 119);
             this.cbFiltering.Name = "cbFiltering";
             this.cbFiltering.Size = new System.Drawing.Size(156, 36);
@@ -316,7 +319,22 @@
             this.cbfiltering2.Name = "cbfiltering2";
             this.cbfiltering2.Size = new System.Drawing.Size(255, 36);
             this.cbfiltering2.TabIndex = 55;
+            this.cbfiltering2.Visible = false;
             this.cbfiltering2.SelectedIndexChanged += new System.EventHandler(this.cbfiltering2_SelectedIndexChanged);
+            // 
+            // txtName
+            // 
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.IsRequired = false;
+            this.txtName.Length = null;
+            this.txtName.Location = new System.Drawing.Point(813, 120);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(254, 36);
+            this.txtName.TabIndex = 56;
+            this.txtName.Visible = false;
+            this.txtName.WritingType = SCMSControlsLib.cusTextBox.enWritingType.None;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // frmManageRepairOrders
             // 
@@ -326,6 +344,7 @@
             this.BackgroundImage = global::Service_Center_Management_System__SCMS_.Properties.Resources.repair;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1092, 548);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.cbfiltering2);
             this.Controls.Add(this.cbFiltering);
             this.Controls.Add(this.dgvData);
@@ -373,5 +392,6 @@
         private System.Windows.Forms.ToolStripMenuItem recordUsedPartToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setRepairCostToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private SCMSControlsLib.cusTextBox txtName;
     }
 }

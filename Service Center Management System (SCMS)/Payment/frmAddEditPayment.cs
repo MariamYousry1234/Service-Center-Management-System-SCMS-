@@ -203,6 +203,8 @@ namespace Service_Center_Management_System__SCMS_
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
+                //refresh data
+                ucShowInvoiceDetails1.LoadInvoiceInfo(_Payment.InvoiceID);
 
                 lblPaymentID.Text = _Payment.PaymentID.ToString();
                 lblRemaining.Text = _Payment.Remaining.ToString();
