@@ -85,7 +85,7 @@ This separation improves maintainability, organization, and separation of concer
 - App.config
 - Windows Registry
 - Windows Event Log
-- Cryptography & Hashing
+- Cryptography
 - Symmetric & Asymmetric Encryption
 
 ## 🎯 Project Goals
