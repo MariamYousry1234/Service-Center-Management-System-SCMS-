@@ -125,3 +125,20 @@ This project focuses on strengthening practical software development skills thro
 ---
 
 *Built to practice, apply, and strengthen software development skills through a real-world business application.*
+
+
+![Login](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login.PNG?raw=true)
+
+![Main Screen](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Main%20Screen.PNG?raw=true)
+
+![Manage Customers](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Customers.PNG?raw=true)
+
+![Manage Employees](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Employees.PNG?raw=true)
+
+![Manage Repair Orders](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Repair%20Order.PNG?raw=true)
+
+![Add New Repair Order](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/AddNewRepairOrder.PNG?raw=true)
+
+![Manage Spare Parts](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Spare%20Parts.PNG?raw=true)
+
+![User Permissions](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/User%20Permissions.PNG?raw=true)
