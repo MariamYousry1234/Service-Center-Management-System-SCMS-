@@ -88,6 +88,23 @@ This separation improves maintainability, organization, and separation of concer
 - Cryptography
 - Symmetric & Asymmetric Encryption
 
+## 🗄️ Database Setup
+
+To run the application, you need to restore the database backup using **SQL Server Management Studio (SSMS)**.
+
+1. Download the database backup file from the [`Database/SCMS.bak`](Database/SCMS.bak) folder.
+2. Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
+3. Right-click **Databases** and select **Restore Database**.
+4. Select **Device** as the source, then browse and select the downloaded `SCMS.bak` file.
+5. Complete the restore process.
+
+After restoring the database, update the connection string in the `App.config` file to match your SQL Server instance.
+
+**Requirements:**
+- SQL Server
+- SQL Server Management Studio (SSMS)
+
+
 ## 🎯 Project Goals
 
 This project focuses on strengthening practical software development skills through:
@@ -108,3 +125,23 @@ This project focuses on strengthening practical software development skills thro
 ---
 
 *Built to practice, apply, and strengthen software development skills through a real-world business application.*
+
+
+
+## 📸 Screenshots
+
+![Login](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login.PNG?raw=true)
+
+![Main Screen](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Main%20Screen.PNG?raw=true)
+
+![Manage Customers](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Customers.PNG?raw=true)
+
+![Manage Employees](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Employees.PNG?raw=true)
+
+![Manage Repair Orders](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Repair%20Order.PNG?raw=true)
+
+![Add New Repair Order](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/AddNewRepairOrder.PNG?raw=true)
+
+![Manage Spare Parts](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Manage%20Spare%20Parts.PNG?raw=true)
+
+![User Permissions](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/User%20Permissions.PNG?raw=true)
