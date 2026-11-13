@@ -88,6 +88,23 @@ This separation improves maintainability, organization, and separation of concer
 - Cryptography
 - Symmetric & Asymmetric Encryption
 
+## 🗄️ Database Setup
+
+To run the application, you need to restore the database backup using **SQL Server Management Studio (SSMS)**.
+
+1. Download the database backup file from the [`Database/SCMS.bak`](Database/SCMS.bak) folder.
+2. Open SQL Server Management Studio (SSMS) and connect to your SQL Server instance.
+3. Right-click **Databases** and select **Restore Database**.
+4. Select **Device** as the source, then browse and select the downloaded `SCMS.bak` file.
+5. Complete the restore process.
+
+After restoring the database, update the connection string in the `App.config` file to match your SQL Server instance.
+
+**Requirements:**
+- SQL Server
+- SQL Server Management Studio (SSMS)
+
+
 ## 🎯 Project Goals
 
 This project focuses on strengthening practical software development skills through:
