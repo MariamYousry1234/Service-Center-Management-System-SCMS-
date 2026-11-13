@@ -105,6 +105,19 @@ After restoring the database, update the connection string in the `App.config` f
 - SQL Server Management Studio (SSMS)
 
 
+
+## 📊 Database Diagrams
+
+### Entity Relationship Diagram (ERD)
+
+![SCMS ERD](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_ERD.png?raw=true)
+
+### Database Schema
+
+![SCMS Database Schema](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Schema.png?raw=true)
+
+
+
 ## 🎯 Project Goals
 
 This project focuses on strengthening practical software development skills through:
