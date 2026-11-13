@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -190,12 +191,23 @@ namespace Service_Center_Management_System__SCMS_
 
             if (_Invoice.Save())
             {
-                MessageBox.Show(
-                       "Invoice saved successfully.",
-                       "Success",
-                      MessageBoxButtons.OK,
-                      MessageBoxIcon.Information);
+                if (_Mode == enMode.AddNew)
+                {
+                    MessageBox.Show(
+                    "Invoice saved successfully. The invoice is now available in the Invoices Awaiting Payments screen.",
+                    "Success",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
 
+                }
+                else
+                {
+                    MessageBox.Show(
+                           "Invoice saved successfully.",
+                           "Success",
+                          MessageBoxButtons.OK,
+                          MessageBoxIcon.Information);
+                }
 
                 _Mode = enMode.Update;
                 lblInvoiceID.Text = _Invoice.InvoiceID.ToString();

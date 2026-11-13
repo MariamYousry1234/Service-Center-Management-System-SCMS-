@@ -36,6 +36,8 @@ namespace Service_Center_Management_System__SCMS_
                 dgvData.Columns[3].Width = 200;
                 dgvData.Columns[4].Width = 170;
             }
+
+            cbFiltering.SelectedIndex = 0;
         }
 
         private async void frmManageDiagnoses_Load(object sender, EventArgs e)

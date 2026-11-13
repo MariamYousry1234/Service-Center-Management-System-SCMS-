@@ -212,11 +212,21 @@ namespace Service_Center_Management_System__SCMS_
 
             if(_RepairCost.Save())
             {
-
-                MessageBox.Show("Repair cost saved successfully.",
-                      "Success",
-                    MessageBoxButtons.OK,
+                if (_Mode == enMode.AddNew)
+                {
+                    MessageBox.Show("Repair cost saved successfully. The repair order is now available in the Ready for Invoicing screen. Please go to that screen to generate the invoice.",
+                     "Success",
+                     MessageBoxButtons.OK,
                      MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Repair cost saved successfully.",
+                                       "Success",
+                                      MessageBoxButtons.OK,
+                                     MessageBoxIcon.Information);
+                }
+
 
                 _Mode = enMode.Update;
                 _RepairCostID = _RepairCost.RepairCostID;

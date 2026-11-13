@@ -106,11 +106,14 @@ namespace SCMS_Business_Logic
 
         private bool UpdateUser()
         {
+            string EncryptPassword
+                = clsSymmetric.Encrypt(this.Password, ConfigurationManager.AppSettings["EncrytDecryptKey"]);
 
             return clsUserDataAccess.UpdateUser(
                 this.UserID,
                 this.EmployeeID,
                 this.Username,
+                EncryptPassword,
                 this.Permissions
                 );
         }

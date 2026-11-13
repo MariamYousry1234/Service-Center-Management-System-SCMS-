@@ -197,14 +197,26 @@ namespace Service_Center_Management_System__SCMS_
 
            if (_Payment.Save())
             {
-                MessageBox.Show(
-                    "Payment saved successfully.",
-                    "Success",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-
                 //refresh data
                 ucShowInvoiceDetails1.LoadInvoiceInfo(_Payment.InvoiceID);
+
+                if (_Mode == enMode.AddNew && _Payment.Remaining == 0)
+                {
+                    MessageBox.Show(
+                   "Payment saved successfully. The repair order is now available in the Repair Orders Ready for Delivery screen. The device is now ready for delivery.",
+                   "Success",
+                   MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "Payment saved successfully.",
+                        "Success",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                }
 
                 lblPaymentID.Text = _Payment.PaymentID.ToString();
                 lblRemaining.Text = _Payment.Remaining.ToString();

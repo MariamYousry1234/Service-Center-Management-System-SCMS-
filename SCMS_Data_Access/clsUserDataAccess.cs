@@ -268,6 +268,7 @@ namespace SCMS_Data_Access
     int UserID,
     int EmployeeID,
     string Username,
+    string Password,
     int Permissions
    )
         {
@@ -286,7 +287,7 @@ namespace SCMS_Data_Access
                         Command.Parameters.AddWithValue("UserID", UserID);
                         Command.Parameters.AddWithValue("EmployeeID", EmployeeID);
                         Command.Parameters.AddWithValue("Username", Username);
- 
+                        Command.Parameters.AddWithValue("Password", Password);
 
                         Command.Parameters.AddWithValue(
                             "Permissions", Permissions);
