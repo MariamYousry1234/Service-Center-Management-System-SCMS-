@@ -127,6 +127,9 @@ This project focuses on strengthening practical software development skills thro
 *Built to practice, apply, and strengthen software development skills through a real-world business application.*
 
 
+
+## 📸 Screenshots
+
 ![Login](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login.PNG?raw=true)
 
 ![Main Screen](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Main%20Screen.PNG?raw=true)
