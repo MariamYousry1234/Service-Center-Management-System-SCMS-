@@ -27,11 +27,12 @@ It also includes spare parts inventory and purchasing management to help track a
   - Inventory Employee
 - Control access to system operations based on user permissions.
 
-### 📦 Spare Parts & Inventory Management
+### 📦 Spare Parts & Purchasing Management
 - Manage spare parts and their information.
-- Track available quantities.
-- Manage spare parts purchases.
-- Monitor inventory changes.
+- Track available spare parts quantities.
+- Manage suppliers and their information.
+- Manage spare parts purchases from suppliers.
+- Monitor stock quantity changes resulting from purchases.
 - Prevent invalid stock operations.
 
 ### 💰 Invoicing & Payments
