@@ -27,11 +27,12 @@ It also includes spare parts inventory and purchasing management to help track a
   - Inventory Employee
 - Control access to system operations based on user permissions.
 
-### 📦 Spare Parts & Inventory Management
+### 📦 Spare Parts & Purchasing Management
 - Manage spare parts and their information.
-- Track available quantities.
-- Manage spare parts purchases.
-- Monitor inventory changes.
+- Track available spare parts quantities.
+- Manage suppliers and their information.
+- Manage spare parts purchases from suppliers.
+- Monitor stock quantity changes resulting from purchases.
 - Prevent invalid stock operations.
 
 ### 💰 Invoicing & Payments
@@ -110,11 +111,11 @@ After restoring the database, update the connection string in the `App.config` f
 
 ### Entity Relationship Diagram (ERD)
 
-![SCMS ERD](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_ERD.png?raw=true)
+![SCMS ERD](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Database.drawio.png?raw=true)
 
 ### Database Schema
 
-![SCMS Database Schema](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Schema.png?raw=true)
+![SCMS Database Schema](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Schema.drawio.png?raw=true)
 
 
 
