@@ -110,11 +110,11 @@ After restoring the database, update the connection string in the `App.config` f
 
 ### Entity Relationship Diagram (ERD)
 
-![SCMS ERD](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_ERD.png?raw=true)
+![SCMS ERD](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Database.drawio.png?raw=true)
 
 ### Database Schema
 
-![SCMS Database Schema](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Schema.png?raw=true)
+![SCMS Database Schema](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Database/Diagrams/SCMS_Schema.drawio.png?raw=true)
 
 
 
