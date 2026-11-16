@@ -22,6 +22,10 @@ namespace Service_Center_Management_System__SCMS_
         private string EncryptDecryptKey = ConfigurationManager.AppSettings["EncrytDecryptKey"];
         private string ApplicationName = ConfigurationManager.AppSettings["ApplicationName"];
 
+        private byte Counter = 3;
+
+  
+
         public frmLoginScreen()
         {
             InitializeComponent();
@@ -34,15 +38,20 @@ namespace Service_Center_Management_System__SCMS_
 
         private void frmLoginScreen_Activated(object sender, EventArgs e)
         {
-            //read saved data if exists
-            string Username = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNameUsername);
-            string Password = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNamePassword);
+          
+                //read saved data if exists
+                string Username = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNameUsername);
+                string Password = clsRegistry.ReadFromRegistry<string>(CurrentUserKeyPath, ValueNamePassword);
 
-            txtUsername.Text = Username ?? "";
-            txtPassword.Text = Password == null ? "" : clsSymmetric.Decrypt(Password, EncryptDecryptKey);
-            chbRememberme.Checked =( Username != null && Password != null);
-            txtUsername.Focus();
-            txtUsername.SelectionStart = txtUsername.Text.Length;
+                txtUsername.Text = Username ?? "";
+                txtPassword.Text = Password == null ? "" : clsSymmetric.Decrypt(Password, EncryptDecryptKey);
+                chbRememberme.Checked = (Username != null && Password != null);
+                txtUsername.Focus();
+                txtUsername.SelectionStart = txtUsername.Text.Length;
+
+
+                lblErrorMessage.Visible = false;
+         
         }
 
         private void _SaveUsernameAndPasswordToRegistry()
@@ -67,25 +76,30 @@ namespace Service_Center_Management_System__SCMS_
             }
 
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+
+
+        private clsUser _IsUsernameAndPasswordValid()
         {
-            if (!txtUsername.IsValid() || !txtPassword.IsValid()) return;
+            if (!txtUsername.IsValid() || !txtPassword.IsValid())    
+                return null;
+           
 
             clsUser User =
                 clsUser.FindByUsernameAndPassword(txtUsername.Text.Trim(),
                 txtPassword.Text.Trim());
 
-            if(User == null)
+            if (User == null)
             {
                 MessageBox.Show("Invalid username or password.",
                 "Login Failed",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error);
                 txtUsername.Focus();
-                return;
+
+                return null;
             }
 
-            if(!User.IsActive)
+            if (!User.IsActive)
             {
                 MessageBox.Show(
                    "Your account is inactive. Please contact the administrator.",
@@ -93,22 +107,59 @@ namespace Service_Center_Management_System__SCMS_
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Warning);
 
-                return;
+         
+                return null;
             }
-            clsGlobal.CurrentUser = User;
-            //save user data
-            _SaveUsernameAndPasswordToRegistry();
 
+            
+            return User;
+        }
+        private async void btnLogin_Click(object sender, EventArgs e)
+        {
+         
+                clsGlobal.CurrentUser = _IsUsernameAndPasswordValid();
 
-            clsEventLogger.WriteEntryToEventLog(ApplicationName,
-                $"User with username = {User.Username} logged into SCMS successfully",
-                System.Diagnostics.EventLogEntryType.Information);
+                if (clsGlobal.CurrentUser != null)
+                {
+                    //save user data
+                    _SaveUsernameAndPasswordToRegistry();
 
-            this.Hide();
+                    clsEventLogger.WriteEntryToEventLog(ApplicationName,
+                        $"User with username = {clsGlobal.CurrentUser.Username} logged into SCMS successfully",
+                        System.Diagnostics.EventLogEntryType.Information);
 
-            MainScreen frmMainScreen = new MainScreen(this);
+                    this.Hide();
 
-            frmMainScreen.ShowDialog();
+                    MainScreen frmMainScreen = new MainScreen(this);
+
+                    frmMainScreen.ShowDialog();
+                      Counter = 3;
+                }
+                else
+                {
+                    Counter--;
+
+                    lblErrorMessage.Visible = true;
+
+                    if (Counter > 0)
+                    {
+                        lblErrorMessage.Text = 
+                            $"InCorrect Username or Password.\nRemaining attempts {Counter}";
+
+                    }
+                    else
+                    {
+                        btnLogin.Enabled = false;
+                        lblErrorMessage.Text = "You have failed 3 times.\nPlease try again in a minute";
+
+                        await Task.Delay(60000);
+
+                        lblErrorMessage.Visible = false;
+                        btnLogin.Enabled = true;
+                        Counter = 3;
+                    }
+                }
+
         }
 
         private void User_KeyPress(object sender, KeyPressEventArgs e)
@@ -116,5 +167,7 @@ namespace Service_Center_Management_System__SCMS_
             if (e.KeyChar == (char)Keys.Enter)
                 btnLogin.PerformClick();
         }
+
+
     }
 }

@@ -35,6 +35,7 @@
             this.txtPassword = new SCMSControlsLib.cusTextBox();
             this.txtUsername = new SCMSControlsLib.cusTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblErrorMessage = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,12 +139,25 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblErrorMessage
+            // 
+            this.lblErrorMessage.AutoSize = true;
+            this.lblErrorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorMessage.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorMessage.Location = new System.Drawing.Point(74, 449);
+            this.lblErrorMessage.Name = "lblErrorMessage";
+            this.lblErrorMessage.Size = new System.Drawing.Size(32, 18);
+            this.lblErrorMessage.TabIndex = 11;
+            this.lblErrorMessage.Text = "???";
+            this.lblErrorMessage.Visible = false;
+            // 
             // frmLoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(342, 550);
+            this.Controls.Add(this.lblErrorMessage);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.chbRememberme);
@@ -173,5 +187,6 @@
         private Guna.UI2.WinForms.Guna2CheckBox chbRememberme;
         private SCMSControlsLib.cusTextBox txtUsername;
         private SCMSControlsLib.cusTextBox txtPassword;
+        private System.Windows.Forms.Label lblErrorMessage;
     }
 }
