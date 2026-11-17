@@ -48,9 +48,6 @@ namespace Service_Center_Management_System__SCMS_
                 chbRememberme.Checked = (Username != null && Password != null);
                 txtUsername.Focus();
                 txtUsername.SelectionStart = txtUsername.Text.Length;
-
-
-                lblErrorMessage.Visible = false;
          
         }
 
@@ -133,7 +130,8 @@ namespace Service_Center_Management_System__SCMS_
                     MainScreen frmMainScreen = new MainScreen(this);
 
                     frmMainScreen.ShowDialog();
-                      Counter = 3;
+                    Counter = 3;
+                    lblErrorMessage.Visible = false;
                 }
                 else
                 {
