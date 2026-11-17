@@ -144,8 +144,7 @@ This project focuses on strengthening practical software development skills thro
 
 ## 📸 Screenshots
 
-![Login Attempts](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login%20Attempts.PNG?raw=true) ![Login Attempts2](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login%20Attempts2.PNG?raw=true)
-
+![Login Attempts](https://github.com/MariamYousry1234/Service-Center-Management-System-SCMS-/blob/main/Screenshots/Login%20Attempts.PNG?raw=true) 
 
 
 
